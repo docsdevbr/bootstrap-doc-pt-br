@@ -1,0 +1,128 @@
+### config ###
+
+# See https://www.mkdocs.org/user-guide/configuration/.
+
+INHERIT: !ENV MKDOCS_BASE_CONFIG
+
+site_name: Documentação do Bootstrap 5.3
+site_description: Documentação do Bootstrap 5.3
+
+### navigation ###
+
+nav:
+  - Getting started:
+      - Introduction: getting-started/introduction.md
+      - Download: getting-started/download.md
+      - Contents: getting-started/contents.md
+      - Browsers & devices: getting-started/browsers-devices.md
+      - JavaScript: getting-started/javascript.md
+      - Webpack: getting-started/webpack.md
+      - Parcel: getting-started/parcel.md
+      - Vite: getting-started/vite.md
+      - Accessibility: getting-started/accessibility.md
+      - RFS: getting-started/rfs.md
+      - RTL: getting-started/rtl.md
+      - Contribute: getting-started/contribute.md
+  - Customize:
+      - Overview: customize/overview.md
+      - Sass: customize/sass.md
+      - Options: customize/options.md
+      - Color: customize/color.md
+      - Color modes: customize/color-modes.md
+      - Components: customize/components.md
+      - CSS variables: customize/css-variables.md
+      - Optimize: customize/optimize.md
+  - Layout:
+      - Breakpoints: layout/breakpoints.md
+      - Containers: layout/containers.md
+      - Grid: layout/grid.md
+      - Columns: layout/columns.md
+      - Gutters: layout/gutters.md
+      - Utilities: layout/utilities.md
+      - Z-index: layout/z-index.md
+      - CSS Grid: layout/css-grid.md
+  - Content:
+      - Reboot: content/reboot.md
+      - Typography: content/typography.md
+      - Images: content/images.md
+      - Tables: content/tables.md
+      - Figures: content/figures.md
+  - Forms:
+      - Overview: forms/overview.md
+      - Form control: forms/form-control.md
+      - Select: forms/select.md
+      - Checks & radios: forms/checks-radios.md
+      - Range: forms/range.md
+      - Input group: forms/input-group.md
+      - Floating labels: forms/floating-labels.md
+      - Layout: forms/layout.md
+      - Validation: forms/validation.md
+  - Components:
+      - Accordion: components/accordion.md
+      - Alerts: components/alerts.md
+      - Badge: components/badge.md
+      - Breadcrumb: components/breadcrumb.md
+      - Buttons: components/buttons.md
+      - Button group: components/button-group.md
+      - Card: components/card.md
+      - Carousel: components/carousel.md
+      - Close button: components/close-button.md
+      - Collapse: components/collapse.md
+      - Dropdowns: components/dropdowns.md
+      - List group: components/list-group.md
+      - Modal: components/modal.md
+      - Navbar: components/navbar.md
+      - Navs & tabs: components/navs-tabs.md
+      - Offcanvas: components/offcanvas.md
+      - Pagination: components/pagination.md
+      - Placeholders: components/placeholders.md
+      - Popovers: components/popovers.md
+      - Progress: components/progress.md
+      - Scrollspy: components/scrollspy.md
+      - Spinners: components/spinners.md
+      - Toasts: components/toasts.md
+      - Tooltips: components/tooltips.md
+  - Helpers:
+      - Clearfix: helpers/clearfix.md
+      - Color & background: helpers/color-background.md
+      - Colored links: helpers/colored-links.md
+      - Focus ring: helpers/focus-ring.md
+      - Icon link: helpers/icon-link.md
+      - Position: helpers/position.md
+      - Ratio: helpers/ratio.md
+      - Stacks: helpers/stacks.md
+      - Stretched link: helpers/stretched-link.md
+      - Text truncation: helpers/text-truncation.md
+      - Vertical rule: helpers/vertical-rule.md
+      - Visually hidden: helpers/visually-hidden.md
+  - Utilities:
+      - API: utilities/api.md
+      - Background: utilities/background.md
+      - Borders: utilities/borders.md
+      - Colors: utilities/colors.md
+      - Display: utilities/display.md
+      - Flex: utilities/flex.md
+      - Float: utilities/float.md
+      - Interactions: utilities/interactions.md
+      - Link: utilities/link.md
+      - Object fit: utilities/object-fit.md
+      - Opacity: utilities/opacity.md
+      - Overflow: utilities/overflow.md
+      - Position: utilities/position.md
+      - Shadows: utilities/shadows.md
+      - Sizing: utilities/sizing.md
+      - Spacing: utilities/spacing.md
+      - Text: utilities/text.md
+      - Vertical align: utilities/vertical-align.md
+      - Visibility: utilities/visibility.md
+      - Z-index: utilities/z-index.md
+  - Extend:
+      - Approach: extend/approach.md
+      - Icons: extend/icons.md
+  - About:
+      - Overview: about/overview.md
+      - Team: about/team.md
+      - Brand: about/brand.md
+      - License: about/license.md
+      - Translations: about/translations.md
+  - Migration: migration.md
