@@ -6,13 +6,13 @@ license: https://github.com/twbs/bootstrap/blob/main/LICENSE
 
 title: Conteúdo
 description: |
-  Descubra o que está incluído no Bootstrap, incluindo nossos sabores de
+  Descubra o que está incluído no Bootstrap, incluindo nossas opções de
   código-fonte e compilados.
 ---
 
 # Conteúdo
 
-Descubra o que está incluído no Bootstrap, incluindo nossos sabores de
+Descubra o que está incluído no Bootstrap, incluindo nossas opções de
 código-fonte e compilados.
 {: .lead }
 
@@ -85,12 +85,12 @@ minificado) incluem o [Popper](https://popper.js.org/docs/v2/).
 O Bootstrap inclui um punhado de opções para incluir alguns ou todos os nossos
 CSS compilados.
 
-| Arquivos CSS                                                                                                                        | Layout                                | Conteúdo                            | Componentes | Utilities                                   |
-|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------|-------------|---------------------------------------------|
-| `bootstrap.css`<br> `bootstrap.min.css`<br> `bootstrap.rtl.css`<br> `bootstrap.rtl.min.css`                                         | Included                              | Included                            | Included    | Included                                    |
-| `bootstrap-grid.css`<br> `bootstrap-grid.rtl.css`<br> `bootstrap-grid.min.css`<br> `bootstrap-grid.rtl.min.css`                     | [Only grid system](../layout/grid.md) | —                                   | —           | [Only flex utilities](../utilities/flex.md) |
-| `bootstrap-utilities.css`<br> `bootstrap-utilities.rtl.css`<br> `bootstrap-utilities.min.css`<br> `bootstrap-utilities.rtl.min.css` | —                                     | —                                   | —           | Included                                    |
-| `bootstrap-reboot.css`<br> `bootstrap-reboot.rtl.css`<br> `bootstrap-reboot.min.css`<br> `bootstrap-reboot.rtl.min.css`             | —                                     | [Only Reboot](../content/reboot.md) | —           | —                                           |
+| Arquivos CSS                                                                                                                        | Layout                                        | Conteúdo                              | Componentes | Utilities                                        |
+|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------------------------------|-------------|--------------------------------------------------|
+| `bootstrap.css`<br> `bootstrap.min.css`<br> `bootstrap.rtl.css`<br> `bootstrap.rtl.min.css`                                         | Incluído                                      | Incluído                              | Incluído    | Incluído                                         |
+| `bootstrap-grid.css`<br> `bootstrap-grid.rtl.css`<br> `bootstrap-grid.min.css`<br> `bootstrap-grid.rtl.min.css`                     | [Apenas sistema de _grid_](../layout/grid.md) | —                                     | —           | [Somente utilitários _flex_](../utilities/flex.md) |
+| `bootstrap-utilities.css`<br> `bootstrap-utilities.rtl.css`<br> `bootstrap-utilities.min.css`<br> `bootstrap-utilities.rtl.min.css` | —                                             | —                                     | —           | Incluído                                         |
+| `bootstrap-reboot.css`<br> `bootstrap-reboot.rtl.css`<br> `bootstrap-reboot.min.css`<br> `bootstrap-reboot.rtl.min.css`             | —                                             | [Apenas Reboot](../content/reboot.md) | —           | —                                                |
 
 ### Arquivos JS
 
@@ -99,13 +99,13 @@ compilado.
 
 | Arquivos JS                                             | Popper   |
 |---------------------------------------------------------|----------|
-| `bootstrap.bundle.js`<br> `bootstrap.bundle.min.js`<br> | Included |
+| `bootstrap.bundle.js`<br> `bootstrap.bundle.min.js`<br> | Incluído |
 | `bootstrap.js`<br> `bootstrap.min.js`<br>               | –        |
 
 ## Código-fonte do Bootstrap
 
 O _download_ do código-fonte do Bootstrap inclui os ativos CSS e JavaScript
-compilados, juntamente com os arquivos fonte Sass, JavaScript e a documentação.
+compilados, juntamente com os arquivos fonte Sass, JavaScript e da documentação.
 Mais especificamente, ele inclui o seguinte e mais:
 
 ```text

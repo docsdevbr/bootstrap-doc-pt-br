@@ -35,7 +35,7 @@ JavaScript opcionais como o Popper.
 ## Arquivos fonte
 
 Compile o Bootstrap com sua própria esteira de ativos baixando nossos arquivos
-fonte Sass, JavaScript e a documentação.
+fonte Sass, JavaScript e da documentação.
 Esta opção requer algumas ferramentas adicionais:
 
 * [Compilador Sass](../getting-started/contribute.md#sass) para compilar

@@ -25,6 +25,7 @@ extra:
     dist: https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-dist.zip
     dist_examples: https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip
     source: https://github.com/twbs/bootstrap/archive/v5.3.3.zip
+  repo: https://github.com/twbs/bootstrap
   twitter: getbootstrap
 
 ### navigation ###
@@ -34,7 +35,7 @@ nav:
       - Introdução: comecando/introducao.md
       - Baixar: comecando/baixar.md
       - Conteúdo: comecando/conteudo.md
-      - Browsers & devices: getting-started/browsers-devices.md
+      - Navegadores e Dispositivos: comecando/navegadores-dispositivos.md
       - JavaScript: getting-started/javascript.md
       - Webpack: getting-started/webpack.md
       - Parcel: getting-started/parcel.md

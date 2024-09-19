@@ -201,9 +201,9 @@ esses recursos úteis.
 * Discuta, faça perguntas e muito mais no
   [Discord da comunidade](https://discord.gg/bZUvakRU3M) ou no
   [subreddit do Bootstrap](https://www.reddit.com/r/bootstrap/);
-* Converse com colegas Bootstrappers no IRC.
-  No servidor `irc.libera.chat`, no canal `#bootstrap`;
-* A ajuda para implementação pode ser encontrada no Stack Overflow (marcado como
+* Converse com colegas Bootstrappers no IRC no servidor `irc.libera.chat`, no
+  canal `#bootstrap`;
+* A ajuda para implementação pode ser encontrada no Stack Overflow (marcada como
   [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5));
 * As pessoas desenvolvedoras devem usar a palavra-chave `bootstrap` em pacotes
   que modificam ou adicionam funcionalidades do Bootstrap ao distribuir por meio
