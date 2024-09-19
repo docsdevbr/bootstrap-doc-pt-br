@@ -87,7 +87,7 @@ Como referência, aqui estão nossos principais _links_ de CDN.
 | JS        | `{{ cdn.js_bundle }}` |
 
 Você também pode usar a CDN para obter qualquer uma das nossas
-[compilações adicionais listadas na página Conteúdo](../getting-started/contents.md).
+[compilações adicionais listadas na página Conteúdo](conteudo.md).
 
 ## Próximos passos
 
@@ -95,10 +95,10 @@ Você também pode usar a CDN para obter qualquer uma das nossas
   [configurações importantes do ambiente global](#globais-importantes) que o
   Bootstrap utiliza.
 * Leia sobre o que está incluído no Bootstrap em nossa
-  [seção Conteúdo](../getting-started/contents.md) e a lista de
+  [seção Conteúdo](conteudo.md) e a lista de
   [componentes que exigem JavaScript](#componentes-js) abaixo.
 * Precisa de um pouco mais de capacidade? Considere construir com o Bootstrap
-  [incluindo os arquivos de origem usando o gerenciador de pacotes](../comecando/baixar.md#gerenciadores-de-pacotes).
+  [incluindo os arquivos fonte usando o gerenciador de pacotes](../comecando/baixar.md#gerenciadores-de-pacotes).
 * Procurando usar o Bootstrap como um módulo com `<script type="module">`?
   Consulte nossa seção [Usando o Bootstrap como um módulo](../getting-started/javascript.md#using-bootstrap-as-a-module).
 

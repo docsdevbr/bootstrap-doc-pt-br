@@ -23,23 +23,23 @@ Baixe o código compilado pronto para uso do **Bootstrap v{{ current_version }}*
 para inserir facilmente em seu projeto, que inclui:
 
 * Pacotes CSS compilados e minimizados (veja a
-  [comparação de arquivos CSS](../getting-started/contents.md#css-files))
+  [comparação de arquivos CSS](conteudo.md#arquivos-css));
 * _Plug-ins_ JavaScript compilados e minimizados (veja a
-  [comparação de arquivos JS](../getting-started/contents#js-files))
+  [comparação de arquivos JS](conteudo#arquivos-js)).
 
-Isso não inclui documentação, arquivos fontes ou quaisquer dependências
+Isso não inclui documentação, arquivos fonte ou quaisquer dependências
 JavaScript opcionais como o Popper.
 
 <a href="{{ download.dist }}" class="btn btn-primary">Baixar</a>
 
-## Arquivos fontes
+## Arquivos fonte
 
 Compile o Bootstrap com sua própria esteira de ativos baixando nossos arquivos
-fontes Sass, JavaScript e de documentação.
+fonte Sass, JavaScript e a documentação.
 Esta opção requer algumas ferramentas adicionais:
 
 * [Compilador Sass](../getting-started/contribute.md#sass) para compilar
-  arquivos fontes Sass em arquivos CSS;
+  arquivos fonte Sass em arquivos CSS;
 * [Autoprefixer](https://github.com/postcss/autoprefixer) para prefixação de
   fornecedores CSS.
 
@@ -48,7 +48,7 @@ Se você precisar de nosso conjunto completo de
 elas foram incluídas para desenvolver o Bootstrap e sua documentação, mas
 provavelmente não são adequadas para seus propósitos.
 
-<a href="{{ download.source }}" class="btn btn-primary">Baixar código fonte</a>
+<a href="{{ download.source }}" class="btn btn-primary">Baixar código-fonte</a>
 
 ## Exemplos
 
@@ -112,7 +112,7 @@ openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A
 
 ## Gerenciadores de pacotes
 
-Inclua os **arquivos fontes** do Bootstrap em praticamente qualquer projeto com
+Inclua os **arquivos fonte** do Bootstrap em praticamente qualquer projeto com
 alguns dos gerenciadores de pacotes mais populares.
 Não importa o gerenciador de pacotes, o Bootstrap **exigirá um
 [compilador Sass](/getting-started/contribute.md#sass) e um
@@ -180,7 +180,7 @@ Você também pode instalar e gerenciar o Sass e o JavaScript do Bootstrap usand
 o [Composer](https://getcomposer.org/):
 
 ```shell
-composer require twbs/bootstrap:{ { < param current_version >} }
+composer require twbs/bootstrap:{{ current_version }}
 ```
 
 ### NuGet
