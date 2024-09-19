@@ -28,7 +28,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    folder and initialize npm with the `-y` argument to avoid it asking us all
    the interactive questions.
 
-   ```sh
+   ```shell
    mkdir my-project && cd my-project
    npm init -y
    ```
@@ -41,7 +41,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    default `dist` one. We use `--save-dev` to signal that these dependencies are
    only for development use and not for production.
 
-   ```sh
+   ```shell
    npm i --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin
    ```
 
@@ -50,7 +50,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    positioning. If you don't plan on using those components, you can omit Popper
    here.
 
-   ```sh
+   ```shell
    npm i --save bootstrap @popperjs/core
    ```
 
@@ -58,7 +58,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    need a few more dependencies to properly import and bundle Bootstrap's CSS
    and JS with Webpack. These include Sass, some loaders, and Autoprefixer.
 
-   ```sh
+   ```shell
    npm i --save-dev autoprefixer css-loader postcss-loader sass sass-loader style-loader
    ```
 
@@ -72,7 +72,7 @@ also create our `src` and `dist` folders to round out the project structure. Run
 the following from `my-project`, or manually create the folder and file
 structure shown below.
 
-```sh
+```shell
 mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js
 ```
@@ -176,7 +176,7 @@ we can now configure Webpack and run our project locally.
 4. **And finally, we can start Webpack.** From the `my-project` folder in your
    terminal, run that newly added npm script:
 
-   ```sh
+   ```shell
    npm start
    ```
 
@@ -325,7 +325,7 @@ the `mini-css-extract-loader` Webpack plugin.
 
 First, install the plugin:
 
-```sh
+```shell
 npm install --save-dev mini-css-extract-plugin
 ```
 

@@ -28,7 +28,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    folder and initialize npm with the `-y` argument to avoid it asking us all
    the interactive questions.
 
-   ```sh
+   ```shell
    mkdir my-project && cd my-project
    npm init -y
    ```
@@ -38,7 +38,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    transformers (like Sass) as it detects them. We use `--save-dev` to signal
    that this dependency is only for development use and not for production.
 
-   ```sh
+   ```shell
    npm i --save-dev parcel
    ```
 
@@ -47,7 +47,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    positioning. If you don't plan on using those components, you can omit Popper
    here.
 
-   ```sh
+   ```shell
    npm i --save bootstrap @popperjs/core
    ```
 
@@ -61,7 +61,7 @@ also create our `src` folder, stylesheet, and JavaScript file to round out the
 project structure. Run the following from `my-project`, or manually create the
 folder and file structure shown below.
 
-```sh
+```shell
 mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss
 ```
@@ -141,7 +141,7 @@ to start our server.
 3. **And finally, we can start Parcel.** From the `my-project` folder in your
    terminal, run that newly added npm script:
 
-   ```sh
+   ```shell
    npm start
    ```
 

@@ -52,9 +52,7 @@ and [terser](https://github.com/terser/terser). |
 | `npm run docs-serve` | Builds and runs the documentation locally. |
 { { < /bs-table >} }
 
-{ { < callout info >} }
-{ { < partial "callouts/info-npm-starter.md" >} }
-{ { < /callout >} }
+{% include-markdown '_includes/partials/callouts/info-npm-starter.md' %}
 
 ## Sass
 

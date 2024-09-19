@@ -30,9 +30,9 @@ you're using, browser support, and more.
 
 Our two preferred methods are:
 
-1. Using Bootstrap [via package manager](   /getting-started/download.md#package-managers) so you can use and extend
+1. Using Bootstrap [via package manager](../comecando/baixar.md#gerenciadores-de-pacotes) so you can use and extend
    our source files.
-2. Using Bootstrap's compiled distribution files or [jsDelivr](   /getting-started/download.md#cdn-via-jsdelivr) so you can add onto or
+2. Using Bootstrap's compiled distribution files or [jsDelivr](../comecando/baixar.md#cdn-via-jsdelivr) so you can add onto or
    override Bootstrap's styles.
 
 While we cannot go into details here on how to use every package manager, we can

@@ -31,7 +31,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    folder and initialize npm with the `-y` argument to avoid it asking us all
    the interactive questions.
 
-   ```sh
+   ```shell
    mkdir my-project && cd my-project
    npm init -y
    ```
@@ -40,7 +40,7 @@ requires you to have Node.js installed and some familiarity with the terminal.
    dependency here. We use `--save-dev` to signal that this dependency is only
    for development use and not for production.
 
-   ```sh
+   ```shell
    npm i --save-dev vite
    ```
 
@@ -49,14 +49,14 @@ requires you to have Node.js installed and some familiarity with the terminal.
    positioning. If you don't plan on using those components, you can omit Popper
    here.
 
-   ```sh
+   ```shell
    npm i --save bootstrap @popperjs/core
    ```
 
 4. **Install additional dependency.** In addition to Vite and Bootstrap, we need
    another dependency (Sass) to properly import and bundle Bootstrap's CSS.
 
-   ```sh
+   ```shell
    npm i --save-dev sass
    ```
 
@@ -70,7 +70,7 @@ also create our `src` folder, stylesheet, and JavaScript file to round out the
 project structure. Run the following from `my-project`, or manually create the
 folder and file structure shown below.
 
-```sh
+```shell
 mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
 ```
@@ -162,7 +162,7 @@ we can now configure Vite and run our project locally.
 4. **And finally, we can start Vite.** From the `my-project` folder in your
    terminal, run that newly added npm script:
 
-   ```sh
+   ```shell
    npm start
    ```
 

@@ -191,9 +191,7 @@ $body-color: #111;
 Repeat as necessary for any variable in Bootstrap, including the global options
 below.
 
-{ { < callout info >} }
-{ { < partial "callouts/info-npm-starter.md" >} }
-{ { < /callout >} }
+{% include-markdown '_includes/partials/callouts/info-npm-starter.md' %}
 
 ## Maps and loops
 

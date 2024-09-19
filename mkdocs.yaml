@@ -18,6 +18,12 @@ extra:
     js_hash: sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy
     popper: https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js
     popper_hash: sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r
+  current_ruby_version: 5.3.3
+  current_version: 5.3.3
+  download:
+    dist: https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-dist.zip
+    dist_examples: https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip
+    source: https://github.com/twbs/bootstrap/archive/v5.3.3.zip
   twitter: getbootstrap
 
 ### navigation ###
@@ -25,7 +31,7 @@ extra:
 nav:
   - Começando:
       - Introdução: comecando/introducao.md
-      - Download: getting-started/download.md
+      - Baixar: comecando/baixar.md
       - Contents: getting-started/contents.md
       - Browsers & devices: getting-started/browsers-devices.md
       - JavaScript: getting-started/javascript.md

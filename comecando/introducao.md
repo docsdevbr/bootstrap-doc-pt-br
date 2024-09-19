@@ -13,6 +13,7 @@ description: Bootstrap é um poderoso conjunto de ferramentas de frontend replet
 Bootstrap é um poderoso conjunto de ferramentas de _front-end_ repleto de
 recursos.
 Construa qualquer coisa — do protótipo à produção — em minutos.
+{: .lead }
 
 ## Início rápido
 
@@ -97,7 +98,7 @@ Você também pode usar a CDN para obter qualquer uma das nossas
   [seção Conteúdo](../getting-started/contents.md) e a lista de
   [componentes que exigem JavaScript](#componentes-js) abaixo.
 * Precisa de um pouco mais de capacidade? Considere construir com o Bootstrap
-  [incluindo os arquivos de origem usando o gerenciador de pacotes](../getting-started/download.md#package-managers).
+  [incluindo os arquivos de origem usando o gerenciador de pacotes](../comecando/baixar.md#gerenciadores-de-pacotes).
 * Procurando usar o Bootstrap como um módulo com `<script type="module">`?
   Consulte nossa seção [Usando o Bootstrap como um módulo](../getting-started/javascript.md#using-bootstrap-as-a-module).
 
