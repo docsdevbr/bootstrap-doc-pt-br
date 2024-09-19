@@ -20,7 +20,7 @@ purpose. For example, if the pagination component is used to navigate between a
 set of search results, an appropriate label could be
 `aria-label="Search results pages"`.
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -30,14 +30,14 @@ set of search results, an appropriate label could be
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Working with icons
 
 Looking to use an icon or symbol in place of text for some pagination links? Be
 sure to provide proper screen reader support with `aria` attributes.
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item">
@@ -55,7 +55,7 @@ sure to provide proper screen reader support with `aria` attributes.
     </li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Disabled and active states
 
@@ -68,7 +68,7 @@ doesn't account for keyboard navigation. As such, you should always add
 `tabindex="-1"` on disabled links and use custom JavaScript to fully disable
 their functionality.
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="...">
   <ul class="pagination">
     <li class="page-item disabled">
@@ -84,13 +84,13 @@ their functionality.
     </li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 You can optionally swap out active or disabled anchors for `<span>`, or omit the
 anchor in the case of the prev/next arrows, to remove click functionality and
 prevent keyboard focus while retaining intended styles.
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="...">
   <ul class="pagination">
     <li class="page-item disabled">
@@ -106,14 +106,14 @@ prevent keyboard focus while retaining intended styles.
     </li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Sizing
 
 Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
 additional sizes.
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="...">
   <ul class="pagination pagination-lg">
     <li class="page-item active" aria-current="page">
@@ -123,9 +123,9 @@ additional sizes.
     <li class="page-item"><a class="page-link" href="#">3</a></li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="...">
   <ul class="pagination pagination-sm">
     <li class="page-item active" aria-current="page">
@@ -135,14 +135,13 @@ additional sizes.
     <li class="page-item"><a class="page-link" href="#">3</a></li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Alignment
 
-Change the alignment of pagination components with [flexbox utilities]({{<
-docsref "/utilities/flex" >}}). For example, with `.justify-content-center`:
+Change the alignment of pagination components with [flexbox utilities](/utilities/flex.md). For example, with `.justify-content-center`:
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled">
@@ -156,11 +155,11 @@ docsref "/utilities/flex" >}}). For example, with `.justify-content-center`:
     </li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 Or with `.justify-content-end`:
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
     <li class="page-item disabled">
@@ -174,25 +173,25 @@ Or with `.justify-content-end`:
     </li>
   </ul>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## CSS
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 As part of Bootstrap's evolving CSS variables approach, pagination now uses
 local CSS variables on `.pagination` for enhanced real-time customization.
 Values for the CSS variables are set via Sass, so Sass customization is still
 supported, too.
 
-{{< scss-docs name="pagination-css-vars" file="scss/_pagination.scss" >}}
+{ { < scss-docs name="pagination-css-vars" file="scss/_pagination.scss" > } }
 
 ### Sass variables
 
-{{< scss-docs name="pagination-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="pagination-variables" file="scss/_variables.scss" > } }
 
 ### Sass mixins
 
-{{< scss-docs name="pagination-mixin" file="scss/mixins/_pagination.scss" >}}
+{ { < scss-docs name="pagination-mixin" file="scss/mixins/_pagination.scss" > } }

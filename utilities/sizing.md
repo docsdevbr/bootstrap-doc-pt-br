@@ -13,15 +13,15 @@ Width and height utilities are generated from the utility API in
 by default. Modify those values as you need to generate different utilities
 here.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="w-25 p-3">Width 25%</div>
 <div class="w-50 p-3">Width 50%</div>
 <div class="w-75 p-3">Width 75%</div>
 <div class="w-100 p-3">Width 100%</div>
 <div class="w-auto p-3">Width auto</div>
-{{< /example >}}
+{ { < /example >} }
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div style="height: 100px;">
   <div class="h-25 d-inline-block" style="width: 120px;">Height 25%</div>
   <div class="h-50 d-inline-block" style="width: 120px;">Height 50%</div>
@@ -29,21 +29,21 @@ here.
   <div class="h-100 d-inline-block" style="width: 120px;">Height 100%</div>
   <div class="h-auto d-inline-block" style="width: 120px;">Height auto</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 You can also use `max-width: 100%;` and `max-height: 100%;` utilities as needed.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div style="width: 50%; height: 100px;">
   <div class="mw-100" style="width: 200%;">Max-width 100%</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div style="height: 100px;">
   <div class="mh-100" style="width: 100px; height: 200px;">Max-height 100%</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Relative to the viewport
 
@@ -61,7 +61,6 @@ You can also use utilities to set the width and height relative to the viewport.
 ### Sass utilities API
 
 Sizing utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.]({{< docsref "
-/utilities/api#using-the-api" >}})
+`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{{< scss-docs name="utils-sizing" file="scss/_utilities.scss" >}}
+{ { < scss-docs name="utils-sizing" file="scss/_utilities.scss" >} }

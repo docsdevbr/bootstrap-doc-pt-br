@@ -11,7 +11,7 @@ toc: true
 Use an ordered or unordered list with linked list items to create a minimally
 styled breadcrumb. Use our utilities to add additional styles as desired.
 
-{{< example >}}
+{ { < example > } }
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -32,7 +32,7 @@ styled breadcrumb. Use our utilities to add additional styles as desired.
     <li class="breadcrumb-item active" aria-current="page">Data</li>
   </ol>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Dividers
 
@@ -46,14 +46,14 @@ our Sass variable, which is set as a fallback to the custom property. This way,
 you get a global divider that you can override without recompiling CSS at any
 time.
 
-{{< example >}}
+{ { < example > } }
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 When modifying via Sass,
 the [quote](https://sass-lang.com/documentation/modules/string/#quote) function
@@ -67,24 +67,23 @@ $breadcrumb-divider: quote(">");
 It's also possible to use an **embedded SVG icon**. Apply it via our CSS custom
 property, or use the Sass variable.
 
-{{< callout info >}}
+{ { < callout info > } }
 **Inlined SVG requires properly escaped characters.** Some reserved characters,
 such as `<`, `>` and `#`, must be URL-encoded or escaped. We do this with the
-`$breadcrumb-divider` variable using our [`escape-svg()` Sass function]({{<
-docsref "/customize/sass#escape-svg" >}}). When customizing the CSS variable,
+`$breadcrumb-divider` variable using our [`escape-svg()` Sass function](/customize/sass.md#escape-svg). When customizing the CSS variable,
 you must handle this yourself.
 Read [Kevin Weber's explanations on CodePen](https://codepen.io/kevinweber/pen/dXWoRw )
 for more info.
-{{< /callout >}}
+{ { < /callout > } }
 
-{{< example >}}
+{ { < example > } }
 <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ```scss
 $breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");
@@ -94,14 +93,14 @@ You can also remove the divider setting `--bs-breadcrumb-divider: '';` (empty
 strings in CSS custom properties counts as a value), or setting the Sass
 variable to `$breadcrumb-divider: none;`.
 
-{{< example >}}
+{ { < example > } }
 <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ```scss
 $breadcrumb-divider: none;
@@ -121,15 +120,15 @@ the [ARIA Authoring Practices Guide breadcrumb pattern](https://www.w3.org/WAI/A
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 As part of Bootstrap's evolving CSS variables approach, breadcrumbs now use
 local CSS variables on `.breadcrumb` for enhanced real-time customization.
 Values for the CSS variables are set via Sass, so Sass customization is still
 supported, too.
 
-{{< scss-docs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" >}}
+{ { < scss-docs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" > } }
 
 ### Sass variables
 
-{{< scss-docs name="breadcrumb-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="breadcrumb-variables" file="scss/_variables.scss" > } }

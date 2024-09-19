@@ -34,7 +34,7 @@ today.
 
 Originally [released](https://blog.twitter.com/developer/en_us/a/2011/bootstrap-twitter)
 on <time datetime="2011-08-19 11:25">Friday, August 19, 2011</time>, we've since
-had over [twenty releases]({{< param repo >}}/releases), including two major
+had over [twenty releases]({ { < param repo >} }/releases), including two major
 rewrites with v2 and v3. With Bootstrap 2, we added responsive functionality to
 the entire framework as an optional stylesheet. Building on that with Bootstrap
 3, we rewrote the library once more to make it responsive by default with a
@@ -54,7 +54,7 @@ properties as part of our tooling.
 
 ## Get involved
 
-Get involved with Bootstrap development by [opening an issue]({{< param repo >
-}}/issues/new/choose) or submitting a pull request. Read
-our [contributing guidelines]({{< param repo >}}/blob/v{{< param
-current_version >}}/.github/CONTRIBUTING.md) for information on how we develop.
+Get involved with Bootstrap development by [opening an issue]({ { < param repo >
+} }/issues/new/choose) or submitting a pull request. Read
+our [contributing guidelines]({ { < param repo >} }/blob/v{ { < param
+current_version >} }/.github/CONTRIBUTING.md) for information on how we develop.

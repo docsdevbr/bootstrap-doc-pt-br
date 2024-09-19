@@ -25,7 +25,7 @@ much. However, once we got going, we couldn't stop making more.
 Oh, and did we mention they're completely open source? Licensed under MIT, just
 like Bootstrap, our icon set is available to everyone.
 
-[Learn more about Bootstrap Icons]({{< param icons >}}), including how to
+[Learn more about Bootstrap Icons]({ { < param icons >} }), including how to
 install them and recommended usage.
 
 ## Alternatives
@@ -33,22 +33,22 @@ install them and recommended usage.
 We've tested and used these icon sets ourselves as preferred alternatives to
 Bootstrap Icons.
 
-{{< markdown >}}
-{{< icons.inline >}}
-{{- $type := .Get "type" | default "preferred" -}}
+{ { < markdown >} }
+{ { < icons.inline >} }
+{ {- $type := .Get "type" | default "preferred" -} }
 
-{{- range (index .Site.Data.icons $type) }}
+{ {- range (index .Site.Data.icons $type) } }
 
-- [{{ .name }}]({{ .website }})
-  {{- end }}
-  {{< /icons.inline >}}
-  {{< /markdown >}}
+- [{ { .name } }]({ { .website } })
+  { {- end } }
+  { { < /icons.inline >} }
+  { { < /markdown >} }
 
 ## More options
 
 While we haven't tried these out ourselves, they do look promising and provide
 multiple formats, including SVG.
 
-{{< markdown >}}
-{{< icons.inline type="more" />}}
-{{< /markdown >}}
+{ { < markdown >} }
+{ { < icons.inline type="more" />} }
+{ { < /markdown >} }

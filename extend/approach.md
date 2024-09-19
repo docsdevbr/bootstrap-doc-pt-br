@@ -13,7 +13,7 @@ Bootstrap. It explains our philosophy to building on the web so that others can
 learn from us, contribute with us, and help us improve.
 
 See something that doesn't sound right, or perhaps could be done
-better? [Open an issue]({{< param repo >}}/issues/new/choose)—we'd love to
+better? [Open an issue]({ { < param repo >} }/issues/new/choose)—we'd love to
 discuss it with you.
 
 ## Summary
@@ -100,8 +100,7 @@ common UI principles allow user focused or hovered elements to remain in view at
 all times. For example, a modal is document blocking (e.g., you cannot take any
 other action save for the modal's action), so we put that above our navbars.
 
-Learn more about this in our [`z-index` layout page]({{< docsref "
-/layout/z-index" >}}).
+Learn more about this in our [`z-index` layout page](/layout/z-index.md).
 
 ## HTML and CSS over JS
 
@@ -112,8 +111,7 @@ and your browser generally provides a great deal of functionality for you.
 
 This principle is our first-class JavaScript API using `data` attributes. You
 don't need to write nearly any JavaScript to use our JavaScript plugins;
-instead, write HTML. Read more about this in [our JavaScript overview page]({{<
-docsref "/getting-started/javascript#data-attributes" >}}).
+instead, write HTML. Read more about this in [our JavaScript overview page](/getting-started/javascript.md#data-attributes).
 
 Lastly, our styles build on the fundamental behaviors of common web elements.
 Whenever possible, we prefer to use what the browser provides. For example, you

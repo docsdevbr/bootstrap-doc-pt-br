@@ -5,7 +5,7 @@ description: Commonly asked questions about Bootstrap's open source license.
 group: about
 ---
 
-Bootstrap is released under the MIT license and is copyright {{< year >}}.
+Bootstrap is released under the MIT license and is copyright { { < year >} }.
 Boiled down to smaller chunks, it can be described with the following
 conditions.
 
@@ -41,5 +41,5 @@ conditions.
 - Submit changes that you make to Bootstrap back to the Bootstrap project (
   though such feedback is encouraged)
 
-The full Bootstrap license is located [in the project repository]({{< param
-repo >}}/blob/v{{< param current_version >}}/LICENSE) for more information.
+The full Bootstrap license is located [in the project repository]({ { < param
+repo >} }/blob/v{ { < param current_version >} }/LICENSE) for more information.

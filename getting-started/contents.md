@@ -75,35 +75,32 @@ include [Popper](https://popper.js.org/docs/v2/).
 Bootstrap includes a handful of options for including some or all of our
 compiled CSS.
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | CSS files | Layout | Content | Components | Utilities |
 | --- | --- | --- | --- | --- |
 | `bootstrap.css`<br> `bootstrap.min.css`<br> `bootstrap.rtl.css`<br>
 `bootstrap.rtl.min.css` | Included | Included | Included | Included |
 | `bootstrap-grid.css`<br> `bootstrap-grid.rtl.css`<br>
 `bootstrap-grid.min.css`<br>
-`bootstrap-grid.rtl.min.css` | [Only grid system]({{< docsref "
-/layout/grid" >}}) | — | — | [Only flex utilities]({{< docsref "
-/utilities/flex" >}}) |
+`bootstrap-grid.rtl.min.css` | [Only grid system](/layout/grid.md) | — | — | [Only flex utilities](/utilities/flex.md) |
 | `bootstrap-utilities.css`<br> `bootstrap-utilities.rtl.css`<br>
 `bootstrap-utilities.min.css`<br>
 `bootstrap-utilities.rtl.min.css` | — | — | — | Included |
 | `bootstrap-reboot.css`<br> `bootstrap-reboot.rtl.css`<br>
 `bootstrap-reboot.min.css`<br>
-`bootstrap-reboot.rtl.min.css` | — | [Only Reboot]({{< docsref "
-/content/reboot" >}}) | — | — |
-{{< /bs-table >}}
+`bootstrap-reboot.rtl.min.css` | — | [Only Reboot](/content/reboot.md) | — | — |
+{ { < /bs-table >} }
 
 ### JS files
 
 Similarly, we have options for including some or all of our compiled JavaScript.
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | JS Files | Popper |
 | --- | --- |
 | `bootstrap.bundle.js`<br> `bootstrap.bundle.min.js`<br> | Included |
 | `bootstrap.js`<br> `bootstrap.min.js`<br> | – |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
 ## Bootstrap source code
 
@@ -119,7 +116,7 @@ bootstrap/
 ├── site/
 │   └──content/
 │      └── docs/
-│          └── {{< param docs_version >}}/
+│          └── { { < param docs_version >} }/
 │              └── examples/
 ├── js/
 └── scss/

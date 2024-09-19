@@ -14,25 +14,24 @@ provide some baseline styles for the HTML5 `<figure>` and `<figcaption>`
 elements. Images in figures have no explicit size, so be sure to add the
 `.img-fluid` class to your `<img>` to make it responsive.
 
-{{< example >}}
+{ { < example >} }
 <figure class="figure">
-  {{< placeholder width="400" height="300" class="figure-img img-fluid rounded" >}}
+  { { < placeholder width="400" height="300" class="figure-img img-fluid rounded" >} }
   <figcaption class="figure-caption">A caption for the above image.</figcaption>
 </figure>
-{{< /example >}}
+{ { < /example >} }
 
-Aligning the figure's caption is easy with our [text utilities]({{< docsref "
-/utilities/text#text-alignment" >}}).
+Aligning the figure's caption is easy with our [text utilities](/utilities/text.md#text-alignment).
 
-{{< example >}}
+{ { < example >} }
 <figure class="figure">
-  {{< placeholder width="400" height="300" class="figure-img img-fluid rounded" >}}
+  { { < placeholder width="400" height="300" class="figure-img img-fluid rounded" >} }
   <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
 </figure>
-{{< /example >}}
+{ { < /example >} }
 
 ## CSS
 
 ### Sass variables
 
-{{< scss-docs name="figure-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="figure-variables" file="scss/_variables.scss" >} }

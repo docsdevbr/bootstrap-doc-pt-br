@@ -12,45 +12,43 @@ Images in Bootstrap are made responsive with `.img-fluid`. This applies
 `max-width: 100%;` and `height: auto;` to the image so that it scales with the
 parent width.
 
-{{< example >}}
-{{< placeholder width="100%" height="250" class="bd-placeholder-img-lg
-img-fluid" text="Responsive image" >}}
-{{< /example >}}
+{ { < example >} }
+{ { < placeholder width="100%" height="250" class="bd-placeholder-img-lg
+img-fluid" text="Responsive image" >} }
+{ { < /example >} }
 
 ## Image thumbnails
 
-In addition to our [border-radius utilities]({{< docsref "
-/utilities/borders" >}}), you can use `.img-thumbnail` to give an image a
+In addition to our [border-radius utilities](/utilities/borders.md), you can use `.img-thumbnail` to give an image a
 rounded 1px border appearance.
 
-{{< example >}}
-{{< placeholder width="200" height="200" class="img-thumbnail" title="A generic
+{ { < example >} }
+{ { < placeholder width="200" height="200" class="img-thumbnail" title="A generic
 square placeholder image with a white border around it, making it resemble a
-photograph taken with an old instant camera" >}}
-{{< /example >}}
+photograph taken with an old instant camera" >} }
+{ { < /example >} }
 
 ## Aligning images
 
-Align images with the [helper float classes]({{< docsref "/utilities/float" >}})
-or [text alignment classes]({{< docsref "/utilities/text#text-alignment" >}}).
+Align images with the [helper float classes](/utilities/float.md)
+or [text alignment classes](/utilities/text.md#text-alignment).
 `block`-level images can be centered using [the
-`.mx-auto` margin utility class]({{< docsref "
-/utilities/spacing#horizontal-centering" >}}).
+`.mx-auto` margin utility class](/utilities/spacing.md#horizontal-centering).
 
-{{< example >}}
-{{< placeholder width="200" height="200" class="rounded float-start" >}}
-{{< placeholder width="200" height="200" class="rounded float-end" >}}
-{{< /example >}}
+{ { < example >} }
+{ { < placeholder width="200" height="200" class="rounded float-start" >} }
+{ { < placeholder width="200" height="200" class="rounded float-end" >} }
+{ { < /example >} }
 
-{{< example >}}
-{{< placeholder width="200" height="200" class="rounded mx-auto d-block" >}}
-{{< /example >}}
+{ { < example >} }
+{ { < placeholder width="200" height="200" class="rounded mx-auto d-block" >} }
+{ { < /example >} }
 
-{{< example >}}
+{ { < example >} }
 <div class="text-center">
-  {{< placeholder width="200" height="200" class="rounded" >}}
+  { { < placeholder width="200" height="200" class="rounded" >} }
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Picture
 
@@ -71,4 +69,4 @@ not to the `<picture>` tag.
 
 Variables are available for image thumbnails.
 
-{{< scss-docs name="thumbnail-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="thumbnail-variables" file="scss/_variables.scss" >} }

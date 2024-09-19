@@ -30,19 +30,16 @@ you're using, browser support, and more.
 
 Our two preferred methods are:
 
-1. Using Bootstrap [via package manager]({{< docsref "
-   /getting-started/download#package-managers" >}}) so you can use and extend
+1. Using Bootstrap [via package manager](   /getting-started/download.md#package-managers) so you can use and extend
    our source files.
-2. Using Bootstrap's compiled distribution files or [jsDelivr]({{< docsref "
-   /getting-started/download#cdn-via-jsdelivr" >}}) so you can add onto or
+2. Using Bootstrap's compiled distribution files or [jsDelivr](   /getting-started/download.md#cdn-via-jsdelivr) so you can add onto or
    override Bootstrap's styles.
 
 While we cannot go into details here on how to use every package manager, we can
-give some guidance on [using Bootstrap with your own Sass compiler]({{<
-docsref "/customize/sass" >}}).
+give some guidance on [using Bootstrap with your own Sass compiler](/customize/sass.md).
 
 For those who want to use the distribution files, review
-the [getting started page]({{< docsref "/getting-started/introduction" >}}) for
+the [getting started page](/getting-started/introduction.md) for
 how to include those files and an example HTML page. From there, consult the
 docs for the layout, components, and behaviors you'd like to use.
 
@@ -61,22 +58,20 @@ configurations**, we've documented all instances of our embedded SVGs (all of
 which are applied via `background-image`) so you can more thoroughly review your
 options.
 
-- [Accordion]({{< docsref "/components/accordion" >}})
-- [Carousel controls]({{< docsref "/components/carousel#with-controls" >}})
-- [Close button]({{< docsref "/components/close-button" >}}) (used in alerts and
+- [Accordion](/components/accordion.md)
+- [Carousel controls](/components/carousel.md#with-controls)
+- [Close button](/components/close-button.md) (used in alerts and
   modals)
-- [Form checkboxes and radio buttons]({{< docsref "/forms/checks-radios" >}})
-- [Form switches]({{< docsref "/forms/checks-radios#switches" >}})
-- [Form validation icons]({{< docsref "/forms/validation#server-side" >}})
-- [Navbar toggle buttons]({{< docsref "
-  /components/navbar#responsive-behaviors" >}})
-- [Select menus]({{< docsref "/forms/select" >}})
+- [Form checkboxes and radio buttons](/forms/checks-radios.md)
+- [Form switches](/forms/checks-radios.md#switches)
+- [Form validation icons](/forms/validation.md#server-side)
+- [Navbar toggle buttons](  /components/navbar.md#responsive-behaviors)
+- [Select menus](/forms/select.md)
 
 Based
 on [community conversation](https://github.com/twbs/bootstrap/issues/25394),
 some options for addressing this in your own codebase
-include [replacing the URLs with locally hosted assets]({{< docsref "
-/getting-started/webpack#extracting-svg-files" >}}), removing the images and
+include [replacing the URLs with locally hosted assets](/getting-started/webpack.md#extracting-svg-files), removing the images and
 using inline images (not possible in all components), and modifying your CSP.
 Our recommendation is to carefully review your own security policies and decide
 on the best path forward, if necessary.

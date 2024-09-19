@@ -18,13 +18,13 @@ correctly in these browsers as well. More specific support information is
 provided below.
 
 You can find our supported range of browsers and their versions [in our
-`.browserslistrc file`]({{< param repo >}}/blob/v{{< param current_version >
-}}/.browserslistrc):
+`.browserslistrc file`]({ { < param repo >} }/blob/v{ { < param current_version >
+} }/.browserslistrc):
 
 ```text
-{{< rf.inline >}}
-{{- readFile ".browserslistrc" | chomp | htmlEscape -}}
-{{< /rf.inline >}}
+{ { < rf.inline >} }
+{ {- readFile ".browserslistrc" | chomp | htmlEscape -} }
+{ { < /rf.inline >} }
 ```
 
 We use [Autoprefixer](https://github.com/postcss/autoprefixer) to handle
@@ -39,26 +39,26 @@ Generally speaking, Bootstrap supports the latest versions of each major
 platform's default browsers. Note that proxy browsers (such as Opera Mini, Opera
 Mobile's Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | | Chrome | Firefox | Safari | Android Browser &amp; WebView |
 | --- | --- | --- | --- | --- |
 | **Android** | Supported | Supported | <span class="text-body-secondary">
 &mdash;</span> | v6.0+ |
 | **iOS** | Supported | Supported |
 Supported | <span class="text-body-secondary">&mdash;</span> |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
 ### Desktop browsers
 
 Similarly, the latest versions of most desktop browsers are supported.
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | | Chrome | Firefox | Microsoft Edge | Opera | Safari |
 | --- | --- | --- | --- | --- | --- |
 | **Mac** | Supported | Supported | Supported | Supported | Supported |
 | **Windows** | Supported | Supported | Supported |
 Supported | <span class="text-body-secondary">&mdash;</span> |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
 For Firefox, in addition to the latest normal stable release, we also support
 the

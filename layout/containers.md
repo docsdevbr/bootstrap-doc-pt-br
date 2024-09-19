@@ -23,10 +23,9 @@ Bootstrap comes with three different containers:
 The table below illustrates how each container's `max-width` compares to the
 original `.container` and `.container-fluid` across each breakpoint.
 
-See them in action and compare them in our [Grid example]({{< docsref "
-/examples/grid#containers" >}}).
+See them in action and compare them in our [Grid example](/examples/grid.md#containers).
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | | Extra small<div class="fw-normal">&lt;576px</div> |
 Small<div class="fw-normal">&ge;576px</div> | Medium<div class="fw-normal">
 &ge;768px</div> | Large<div class="fw-normal">&ge;992px</div> |
@@ -59,7 +58,7 @@ X-Large<div class="fw-normal">&ge;1200px</div> | XX-Large<div class="fw-normal">
 100%</span> | <span class="text-body-secondary">
 100%</span> | <span class="text-body-secondary">
 100%</span> | <span class="text-body-secondary">100%</span> |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
 ## Default container
 
@@ -108,11 +107,10 @@ help you build the layouts you desire. You may customize these predefined
 container classes by modifying the Sass map (found in `_variables.scss`) that
 powers them:
 
-{{< scss-docs name="container-max-widths" file="scss/_variables.scss" >}}
+{ { < scss-docs name="container-max-widths" file="scss/_variables.scss" >} }
 
 For more information and examples on how to modify our Sass maps and variables,
-please refer to [the Sass section of the Grid documentation]({{< docsref "
-/layout/grid#css" >}}).
+please refer to [the Sass section of the Grid documentation](/layout/grid.md#css).
 
 ### Sass mixins
 

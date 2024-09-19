@@ -9,7 +9,7 @@ toc: false
 For longer content, you can add a `.text-truncate` class to truncate the text
 with an ellipsis. **Requires `display: inline-block` or `display: block`.**
 
-{{< example >}}
+{ { < example >} }
 <!-- Block level -->
 <div class="row">
   <div class="col-2 text-truncate">
@@ -21,4 +21,4 @@ with an ellipsis. **Requires `display: inline-block` or `display: block`.**
 <span class="d-inline-block text-truncate" style="max-width: 150px;">
   This text is quite long, and will be truncated once displayed.
 </span>
-{{< /example >}}
+{ { < /example >} }

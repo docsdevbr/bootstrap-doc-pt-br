@@ -8,13 +8,13 @@ added:
   version: "5.3"
 ---
 
-{{< callout >}}
+{ { < callout >} }
 **Try it yourself!** Download the source code and working demo for using
 Bootstrap with Stylelint, and the color modes from
 the [twbs/examples repository](https://github.com/twbs/examples/tree/main/color-modes).
 You can
 also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html).
-{{< /callout >}}
+{ { < /callout >} }
 
 ## Dark mode
 
@@ -37,7 +37,7 @@ For example, to change the color mode of a dropdown menu, add
 Now, no matter the global color mode, these dropdowns will display with the
 specified theme value.
 
-{{< example class="d-flex justify-content-between" >}}
+{ { < example class="d-flex justify-content-between" >} }
 <div class="dropdown" data-bs-theme="light">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
     Default dropdown
@@ -65,7 +65,7 @@ specified theme value.
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## How it works
 
@@ -101,21 +101,20 @@ specified theme value.
 Enable the built in dark color mode across your entire project by adding the
 `data-bs-theme="dark"` attribute to the `<html>` element. This will apply the
 dark color mode to all components and elements, other than those with a specific
-`data-bs-theme` attribute applied. Building on the [quick start template]({{<
-docsref "/getting-started/introduction#quick-start" >}}):
+`data-bs-theme` attribute applied. Building on the [quick start template](/getting-started/introduction.md#quick-start):
 
 ```html
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="pt-br" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
+    <link href="{ { < param "cdn.css" >} }" rel="stylesheet" integrity="{ { < param "cdn.css_hash" >} }" crossorigin="anonymous">
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
+    <script src="{ { < param "cdn.js_bundle" >} }" integrity="{ { < param "cdn.js_bundle_hash" >} }" crossorigin="anonymous"></script>
   </body>
 </html>
 ```
@@ -199,7 +198,7 @@ For example, you can create a "blue theme" with the selector
 and override any global or component CSS variables as needed. If you're using
 Sass, you can also use Sass's functions within your CSS variable overrides.
 
-{{< scss-docs name="custom-color-mode" file="site/assets/scss/_content.scss" >}}
+{ { < scss-docs name="custom-color-mode" file="site/assets/scss/_content.scss" >} }
 
 <div class="bd-example text-body bg-body" data-bs-theme="blue">
   <div class="h4">Example blue theme</div>
@@ -243,18 +242,17 @@ reduce potential screen flickering during reloading of your site. Note that if
 you decide to use media queries for your color modes, your JavaScript may need
 to be modified or removed if you prefer an implicit control.
 
-{{< example lang="js" show_preview="false" >}}
-{{< js.inline >}}
-{{- readFile (path.Join "site/static/docs" .Site.Params.docs_version "
-assets/js/color-modes.js") -}}
-{{< /js.inline >}}
-{{< /example >}}
+{ { < example lang="js" show_preview="false" >} }
+{ { < js.inline >} }
+{ {- readFile (path.Join "site/static/docs" .Site.Params.docs_version "
+assets/js/color-modes.js") -} }
+{ { < /js.inline >} }
+{ { < /example >} }
 
 ## Adding theme colors
 
 Adding a new color in `$theme-colors` is not enough for some of our components
-like [alerts]({{< docsref "/components/alerts" >}}) and [list groups]({{<
-docsref "/components/list-group" >}}). New colors must also be defined in
+like [alerts](/components/alerts.md) and [list groups](/components/list-group.md). New colors must also be defined in
 `$theme-colors-text`, `$theme-colors-bg-subtle`, and
 `$theme-colors-border-subtle` for light theme; but also in
 `$theme-colors-text-dark`, `$theme-colors-bg-subtle-dark`, and
@@ -316,7 +314,7 @@ but [can be configured](#building-with-sass) to use a `prefers-color-scheme`
 media query. Use these variables as a guideline for generating your own new
 color modes.
 
-{{< scss-docs name="root-dark-mode-vars" file="scss/_root.scss" >}}
+{ { < scss-docs name="root-dark-mode-vars" file="scss/_root.scss" >} }
 
 ### Sass variables
 
@@ -325,7 +323,7 @@ specific Sass variables in `_variables-dark.scss`. This also includes some
 custom overrides for changing the colors of embedded SVGs used throughout our
 components.
 
-{{< scss-docs name="sass-dark-mode-vars" file="scss/_variables-dark.scss" >}}
+{ { < scss-docs name="sass-dark-mode-vars" file="scss/_variables-dark.scss" >} }
 
 ### Sass mixins
 
@@ -334,4 +332,4 @@ appropriately to the `data-bs-theme` attribute selector or media query with the
 customizable `color-mode()` mixin. See
 the [Sass usage section](#building-with-sass) for more details.
 
-{{< scss-docs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" >}}
+{ { < scss-docs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" >} }

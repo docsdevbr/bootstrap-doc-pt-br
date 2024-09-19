@@ -13,8 +13,8 @@ added:
 ## Tooling setup
 
 Bootstrap uses [npm scripts](https://docs.npmjs.com/misc/scripts/) to build the
-documentation and compile source files. Our [package.json]({{< param repo >
-}}/blob/v{{< param current_version >}}/package.json) houses these scripts for
+documentation and compile source files. Our [package.json]({ { < param repo >
+} }/blob/v{ { < param current_version >} }/package.json) houses these scripts for
 compiling code, running tests, and more. These aren't intended for use outside
 our repository and documentation.
 
@@ -24,23 +24,23 @@ rock:
 
 1. [Download and install Node.js](https://nodejs.org/en/download/), which we use
    to manage our dependencies.
-2. Either [download Bootstrap's sources]({{< param "download.source" >}}) or
-   fork and clone [Bootstrap's repository]({{< param repo >}}).
+2. Either [download Bootstrap's sources]({ { < param "download.source" >} }) or
+   fork and clone [Bootstrap's repository]({ { < param repo >} }).
 3. Navigate to the root `/bootstrap` directory and run `npm install` to install
-   our local dependencies listed in [package.json]({{< param repo >}}/blob/v{{<
-   param current_version >}}/package.json).
+   our local dependencies listed in [package.json]({ { < param repo >} }/blob/v{ { <
+   param current_version >} }/package.json).
 
 When completed, you'll be able to run the various commands provided from the
 command line.
 
 ## Using npm scripts
 
-Our [package.json]({{< param repo >}}/blob/v{{< param current_version >
-}}/package.json) includes numerous tasks for developing the project. Run
+Our [package.json]({ { < param repo >} }/blob/v{ { < param current_version >
+} }/package.json) includes numerous tasks for developing the project. Run
 `npm run` to see all the npm scripts in your terminal. **Primary tasks include:
 **
 
-{{< bs-table >}}
+{ { < bs-table >} }
 | Task | Description |
 | --- | --- |
 | `npm start` | Compiles CSS and JavaScript, builds the documentation, and
@@ -50,11 +50,11 @@ Uses [Sass](https://sass-lang.com/), [Autoprefixer](https://github.com/postcss/a
 and [terser](https://github.com/terser/terser). |
 | `npm test` | Runs tests locally after running `npm run dist` |
 | `npm run docs-serve` | Builds and runs the documentation locally. |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
-{{< callout info >}}
-{{< partial "callouts/info-npm-starter.md" >}}
-{{< /callout >}}
+{ { < callout info >} }
+{ { < partial "callouts/info-npm-starter.md" >} }
+{ { < /callout >} }
 
 ## Sass
 
@@ -80,8 +80,8 @@ write key parts of our CSS a single time while eliminating the need for vendor
 mixins like those found in v3.
 
 We maintain the list of browsers supported through Autoprefixer in a separate
-file within our GitHub repository. See [.browserslistrc]({{< param repo >
-}}/blob/v{{< param current_version >}}/.browserslistrc) for details.
+file within our GitHub repository. See [.browserslistrc]({ { < param repo >
+} }/blob/v{ { < param current_version >} }/.browserslistrc) for details.
 
 ## RTLCSS
 

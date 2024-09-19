@@ -14,22 +14,22 @@ Choose from `.align-baseline`, `.align-top`, `.align-middle`, `.align-bottom`,
 `.align-text-bottom`, and `.align-text-top` as needed.
 
 To vertically center non-inline content (like `<div>`s and more), use
-our [flex box utilities]({{< docsref "/utilities/flex#align-items" >}}).
+our [flex box utilities](/utilities/flex.md#align-items).
 
 With inline elements:
 
-{{< example >}}
+{ { < example >} }
 <span class="align-baseline">baseline</span>
 <span class="align-top">top</span>
 <span class="align-middle">middle</span>
 <span class="align-bottom">bottom</span>
 <span class="align-text-top">text-top</span>
 <span class="align-text-bottom">text-bottom</span>
-{{< /example >}}
+{ { < /example >} }
 
 With table cells:
 
-{{< example >}}
+{ { < example >} }
 <table style="height: 100px;">
   <tbody>
     <tr>
@@ -42,14 +42,13 @@ With table cells:
     </tr>
   </tbody>
 </table>
-{{< /example >}}
+{ { < /example >} }
 
 ## CSS
 
 ### Sass utilities API
 
 Vertical align utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.]({{< docsref "
-/utilities/api#using-the-api" >}})
+`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{{< scss-docs name="utils-vertical-align" file="scss/_utilities.scss" >}}
+{ { < scss-docs name="utils-vertical-align" file="scss/_utilities.scss" >} }

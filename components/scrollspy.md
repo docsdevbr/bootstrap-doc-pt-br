@@ -10,9 +10,7 @@ toc: true
 
 Scrollspy toggles the `.active` class on anchor (`<a>`) elements when the
 element with the `id` referenced by the anchor's `href` is scrolled into view.
-Scrollspy is best used in conjunction with a Bootstrap [nav component]({{<
-docsref "/components/navs-tabs" >}}) or [list group]({{< docsref "
-/components/list-group" >}}), but it will also work with any anchor elements in
+Scrollspy is best used in conjunction with a Bootstrap [nav component](/components/navs-tabs.md) or [list group](/components/list-group.md), but it will also work with any anchor elements in
 the current page. Here's how it works.
 
 - To start, scrollspy requires two things: a navigation, list group, or a simple
@@ -356,7 +354,7 @@ items won't receive an `.active` class. Scrollspy instances initialized in a
 non-visible wrapper will ignore all target elements. Use the `refresh` method to
 check for observable elements once the wrapper becomes visible.
 
-```js
+```javascript
 document.querySelectorAll('#nav-tab>[data-bs-toggle="tab"]').forEach(el => {
   el.addEventListener('shown.bs.tab', () => {
     const target = el.getAttribute('data-bs-target')
@@ -389,7 +387,7 @@ class name of the parent element of any Bootstrap `.nav` component.
 
 ### Via JavaScript
 
-```js
+```javascript
 const scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: '#navbar-example'
 })
@@ -397,11 +395,11 @@ const scrollSpy = new bootstrap.ScrollSpy(document.body, {
 
 ### Options
 
-{{< markdown >}}
-{{< partial "js-data-attributes.md" >}}
-{{< /markdown >}}
+{ { < markdown > } }
+{ { < partial "js-data-attributes.md" > } }
+{ { < /markdown > } }
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `rootMargin` | string | `0px 0px -25%` | Intersection
@@ -415,20 +413,20 @@ plugin. |
 `IntersectionObserver` [threshold](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold)
 valid input, when calculating scroll position. |
 
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-{{< callout warning >}}
+{ { < callout warning > } }
 **Deprecated Options**
 
 Up until v5.1.3 we were using `offset` & `method` options, which are now
 deprecated and replaced by `rootMargin`.
 To keep backwards compatibility, we will continue to parse a given `offset` to
 `rootMargin`, but this feature will be removed in **v6**.
-{{< /callout >}}
+{ { < /callout > } }
 
 ### Methods
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Method | Description |
 | --- | --- |
 | `dispose` | Destroys an element's scrollspy. (Removes stored data on the DOM
@@ -440,11 +438,11 @@ associated with a DOM element, or to create a new one in case it wasn't
 initialized. |
 | `refresh` | When adding or removing elements in the DOM, you'll need to call
 the refresh method. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
 Here's an example using the refresh method:
 
-```js
+```javascript
 const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
 dataSpyList.forEach(dataSpyEl => {
   bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
@@ -453,14 +451,14 @@ dataSpyList.forEach(dataSpyEl => {
 
 ### Events
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Event | Description |
 | --- | --- |
 | `activate.bs.scrollspy` | This event fires on the scroll element whenever an
 anchor is activated by the scrollspy. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-```js
+```javascript
 const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
 firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
   // do something...

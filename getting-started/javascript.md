@@ -28,13 +28,13 @@ framework-specific package **instead of** the Bootstrap JavaScript. Here are
 some of the most popular options:
 
 - React: [React Bootstrap](https://react-bootstrap.github.io/)
-  {{< callout >}}
+  { { < callout >} }
   **Try it yourself!** Download the source code and working demo for using
   Bootstrap with React, Next.js, and React Bootstrap from
   the [twbs/examples repository](https://github.com/twbs/examples/tree/main/react-nextjs).
   You can
   also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx).
-  {{< /callout >}}
+  { { < /callout >} }
 - Vue: [BootstrapVue](https://bootstrap-vue.org/) (Bootstrap 4)
 - Vue
   3: [BootstrapVueNext](https://bootstrap-vue-next.github.io/bootstrap-vue-next/) (
@@ -43,13 +43,13 @@ some of the most popular options:
 
 ## Using Bootstrap as a module
 
-{{< callout >}}
+{ { < callout >} }
 **Try it yourself!** Download the source code and working demo for using
 Bootstrap as an ES module from
 the [twbs/examples repository](https://github.com/twbs/examples/tree/main/sass-js-esm).
 You can
 also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html).
-{{< /callout >}}
+{ { < /callout >} }
 
 We provide a version of Bootstrap built as `ESM` (`bootstrap.esm.js` and
 `bootstrap.esm.min.js`) which allows you to use Bootstrap as a module in the
@@ -75,7 +75,7 @@ Popper into our JavaScript like so:
 
 <!-- eslint-skip -->
 
-```js
+```javascript
 import * as Popper from "@popperjs/core"
 ```
 
@@ -96,11 +96,11 @@ Here's how it works for Bootstrap and Popper:
 
 ```html
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
+    <link href="{ { < param "cdn.css" >} }" rel="stylesheet" integrity="{ { < param "cdn.css_hash" >} }" crossorigin="anonymous">
     <title>Hello, modularity!</title>
   </head>
   <body>
@@ -111,8 +111,8 @@ Here's how it works for Bootstrap and Popper:
     <script type="importmap">
     {
       "imports": {
-        "@popperjs/core": "{{< param "cdn.popper_esm" >}}",
-        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@{{< param "current_version" >}}/dist/js/bootstrap.esm.min.js"
+        "@popperjs/core": "{ { < param "cdn.popper_esm" >} }",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@{ { < param "current_version" >} }/dist/js/bootstrap.esm.min.js"
       }
     }
     </script>
@@ -140,9 +140,9 @@ with data attributes (our preferred way of using JavaScript functionality). Be
 sure to **only use one set of data attributes on a single element** (e.g., you
 cannot trigger a tooltip and modal from the same button.)
 
-{{< markdown >}}
-{{< partial "js-data-attributes.md" >}}
-{{< /markdown >}}
+{ { < markdown >} }
+{ { < partial "js-data-attributes.md" >} }
+{ { < /markdown >} }
 
 ## Selectors
 
@@ -164,7 +164,7 @@ functionality. This provides the ability to stop the execution of an action
 before it starts. Returning false from an event handler will also automatically
 call `preventDefault()`.
 
-```js
+```javascript
 const myModal = document.querySelector('#myModal')
 
 myModal.addEventListener('show.bs.modal', event => {
@@ -177,7 +177,7 @@ myModal.addEventListener('show.bs.modal', event => {
 All constructors accept an optional options object or nothing (which initiates a
 plugin with its default behavior):
 
-```js
+```javascript
 const myModalEl = document.querySelector('#myModal')
 const modal = new bootstrap.Modal(myModalEl) // initialized with defaults
 
@@ -189,7 +189,7 @@ If you'd like to get a particular plugin instance, each plugin exposes a
 `getInstance` method. For example, to retrieve an instance directly from an
 element:
 
-```js
+```javascript
 bootstrap.Popover.getInstance(myPopoverEl)
 ```
 
@@ -199,7 +199,7 @@ requested element.
 Alternatively, `getOrCreateInstance` can be used to get the instance associated
 with a DOM element, or create a new one in case it wasn't initialized.
 
-```js
+```javascript
 bootstrap.Popover.getOrCreateInstance(myPopoverEl, configObject)
 ```
 
@@ -213,7 +213,7 @@ constructors can accept a DOM element or a valid [CSS selector](#selectors) as
 the first argument. Plugin elements are found with the `querySelector` method
 since our plugins only support a single element.
 
-```js
+```javascript
 const modal = new bootstrap.Modal('#myModal')
 const dropdown = new bootstrap.Dropdown('[data-bs-toggle="dropdown"]')
 const offcanvas = bootstrap.Offcanvas.getInstance('#myOffcanvas')
@@ -226,7 +226,7 @@ All programmatic API methods are **asynchronous** and return to the caller once
 the transition is started, but **before it ends**. In order to execute an action
 once the transition is complete, you can listen to the corresponding event.
 
-```js
+```javascript
 const myCollapseEl = document.querySelector('#myCollapse')
 
 myCollapseEl.addEventListener('shown.bs.collapse', event => {
@@ -236,7 +236,7 @@ myCollapseEl.addEventListener('shown.bs.collapse', event => {
 
 In addition, a method call on a **transitioning component will be ignored**.
 
-```js
+```javascript
 const myCarouselEl = document.querySelector('#myCarousel')
 const carousel = bootstrap.Carousel.getInstance(myCarouselEl) // Retrieve a Carousel instance
 
@@ -254,7 +254,7 @@ While it may seem correct to use the `dispose` method immediately after
 `hide()`, it will lead to incorrect results. Here's an example of the problem
 use:
 
-```js
+```javascript
 const myModal = document.querySelector('#myModal')
 myModal.hide() // it is asynchronous
 
@@ -268,7 +268,7 @@ myModal.addEventListener('shown.bs.hidden', event => {
 You can change the default settings for a plugin by modifying the plugin's
 `Constructor.Default` object:
 
-```js
+```javascript
 // changes default for the modal plugin's `keyboard` option to false
 bootstrap.Modal.Default.keyboard = false
 ```
@@ -277,7 +277,7 @@ bootstrap.Modal.Default.keyboard = false
 
 Every Bootstrap plugin exposes the following methods and static properties.
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | Method | Description |
 | --- | --- |
 | `dispose` | Destroys an element's modal. (Removes stored data on the DOM
@@ -287,16 +287,16 @@ associated with a DOM element. |
 | `getOrCreateInstance` | *Static* method which allows you to get the modal
 instance associated with a DOM element, or create a new one in case it wasn't
 initialized. |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" >} }
 | Static property | Description |
 | --- | --- |
 | `NAME` | Returns the plugin name. (Example: `bootstrap.Tooltip.NAME`) |
 | `VERSION` | The version of each of Bootstrap's plugins can be accessed via the
 `VERSION` property of the plugin's constructor (Example:
 `bootstrap.Tooltip.VERSION`) |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
 ## Sanitizer
 
@@ -305,12 +305,12 @@ accept HTML.
 
 The default `allowList` value is the following:
 
-{{< js-docs name="allow-list" file="js/src/util/sanitizer.js" >}}
+{ { < js-docs name="allow-list" file="js/src/util/sanitizer.js" >} }
 
 If you want to add new values to this default `allowList` you can do the
 following:
 
-```js
+```javascript
 const myDefaultAllowList = bootstrap.Tooltip.Default.allowList
 
 // To allow table elements
@@ -329,7 +329,7 @@ If you want to bypass our sanitizer because you prefer to use a dedicated
 library, for example [DOMPurify](https://www.npmjs.com/package/dompurify), you
 should do the following:
 
-```js
+```javascript
 const yourTooltipEl = document.querySelector('#yourTooltip')
 const tooltip = new bootstrap.Tooltip(yourTooltipEl, {
   sanitizeFn(content) {
@@ -345,7 +345,7 @@ components with jQuery. If Bootstrap detects `jQuery` in the `window` object,
 it'll add all of our components in jQuery's plugin system. This allows you to do
 the following:
 
-```js
+```javascript
 // to enable tooltips with the default configuration
 $('[data-bs-toggle="tooltip"]').tooltip()
 
@@ -368,7 +368,7 @@ these circumstances, namespace collisions can occasionally occur. If this
 happens, you may call `.noConflict` on the plugin you wish to revert the value
 of.
 
-```js
+```javascript
 const bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
 ```
@@ -385,7 +385,7 @@ Bootstrap will emit events thanks to jQuery's event system. So if you want to
 listen to Bootstrap's events, you'll have to use the jQuery methods (`.on`,
 `.one`) instead of `addEventListener`.
 
-```js
+```javascript
 $('#myTab a').on('shown.bs.tab', () => {
   // do something...
 })

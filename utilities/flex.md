@@ -12,25 +12,25 @@ Apply `display` utilities to create a flexbox container and transform **direct
 children elements** into flex items. Flex containers and items are able to be
 modified further with additional flex properties.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex p-2">I'm a flexbox container!</div>
-{{< /example >}}
+{ { < /example >} }
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-inline-flex p-2">I'm an inline flexbox container!</div>
-{{< /example >}}
+{ { < /example >} }
 
 Responsive variations also exist for `.d-flex` and `.d-inline-flex`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.d{{ .abbr }}-flex`
-- `.d{{ .abbr }}-inline-flex`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.d{ { .abbr } }-flex`
+- `.d{ { .abbr } }-inline-flex`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Direction
 
@@ -42,7 +42,7 @@ this value (like responsive layouts).
 Use `.flex-row` to set a horizontal direction (the browser default), or
 `.flex-row-reverse` to start the horizontal direction from the opposite side.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex flex-row mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
@@ -53,12 +53,12 @@ Use `.flex-row` to set a horizontal direction (the browser default), or
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Use `.flex-column` to set a vertical direction, or `.flex-column-reverse`  to
 start the vertical direction from the opposite side.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex flex-column mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
@@ -69,21 +69,21 @@ start the vertical direction from the opposite side.
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Responsive variations also exist for `flex-direction`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.flex{{ .abbr }}-row`
-- `.flex{{ .abbr }}-row-reverse`
-- `.flex{{ .abbr }}-column`
-- `.flex{{ .abbr }}-column-reverse`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.flex{ { .abbr } }-row`
+- `.flex{ { .abbr } }-row-reverse`
+- `.flex{ { .abbr } }-column`
+- `.flex{ { .abbr } }-column-reverse`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Justify content
 
@@ -136,19 +136,19 @@ flex items on the main axis (the x-axis to start, y-axis if
 
 Responsive variations also exist for `justify-content`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.justify-content{{ .abbr }}-start`
-- `.justify-content{{ .abbr }}-end`
-- `.justify-content{{ .abbr }}-center`
-- `.justify-content{{ .abbr }}-between`
-- `.justify-content{{ .abbr }}-around`
-- `.justify-content{{ .abbr }}-evenly`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.justify-content{ { .abbr } }-start`
+- `.justify-content{ { .abbr } }-end`
+- `.justify-content{ { .abbr } }-center`
+- `.justify-content{ { .abbr } }-between`
+- `.justify-content{ { .abbr } }-around`
+- `.justify-content{ { .abbr } }-evenly`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Align items
 
@@ -195,18 +195,18 @@ flex items on the cross axis (the y-axis to start, x-axis if
 
 Responsive variations also exist for `align-items`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.align-items{{ .abbr }}-start`
-- `.align-items{{ .abbr }}-end`
-- `.align-items{{ .abbr }}-center`
-- `.align-items{{ .abbr }}-baseline`
-- `.align-items{{ .abbr }}-stretch`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.align-items{ { .abbr } }-start`
+- `.align-items{ { .abbr } }-end`
+- `.align-items{ { .abbr } }-center`
+- `.align-items{ { .abbr } }-baseline`
+- `.align-items{ { .abbr } }-stretch`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Align self
 
@@ -253,18 +253,18 @@ alignment on the cross axis (the y-axis to start, x-axis if
 
 Responsive variations also exist for `align-self`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.align-self{{ .abbr }}-start`
-- `.align-self{{ .abbr }}-end`
-- `.align-self{{ .abbr }}-center`
-- `.align-self{{ .abbr }}-baseline`
-- `.align-self{{ .abbr }}-stretch`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.align-self{ { .abbr } }-start`
+- `.align-self{ { .abbr } }-end`
+- `.align-self{ { .abbr } }-center`
+- `.align-self{ { .abbr } }-baseline`
+- `.align-self{ { .abbr } }-stretch`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Fill
 
@@ -272,24 +272,24 @@ Use the `.flex-fill` class on a series of sibling elements to force them into
 widths equal to their content (or equal widths if their content does not surpass
 their border-boxes) while taking up all available horizontal space.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex">
   <div class="p-2 flex-fill">Flex item with a lot of content</div>
   <div class="p-2 flex-fill">Flex item</div>
   <div class="p-2 flex-fill">Flex item</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Responsive variations also exist for `flex-fill`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.flex{{ .abbr }}-fill`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.flex{ { .abbr } }-fill`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Grow and shrink
 
@@ -298,37 +298,37 @@ available space. In the example below, the `.flex-grow-1` elements uses all
 available space it can, while allowing the remaining two flex items their
 necessary space.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex">
   <div class="p-2 flex-grow-1">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Third flex item</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Use `.flex-shrink-*` utilities to toggle a flex item's ability to shrink if
 necessary. In the example below, the second flex item with `.flex-shrink-1` is
 forced to wrap its contents to a new line, "shrinking" to allow more space for
 the previous flex item with `.w-100`.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex">
   <div class="p-2 w-100">Flex item</div>
   <div class="p-2 flex-shrink-1">Flex item</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Responsive variations also exist for `flex-grow` and `flex-shrink`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.flex{{ .abbr }}-{grow|shrink}-0`
-- `.flex{{ .abbr }}-{grow|shrink}-1`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.flex{ { .abbr } }-{grow|shrink}-0`
+- `.flex{ { .abbr } }-{grow|shrink}-1`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Auto margins
 
@@ -337,7 +337,7 @@ margins. Shown below are three examples of controlling flex items via auto
 margins: default (no auto margin), pushing two items to the right (`.me-auto`),
 and pushing two items to the left (`.ms-auto`).
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex mb-3">
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
@@ -355,7 +355,7 @@ and pushing two items to the left (`.ms-auto`).
   <div class="p-2">Flex item</div>
   <div class="ms-auto p-2">Flex item</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ### With align-items
 
@@ -363,7 +363,7 @@ Vertically move one flex item to the top or bottom of a container by mixing
 `align-items`, `flex-direction: column`, and `margin-top: auto` or
 `margin-bottom: auto`.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
   <div class="mb-auto p-2">Flex item</div>
   <div class="p-2">Flex item</div>
@@ -375,7 +375,7 @@ Vertically move one flex item to the top or bottom of a container by mixing
   <div class="p-2">Flex item</div>
   <div class="mt-auto p-2">Flex item</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Wrap
 
@@ -451,16 +451,16 @@ wrapping with `.flex-wrap-reverse`.
 
 Responsive variations also exist for `flex-wrap`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.flex{{ .abbr }}-nowrap`
-- `.flex{{ .abbr }}-wrap`
-- `.flex{{ .abbr }}-wrap-reverse`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.flex{ { .abbr } }-nowrap`
+- `.flex{ { .abbr } }-wrap`
+- `.flex{ { .abbr } }-wrap-reverse`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Order
 
@@ -469,41 +469,41 @@ utilities. We only provide options for making an item first or last, as well as
 a reset to use the DOM order. As `order` takes any integer value from 0 to 5,
 add custom CSS for any additional values needed.
 
-{{< example class="bd-example-flex" >}}
+{ { < example class="bd-example-flex" >} }
 <div class="d-flex flex-nowrap">
   <div class="order-3 p-2">First flex item</div>
   <div class="order-2 p-2">Second flex item</div>
   <div class="order-1 p-2">Third flex item</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Responsive variations also exist for `order`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $bp := $.Site.Data.breakpoints -}}
-{{- range (seq 0 5) }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $bp := $.Site.Data.breakpoints -} }
+{ {- range (seq 0 5) } }
 
-- `.order{{ $bp.abbr }}-{{ . }}`
-  {{- end -}}
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.order{ { $bp.abbr } }-{ { . } }`
+  { {- end -} }
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 Additionally there are also responsive `.order-first` and `.order-last` classes
 that change the `order` of an element by applying `order: -1` and `order: 6`,
 respectively.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $bp := $.Site.Data.breakpoints -}}
-{{- range (slice "first" "last") }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $bp := $.Site.Data.breakpoints -} }
+{ {- range (slice "first" "last") } }
 
-- `.order{{ $bp.abbr }}-{{ . }}`
-  {{- end -}}
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.order{ { $bp.abbr } }-{ { . } }`
+  { {- end -} }
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Align content
 
@@ -662,19 +662,19 @@ we've enforced `flex-wrap: wrap` and increased the number of flex items.
 
 Responsive variations also exist for `align-content`.
 
-{{< markdown >}}
-{{< flex.inline >}}
-{{- range $.Site.Data.breakpoints }}
+{ { < markdown >} }
+{ { < flex.inline >} }
+{ {- range $.Site.Data.breakpoints } }
 
-- `.align-content{{ .abbr }}-start`
-- `.align-content{{ .abbr }}-end`
-- `.align-content{{ .abbr }}-center`
-- `.align-content{{ .abbr }}-between`
-- `.align-content{{ .abbr }}-around`
-- `.align-content{{ .abbr }}-stretch`
-  {{- end -}}
-  {{< /flex.inline >}}
-  {{< /markdown >}}
+- `.align-content{ { .abbr } }-start`
+- `.align-content{ { .abbr } }-end`
+- `.align-content{ { .abbr } }-center`
+- `.align-content{ { .abbr } }-between`
+- `.align-content{ { .abbr } }-around`
+- `.align-content{ { .abbr } }-stretch`
+  { {- end -} }
+  { { < /flex.inline >} }
+  { { < /markdown >} }
 
 ## Media object
 
@@ -683,36 +683,35 @@ the [media object component](https://getbootstrap.com/docs/4.6/components/media-
 from Bootstrap 4? Recreate it in no time with a few flex utilities that allow
 even more flexibility and customization than before.
 
-{{< example >}}
+{ { < example >} }
 <div class="d-flex">
   <div class="flex-shrink-0">
-    {{< placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" >}}
+    { { < placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" >} }
   </div>
   <div class="flex-grow-1 ms-3">
     This is some content from a media component. You can replace this with any content and adjust it as needed.
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 And say you want to vertically center the content next to the image:
 
-{{< example >}}
+{ { < example >} }
 <div class="d-flex align-items-center">
   <div class="flex-shrink-0">
-    {{< placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" >}}
+    { { < placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" >} }
   </div>
   <div class="flex-grow-1 ms-3">
     This is some content from a media component. You can replace this with any content and adjust it as needed.
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## CSS
 
 ### Sass utilities API
 
 Flexbox utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.]({{< docsref "
-/utilities/api#using-the-api" >}})
+`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{{< scss-docs name="utils-flex" file="scss/_utilities.scss" >}}
+{ { < scss-docs name="utils-flex" file="scss/_utilities.scss" >} }

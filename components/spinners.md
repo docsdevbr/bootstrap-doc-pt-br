@@ -17,19 +17,19 @@ with our amazing utility classes.
 For accessibility purposes, each loader here includes `role="status"` and a
 nested `<span class="visually-hidden">Loading...</span>`.
 
-{{< callout info >}}
-{{< partial "callouts/info-prefersreducedmotion.md" >}}
-{{< /callout >}}
+{ { < callout info > } }
+{ { < partial "callouts/info-prefersreducedmotion.md" > } }
+{ { < /callout > } }
 
 ## Border spinner
 
 Use the border spinners for a lightweight loading indicator.
 
-{{< example >}}
+{ { < example > } }
 <div class="spinner-border" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ### Colors
 
@@ -37,46 +37,46 @@ The border spinner uses `currentColor` for its `border-color`, meaning you can
 customize the color with [text color utilities][color]. You can use any of our
 text color utilities on the standard spinner.
 
-{{< example >}}
-{{< spinner.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-<div class="spinner-border text-{{ .name }}" role="status">
+{ { < example > } }
+{ { < spinner.inline > } }
+{ {- range (index $.Site.Data "theme-colors") } }
+<div class="spinner-border text-{ { .name } }" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{- end -}}
-{{< /spinner.inline >}}
-{{< /example >}}
+{ {- end -} }
+{ { < /spinner.inline > } }
+{ { < /example > } }
 
-{{< callout info >}}
+{ { < callout info > } }
 **Why not use `border-color` utilities?** Each border spinner specifies a
 `transparent` border for at least one side, so `.border-{color}` utilities would
 override that.
-{{< /callout >}}
+{ { < /callout > } }
 
 ## Growing spinner
 
 If you don't fancy a border spinner, switch to the grow spinner. While it
 doesn't technically spin, it does repeatedly grow!
 
-{{< example >}}
+{ { < example > } }
 <div class="spinner-grow" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 Once again, this spinner is built with `currentColor`, so you can easily change
 its appearance with [text color utilities][color]. Here it is in blue, along
 with the supported variants.
 
-{{< example >}}
-{{< spinner.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-<div class="spinner-grow text-{{ .name }}" role="status">
+{ { < example > } }
+{ { < spinner.inline > } }
+{ {- range (index $.Site.Data "theme-colors") } }
+<div class="spinner-grow text-{ { .name } }" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{- end -}}
-{{< /spinner.inline >}}
-{{< /example >}}
+{ {- end -} }
+{ { < /spinner.inline > } }
+{ { < /example > } }
 
 ## Alignment
 
@@ -88,11 +88,11 @@ quickly aligned.
 
 Use [margin utilities][margin] like `.m-5` for easy spacing.
 
-{{< example >}}
+{ { < example > } }
 <div class="spinner-border m-5" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ### Placement
 
@@ -102,65 +102,65 @@ them in any situation.
 
 #### Flex
 
-{{< example >}}
+{ { < example > } }
 <div class="d-flex justify-content-center">
   <div class="spinner-border" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
-{{< example >}}
+{ { < example > } }
 <div class="d-flex align-items-center">
   <strong role="status">Loading...</strong>
   <div class="spinner-border ms-auto" aria-hidden="true"></div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 #### Floats
 
-{{< example >}}
+{ { < example > } }
 <div class="clearfix">
   <div class="spinner-border float-end" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 #### Text align
 
-{{< example >}}
+{ { < example > } }
 <div class="text-center">
   <div class="spinner-border" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ## Size
 
 Add `.spinner-border-sm` and `.spinner-grow-sm` to make a smaller spinner that
 can quickly be used within other components.
 
-{{< example >}}
+{ { < example > } }
 <div class="spinner-border spinner-border-sm" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
 <div class="spinner-grow spinner-grow-sm" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 Or, use custom CSS or inline styles to change the dimensions as needed.
 
-{{< example >}}
+{ { < example > } }
 <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
 <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ## Buttons
 
@@ -168,7 +168,7 @@ Use spinners within buttons to indicate an action is currently processing or
 taking place. You may also swap the text out of the spinner element and utilize
 button text as needed.
 
-{{< example >}}
+{ { < example > } }
 <button class="btn btn-primary" type="button" disabled>
 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
 <span class="visually-hidden" role="status">Loading...</span>
@@ -177,9 +177,9 @@ button text as needed.
 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
 <span role="status">Loading...</span>
 </button>
-{{< /example >}}
+{ { < /example > } }
 
-{{< example >}}
+{ { < example > } }
 <button class="btn btn-primary" type="button" disabled>
 <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
 <span class="visually-hidden" role="status">Loading...</span>
@@ -188,13 +188,13 @@ button text as needed.
 <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
 <span role="status">Loading...</span>
 </button>
-{{< /example >}}
+{ { < /example > } }
 
 ## CSS
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 As part of Bootstrap's evolving CSS variables approach, spinners now use local
 CSS variables on `.spinner-border` and `.spinner-grow` for enhanced real-time
@@ -203,30 +203,30 @@ customization is still supported, too.
 
 Border spinner variables:
 
-{{< scss-docs name="spinner-border-css-vars" file="scss/_spinners.scss" >}}
+{ { < scss-docs name="spinner-border-css-vars" file="scss/_spinners.scss" > } }
 
 Growing spinner variables:
 
-{{< scss-docs name="spinner-grow-css-vars" file="scss/_spinners.scss" >}}
+{ { < scss-docs name="spinner-grow-css-vars" file="scss/_spinners.scss" > } }
 
 For both spinners, small spinner modifier classes are used to update the values
 of these CSS variables as needed. For example, the `.spinner-border-sm` class
 does the following:
 
-{{< scss-docs name="spinner-border-sm-css-vars" file="scss/_spinners.scss" >}}
+{ { < scss-docs name="spinner-border-sm-css-vars" file="scss/_spinners.scss" > } }
 
 ### Sass variables
 
-{{< scss-docs name="spinner-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="spinner-variables" file="scss/_variables.scss" > } }
 
 ### Keyframes
 
 Used for creating the CSS animations for our spinners. Included in
 `scss/_spinners.scss`.
 
-{{< scss-docs name="spinner-border-keyframes" file="scss/_spinners.scss" >}}
+{ { < scss-docs name="spinner-border-keyframes" file="scss/_spinners.scss" > } }
 
-{{< scss-docs name="spinner-grow-keyframes" file="scss/_spinners.scss" >}}
+{ { < scss-docs name="spinner-grow-keyframes" file="scss/_spinners.scss" > } }
 
 [color]: ../utilities/colors.md
 

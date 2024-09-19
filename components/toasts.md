@@ -18,9 +18,9 @@ Things to know when using the toast plugin:
   yourself**.
 - Toasts will automatically hide if you do not specify `autohide: false`.
 
-{{< callout info >}}
-{{< partial "callouts/info-prefersreducedmotion.md" >}}
-{{< /callout >}}
+{ { < callout info > } }
+{ { < partial "callouts/info-prefersreducedmotion.md" > } }
+{ { < /callout > } }
 
 ## Examples
 
@@ -34,10 +34,10 @@ Toasts are as flexible as you need and have very little required markup. At a
 minimum, we require a single element to contain your "toasted" content and
 strongly encourage a dismiss button.
 
-{{< example >}}
+{ { < example > } }
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+    { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
     <strong class="me-auto">Bootstrap</strong>
     <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -46,15 +46,15 @@ strongly encourage a dismiss button.
     Hello, world! This is a toast message.
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
-{{< callout warning >}}
+{ { < callout warning > } }
 Previously, our scripts dynamically added the `.hide` class to completely hide a
 toast (with `display:none`, rather than just with `opacity:0`). This is now not
 necessary anymore. However, for backwards compatibility, our script will
 continue to toggle the class (even though there is no practical need for it)
 until the next major version.
-{{< /callout >}}
+{ { < /callout > } }
 
 ### Live example
 
@@ -64,7 +64,7 @@ lower right corner) that has been hidden by default.
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+      { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
       <strong class="me-auto">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -99,16 +99,16 @@ lower right corner) that has been hidden by default.
 
 We use the following JavaScript to trigger our live toast demo:
 
-{{< js-docs name="live-toast" file="site/assets/js/partials/snippets.js" >}}
+{ { < js-docs name="live-toast" file="site/assets/js/partials/snippets.js" > } }
 
 ### Translucent
 
 Toasts are slightly translucent to blend in with what's below them.
 
-{{< example class="bg-dark" >}}
+{ { < example class="bg-dark" > } }
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+    { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
     <strong class="me-auto">Bootstrap</strong>
     <small class="text-body-secondary">11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -117,18 +117,18 @@ Toasts are slightly translucent to blend in with what's below them.
     Hello, world! This is a toast message.
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ### Stacking
 
 You can stack toasts by wrapping them in a toast container, which will
 vertically add some spacing.
 
-{{< example >}}
+{ { < example > } }
 <div class="toast-container position-static">
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+      { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
       <strong class="me-auto">Bootstrap</strong>
       <small class="text-body-secondary">just now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -140,7 +140,7 @@ vertically add some spacing.
 
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+      { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
       <strong class="me-auto">Bootstrap</strong>
       <small class="text-body-secondary">2 seconds ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -150,18 +150,17 @@ vertically add some spacing.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ### Custom content
 
 Customize your toasts by removing sub-components, tweaking them
-with [utilities]({{< docsref "/utilities/api" >}}), or by adding your own
+with [utilities](/utilities/api.md), or by adding your own
 markup. Here we've created a simpler toast by removing the default
-`.toast-header`, adding a custom hide icon from [Bootstrap Icons]({{< param
-icons >}}), and using some [flexbox utilities]({{< docsref "
-/utilities/flex" >}}) to adjust the layout.
+`.toast-header`, adding a custom hide icon from [Bootstrap Icons]({ { < param
+icons > } }), and using some [flexbox utilities](/utilities/flex.md) to adjust the layout.
 
-{{< example >}}
+{ { < example > } }
 <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body">
@@ -170,11 +169,11 @@ icons >}}), and using some [flexbox utilities]({{< docsref "
     <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 Alternatively, you can also add additional controls and components to toasts.
 
-{{< example >}}
+{ { < example > } }
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-body">
     Hello, world! This is a toast message.
@@ -184,17 +183,16 @@ Alternatively, you can also add additional controls and components to toasts.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ### Color schemes
 
 Building on the above example, you can create different toast color schemes with
-our [color]({{< docsref "/utilities/colors" >}}) and [background]({{< docsref "
-/utilities/background" >}}) utilities. Here we've added `.text-bg-primary` to
+our [color](/utilities/colors.md) and [background](/utilities/background.md) utilities. Here we've added `.text-bg-primary` to
 the `.toast`, and then added `.btn-close-white` to our close button. For a crisp
 edge, we remove the default border with `.border-0`.
 
-{{< example >}}
+{ { < example > } }
 <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body">
@@ -203,7 +201,7 @@ edge, we remove the default border with `.border-0`.
     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ## Placement
 
@@ -211,7 +209,7 @@ Place toasts with custom CSS as you need them. The top right is often used for
 notifications, as is the top middle. If you're only ever going to show one toast
 at a time, put the positioning styles right on the `.toast`.
 
-{{< example stackblitz_add_js="true" >}}
+{ { < example stackblitz_add_js="true" > } }
 <form>
   <div class="mb-3">
     <label for="selectToastPlacement">Toast placement</label>
@@ -233,7 +231,7 @@ at a time, put the positioning styles right on the `.toast`.
   <div class="toast-container p-3" id="toastPlacement">
     <div class="toast">
       <div class="toast-header">
-        {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+        { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
         <strong class="me-auto">Bootstrap</strong>
         <small>11 mins ago</small>
       </div>
@@ -243,12 +241,12 @@ at a time, put the positioning styles right on the `.toast`.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 For systems that generate more notifications, consider using a wrapping element
 so they can easily stack.
 
-{{< example class="bd-example-toasts p-0" >}}
+{ { < example class="bd-example-toasts p-0" > } }
 <div aria-live="polite" aria-atomic="true" class="position-relative">
   <!-- Position it: -->
   <!-- - `.toast-container` for spacing between toasts -->
@@ -259,7 +257,7 @@ so they can easily stack.
     <!-- Then put toasts within -->
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+        { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
         <strong class="me-auto">Bootstrap</strong>
         <small class="text-body-secondary">just now</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -271,7 +269,7 @@ so they can easily stack.
 
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+        { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
         <strong class="me-auto">Bootstrap</strong>
         <small class="text-body-secondary">2 seconds ago</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -283,19 +281,19 @@ so they can easily stack.
 
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 You can also get fancy with flexbox utilities to align toasts horizontally
 and/or vertically.
 
-{{< example class="bd-example-toasts d-flex" >}}
+{ { < example class="bd-example-toasts d-flex" > } }
 <!-- Flexbox container for aligning the toasts -->
 <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
 
   <!-- Then put toasts within -->
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+      { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
       <strong class="me-auto">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -305,7 +303,7 @@ and/or vertically.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 ## Accessibility
 
@@ -321,7 +319,7 @@ single (atomic) unit, rather than just announcing what was changed (which could
 lead to problems if you only update part of the toast's content, or if
 displaying the same toast content at a later point in time). If the information
 needed is important for the process, e.g. for a list of errors in a form, then
-use the [alert component]({{< docsref "/components/alerts" >}}) instead of
+use the [alert component](/components/alerts.md) instead of
 toast.
 
 Note that the live region needs to be present in the markup *before* the toast
@@ -346,10 +344,10 @@ As the content you're displaying changes, be sure to update the [
 When using `autohide: false`, you must add a close button to allow users to
 dismiss the toast.
 
-{{< example >}}
+{ { < example > } }
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
   <div class="toast-header">
-    {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+    { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" > } }
     <strong class="me-auto">Bootstrap</strong>
     <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -358,7 +356,7 @@ dismiss the toast.
     Hello, world! This is a toast message.
   </div>
 </div>
-{{< /example >}}
+{ { < /example > } }
 
 While technically it's possible to add focusable/actionable controls (such as
 additional buttons or links) in your toast, you should avoid doing this for
@@ -372,53 +370,53 @@ recommend using a toast with `autohide: false`.
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 As part of Bootstrap's evolving CSS variables approach, toasts now use local CSS
 variables on `.toast` for enhanced real-time customization. Values for the CSS
 variables are set via Sass, so Sass customization is still supported, too.
 
-{{< scss-docs name="toast-css-vars" file="scss/_toasts.scss" >}}
+{ { < scss-docs name="toast-css-vars" file="scss/_toasts.scss" > } }
 
 ### Sass variables
 
-{{< scss-docs name="toast-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="toast-variables" file="scss/_variables.scss" > } }
 
 ## Usage
 
 Initialize toasts via JavaScript:
 
-```js
+```javascript
 const toastElList = document.querySelectorAll('.toast')
 const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
 ```
 
 ### Triggers
 
-{{% js-dismiss "toast" %}}
+{ { % js-dismiss "toast" % } }
 
 ### Options
 
-{{< markdown >}}
-{{< partial "js-data-attributes.md" >}}
-{{< /markdown >}}
+{ { < markdown > } }
+{ { < partial "js-data-attributes.md" > } }
+{ { < /markdown > } }
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `animation` | boolean | `true` | Apply a CSS fade transition to the toast. |
 | `autohide` | boolean | `true` | Automatically hide the toast after the
 delay. |
 | `delay` | number | `5000` | Delay in milliseconds before hiding the toast. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
 ### Methods
 
-{{< callout danger >}}
-{{< partial "callouts/danger-async-methods.md" >}}
-{{< /callout >}}
+{ { < callout danger > } }
+{ { < partial "callouts/danger-async-methods.md" > } }
+{ { < /callout > } }
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Method | Description |
 | --- | --- |
 | `dispose` | Hides an element's toast. Your toast will remain on the DOM but
@@ -440,11 +438,11 @@ have to manually call this method if you made `autohide` to `false`. |
 | `show` | Reveals an element's toast. **Returns to the caller before the toast
 has actually been shown** (i.e. before the `shown.bs.toast` event occurs). You
 have to manually call this method, instead your toast won't show. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
 ### Events
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Event | Description |
 | --- | --- |
 | `hide.bs.toast` | This event is fired immediately when the `hide` instance
@@ -455,9 +453,9 @@ hidden from the user. |
 is called. |
 | `shown.bs.toast` | This event is fired when the toast has been made visible to
 the user. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-```js
+```javascript
 const myToastEl = document.getElementById('myToast')
 myToastEl.addEventListener('hidden.bs.toast', () => {
   // do something...

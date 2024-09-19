@@ -7,16 +7,16 @@ toc: true
 thumbnail: guides/bootstrap-parcel@2x.png
 ---
 
-<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{{< param docs_version >}}/assets/img/guides/bootstrap-parcel.png, /docs/{{< param docs_version >}}/assets/img/guides/bootstrap-parcel@2x.png 2x" src="/docs/{{< param docs_version >}}/assets/img/guides/bootstrap-parcel.png" width="800" height="400" alt="">
+<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-parcel.png, /docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-parcel@2x.png 2x" src="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-parcel.png" width="800" height="400" alt="">
 
-{{< callout >}}
+{ { < callout >} }
 **Want to skip to the end?** Download the source code and working demo for this
 guide from
 the [twbs/examples repository](https://github.com/twbs/examples/tree/main/parcel).
 You can
 also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html)
 but not run it because Parcel isn't currently supported there.
-{{< /callout >}}
+{ { < /callout >} }
 
 ## Setup
 
@@ -96,7 +96,7 @@ to start our server.
 
    ```html
    <!doctype html>
-   <html lang="en">
+   <html lang="pt-br">
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -127,7 +127,7 @@ to start our server.
    Parcel development server and render the HTML file we created after it's
    compiled into the `dist` directory.
 
-   ```json
+   ```javascripton
    {
       // ...
       "scripts": {
@@ -164,15 +164,14 @@ and one into our `main.js`.
    ```
 
    *You can also import our stylesheets individually if you
-   want. [Read our Sass import docs]({{< docsref "
-   /customize/sass#importing" >}}) for details.*
+   want. [Read our Sass import docs](   /customize/sass.md#importing) for details.*
 
 2. **Import Bootstrap's JS.** Add the following to `src/js/main.js` to import
    all of Bootstrap's JS. Popper will be imported automatically through
    Bootstrap.
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    // Import all of Bootstrap's JS
    import * as bootstrap from 'bootstrap'
    ```
@@ -181,14 +180,14 @@ and one into our `main.js`.
    sizes down:
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    import Alert from 'bootstrap/js/dist/alert'
 
    // or, specify which plugins you need:
    import { Tooltip, Toast, Popover } from 'bootstrap'
    ```
 
-   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}})
+   *[Read our JavaScript docs](/getting-started/javascript/.md)
    for more information on how to use Bootstrap's plugins.*
 
 3. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your
@@ -201,6 +200,6 @@ and one into our `main.js`.
    for how to include additional custom Sass and optimize your build by
    importing only the parts of Bootstrap's CSS and JS that you need.
 
-{{< markdown >}}
-{{< partial "guide-footer.md" >}}
-{{< /markdown >}}
+{ { < markdown >} }
+{ { < partial "guide-footer.md" >} }
+{ { < /markdown >} }

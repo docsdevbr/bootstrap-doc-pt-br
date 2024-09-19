@@ -122,14 +122,11 @@ Learn more about your options
 at [sass-lang.com/install](https://sass-lang.com/install/)
 and [compiling with VS Code](https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css).
 
-{{< callout info >}}
+{ { < callout info >} }
 **Using Bootstrap with another build tool?** Consider reading our guides for
-compiling with [Webpack]({{< docsref "
-/getting-started/webpack" >}}), [Parcel]({{< docsref "
-/getting-started/parcel" >}}), or [Vite]({{< docsref "
-/getting-started/vite" >}}). We also have production-ready demos
+compiling with [Webpack](/getting-started/webpack.md), [Parcel](/getting-started/parcel.md), or [Vite](/getting-started/vite.md). We also have production-ready demos
 in [our examples repository on GitHub](https://github.com/twbs/examples).
-{{< /callout >}}
+{ { < /callout >} }
 
 ## Including
 
@@ -139,7 +136,7 @@ the path to your compiled CSS file if you've changed it.
 
 ```html
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -194,9 +191,9 @@ $body-color: #111;
 Repeat as necessary for any variable in Bootstrap, including the global options
 below.
 
-{{< callout info >}}
-{{< partial "callouts/info-npm-starter.md" >}}
-{{< /callout >}}
+{ { < callout info >} }
+{ { < partial "callouts/info-npm-starter.md" >} }
+{ { < /callout >} }
 
 ## Maps and loops
 
@@ -285,7 +282,7 @@ makes use of those values.
 
 ### Colors
 
-Next to the [Sass maps]({{< docsref "/customize/color#color-sass-maps" >}}) we
+Next to the [Sass maps](/customize/color.md#color-sass-maps) we
 have, theme colors can also be used as standalone variables, like `$primary`.
 
 ```scss
@@ -303,7 +300,7 @@ lightness by a fixed amount, which often doesn't lead to the desired effect.
 `shift-color()` combines these two functions by shading the color if the weight
 is positive and tinting the color if the weight is negative.
 
-{{< scss-docs name="color-functions" file="scss/_functions.scss" >}}
+{ { < scss-docs name="color-functions" file="scss/_functions.scss" >} }
 
 In practice, you'd call the function and pass in the color and weight
 parameters.
@@ -425,11 +422,11 @@ and can also be used across your own project.
 
 A shorthand mixin for the `prefers-color-scheme` media query is available with
 support for `light` and `dark` color schemes.
-See [the color modes documentation]({{< docsref "/customize/color-modes" >}})
+See [the color modes documentation](/customize/color-modes.md)
 for information on our color mode mixin.
 
-{{< scss-docs name="mixin-color-scheme" file="scss/mixins/_
-color-scheme.scss" >}}
+{ { < scss-docs name="mixin-color-scheme" file="scss/mixins/_
+color-scheme.scss" >} }
 
 ```scss
 .custom-element {

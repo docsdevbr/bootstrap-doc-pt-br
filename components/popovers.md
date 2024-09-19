@@ -12,9 +12,9 @@ Things to know when using the popover plugin:
 
 - Popovers rely on the third party
   library [Popper](https://popper.js.org/docs/v2/) for positioning. You must
-  include [popper.min.js]({{< param "cdn.popper" >}}) before `bootstrap.js`, or
+  include [popper.min.js]({ { < param "cdn.popper" > } }) before `bootstrap.js`, or
   use one `bootstrap.bundle.min.js` which contains Popper.
-- Popovers require the [popover plugin]({{< docsref "/components/popovers" >}})
+- Popovers require the [popover plugin](/components/popovers.md)
   as a dependency.
 - Popovers are opt-in for performance reasons, so **you must initialize them
   yourself**.
@@ -31,13 +31,13 @@ Things to know when using the popover plugin:
   from the DOM.
 - Popovers can be triggered thanks to an element inside a shadow DOM.
 
-{{< callout info >}}
-{{< partial "callouts/info-sanitizer.md" >}}
-{{< /callout >}}
+{ { < callout info > } }
+{ { < partial "callouts/info-sanitizer.md" > } }
+{ { < /callout > } }
 
-{{< callout info >}}
-{{< partial "callouts/info-prefersreducedmotion.md" >}}
-{{< /callout >}}
+{ { < callout info > } }
+{ { < partial "callouts/info-prefersreducedmotion.md" > } }
+{ { < /callout > } }
 
 Keep reading to see how popovers work with some examples.
 
@@ -49,7 +49,7 @@ As mentioned above, you must initialize popovers before they can be used. One
 way to initialize all popovers on a page would be to select them by their
 `data-bs-toggle` attribute, like so:
 
-```js
+```javascript
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 ```
@@ -60,14 +60,14 @@ We use JavaScript similar to the snippet above to render the following live
 popover. Titles are set via `data-bs-title` and body content is set via
 `data-bs-content`.
 
-{{< callout warning >}}
-{{< partial "callouts/warning-data-bs-title-vs-title.md" >}}
-{{< /callout >}}
+{ { < callout warning > } }
+{ { < partial "callouts/warning-data-bs-title-vs-title.md" > } }
+{ { < /callout > } }
 
-{{< example stackblitz_add_js="true" >}}
+{ { < example stackblitz_add_js="true" > } }
 <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
 Click to toggle popover</button>
-{{< /example >}}
+{ { < /example > } }
 
 ### Four directions
 
@@ -75,7 +75,7 @@ Four options are available: top, right, bottom, and left. Directions are
 mirrored when using Bootstrap in RTL. Set `data-bs-placement` to change the
 direction.
 
-{{< example stackblitz_add_js="true" >}}
+{ { < example stackblitz_add_js="true" > } }
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
 Popover on top
 </button>
@@ -88,7 +88,7 @@ Popover on bottom
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
 Popover on left
 </button>
-{{< /example >}}
+{ { < /example > } }
 
 ### Custom `container`
 
@@ -97,20 +97,20 @@ you'll want to specify a custom `container` so that the popover's HTML appears
 within that element instead. This is common in responsive tables, input groups,
 and the like.
 
-```js
+```javascript
 const popover = new bootstrap.Popover('.example-popover', {
   container: 'body'
 })
 ```
 
 Another situation where you'll want to set an explicit custom `container` are
-popovers inside a [modal dialog]({{< docsref "/components/modal" >}}), to make
+popovers inside a [modal dialog](/components/modal.md), to make
 sure that the popover itself is appended to the modal. This is particularly
 important for popovers that contain interactive elements – modal dialogs will
 trap focus, so unless the popover is a child element of the modal, users won't
 be able to focus or activate these interactive elements.
 
-```js
+```javascript
 const popover = new bootstrap.Popover('.example-popover', {
   container: '.modal-body'
 })
@@ -118,16 +118,16 @@ const popover = new bootstrap.Popover('.example-popover', {
 
 ### Custom popovers
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 You can customize the appearance of popovers using [CSS variables](#variables).
 We set a custom class with `data-bs-custom-class="custom-popover"` to scope our
 custom appearance and use it to override some of the local CSS variables.
 
-{{< scss-docs name="custom-popovers" file="site/assets/scss/_
-component-examples.scss" >}}
+{ { < scss-docs name="custom-popovers" file="site/assets/scss/_
+component-examples.scss" > } }
 
-{{< example class="custom-popover-demo" stackblitz_add_js="true" >}}
+{ { < example class="custom-popover-demo" stackblitz_add_js="true" > } }
 <button type="button" class="btn btn-secondary"
 data-bs-toggle="popover" data-bs-placement="right"
 data-bs-custom-class="custom-popover"
@@ -135,26 +135,26 @@ data-bs-title="Custom popover"
 data-bs-content="This popover is themed via CSS variables.">
 Custom popover
 </button>
-{{< /example >}}
+{ { < /example > } }
 
 ### Dismiss on next click
 
 Use the `focus` trigger to dismiss popovers on the user's next click of an
 element other than the toggle element.
 
-{{< callout danger >}}
+{ { < callout danger > } }
 **Dismissing on next click requires specific HTML for proper cross-browser and
 cross-platform behavior.** You can only use `<a>` elements, not `<button>`s, and
 you must include a [
 `tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
-{{< /callout >}}
+{ { < /callout > } }
 
-{{< example stackblitz_add_js="true" >}}
+{ { < example stackblitz_add_js="true" > } }
 <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">
 Dismissible popover</a>
-{{< /example >}}
+{ { < /example > } }
 
-```js
+```javascript
 const popover = new bootstrap.Popover('.popover-dismiss', {
   trigger: 'focus'
 })
@@ -171,38 +171,38 @@ For disabled popover triggers, you may also prefer
 `data-bs-trigger="hover focus"` so that the popover appears as immediate visual
 feedback to your users as they may not expect to _click_ on a disabled element.
 
-{{< example stackblitz_add_js="true" >}}
+{ { < example stackblitz_add_js="true" > } }
 <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
 <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>
-{{< /example >}}
+{ { < /example > } }
 
 ## CSS
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 As part of Bootstrap’s evolving CSS variables approach, popovers now use local
 CSS variables on `.popover` for enhanced real-time customization. Values for the
 CSS variables are set via Sass, so Sass customization is still supported, too.
 
-{{< scss-docs name="popover-css-vars" file="scss/_popover.scss" >}}
+{ { < scss-docs name="popover-css-vars" file="scss/_popover.scss" > } }
 
 ### Sass variables
 
-{{< scss-docs name="popover-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="popover-variables" file="scss/_variables.scss" > } }
 
 ## Usage
 
 Enable popovers via JavaScript:
 
-```js
+```javascript
 const exampleEl = document.getElementById('example')
 const popover = new bootstrap.Popover(exampleEl, options)
 ```
 
-{{< callout warning >}}
+{ { < callout warning > } }
 **Keep popovers accessible to keyboard and assistive technology users** by only
 adding them to HTML elements that are traditionally keyboard-focusable and
 interactive (such as links or form controls). While other HTML elements can be
@@ -222,24 +222,23 @@ in the DOM, so be careful when adding interactive elements (like forms or
 links), as it may lead to an illogical focus order or make the popover content
 itself completely unreachable for keyboard users. In cases where you must use
 these elements, consider using a modal dialog instead.
-{{< /callout >}}
+{ { < /callout > } }
 
 ### Options
 
-{{< markdown >}}
-{{< partial "js-data-attributes.md" >}}
-{{< /markdown >}}
+{ { < markdown > } }
+{ { < partial "js-data-attributes.md" > } }
+{ { < /markdown > } }
 
-{{< callout warning >}}
+{ { < callout warning > } }
 Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList`
 options cannot be supplied using data attributes.
-{{< /callout >}}
+{ { < /callout > } }
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `allowList` | object | [Default value]({{< docsref "
-/getting-started/javascript#sanitizer" >}}) | Object which contains allowed
+| `allowList` | object | [Default value](/getting-started/javascript.md#sanitizer) | Object which contains allowed
 attributes and tags. |
 | `animation` | boolean | `true` | Apply a CSS fade transition to the popover. |
 | `boundary` | string, element | `'clippingParents'` | Overflow constraint
@@ -302,7 +301,7 @@ sanitization. |
 | `selector` | string, false | `false` | If a selector is provided, popover
 objects will be delegated to the specified targets. In practice, this is used to
 also apply popovers to dynamically added DOM elements (`jQuery.on` support).
-See [this issue]({{< param repo >}}/issues/4215)
+See [this issue]({ { < param repo > } }/issues/4215)
 and [an informative example](https://codepen.io/Johann-S/pen/djJYPb). **Note**:
 `title` attribute must not be used as a selector. |
 | `template` | string |
@@ -323,19 +322,19 @@ value cannot be combined with any other trigger. `'hover'` on its own will
 result in popovers that cannot be triggered via the keyboard, and should only be
 used if alternative methods for conveying the same information for keyboard
 users is present. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-{{< callout info >}}
+{ { < callout info > } }
 
 #### Data attributes for individual popovers
 
 Options for individual popovers can alternatively be specified through the use
 of data attributes, as explained above.
-{{< /callout >}}
+{ { < /callout > } }
 
 #### Using function with `popperConfig`
 
-```js
+```javascript
 const popover = new bootstrap.Popover(element, {
   popperConfig(defaultBsPopperConfig) {
     // const newPopperConfig = {...}
@@ -347,11 +346,11 @@ const popover = new bootstrap.Popover(element, {
 
 ### Methods
 
-{{< callout danger >}}
-{{< partial "callouts/danger-async-methods.md" >}}
-{{< /callout >}}
+{ { < callout danger > } }
+{ { < partial "callouts/danger-async-methods.md" > } }
+{ { < /callout > } }
 
-{{< bs-table "table" >}}
+{ { < bs-table "table" > } }
 | Method | Description |
 | --- | --- |
 | `disable` | Removes the ability for an element's popover to be shown. The
@@ -383,9 +382,9 @@ of the popover. |
 | `toggleEnabled` | Toggles the ability for an element's popover to be shown or
 hidden. |
 | `update` | Updates the position of an element's popover. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-```js
+```javascript
 // getOrCreateInstance example
 const popover = bootstrap.Popover.getOrCreateInstance('#example') // Returns a Bootstrap popover instance
 
@@ -397,15 +396,15 @@ popover.setContent({
 
 ```
 
-{{< callout info >}}
+{ { < callout info > } }
 The `setContent` method accepts an `object` argument, where each property-key is
 a valid `string` selector within the popover template, and each related
 property-value can be `string` | `element` | `function` | `null`
-{{< /callout >}}
+{ { < /callout > } }
 
 ### Events
 
-{{< bs-table >}}
+{ { < bs-table > } }
 | Event | Description |
 | --- | --- |
 | `hide.bs.popover` | This event is fired immediately when the `hide` instance
@@ -418,9 +417,9 @@ when the popover template has been added to the DOM. |
 method is called. |
 | `shown.bs.popover` | This event is fired when the popover has been made
 visible to the user (will wait for CSS transitions to complete). |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-```js
+```javascript
 const myPopoverTrigger = document.getElementById('myPopover')
 myPopoverTrigger.addEventListener('hidden.bs.popover', () => {
   // do something...

@@ -7,16 +7,16 @@ toc: true
 thumbnail: guides/bootstrap-webpack@2x.png
 ---
 
-<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{{< param docs_version >}}/assets/img/guides/bootstrap-webpack.png, /docs/{{< param docs_version >}}/assets/img/guides/bootstrap-webpack@2x.png 2x" src="/docs/{{< param docs_version >}}/assets/img/guides/bootstrap-webpack.png" width="800" height="400" alt="">
+<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-webpack.png, /docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-webpack@2x.png 2x" src="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-webpack.png" width="800" height="400" alt="">
 
-{{< callout >}}
+{ { < callout >} }
 **Want to skip to the end?** Download the source code and working demo for this
 guide from
 the [twbs/examples repository](https://github.com/twbs/examples/tree/main/webpack).
 You can
 also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html)
 for live editing.
-{{< /callout >}}
+{ { < /callout >} }
 
 ## Setup
 
@@ -106,7 +106,7 @@ we can now configure Webpack and run our project locally.
    output the compiled code to (`dist`), and how the development server should
    behave (pulling from the `dist` folder with hot reload).
 
-   ```js
+   ```javascript
    'use strict'
 
    const path = require('path')
@@ -137,7 +137,7 @@ we can now configure Webpack and run our project locally.
 
    ```html
    <!doctype html>
-   <html lang="en">
+   <html lang="pt-br">
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -161,7 +161,7 @@ we can now configure Webpack and run our project locally.
    use this script to start our local Webpack dev server. You can also add a
    `build` script shown below to build your project.
 
-   ```json
+   ```javascripton
    {
      // ...
      "scripts": {
@@ -195,7 +195,7 @@ to use them.
    complete and should match the snippet below. The only new part here is the
    `module` section.
 
-   ```js
+   ```javascript
    'use strict'
 
    const path = require('path')
@@ -266,15 +266,14 @@ to use them.
    ```
 
    *You can also import our stylesheets individually if you
-   want. [Read our Sass import docs]({{< docsref "
-   /customize/sass#importing" >}}) for details.*
+   want. [Read our Sass import docs](   /customize/sass.md#importing) for details.*
 
 3. **Next we load the CSS and import Bootstrap's JavaScript.** Add the following
    to `src/js/main.js` to load the CSS and import all of Bootstrap's JS. Popper
    will be imported automatically through Bootstrap.
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    // Import our custom CSS
    import '../scss/styles.scss'
 
@@ -286,14 +285,14 @@ to use them.
    sizes down:
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    import Alert from 'bootstrap/js/dist/alert'
 
    // or, specify which plugins you need:
    import { Tooltip, Toast, Popover } from 'bootstrap'
    ```
 
-   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}})
+   *[Read our JavaScript docs](/getting-started/javascript/.md)
    for more information on how to use Bootstrap's plugins.*
 
 4. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your
@@ -417,6 +416,6 @@ Configure Webpack to extract inline SVG files like this:
 After running `npm run build` again, you'll find the SVG files extracted into
 `dist/icons` and properly referenced from CSS.
 
-{{< markdown >}}
-{{< partial "guide-footer.md" >}}
-{{< /markdown >}}
+{ { < markdown >} }
+{ { < partial "guide-footer.md" >} }
+{ { < /markdown >} }

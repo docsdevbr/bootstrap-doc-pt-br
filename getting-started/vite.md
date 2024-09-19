@@ -10,16 +10,16 @@ added:
   version: "5.2"
 ---
 
-<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{{< param docs_version >}}/assets/img/guides/bootstrap-vite.png, /docs/{{< param docs_version >}}/assets/img/guides/bootstrap-vite@2x.png 2x" src="/docs/{{< param docs_version >}}/assets/img/guides/bootstrap-vite.png" width="800" height="400" alt="">
+<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-vite.png, /docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-vite@2x.png 2x" src="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-vite.png" width="800" height="400" alt="">
 
-{{< callout >}}
+{ { < callout >} }
 **Want to skip to the end?** Download the source code and working demo for this
 guide from
 the [twbs/examples repository](https://github.com/twbs/examples/tree/main/vite).
 You can
 also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html)
 for live editing.
-{{< /callout >}}
+{ { < /callout >} }
 
 ## Setup
 
@@ -105,7 +105,7 @@ we can now configure Vite and run our project locally.
    reload).
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    import { resolve } from 'path'
 
    export default {
@@ -124,7 +124,7 @@ we can now configure Vite and run our project locally.
 
    ```html
    <!doctype html>
-   <html lang="en">
+   <html lang="pt-br">
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -148,7 +148,7 @@ we can now configure Vite and run our project locally.
    `start` script shown below (you should already have the test script). We'll
    use this script to start our local Vite dev server.
 
-   ```json
+   ```javascripton
    {
      // ...
      "scripts": {
@@ -182,15 +182,14 @@ and JavaScript.
    ```
 
    *You can also import our stylesheets individually if you
-   want. [Read our Sass import docs]({{< docsref "
-   /customize/sass#importing" >}}) for details.*
+   want. [Read our Sass import docs](   /customize/sass.md#importing) for details.*
 
 2. **Next we load the CSS and import Bootstrap's JavaScript.** Add the following
    to `src/js/main.js` to load the CSS and import all of Bootstrap's JS. Popper
    will be imported automatically through Bootstrap.
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    // Import our custom CSS
    import '../scss/styles.scss'
 
@@ -202,14 +201,14 @@ and JavaScript.
    sizes down:
 
    <!-- eslint-skip -->
-   ```js
+   ```javascript
    import Alert from 'bootstrap/js/dist/alert';
 
    // or, specify which plugins you need:
    import { Tooltip, Toast, Popover } from 'bootstrap';
    ```
 
-   *[Read our JavaScript docs]({{< docsref "/getting-started/javascript/" >}})
+   *[Read our JavaScript docs](/getting-started/javascript/.md)
    for more information on how to use Bootstrap's plugins.*
 
 3. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your
@@ -222,6 +221,6 @@ and JavaScript.
    for how to include additional custom Sass and optimize your build by
    importing only the parts of Bootstrap's CSS and JS that you need.
 
-{{< markdown >}}
-{{< partial "guide-footer.md" >}}
-{{< /markdown >}}
+{ { < markdown >} }
+{ { < partial "guide-footer.md" >} }
+{ { < /markdown >} }

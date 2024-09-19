@@ -9,12 +9,12 @@ extra_js:
     async: true
 ---
 
-{{< callout warning >}}
+{ { < callout warning >} }
 We are aware that currently the client-side custom validation styles and
 tooltips are not accessible, since they are not exposed to assistive
 technologies. While we work on a solution, we'd recommend either using the
 server-side option or the default browser validation method.
-{{< /callout >}}
+{ { < /callout >} }
 
 ## How it works
 
@@ -60,7 +60,7 @@ Custom feedback styles apply custom colors, borders, focus styles, and
 background icons to better communicate feedback. Background icons for `<select>`
 s are only available with `.form-select`, and not `.form-control`.
 
-{{< example >}}
+{ { < example >} }
 <form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4">
     <label for="validationCustom01" class="form-label">First name</label>
@@ -125,14 +125,14 @@ s are only available with `.form-select`, and not `.form-control`.
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
-{{< example lang="js" show_preview="false" >}}
-{{< js.inline >}}
-{{- readFile (path.Join "site/static/docs" .Site.Params.docs_version "
-assets/js/validate-forms.js") -}}
-{{< /js.inline >}}
-{{< /example >}}
+{ { < example lang="js" show_preview="false" >} }
+{ { < js.inline >} }
+{ {- readFile (path.Join "site/static/docs" .Site.Params.docs_version "
+assets/js/validate-forms.js") -} }
+{ { < /js.inline >} }
+{ { < /example >} }
 
 ## Browser defaults
 
@@ -144,7 +144,7 @@ slightly different style of feedback.
 While these feedback styles cannot be styled with CSS, you can still customize
 the feedback text through JavaScript.
 
-{{< example >}}
+{ { < example >} }
 <form class="row g-3">
   <div class="col-md-4">
     <label for="validationDefault01" class="form-label">First name</label>
@@ -188,7 +188,7 @@ the feedback text through JavaScript.
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Server-side
 
@@ -206,7 +206,7 @@ To
 fix [issues with border radius](https://github.com/twbs/bootstrap/issues/25110),
 input groups require an additional `.has-validation` class.
 
-{{< example >}}
+{ { < example >} }
 <form class="row g-3">
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">First name</label>
@@ -271,7 +271,7 @@ input groups require an additional `.has-validation` class.
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Supported elements
 
@@ -282,7 +282,7 @@ Validation styles are available for the following form controls and components:
 - `<select>`s with `.form-select`
 - `.form-check`s
 
-{{< example >}}
+{ { < example >} }
 <form class="was-validated">
   <div class="mb-3">
     <label for="validationTextarea" class="form-label">Textarea</label>
@@ -327,7 +327,7 @@ Validation styles are available for the following form controls and components:
     <button class="btn btn-primary" type="submit" disabled>Submit form</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Tooltips
 
@@ -337,7 +337,7 @@ a styled tooltip. Be sure to have a parent with `position: relative` on it for
 tooltip positioning. In the example below, our column classes have this already,
 but your project may require an alternative setup.
 
-{{< example >}}
+{ { < example >} }
 <form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">First name</label>
@@ -391,45 +391,45 @@ but your project may require an alternative setup.
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## CSS
 
 ### Variables
 
-{{< added-in "5.3.0" >}}
+{ { < added-in "5.3.0" >} }
 
 As part of Bootstrap's evolving CSS variables approach, forms now use local CSS
 variables for validation for enhanced real-time customization. Values for the
 CSS variables are set via Sass, so Sass customization is still supported, too.
 
-{{< scss-docs name="root-form-validation-variables" file="scss/_root.scss" >}}
+{ { < scss-docs name="root-form-validation-variables" file="scss/_root.scss" >} }
 
 These variables are also color mode adaptive, meaning they change color while in
 dark mode.
 
 ### Sass variables
 
-{{< scss-docs name="form-feedback-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="form-feedback-variables" file="scss/_variables.scss" >} }
 
-{{< scss-docs name="form-validation-colors" file="scss/_variables.scss" >}}
+{ { < scss-docs name="form-validation-colors" file="scss/_variables.scss" >} }
 
-{{< scss-docs name="form-validation-colors-dark" file="scss/_
-variables-dark.scss" >}}
+{ { < scss-docs name="form-validation-colors-dark" file="scss/_
+variables-dark.scss" >} }
 
 ### Sass mixins
 
 Two mixins are combined, through our [loop](#sass-loops), to generate our form
 validation feedback styles.
 
-{{< scss-docs name="form-validation-mixins" file="scss/mixins/_forms.scss" >}}
+{ { < scss-docs name="form-validation-mixins" file="scss/mixins/_forms.scss" >} }
 
 ### Sass maps
 
 This is the validation Sass map from `_variables.scss`. Override or extend this
 to generate different or additional states.
 
-{{< scss-docs name="form-validation-states" file="scss/_variables.scss" >}}
+{ { < scss-docs name="form-validation-states" file="scss/_variables.scss" >} }
 
 Maps of `$form-validation-states` can contain three optional parameters to
 override tooltips and focus styles.
@@ -440,8 +440,8 @@ Used to iterate over `$form-validation-states` map values to generate our
 validation styles. Any modifications to the above Sass map will be reflected in
 your compiled CSS via this loop.
 
-{{< scss-docs name="form-validation-states-loop" file="scss/forms/_
-validation.scss" >}}
+{ { < scss-docs name="form-validation-states-loop" file="scss/forms/_
+validation.scss" >} }
 
 ### Customizing
 

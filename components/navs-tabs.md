@@ -18,7 +18,7 @@ for building all types of navigation components. It includes some style
 overrides (for working with lists), some link padding for larger hit areas, and
 basic disabled styling.
 
-{{< callout info >}}
+{ { < callout info > } }
 The base `.nav` component does not include any `.active` state. The following
 examples include the class, mainly to demonstrate that this particular class
 does not trigger any special styling.
@@ -26,9 +26,9 @@ does not trigger any special styling.
 To convey the active state to assistive technologies, use the `aria-current`
 attribute — using the `page` value for current page, or `true` for the current
 item in a set.
-{{< /callout >}}
+{ { < /callout > } }
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -43,21 +43,21 @@ item in a set.
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 Classes are used throughout, so your markup can be super flexible. Use `<ul>`s
 like above, `<ol>` if the order of your items is important, or roll your own
 with a `<nav>` element. Because the `.nav` uses `display: flex`, the nav links
 behave the same as nav items would, but without the extra markup.
 
-{{< example >}}
+{ { < example > } }
 <nav class="nav">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Available styles
 
@@ -66,13 +66,12 @@ match as needed, or build your own.
 
 ### Horizontal alignment
 
-Change the horizontal alignment of your nav with [flexbox utilities]({{<
-docsref "/utilities/flex#justify-content" >}}). By default, navs are
+Change the horizontal alignment of your nav with [flexbox utilities](/utilities/flex.md#justify-content). By default, navs are
 left-aligned, but you can easily change them to center or right-aligned.
 
 Centered with `.justify-content-center`:
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -87,11 +86,11 @@ Centered with `.justify-content-center`:
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 Right-aligned with `.justify-content-end`:
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav justify-content-end">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -106,7 +105,7 @@ Right-aligned with `.justify-content-end`:
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 ### Vertical
 
@@ -114,7 +113,7 @@ Stack your navigation by changing the flex item direction with the
 `.flex-column` utility. Need to stack them on some viewports but not others? Use
 the responsive versions (e.g., `.flex-sm-column`).
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav flex-column">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -129,18 +128,18 @@ the responsive versions (e.g., `.flex-sm-column`).
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 As always, vertical navigation is possible without `<ul>`s, too.
 
-{{< example >}}
+{ { < example > } }
 <nav class="nav flex-column">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ### Tabs
 
@@ -148,7 +147,7 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a
 tabbed interface. Use them to create tabbable regions with
 our [tab JavaScript plugin](#javascript-behavior).
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -163,13 +162,13 @@ our [tab JavaScript plugin](#javascript-behavior).
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 ### Pills
 
 Take that same HTML, but use `.nav-pills` instead:
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -184,13 +183,13 @@ Take that same HTML, but use `.nav-pills` instead:
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 ### Underline
 
 Take that same HTML, but use `.nav-underline` instead:
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-underline">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -205,7 +204,7 @@ Take that same HTML, but use `.nav-underline` instead:
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 ### Fill and justify
 
@@ -214,7 +213,7 @@ modifier classes. To proportionately fill all available space with your
 `.nav-item`s, use `.nav-fill`. Notice that all horizontal space is occupied, but
 not every nav item has the same width.
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -229,25 +228,25 @@ not every nav item has the same width.
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 When using a `<nav>`-based navigation, you can safely omit `.nav-item` as only
 `.nav-link` is required for styling `<a>` elements.
 
-{{< example >}}
+{ { < example > } }
 <nav class="nav nav-pills nav-fill">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
   <a class="nav-link" href="#">Much longer nav link</a>
   <a class="nav-link" href="#">Link</a>
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 For equal-width elements, use `.nav-justified`. All horizontal space will be
 occupied by nav links, but unlike the `.nav-fill` above, every nav item will be
 the same width.
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-pills nav-justified">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -262,11 +261,11 @@ the same width.
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 Similar to the `.nav-fill` example using a `<nav>`-based navigation.
 
-{{< example >}}
+{ { < example > } }
 <nav class="nav nav-pills nav-justified">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
   <a class="nav-link" href="#">Much longer nav link</a>
@@ -274,25 +273,25 @@ Similar to the `.nav-fill` example using a `<nav>`-based navigation.
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>
 
-{{< /example >}}
+{ { < /example > } }
 
 ## Working with flex utilities
 
 If you need responsive nav variations, consider using a series
-of [flexbox utilities]({{< docsref "/utilities/flex" >}}). While more verbose,
+of [flexbox utilities](/utilities/flex.md). While more verbose,
 these utilities offer greater customization across responsive breakpoints. In
 the example below, our nav will be stacked on the lowest breakpoint, then adapt
 to a horizontal layout that fills the available width starting from the small
 breakpoint.
 
-{{< example >}}
+{ { < example > } }
 <nav class="nav nav-pills flex-column flex-sm-row">
   <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
   <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
   <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
   <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>
-{{< /example >}}
+{ { < /example > } }
 
 ## Regarding accessibility
 
@@ -315,12 +314,11 @@ adding `aria-selected="true"` on the active tab.
 ## Using dropdowns
 
 Add dropdown menus with a little extra HTML and
-the [dropdowns JavaScript plugin]({{< docsref "
-/components/dropdowns#usage" >}}).
+the [dropdowns JavaScript plugin](/components/dropdowns.md#usage).
 
 ### Tabs with dropdowns
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -342,11 +340,11 @@ the [dropdowns JavaScript plugin]({{< docsref "
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 ### Pills with dropdowns
 
-{{< example >}}
+{ { < example > } }
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -368,13 +366,13 @@ the [dropdowns JavaScript plugin]({{< docsref "
     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+{ { < /example > } }
 
 ## CSS
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
+{ { < added-in "5.2.0" > } }
 
 As part of Bootstrap's evolving CSS variables approach, navs now use local CSS
 variables on `.nav`, `.nav-tabs`, and `.nav-pills` for enhanced real-time
@@ -383,25 +381,25 @@ customization is still supported, too.
 
 On the `.nav` base class:
 
-{{< scss-docs name="nav-css-vars" file="scss/_nav.scss" >}}
+{ { < scss-docs name="nav-css-vars" file="scss/_nav.scss" > } }
 
 On the `.nav-tabs` modifier class:
 
-{{< scss-docs name="nav-tabs-css-vars" file="scss/_nav.scss" >}}
+{ { < scss-docs name="nav-tabs-css-vars" file="scss/_nav.scss" > } }
 
 On the `.nav-pills` modifier class:
 
-{{< scss-docs name="nav-pills-css-vars" file="scss/_nav.scss" >}}
+{ { < scss-docs name="nav-pills-css-vars" file="scss/_nav.scss" > } }
 
-{{< added-in "5.3.0" >}}
+{ { < added-in "5.3.0" > } }
 
 On the `.nav-underline` modifier class:
 
-{{< scss-docs name="nav-underline-css-vars" file="scss/_nav.scss" >}}
+{ { < scss-docs name="nav-underline-css-vars" file="scss/_nav.scss" > } }
 
 ### Sass variables
 
-{{< scss-docs name="nav-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="nav-variables" file="scss/_variables.scss" > } }
 
 ## JavaScript behavior
 
@@ -642,16 +640,16 @@ between horizontal and vertical tab lists when it comes to cursor key
 interactions: regardless of the tab list's orientation, both the up *and* left
 cursor go to the previous tab, and down *and* right cursor go to the next tab.
 
-{{< callout warning >}}
+{ { < callout warning > } }
 In general, to facilitate keyboard navigation, it's recommended to make the tab
 panels themselves focusable as well, unless the first element containing
 meaningful content inside the tab panel is already focusable. The JavaScript
 plugin does not try to handle this aspect—where appropriate, you'll need to
 explicitly make your tab panels focusable by adding `tabindex="0"` in your
 markup.
-{{< /callout >}}
+{ { < /callout > } }
 
-{{< callout danger >}}
+{ { < callout danger > } }
 The tab JavaScript plugin **does not** support tabbed interfaces that contain
 dropdown menus, as these cause both usability and accessibility issues. From a
 usability perspective, the fact that the currently displayed tab's trigger
@@ -660,7 +658,7 @@ cause confusion. From an accessibility point of view, there is currently no
 sensible way to map this sort of construct to a standard WAI ARIA pattern,
 meaning that it cannot be easily made understandable to users of assistive
 technologies.
-{{< /callout >}}
+{ { < /callout > } }
 
 ### Using data attributes
 
@@ -699,7 +697,7 @@ element. Use these data attributes on `.nav-tabs` or `.nav-pills`.
 Enable tabbable tabs via JavaScript (each tab needs to be activated
 individually):
 
-```js
+```javascript
 const triggerTabList = document.querySelectorAll('#myTab button')
 triggerTabList.forEach(triggerEl => {
   const tabTrigger = new bootstrap.Tab(triggerEl)
@@ -713,7 +711,7 @@ triggerTabList.forEach(triggerEl => {
 
 You can activate individual tabs in several ways:
 
-```js
+```javascript
 const triggerEl = document.querySelector('#myTab button[data-bs-target="#profile"]')
 bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
 
@@ -737,19 +735,19 @@ also have `.show` to make the initial content visible.
 
 ### Methods
 
-{{< callout danger >}}
-{{< partial "callouts/danger-async-methods.md" >}}
-{{< /callout >}}
+{ { < callout danger > } }
+{ { < partial "callouts/danger-async-methods.md" > } }
+{ { < /callout > } }
 
 Activates your content as a tab element.
 
 You can create a tab instance with the constructor, for example:
 
-```js
+```javascript
 const bsTab = new bootstrap.Tab('#myTab')
 ```
 
-{{< bs-table >}}
+{ { < bs-table > } }
 | Method | Description |
 | --- | --- |
 | `dispose` | Destroys an element's tab. |
@@ -763,7 +761,7 @@ it like this: `bootstrap.Tab.getOrCreateInstance(element)`. |
 that was previously selected becomes unselected and its associated pane is
 hidden. **Returns to the caller before the tab pane has actually been shown** (
 i.e. before the `shown.bs.tab` event occurs). |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
 ### Events
 
@@ -779,7 +777,7 @@ When showing a new tab, the events fire in the following order:
 If no tab was already active, then the `hide.bs.tab` and `hidden.bs.tab` events
 will not be fired.
 
-{{< bs-table >}}
+{ { < bs-table > } }
 | Event type | Description |
 | --- | --- |
 | `hide.bs.tab` | This event fires when a new tab is to be shown (and thus the
@@ -795,9 +793,9 @@ the previous active tab (if available) respectively. |
 | `shown.bs.tab` | This event fires on tab show after a tab has been shown. Use
 `event.target` and `event.relatedTarget` to target the active tab and the
 previous active tab (if available) respectively. |
-{{< /bs-table >}}
+{ { < /bs-table > } }
 
-```js
+```javascript
 const tabEl = document.querySelector('button[data-bs-toggle="tab"]')
 tabEl.addEventListener('shown.bs.tab', event => {
   event.target // newly activated tab

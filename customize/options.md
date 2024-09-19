@@ -12,14 +12,14 @@ variable's value and recompile with `npm run test` as needed.
 You can find and customize these variables for key global options in Bootstrap's
 `scss/_variables.scss` file.
 
-{{< bs-table "table table-options" >}}
+{ { < bs-table "table table-options" >} }
 | Variable | Values | Description |
 | ------------------------------ | ---------------------------------- | -------------------------------------------------------------------------------------- |
 | `$spacer`                      | `1rem` (default), or any value > 0 |
 Specifies the default spacer value to programmatically generate
-our [spacer utilities]({{< docsref "/utilities/spacing" >}}). |
+our [spacer utilities](/utilities/spacing.md). |
 | `$enable-dark-mode`            | `true` (default) or `false`        | Enables
-built-in [dark mode support]({{< docsref "/customize/color-modes#dark-mode" >}})
+built-in [dark mode support](/customize/color-modes.md#dark-mode)
 across the project and its components. |
 | `$enable-rounded`              | `true` (default) or `false`        | Enables
 predefined `border-radius` styles on various components. |
@@ -31,8 +31,7 @@ predefined gradients via `background-image` styles on various components. |
 | `$enable-transitions`          | `true` (default) or `false`        | Enables
 predefined `transition`s on various components. |
 | `$enable-reduced-motion`       | `true` (default) or `false`        | Enables
-the [`prefers-reduced-motion` media query]({{< docsref "
-/getting-started/accessibility#reduced-motion" >}}), which suppresses certain
+the [`prefers-reduced-motion` media query](/getting-started/accessibility.md#reduced-motion), which suppresses certain
 animations/transitions based on the users' browser/operating system
 preferences. |
 | `$enable-grid-classes`         | `true` (default) or `false`        | Enables
@@ -47,13 +46,12 @@ pseudo element caret on `.dropdown-toggle`. |
 | `$enable-button-pointers`      | `true` (default) or `false`        | Add "
 hand" cursor to non-disabled button elements. |
 | `$enable-rfs`                  | `true` (default) or `false`        | Globally
-enables [RFS]({{< docsref "/getting-started/rfs" >}}). |
+enables [RFS](/getting-started/rfs.md). |
 | `$enable-validation-icons`     | `true` (default) or `false`        | Enables
 `background-image` icons within textual inputs and some custom forms for
 validation states. |
 | `$enable-negative-margins`     | `true` or `false` (default)        | Enables
-the generation of [negative margin utilities]({{< docsref "
-/utilities/spacing#negative-margin" >}}). |
+the generation of [negative margin utilities](/utilities/spacing.md#negative-margin). |
 | `$enable-deprecation-messages` | `true` (default) or `false`        | Set to
 `false` to hide warnings when using any of the deprecated mixins and functions
 that are planned to be removed in `v6`. |
@@ -61,6 +59,5 @@ that are planned to be removed in `v6`. |
 the `!important` suffix in utility classes. |
 | `$enable-smooth-scroll`        | `true` (default) or `false`        | Applies
 `scroll-behavior: smooth` globally, except for users asking for reduced motion
-through [`prefers-reduced-motion` media query]({{< docsref "
-/getting-started/accessibility#reduced-motion" >}}) |
-{{< /bs-table >}}
+through [`prefers-reduced-motion` media query](/getting-started/accessibility.md#reduced-motion) |
+{ { < /bs-table >} }

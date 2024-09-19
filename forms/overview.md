@@ -26,8 +26,7 @@ sections:
 
 ## Overview
 
-Bootstrap's form controls expand on [our Rebooted form styles]({{< docsref "
-/content/reboot#forms" >}}) with classes. Use these classes to opt into their
+Bootstrap's form controls expand on [our Rebooted form styles](/content/reboot.md#forms) with classes. Use these classes to opt into their
 customized displays for a more consistent rendering across browsers and devices.
 
 Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for
@@ -37,7 +36,7 @@ input controls like email verification, number selection, and more.
 Here's a quick example to demonstrate Bootstrap's form styles. Keep reading for
 documentation on required classes, form layout, and more.
 
-{{< example >}}
+{ { < example >} }
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -54,7 +53,7 @@ documentation on required classes, form layout, and more.
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Disabled forms
 
@@ -77,7 +76,7 @@ keyboard. In this case, you must manually modify these controls by adding
 `tabindex="-1"` to prevent them from receiving focus and
 `aria-disabled="disabled"` to signal their state to assistive technologies.
 
-{{< example >}}
+{ { < example >} }
 <form>
   <fieldset disabled>
     <legend>Disabled fieldset example</legend>
@@ -102,7 +101,7 @@ keyboard. In this case, you must manually modify these controls by adding
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Accessibility
 
@@ -140,8 +139,7 @@ individual form components. You'll see these most often as `$input-btn-*` and
 
 ### Sass variables
 
-`$input-btn-*` variables are shared global variables between our [buttons]({{<
-docsref "/components/buttons" >}}) and our form components. You'll find these
+`$input-btn-*` variables are shared global variables between our [buttons](/components/buttons.md) and our form components. You'll find these
 frequently reassigned as values to other component-specific variables.
 
-{{< scss-docs name="input-btn-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="input-btn-variables" file="scss/_variables.scss" >} }

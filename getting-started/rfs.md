@@ -8,8 +8,8 @@ toc: true
 
 ## What is RFS?
 
-Bootstrap's side project [RFS](https://github.com/twbs/rfs/tree/{{< param "
-rfs_version" >}}) is a unit resizing engine which was initially developed to
+Bootstrap's side project [RFS](https://github.com/twbs/rfs/tree/{ { < param "
+rfs_version" >} }) is a unit resizing engine which was initially developed to
 resize font sizes (hence its abbreviation for Responsive Font Sizes). Nowadays
 RFS is capable of rescaling most CSS properties with unit values like `margin`,
 `padding`, `border-radius`, or even `box-shadow`.
@@ -23,8 +23,8 @@ behavior.
 
 The mixins are included in Bootstrap and are available once you include
 Bootstrap's `scss`. RFS can also
-be [installed standalone](https://github.com/twbs/rfs/tree/{{< param "
-rfs_version" >}}#installation) if needed.
+be [installed standalone](https://github.com/twbs/rfs/tree/{ { < param "
+rfs_version" >} }#installation) if needed.
 
 ### Using the mixins
 
@@ -77,7 +77,7 @@ When you don't want to use the includes, there are also two functions:
   rescaling.
 
 In this example, we use one of Bootstrap's
-built-in [responsive breakpoint mixins]({{< docsref "/layout/breakpoints" >}})
+built-in [responsive breakpoint mixins](/layout/breakpoints.md)
 to only apply styling below the `lg` breakpoint.
 
 ```scss
@@ -102,5 +102,5 @@ to only apply styling below the `lg` breakpoint.
 
 RFS is a separate project under the Bootstrap organization. More about RFS and
 its configuration can be found on
-its [GitHub repository](https://github.com/twbs/rfs/tree/{{< param "
-rfs_version" >}}).
+its [GitHub repository](https://github.com/twbs/rfs/tree/{ { < param "
+rfs_version" >} }).

@@ -14,7 +14,7 @@ toc: true
   row to align content.
 
 - **Gutters start at `1.5rem` (`24px`) wide.** This allows us to match our grid
-  to the [padding and margin spacers]({{< docsref "/utilities/spacing" >}})
+  to the [padding and margin spacers](/utilities/spacing.md)
   scale.
 
 - **Gutters can be responsively adjusted.** Use breakpoint-specific gutter
@@ -28,7 +28,7 @@ gutters are used too to avoid unwanted overflow, using a matching padding
 utility. For example, in the following example we've increased the padding with
 `.px-4`:
 
-{{< example class="bd-example-cols" >}}
+{ { < example class="bd-example-cols" >} }
 <div class="container px-4 text-center">
   <div class="row gx-5">
     <div class="col">
@@ -39,12 +39,12 @@ utility. For example, in the following example we've increased the padding with
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 An alternative solution is to add a wrapper around the `.row` with the
 `.overflow-hidden` class:
 
-{{< example class="bd-example-cols" >}}
+{ { < example class="bd-example-cols" >} }
 <div class="container overflow-hidden text-center">
   <div class="row gx-5">
     <div class="col">
@@ -55,7 +55,7 @@ An alternative solution is to add a wrapper around the `.row` with the
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Vertical gutters
 
@@ -64,7 +64,7 @@ when columns wrap to new lines. Like the horizontal gutters, the vertical
 gutters can cause some overflow below the `.row` at the end of a page. If this
 occurs, you add a wrapper around `.row` with the `.overflow-hidden` class:
 
-{{< example class="bd-example-cols" >}}
+{ { < example class="bd-example-cols" >} }
 <div class="container overflow-hidden text-center">
   <div class="row gy-5">
     <div class="col-6">
@@ -81,7 +81,7 @@ occurs, you add a wrapper around `.row` with the `.overflow-hidden` class:
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Horizontal & vertical gutters
 
@@ -89,7 +89,7 @@ Use `.g-*` classes to control the horizontal and vertical grid gutters. In the
 example below, we use a smaller gutter width, so there isn't a need for the
 `.overflow-hidden` wrapper class.
 
-{{< example class="bd-example-cols" >}}
+{ { < example class="bd-example-cols" >} }
 <div class="container text-center">
   <div class="row g-2">
     <div class="col-6">
@@ -106,15 +106,14 @@ example below, we use a smaller gutter width, so there isn't a need for the
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Row columns gutters
 
-Gutter classes can also be added to [row columns]({{< docsref "
-/layout/grid#row-columns" >}}). In the following example, we use responsive row
+Gutter classes can also be added to [row columns](/layout/grid.md#row-columns). In the following example, we use responsive row
 columns and responsive gutter classes.
 
-{{< example class="bd-example-cols" >}}
+{ { < example class="bd-example-cols" >} }
 <div class="container text-center">
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
     <div class="col">
@@ -149,7 +148,7 @@ columns and responsive gutter classes.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## No gutters
 
@@ -164,12 +163,12 @@ In practice, here's how it looks. Note that you can continue to use this with
 all other predefined grid classes (including column widths, responsive tiers,
 reorders, and more).
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="row g-0 text-center">
   <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Change the gutters
 

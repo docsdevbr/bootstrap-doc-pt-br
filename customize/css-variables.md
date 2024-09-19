@@ -27,17 +27,17 @@ be accessed anywhere Bootstrap's CSS is loaded. They're located in our
 These CSS variables are available everywhere, regardless of color mode.
 
 ```css
-{{< root.inline >}}
-{{- $css := readFile "dist/css/bootstrap.css" -}}
-{{- $match := findRE `:root,\n\[data-bs-theme=light\] {([^}]*)}` $css 1 -}}
+{ { < root.inline >} }
+{ {- $css := readFile "dist/css/bootstrap.css" -} }
+{ {- $match := findRE `:root,\n\[data-bs-theme=light\] {([^}]*)}` $css 1 -} }
 
-{{- if (eq (len $match) 0) -}}
-{{- errorf "Got no matches for :root in %q!" $.Page.Path -}}
-{{- end -}}
+{ {- if (eq (len $match) 0) -} }
+{ {- errorf "Got no matches for :root in %q!" $.Page.Path -} }
+{ {- end -} }
 
-{{- index $match 0 -}}
+{ {- index $match 0 -} }
 
-{{< /root.inline >}}
+{ { < /root.inline >} }
 ```
 
 ### Dark mode
@@ -45,14 +45,14 @@ These CSS variables are available everywhere, regardless of color mode.
 These variables are scoped to our built-in dark mode.
 
 ```css
-{{< root.inline >}}
-{{- $css := readFile "dist/css/bootstrap.css" -}}
-{{- $match := findRE `\[data-bs-theme=dark\] {([^}]*)}` $css 1 -}}
-{{- if (eq (len $match) 0) -}}
-{{- errorf "Got no matches for [data-bs-theme=dark] in %q!" $.Page.Path -}}
-{{- end -}}
-{{- index $match 0 -}}
-{{< /root.inline >}}
+{ { < root.inline >} }
+{ {- $css := readFile "dist/css/bootstrap.css" -} }
+{ {- $match := findRE `\[data-bs-theme=dark\] {([^}]*)}` $css 1 -} }
+{ {- if (eq (len $match) 0) -} }
+{ {- errorf "Got no matches for [data-bs-theme=dark] in %q!" $.Page.Path -} }
+{ {- end -} }
+{ {- index $match 0 -} }
+{ { < /root.inline >} }
 ```
 
 ## Component variables
@@ -63,11 +63,10 @@ aren't inherited in places like nested tables, and allow some basic restyling
 and extending of Bootstrap components after Sass compilation.
 
 Have a look at our table documentation for
-some [insight into how we're using CSS variables]({{< docsref "
-/content/tables#how-do-the-variants-and-accented-tables-work" >}}).
-Our [navbars also use CSS variables]({{< docsref "/components/navbar#css" >}})
+some [insight into how we're using CSS variables](/content/tables.md#how-do-the-variants-and-accented-tables-work).
+Our [navbars also use CSS variables](/components/navbar.md#css)
 as of v5.2.0. We're also using CSS variables across our grids—primarily for
-gutters the [new opt-in CSS grid]({{< docsref "/layout/css-grid" >}})—with more
+gutters the [new opt-in CSS grid](/layout/css-grid.md)—with more
 component usage coming in the future.
 
 Whenever possible, we'll assign CSS variables at the base component level (e.g.,
@@ -100,7 +99,7 @@ a {
 
 ## Focus variables
 
-{{< added-in "5.3.0" >}}
+{ { < added-in "5.3.0" >} }
 
 Bootstrap provides custom `:focus` styles using a combination of Sass and CSS
 variables that can be optionally added to specific components and elements. We
@@ -108,13 +107,13 @@ do not yet globally override all `:focus` styles.
 
 In our Sass, we set default values that can be customized before compiling.
 
-{{< scss-docs name="focus-ring-variables" file="scss/_variables.scss" >}}
+{ { < scss-docs name="focus-ring-variables" file="scss/_variables.scss" >} }
 
 Those variables are then reassigned to `:root` level CSS variables that can be
 customized in real-time, including with options for `x` and `y` offsets (which
 default to their fallback value of `0`).
 
-{{< scss-docs name="root-focus-variables" file="scss/_root.scss" >}}
+{ { < scss-docs name="root-focus-variables" file="scss/_root.scss" >} }
 
 ## Grid breakpoints
 

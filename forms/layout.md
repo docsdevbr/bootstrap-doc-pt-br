@@ -24,7 +24,7 @@ used to vary this layout on a per-form basis.
 
 ## Utilities
 
-[Margin utilities]({{< docsref "/utilities/spacing" >}}) are the easiest way to
+[Margin utilities](/utilities/spacing.md) are the easiest way to
 add some structure to forms. They provide basic grouping of labels, controls,
 optional form text, and form validation messaging. We recommend sticking to
 `margin-bottom` utilities, and using a single direction throughout the form for
@@ -33,7 +33,7 @@ consistency.
 Feel free to build your forms however you like, with `<fieldset>`s, `<div>`s, or
 nearly any other element.
 
-{{< example >}}
+{ { < example >} }
 <div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">Example label</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
@@ -42,7 +42,7 @@ nearly any other element.
   <label for="formGroupExampleInput2" class="form-label">Another label</label>
   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Form grid
 
@@ -51,7 +51,7 @@ layouts that require multiple columns, varied widths, and additional alignment
 options. **Requires the `$enable-grid-classes` Sass variable to be enabled** (on
 by default).
 
-{{< example >}}
+{ { < example >} }
 <div class="row">
   <div class="col">
     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
@@ -60,16 +60,16 @@ by default).
     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Gutters
 
-By adding [gutter modifier classes]({{< docsref "/layout/gutters" >}}), you can
+By adding [gutter modifier classes](/layout/gutters.md), you can
 have control over the gutter width in as well the inline as block direction. *
 *Also requires the `$enable-grid-classes` Sass variable to be enabled** (on by
 default).
 
-{{< example >}}
+{ { < example >} }
 <div class="row g-3">
   <div class="col">
     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
@@ -78,11 +78,11 @@ default).
     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 More complex layouts can also be created with the grid system.
 
-{{< example >}}
+{ { < example >} }
 <form class="row g-3">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Email</label>
@@ -127,7 +127,7 @@ More complex layouts can also be created with the grid system.
     <button type="submit" class="btn btn-primary">Sign in</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Horizontal form
 
@@ -140,7 +140,7 @@ At times, you maybe need to use margin or padding utilities to create that
 perfect alignment you need. For example, we've removed the `padding-top` on our
 stacked radio inputs label to better align the text baseline.
 
-{{< example >}}
+{ { < example >} }
 <form>
   <div class="row mb-3">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
@@ -189,7 +189,7 @@ stacked radio inputs label to better align the text baseline.
   </div>
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ### Horizontal form label sizing
 
@@ -197,7 +197,7 @@ Be sure to use `.col-form-label-sm` or `.col-form-label-lg` to your `<label>`s
 or `<legend>`s to correctly follow the size of `.form-control-lg` and
 `.form-control-sm`.
 
-{{< example >}}
+{ { < example >} }
 <div class="row mb-3">
   <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
   <div class="col-sm-10">
@@ -216,7 +216,7 @@ or `<legend>`s to correctly follow the size of `.form-control-lg` and
     <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Column sizing
 
@@ -226,7 +226,7 @@ between them. You may also pick a subset of your columns to take up more or less
 space, while the remaining `.col`s equally split the rest, with specific column
 classes like `.col-sm-7`.
 
-{{< example >}}
+{ { < example >} }
 <div class="row g-3">
   <div class="col-sm-7">
     <input type="text" class="form-control" placeholder="City" aria-label="City">
@@ -238,7 +238,7 @@ classes like `.col-sm-7`.
     <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Auto-sizing
 
@@ -246,7 +246,7 @@ The example below uses a flexbox utility to vertically center the contents and
 changes `.col` to `.col-auto` so that your columns only take up as much space as
 needed. Put another way, the column sizes itself based on the contents.
 
-{{< example >}}
+{ { < example >} }
 <form class="row gy-2 gx-3 align-items-center">
   <div class="col-auto">
     <label class="visually-hidden" for="autoSizingInput">Name</label>
@@ -280,11 +280,11 @@ needed. Put another way, the column sizes itself based on the contents.
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 You can then remix that once again with size-specific column classes.
 
-{{< example >}}
+{ { < example >} }
 <form class="row gx-3 gy-2 align-items-center">
   <div class="col-sm-3">
     <label class="visually-hidden" for="specificSizeInputName">Name</label>
@@ -318,17 +318,17 @@ You can then remix that once again with size-specific column classes.
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }
 
 ## Inline forms
 
 Use the `.row-cols-*` classes to create responsive horizontal layouts. By
-adding [gutter modifier classes]({{< docsref "/layout/gutters" >}}), we'll have
+adding [gutter modifier classes](/layout/gutters.md), we'll have
 gutters in horizontal and vertical directions. On narrow mobile viewports, the
 `.col-12` helps stack the form controls and more. The `.align-items-center`
 aligns the form elements to the middle, making the `.form-check` align properly.
 
-{{< example >}}
+{ { < example >} }
 <form class="row row-cols-lg-auto g-3 align-items-center">
   <div class="col-12">
     <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
@@ -361,4 +361,4 @@ aligns the form elements to the middle, making the `.form-check` align properly.
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
-{{< /example >}}
+{ { < /example >} }

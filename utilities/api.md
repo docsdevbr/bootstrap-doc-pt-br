@@ -18,7 +18,7 @@ The `$utilities` map contains all our utilities and is later merged with your
 custom `$utilities` map, if present. The utility map contains a keyed list of
 utility groups which accept the following options:
 
-{{< bs-table "table table-utilities" >}}
+{ { < bs-table "table table-utilities" >} }
 | Option | Type | Default&nbsp;value | Description |
 | --- | --- | --- | --- |
 | [`property`](#property) | **Required** | – | Name of the property, this can be
@@ -40,13 +40,12 @@ variables to generate in addition to the CSS rules. |
 `:hover` or `:focus`) to generate. |
 | [`responsive`](#responsive) | Optional | `false` | Boolean indicating if
 responsive classes should be generated. |
-| `rfs` | Optional | `false` | Boolean to enable [fluid rescaling with RFS]({{<
-docsref "/getting-started/rfs" >}}). |
+| `rfs` | Optional | `false` | Boolean to enable [fluid rescaling with RFS](/getting-started/rfs.md). |
 | [`print`](#print) | Optional | `false` | Boolean indicating if print classes
 need to be generated. |
 | `rtl` | Optional | `true` | Boolean indicating if utility should be kept in
 RTL. |
-{{< /bs-table >}}
+{ { < /bs-table >} }
 
 ## API explained
 
@@ -108,14 +107,13 @@ Use the `values` key to specify which values for the specified `property` should
 be used in the generated class names and rules. Can be a list or map (set in the
 utilities or in a Sass variable).
 
-As a list, like with [`text-decoration` utilities]({{< docsref "
-/utilities/text#text-decoration" >}}):
+As a list, like with [`text-decoration` utilities](/utilities/text.md#text-decoration):
 
 ```scss
 values: none underline line-through
 ```
 
-As a map, like with [`opacity` utilities]({{< docsref "/utilities/opacity" >}}):
+As a map, like with [`opacity` utilities](/utilities/opacity.md):
 
 ```scss
 values: (
@@ -128,7 +126,7 @@ values: (
 ```
 
 As a Sass variable that sets the list or map, as in our [
-`position` utilities]({{< docsref "/utilities/position" >}}):
+`position` utilities](/utilities/position.md):
 
 ```scss
 values: $position-values
@@ -297,8 +295,7 @@ Output:
 ### Responsive
 
 Add the `responsive` boolean to generate responsive utilities (e.g.,
-`.opacity-md-25`) across [all breakpoints]({{< docsref "
-/layout/breakpoints" >}}).
+`.opacity-md-25`) across [all breakpoints](/layout/breakpoints.md).
 
 ```scss
 $utilities: (

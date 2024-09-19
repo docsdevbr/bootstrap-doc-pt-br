@@ -13,10 +13,10 @@ subset of its sides with shorthand classes. Includes support for individual
 properties, all properties, and vertical and horizontal properties. Classes are
 built from a default Sass map ranging from `.25rem` to `3rem`.
 
-{{< callout >}}
+{ { < callout >} }
 **Using the CSS Grid layout module?** Consider using [the gap utility](#gap)
 instead.
-{{< /callout >}}
+{ { < /callout >} }
 
 ### Notation
 
@@ -128,14 +128,14 @@ to individual children of a grid or flex container. Gap utilities are responsive
 by default, and are generated via our utilities API, based on the `$spacers`
 Sass map.
 
-{{< example class="bd-example-cssgrid" >}}
+{ { < example class="bd-example-cssgrid" >} }
 <div class="grid gap-3">
   <div class="p-2 g-col-6">Grid item 1</div>
   <div class="p-2 g-col-6">Grid item 2</div>
   <div class="p-2 g-col-6">Grid item 3</div>
   <div class="p-2 g-col-6">Grid item 4</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Support includes responsive options for all of Bootstrap's grid breakpoints, as
 well as six sizes from the `$spacers` map (`0`–`5`). There is no `.gap-auto`
@@ -146,28 +146,28 @@ utility class as it's effectively the same as `.gap-0`.
 `row-gap` sets the vertical space between children items in the specified
 container.
 
-{{< example class="bd-example-cssgrid" >}}
+{ { < example class="bd-example-cssgrid" >} }
 <div class="grid gap-0 row-gap-3">
   <div class="p-2 g-col-6">Grid item 1</div>
   <div class="p-2 g-col-6">Grid item 2</div>
   <div class="p-2 g-col-6">Grid item 3</div>
   <div class="p-2 g-col-6">Grid item 4</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ### column-gap
 
 `column-gap` sets the horizontal space between children items in the specified
 container.
 
-{{< example class="bd-example-cssgrid" >}}
+{ { < example class="bd-example-cssgrid" >} }
 <div class="grid gap-0 column-gap-3">
   <div class="p-2 g-col-6">Grid item 1</div>
   <div class="p-2 g-col-6">Grid item 2</div>
   <div class="p-2 g-col-6">Grid item 3</div>
   <div class="p-2 g-col-6">Grid item 4</div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## CSS
 
@@ -176,12 +176,11 @@ container.
 Spacing utilities are declared via Sass map and then generated with our
 utilities API.
 
-{{< scss-docs name="spacer-variables-maps" file="scss/_variables.scss" >}}
+{ { < scss-docs name="spacer-variables-maps" file="scss/_variables.scss" >} }
 
 ### Sass utilities API
 
 Spacing utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.]({{< docsref "
-/utilities/api#using-the-api" >}})
+`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{{< scss-docs name="utils-spacing" file="scss/_utilities.scss" >}}
+{ { < scss-docs name="utils-spacing" file="scss/_utilities.scss" >} }

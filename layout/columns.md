@@ -6,26 +6,25 @@ group: layout
 toc: true
 ---
 
-{{< callout info >}}
-**Heads up!** Be sure to [read the Grid page]({{< docsref "/layout/grid" >}})
+{ { < callout info >} }
+**Heads up!** Be sure to [read the Grid page](/layout/grid.md)
 first before diving into how to modify and customize your grid columns.
-{{< /callout >}}
+{ { < /callout >} }
 
 ## How they work
 
 - **Columns build on the grid's flexbox architecture.** Flexbox means we have
   options for changing individual columns
-  and [modifying groups of columns at the row level]({{< docsref "
-  /layout/grid#row-columns" >}}). You choose how columns grow, shrink, or
+  and [modifying groups of columns at the row level](  /layout/grid.md#row-columns). You choose how columns grow, shrink, or
   otherwise change.
 
 - **When building grid layouts, all content goes in columns.** The hierarchy of
-  Bootstrap's grid goes from [container]({{< docsref "/layout/containers" >}})
+  Bootstrap's grid goes from [container](/layout/containers.md)
   to row to column to your content. On rare occasions, you may combine content
   and column, but be aware there can be unintended consequences.
 
 - **Bootstrap includes predefined classes for creating fast, responsive layouts.
-  ** With [six breakpoints]({{< docsref "/layout/breakpoints" >}}) and a dozen
+  ** With [six breakpoints](/layout/breakpoints.md) and a dozen
   columns at each grid tier, we have dozens of classes already built for you to
   create your desired layouts. This can be disabled via Sass if you wish.
 
@@ -38,7 +37,7 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
 Change the vertical alignment with any of the responsive `align-items-*`
 classes.
 
-{{< example class="bd-example-row bd-example-row-flex-cols" >}}
+{ { < example class="bd-example-row bd-example-row-flex-cols" >} }
 <div class="container text-center">
   <div class="row align-items-start">
     <div class="col">
@@ -52,9 +51,9 @@ classes.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
-{{< example class="bd-example-row bd-example-row-flex-cols" >}}
+{ { < example class="bd-example-row bd-example-row-flex-cols" >} }
 <div class="container text-center">
   <div class="row align-items-center">
     <div class="col">
@@ -68,9 +67,9 @@ classes.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
-{{< example class="bd-example-row bd-example-row-flex-cols" >}}
+{ { < example class="bd-example-row bd-example-row-flex-cols" >} }
 <div class="container text-center">
   <div class="row align-items-end">
     <div class="col">
@@ -84,12 +83,12 @@ classes.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 Or, change the alignment of each column individually with any of the responsive
 `.align-self-*` classes.
 
-{{< example class="bd-example-row bd-example-row-flex-cols" >}}
+{ { < example class="bd-example-row bd-example-row-flex-cols" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col align-self-start">
@@ -103,14 +102,14 @@ Or, change the alignment of each column individually with any of the responsive
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ### Horizontal alignment
 
 Change the horizontal alignment with any of the responsive `justify-content-*`
 classes.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row justify-content-start">
     <div class="col-4">
@@ -161,14 +160,14 @@ classes.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ### Column wrapping
 
 If more than 12 columns are placed within a single row, each group of extra
 columns will, as one unit, wrap onto a new line.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container">
   <div class="row">
     <div class="col-9">.col-9</div>
@@ -176,7 +175,7 @@ columns will, as one unit, wrap onto a new line.
     <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ### Column breaks
 
@@ -185,7 +184,7 @@ with `width: 100%` wherever you want to wrap your columns to a new line.
 Normally this is accomplished with multiple `.row`s, but not every
 implementation method can account for this.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
@@ -199,12 +198,12 @@ implementation method can account for this.
 
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 You may also apply this break at specific breakpoints with
-our [responsive display utilities]({{< docsref "/utilities/display" >}}).
+our [responsive display utilities](/utilities/display.md).
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
@@ -218,7 +217,7 @@ our [responsive display utilities]({{< docsref "/utilities/display" >}}).
 
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Reordering
 
@@ -230,7 +229,7 @@ These classes are responsive, so you can set the `order` by breakpoint (e.g.,
 tiers. If you need more `.order-*` classes, you can modify the default number
 via Sass variable.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col">
@@ -244,14 +243,14 @@ via Sass variable.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 There are also responsive `.order-first` and `.order-last` classes that change
 the `order` of an element by applying `order: -1` and `order: 6`, respectively.
 These classes can also be intermixed with the numbered `.order-*` classes as
 needed.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col order-last">
@@ -265,12 +264,12 @@ needed.
     </div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ### Offsetting columns
 
 You can offset grid columns in two ways: our responsive `.offset-` grid classes
-and our [margin utilities]({{< docsref "/utilities/spacing" >}}). Grid classes
+and our [margin utilities](/utilities/spacing.md). Grid classes
 are sized to match columns while margins are more useful for quick layouts where
 the width of the offset is variable.
 
@@ -280,7 +279,7 @@ Move columns to the right using `.offset-md-*` classes. These classes increase
 the left margin of a column by `*` columns. For example, `.offset-md-4` moves
 `.col-md-4` over four columns.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col-md-4">.col-md-4</div>
@@ -294,13 +293,12 @@ the left margin of a column by `*` columns. For example, `.offset-md-4` moves
     <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 In addition to column clearing at responsive breakpoints, you may need to reset
-offsets. See this in action in [the grid example]({{< docsref "
-/examples/grid" >}}).
+offsets. See this in action in [the grid example](/examples/grid.md).
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
@@ -311,14 +309,14 @@ offsets. See this in action in [the grid example]({{< docsref "
     <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 #### Margin utilities
 
 With the move to flexbox in v4, you can use margin utilities like `.me-auto` to
 force sibling columns away from one another.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="container text-center">
   <div class="row">
     <div class="col-md-4">.col-md-4</div>
@@ -333,7 +331,7 @@ force sibling columns away from one another.
     <div class="col-auto">.col-auto</div>
   </div>
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 ## Standalone column classes
 
@@ -341,7 +339,7 @@ The `.col-*` classes can also be used outside a `.row` to give an element a
 specific width. Whenever column classes are used as non-direct children of a
 row, the paddings are omitted.
 
-{{< example class="bd-example-row" >}}
+{ { < example class="bd-example-row" >} }
 <div class="col-3 p-3 mb-2">
   .col-3: width of 25%
 </div>
@@ -349,15 +347,14 @@ row, the paddings are omitted.
 <div class="col-sm-9 p-3">
   .col-sm-9: width of 75% above sm breakpoint
 </div>
-{{< /example >}}
+{ { < /example >} }
 
 The classes can be used together with utilities to create responsive floated
-images. Make sure to wrap the content in a [`.clearfix`]({{< docsref "
-/helpers/clearfix" >}}) wrapper to clear the float if the text is shorter.
+images. Make sure to wrap the content in a [`.clearfix`](/helpers/clearfix.md) wrapper to clear the float if the text is shorter.
 
-{{< example >}}
+{ { < example >} }
 <div class="clearfix">
-  {{< placeholder width="100%" height="210" class="col-md-6 float-md-end mb-3 ms-md-3" text="Responsive floated image" >}}
+  { { < placeholder width="100%" height="210" class="col-md-6 float-md-end mb-3 ms-md-3" text="Responsive floated image" >} }
 
   <p>
     A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
@@ -371,4 +368,4 @@ images. Make sure to wrap the content in a [`.clearfix`]({{< docsref "
     And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
   </p>
 </div>
-{{< /example >}}
+{ { < /example >} }
