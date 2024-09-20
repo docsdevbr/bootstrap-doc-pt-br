@@ -34,8 +34,8 @@ JavaScript opcionais como o Popper.
 
 ## Arquivos fonte
 
-Compile o Bootstrap com sua própria esteira de ativos baixando nossos arquivos
-fonte Sass, JavaScript e da documentação.
+Compile o Bootstrap com sua esteira de ativos baixando nossos arquivos fonte
+Sass, JavaScript e da documentação.
 Esta opção requer algumas ferramentas adicionais:
 
 * [Compilador Sass](../getting-started/contribute.md#sass) para compilar
@@ -65,8 +65,10 @@ Pule o _download_ dos arquivos usando [jsDelivr](https://www.jsdelivr.com/) para
 entregar a versão em cache do CSS e JS compilados do Bootstrap para seu projeto.
 
 ```html
-<link href="{{ cdn.css }}" rel="stylesheet" integrity="{{ cdn.css_hash }}" crossorigin="anonymous">
-<script src="{{ cdn.js_bundle }}" integrity="{{ cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
+<link href="{{ cdn.css }}" rel="stylesheet" integrity="{{ cdn.css_hash }}"
+      crossorigin="anonymous">
+<script src="{{ cdn.js_bundle }}" integrity="{{ cdn.js_bundle_hash }}"
+        crossorigin="anonymous"></script>
 ```
 
 Se você estiver usando nosso JavaScript compilado e preferir incluir o Popper
@@ -74,8 +76,10 @@ separadamente, adicione o Popper antes do nosso JS, de preferência por meio de
 uma CDN.
 
 ```html
-<script src="{{ cdn.popper }}" integrity="{{ cdn.popper_hash }}" crossorigin="anonymous"></script>
-<script src="{{ cdn.js }}" integrity="{{ cdn.js_hash }}" crossorigin="anonymous"></script>
+<script src="{{ cdn.popper }}" integrity="{{ cdn.popper_hash }}"
+        crossorigin="anonymous"></script>
+<script src="{{ cdn.js }}" integrity="{{ cdn.js_hash }}"
+        crossorigin="anonymous"></script>
 ```
 
 ### CDNs alternativas

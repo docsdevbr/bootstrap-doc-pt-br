@@ -232,7 +232,7 @@ options cannot be supplied using data attributes.
 { { < bs-table "table" > } }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `allowList` | object | [Default value](/getting-started/javascript.md#sanitizer) | Object which contains allowed
+| `allowList` | object | [Default value](../comecando/javascript.md#sanitizer) | Object which contains allowed
 attributes and tags. |
 | `animation` | boolean | `true` | Apply a CSS fade transition to the tooltip. |
 | `boundary` | string, element | `'clippingParents'` | Overflow constraint

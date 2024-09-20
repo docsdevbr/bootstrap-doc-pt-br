@@ -111,7 +111,7 @@ and your browser generally provides a great deal of functionality for you.
 
 This principle is our first-class JavaScript API using `data` attributes. You
 don't need to write nearly any JavaScript to use our JavaScript plugins;
-instead, write HTML. Read more about this in [our JavaScript overview page](/getting-started/javascript.md#data-attributes).
+instead, write HTML. Read more about this in [our JavaScript overview page](../comecando/javascript.md#data-attributes).
 
 Lastly, our styles build on the fundamental behaviors of common web elements.
 Whenever possible, we prefer to use what the browser provides. For example, you

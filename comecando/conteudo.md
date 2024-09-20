@@ -85,12 +85,12 @@ minificado) incluem o [Popper](https://popper.js.org/docs/v2/).
 O Bootstrap inclui um punhado de opções para incluir alguns ou todos os nossos
 CSS compilados.
 
-| Arquivos CSS                                                                                                                        | Layout                                        | Conteúdo                              | Componentes | Utilities                                        |
-|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------------------------------|-------------|--------------------------------------------------|
-| `bootstrap.css`<br> `bootstrap.min.css`<br> `bootstrap.rtl.css`<br> `bootstrap.rtl.min.css`                                         | Incluído                                      | Incluído                              | Incluído    | Incluído                                         |
+| Arquivos CSS                                                                                                                        | Layout                                        | Conteúdo                              | Componentes | Utilities                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|---------------------------------------|-------------|----------------------------------------------------|
+| `bootstrap.css`<br> `bootstrap.min.css`<br> `bootstrap.rtl.css`<br> `bootstrap.rtl.min.css`                                         | Incluído                                      | Incluído                              | Incluído    | Incluído                                           |
 | `bootstrap-grid.css`<br> `bootstrap-grid.rtl.css`<br> `bootstrap-grid.min.css`<br> `bootstrap-grid.rtl.min.css`                     | [Apenas sistema de _grid_](../layout/grid.md) | —                                     | —           | [Somente utilitários _flex_](../utilities/flex.md) |
-| `bootstrap-utilities.css`<br> `bootstrap-utilities.rtl.css`<br> `bootstrap-utilities.min.css`<br> `bootstrap-utilities.rtl.min.css` | —                                             | —                                     | —           | Incluído                                         |
-| `bootstrap-reboot.css`<br> `bootstrap-reboot.rtl.css`<br> `bootstrap-reboot.min.css`<br> `bootstrap-reboot.rtl.min.css`             | —                                             | [Apenas Reboot](../content/reboot.md) | —           | —                                                |
+| `bootstrap-utilities.css`<br> `bootstrap-utilities.rtl.css`<br> `bootstrap-utilities.min.css`<br> `bootstrap-utilities.rtl.min.css` | —                                             | —                                     | —           | Incluído                                           |
+| `bootstrap-reboot.css`<br> `bootstrap-reboot.rtl.css`<br> `bootstrap-reboot.min.css`<br> `bootstrap-reboot.rtl.min.css`             | —                                             | [Apenas Reboot](../content/reboot.md) | —           | —                                                  |
 
 ### Arquivos JS
 

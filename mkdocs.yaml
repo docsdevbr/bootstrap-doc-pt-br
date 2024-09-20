@@ -17,6 +17,7 @@ extra:
     js_bundle_hash: sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz
     js_hash: sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy
     popper: https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js
+    popper_esm: https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js
     popper_hash: sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r
   current_ruby_version: 5.3.3
   current_version: 5.3.3
@@ -36,7 +37,7 @@ nav:
       - Baixar: comecando/baixar.md
       - Conteúdo: comecando/conteudo.md
       - Navegadores e Dispositivos: comecando/navegadores-dispositivos.md
-      - JavaScript: getting-started/javascript.md
+      - JavaScript: comecando/javascript.md
       - Webpack: getting-started/webpack.md
       - Parcel: getting-started/parcel.md
       - Vite: getting-started/vite.md

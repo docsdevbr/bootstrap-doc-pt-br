@@ -24,7 +24,7 @@ Veja na prática com esta
 
 1. **Crie um novo arquivo `index.html` na raiz do seu projeto.**
    Inclua também a _tag_ `<meta name="viewport">` para um
-   [comportamento responsivo adequado](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+   [comportamento responsivo adequado](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Viewport_meta_tag)
    em dispositivos móveis.
 
     ```html
@@ -72,7 +72,7 @@ Veja na prática com esta
 
 4. **Olá, mundo!** Abra a página no seu navegador de escolha para ver sua página
    com Bootstrap.
-   Agora você pode começar a construir com Bootstrap criando seu próprio
+   Agora você pode começar a construir com Bootstrap criando seu
    [_layout_](../layout/grid.md), adicionando dezenas de
    [componentes](../components/buttons.md) e utilizando
    [nossos exemplos oficiais](../examples/index.md).
@@ -98,9 +98,10 @@ Você também pode usar a CDN para obter qualquer uma das nossas
   [seção Conteúdo](conteudo.md) e a lista de
   [componentes que exigem JavaScript](#componentes-js) abaixo.
 * Precisa de um pouco mais de capacidade? Considere construir com o Bootstrap
-  [incluindo os arquivos fonte usando o gerenciador de pacotes](../comecando/baixar.md#gerenciadores-de-pacotes).
+  [incluindo os arquivos fonte usando o gerenciador de pacotes](baixar.md#gerenciadores-de-pacotes).
 * Procurando usar o Bootstrap como um módulo com `<script type="module">`?
-  Consulte nossa seção [Usando o Bootstrap como um módulo](../getting-started/javascript.md#using-bootstrap-as-a-module).
+  Consulte nossa seção
+  [Usando o Bootstrap como um módulo](javascript.md#usando-bootstrap-como-um-modulo).
 
 ## Componentes JS
 

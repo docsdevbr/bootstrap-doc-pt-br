@@ -187,7 +187,7 @@ and one into our `main.js`.
    import { Tooltip, Toast, Popover } from 'bootstrap'
    ```
 
-   *[Read our JavaScript docs](/getting-started/javascript/.md)
+   *[Read our JavaScript docs](../comecando/javascript.md)
    for more information on how to use Bootstrap's plugins.*
 
 3. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your

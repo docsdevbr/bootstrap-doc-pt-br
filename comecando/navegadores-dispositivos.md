@@ -109,7 +109,8 @@ A partir do iOS 9.2, enquanto um modal estiver aberto, se o toque inicial de um
 gesto de rolagem estiver dentro do limite de um `<input>` textual ou de um
 `<textarea>`, o conteúdo de `<body>` abaixo do modal será rolado em vez do
 próprio modal.
-Veja a [falha #153856 do WebKit](https://bugs.webkit.org/show_bug.cgi?id=153856).
+Veja a
+[falha #153856 do WebKit](https://bugs.webkit.org/show_bug.cgi?id=153856).
 
 ### Menus suspensos da barra de navegação
 
@@ -117,7 +118,7 @@ O elemento `.dropdown-backdrop` não é usado no iOS na navegação devido à
 complexidade da indexação z.
 Portanto, para fechar os menus suspensos nas barras de navegação, você deve
 clicar diretamente no elemento `dropdown` (ou
-[qualquer outro elemento que acione um evento de clique no iOS](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#Safari_Mobile)).
+[qualquer outro elemento que acione um evento de clique no iOS](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/click_event#Safari_Mobile)).
 
 ## Controle de _zoom_ do navegador
 
