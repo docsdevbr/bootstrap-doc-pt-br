@@ -38,7 +38,7 @@ nav:
       - Conteúdo: comecando/conteudo.md
       - Navegadores e Dispositivos: comecando/navegadores-dispositivos.md
       - JavaScript: comecando/javascript.md
-      - Webpack: getting-started/webpack.md
+      - Webpack: comecando/webpack.md
       - Parcel: getting-started/parcel.md
       - Vite: getting-started/vite.md
       - Accessibility: getting-started/accessibility.md

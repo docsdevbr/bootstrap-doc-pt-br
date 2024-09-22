@@ -1,10 +1,11 @@
 # comecando
 
-/ /comecando/introducao
-/comecando/ /comecando/introducao
-/getting-started/ /comecando/introducao
-/getting-started/browsers-devices/ /comecando/navegadores-dispositivos
-/getting-started/contents/ /comecando/conteudo
-/getting-started/download/ /comecando/baixe
-/getting-started/introduction/ /comecando/introducao
-/getting-started/javascript/ /comecando/javascript
+/ /comecando/introducao 301
+/comecando/ /comecando/introducao 301
+/getting-started/ /comecando/introducao 301
+/getting-started/browsers-devices/ /comecando/navegadores-dispositivos 301
+/getting-started/contents/ /comecando/conteudo 301
+/getting-started/download/ /comecando/baixe 301
+/getting-started/introduction/ /comecando/introducao 301
+/getting-started/javascript/ /comecando/javascript 301
+/getting-started/webpack/ /comecando/webpack 301

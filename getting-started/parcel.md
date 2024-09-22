@@ -145,7 +145,7 @@ to start our server.
    npm start
    ```
 
-   ![Parcel dev server running](/assets/img/guides/parcel-dev-server.png)
+   ![Parcel dev server running](../assets/img/guides/parcel-dev-server.png)
 
 In the next and final section to this guide, we'll import all of Bootstrap's CSS
 and JavaScript.
@@ -193,7 +193,7 @@ and one into our `main.js`.
 3. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your
    local development server should now look like this:
 
-   ![Parcel dev server running with Bootstrap](/assets/img/guides/parcel-dev-server-bootstrap.png)
+   ![Parcel dev server running with Bootstrap](../assets/img/guides/parcel-dev-server-bootstrap.png)
 
    Now you can start adding any Bootstrap components you want to use. Be sure
    to [check out the complete Parcel example project](https://github.com/twbs/examples/tree/main/parcel)

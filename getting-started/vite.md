@@ -166,7 +166,7 @@ we can now configure Vite and run our project locally.
    npm start
    ```
 
-   ![Vite dev server running](/assets/img/guides/vite-dev-server.png)
+   ![Vite dev server running](../assets/img/guides/vite-dev-server.png)
 
 In the next and final section to this guide, we’ll import all of Bootstrap’s CSS
 and JavaScript.
@@ -214,7 +214,7 @@ and JavaScript.
 3. **And you're done! 🎉** With Bootstrap's source Sass and JS fully loaded, your
    local development server should now look like this:
 
-   ![Vite dev server running with Bootstrap](/assets/img/guides/vite-dev-server-bootstrap.png)
+   ![Vite dev server running with Bootstrap](../assets/img/guides/vite-dev-server-bootstrap.png)
 
    Now you can start adding any Bootstrap components you want to use. Be sure
    to [check out the complete Vite example project](https://github.com/twbs/examples/tree/main/vite)
