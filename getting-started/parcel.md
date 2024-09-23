@@ -7,16 +7,16 @@ toc: true
 thumbnail: guides/bootstrap-parcel@2x.png
 ---
 
-<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-parcel.png, /docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-parcel@2x.png 2x" src="/docs/{ { < param docs_version >} }/assets/img/guides/bootstrap-parcel.png" width="800" height="400" alt="">
+<img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/{{ docs_version }}/assets/img/guides/bootstrap-parcel.png, /docs/{{ docs_version }}/assets/img/guides/bootstrap-parcel@2x.png 2x" src="/docs/{{ docs_version }}/assets/img/guides/bootstrap-parcel.png" width="800" height="400" alt="">
 
-{ { < callout >} }
+{ { < callout }}
 **Want to skip to the end?** Download the source code and working demo for this
 guide from
 the [twbs/examples repository](https://github.com/twbs/examples/tree/main/parcel).
 You can
 also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html)
 but not run it because Parcel isn't currently supported there.
-{ { < /callout >} }
+{ { < /callout }}
 
 ## Setup
 
@@ -200,6 +200,6 @@ and one into our `main.js`.
    for how to include additional custom Sass and optimize your build by
    importing only the parts of Bootstrap's CSS and JS that you need.
 
-{ { < markdown >} }
-{ { < partial "guide-footer.md" >} }
-{ { < /markdown >} }
+{ { < markdown }}
+{ { < partial "guide-footer.md" }}
+{ { < /markdown }}

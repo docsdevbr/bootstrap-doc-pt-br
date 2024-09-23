@@ -16,8 +16,7 @@ Here's what you need to know before getting started with the navbar:
 - Navbars and their contents are fluid by default. Change
   the [container](#containers) to limit their horizontal width in different
   ways.
-- Use our [spacing](/utilities/spacing.md) and [flex]({ { <
-  docsref "/utilities/flex" > } }) utility classes for controlling spacing and
+- Use our [spacing](/utilities/spacing.md) and [flex](../utilities/flex) utility classes for controlling spacing and
   alignment within navbars.
 - Navbars are responsive by default, but you can easily modify them to change
   that. Responsive behavior depends on our Collapse JavaScript plugin.
@@ -32,9 +31,9 @@ Here's what you need to know before getting started with the navbar:
   `.navbar-dark` has been rewritten to override CSS variables instead of adding
   additional styles.
 
-{ { < callout info > } }
-{ { < partial "callouts/info-prefersreducedmotion.md" > } }
-{ { < /callout > } }
+{ {< callout info >} }
+{ {< partial "callouts/info-prefersreducedmotion.md" >} }
+{ {< /callout >} }
 
 ## Supported content
 
@@ -56,7 +55,7 @@ the following as needed:
 Here's an example of all the sub-components included in a responsive
 light-themed navbar that automatically collapses at the `lg` (large) breakpoint.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -93,7 +92,7 @@ light-themed navbar that automatically collapses at the `lg` (large) breakpoint.
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 This example uses [background](/utilities/background.md) (
 `bg-body-tertiary`) and [spacing](/utilities/spacing.md) (
@@ -108,7 +107,7 @@ as some elements might require utility classes or custom styles.
 
 Add your text within an element with the `.navbar-brand` class.
 
-{ { < example > } }
+{ {< example >} }
 <!-- As a link -->
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -122,21 +121,21 @@ Add your text within an element with the `.navbar-brand` class.
     <span class="navbar-brand mb-0 h1">Navbar</span>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 #### Image
 
 You can replace the text within the `.navbar-brand` with an `<img>`.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="/docs/{ { < param docs_version > } }/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+      <img src="/docs/{{ docs_version }}/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
     </a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 #### Image and text
 
@@ -144,16 +143,16 @@ You can also make use of some additional utilities to add an image and text at
 the same time. Note the addition of `.d-inline-block` and `.align-text-top` on
 the `<img>`.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/docs/{ { < param docs_version > } }/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="/docs/{{ docs_version }}/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Bootstrap
     </a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ### Nav
 
@@ -167,7 +166,7 @@ Add the `.active` class on `.nav-link` to indicate the current page.
 Please note that you should also add the `aria-current` attribute on the active
 `.nav-link`.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -192,12 +191,12 @@ Please note that you should also add the `aria-current` attribute on the active
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 And because we use classes for our navs, you can avoid the list-based approach
 entirely if you like.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -214,13 +213,13 @@ entirely if you like.
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 You can also use dropdowns in your navbar. Dropdown menus require a wrapping
 element for positioning, so be sure to use separate and nested elements for
 `.nav-item` and `.nav-link` as shown below.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -252,13 +251,13 @@ element for positioning, so be sure to use separate and nested elements for
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ### Forms
 
 Place various form controls and components within a navbar:
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <form class="d-flex" role="search">
@@ -267,12 +266,12 @@ Place various form controls and components within a navbar:
     </form>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 Immediate child elements of `.navbar` use flex layout and will default to
 `justify-content: space-between`. Use additional [flex utilities](/utilities/flex.md) as needed to adjust this behavior.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand">Navbar</a>
@@ -282,12 +281,12 @@ Immediate child elements of `.navbar` use flex layout and will default to
     </form>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 Input groups work, too. If your navbar is an entire form, or mostly a form, you
 can use the `<form>` element as the container and save some HTML.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <form class="container-fluid">
     <div class="input-group">
@@ -296,27 +295,27 @@ can use the `<form>` element as the container and save some HTML.
     </div>
   </form>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 Various buttons are supported as part of these navbar forms, too. This is also a
 great reminder that vertical alignment utilities can be used to align different
 sized elements.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <form class="container-fluid justify-content-start">
     <button class="btn btn-outline-success me-2" type="button">Main button</button>
     <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
   </form>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ### Text
 
 Navbars may contain bits of text with the help of `.navbar-text`. This class
 adjusts vertical alignment and horizontal spacing for strings of text.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <span class="navbar-text">
@@ -324,11 +323,11 @@ adjusts vertical alignment and horizontal spacing for strings of text.
     </span>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 Mix and match with other components and utilities as needed.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar w/ text</a>
@@ -353,11 +352,11 @@ Mix and match with other components and utilities as needed.
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Color schemes
 
-{ { < callout warning > } }
+{ {< callout warning >} }
 **New dark navbars in v5.3.0 —** We've deprecated `.navbar-dark` in favor of the
 new `data-bs-theme="dark"`. Add `data-bs-theme="dark"` to the `.navbar` to
 enable a component-specific color mode. [Learn more about our color modes.](/customize/color-modes.md)
@@ -367,7 +366,7 @@ enable a component-specific color mode. [Learn more about our color modes.](/cus
 **New in v5.2.0 —** Navbar theming is now powered by CSS variables and
 `.navbar-light` has been deprecated. CSS variables are applied to `.navbar`,
 defaulting to the "light" appearance, and can be overridden with `.navbar-dark`.
-{ { < /callout > } }
+{ {< /callout >} }
 
 Navbar themes are easier than ever thanks to Bootstrap's combination of Sass and
 CSS variables. The default is our "light navbar" for use with light background
@@ -485,7 +484,7 @@ on a page–though note that an inner container is still required. Or you can ad
 a container inside the `.navbar` to only center the contents of
 a [fixed or static top navbar](#placement).
 
-{ { < example > } }
+{ {< example >} }
 <div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -493,18 +492,18 @@ a [fixed or static top navbar](#placement).
     </div>
   </nav>
 </div>
-{ { < /example > } }
+{ {< /example >} }
 
 Use any of the responsive containers to change how wide the content in your
 navbar is presented.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-md">
     <a class="navbar-brand" href="#">Navbar</a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Placement
 
@@ -518,45 +517,45 @@ Fixed navbars use `position: fixed`, meaning they're pulled from the normal flow
 of the DOM and may require custom CSS (e.g., `padding-top` on the `<body>`) to
 prevent overlap with other elements.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Default</a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar fixed-top bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Fixed top</a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar fixed-bottom bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Fixed bottom</a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar sticky-top bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sticky top</a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar sticky-bottom bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sticky bottom</a>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Scrolling
 
@@ -576,7 +575,7 @@ Here's an example navbar using `.navbar-nav-scroll` with
 `style="--bs-scroll-height: 100px;"`, with some extra margin utilities for
 optimum spacing.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar scroll</a>
@@ -613,7 +612,7 @@ optimum spacing.
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Responsive behaviors
 
@@ -634,7 +633,7 @@ are examples of different toggle styles.
 
 With no `.navbar-brand` shown at the smallest breakpoint:
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -660,11 +659,11 @@ With no `.navbar-brand` shown at the smallest breakpoint:
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 With a brand name shown on the left and toggler on the right:
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -690,11 +689,11 @@ With a brand name shown on the left and toggler on the right:
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 With a toggler on the left and brand name on the right:
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -720,7 +719,7 @@ With a toggler on the left and brand name on the right:
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ### External content
 
@@ -728,7 +727,7 @@ Sometimes you want to use the collapse plugin to trigger a container element for
 content that structurally sits outside of the `.navbar` . Because our plugin
 works on the `id` and `data-bs-target` matching, that's easily done!
 
-{ { < example > } }
+{ {< example >} }
 <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
   <div class="bg-dark p-4">
     <h5 class="text-body-emphasis h4">Collapsed content</h5>
@@ -742,7 +741,7 @@ works on the `id` and `data-bs-target` matching, that's easily done!
     </button>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 When you do this, we recommend including additional JavaScript to move the focus
 programmatically to the container when it is opened. Otherwise, keyboard users
@@ -764,7 +763,7 @@ create a dynamic and flexible navigation sidebar.
 In the example below, to create an offcanvas navbar that is always collapsed
 across all breakpoints, omit the `.navbar-expand-*` class entirely.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Offcanvas navbar</a>
@@ -806,7 +805,7 @@ across all breakpoints, omit the `.navbar-expand-*` class entirely.
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 To create an offcanvas navbar that expands into a normal navbar at a specific
 breakpoint like `lg`, use `.navbar-expand-lg`.
@@ -829,7 +828,7 @@ example below, we add `.navbar-dark` and `.bg-dark` to the `.navbar`,
 `.text-bg-dark` to the `.offcanvas`, `.dropdown-menu-dark` to `.dropdown-menu`,
 and `.btn-close-white` to `.btn-close` for proper styling with a dark offcanvas.
 
-{ { < example > } }
+{ {< example >} }
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
@@ -871,38 +870,38 @@ and `.btn-close-white` to `.btn-close` for proper styling with a dark offcanvas.
     </div>
   </div>
 </nav>
-{ { < /example > } }
+{ {< /example >} }
 
 ## CSS
 
 ### Variables
 
-{ { < added-in "5.2.0" > } }
+{ {< added-in "5.2.0" >} }
 
 As part of Bootstrap's evolving CSS variables approach, navbars now use local
 CSS variables on `.navbar` for enhanced real-time customization. Values for the
 CSS variables are set via Sass, so Sass customization is still supported, too.
 
-{ { < scss-docs name="navbar-css-vars" file="scss/_navbar.scss" > } }
+{ {< scss-docs name="navbar-css-vars" file="scss/_navbar.scss" >} }
 
 Some additional CSS variables are also present on `.navbar-nav`:
 
-{ { < scss-docs name="navbar-nav-css-vars" file="scss/_navbar.scss" > } }
+{ {< scss-docs name="navbar-nav-css-vars" file="scss/_navbar.scss" >} }
 
 Customization through CSS variables can be seen on the `.navbar-dark` class
 where we override specific values without adding duplicate CSS selectors.
 
-{ { < scss-docs name="navbar-dark-css-vars" file="scss/_navbar.scss" > } }
+{ {< scss-docs name="navbar-dark-css-vars" file="scss/_navbar.scss" >} }
 
 ### Sass variables
 
 Variables for all navbars:
 
-{ { < scss-docs name="navbar-variables" file="scss/_variables.scss" > } }
+{ {< scss-docs name="navbar-variables" file="scss/_variables.scss" >} }
 
 Variables for the [dark navbar](#color-schemes):
 
-{ { < scss-docs name="navbar-dark-variables" file="scss/_variables.scss" > } }
+{ {< scss-docs name="navbar-dark-variables" file="scss/_variables.scss" >} }
 
 ### Sass loops
 
@@ -910,4 +909,4 @@ Variables for the [dark navbar](#color-schemes):
 `.navbar-expand-lg`) are combined with the `$breakpoints` map and generated
 through a loop in `scss/_navbar.scss`.
 
-{ { < scss-docs name="navbar-expand-loop" file="scss/_navbar.scss" > } }
+{ {< scss-docs name="navbar-expand-loop" file="scss/_navbar.scss" >} }

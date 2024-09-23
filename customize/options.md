@@ -12,7 +12,7 @@ variable's value and recompile with `npm run test` as needed.
 You can find and customize these variables for key global options in Bootstrap's
 `scss/_variables.scss` file.
 
-{ { < bs-table "table table-options" >} }
+{ { < bs-table "table table-options" }}
 | Variable | Values | Description |
 | ------------------------------ | ---------------------------------- | -------------------------------------------------------------------------------------- |
 | `$spacer`                      | `1rem` (default), or any value > 0 |
@@ -60,4 +60,4 @@ the `!important` suffix in utility classes. |
 | `$enable-smooth-scroll`        | `true` (default) or `false`        | Applies
 `scroll-behavior: smooth` globally, except for users asking for reduced motion
 through [`prefers-reduced-motion` media query](/getting-started/accessibility.md#reduced-motion) |
-{ { < /bs-table >} }
+{ {< /bs-table >} }

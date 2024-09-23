@@ -17,7 +17,7 @@ Use in HTML:
 
 The mixin source code:
 
-{ { < scss-docs name="clearfix" file="scss/mixins/_clearfix.scss" >} }
+{ { < scss-docs name="clearfix" file="scss/mixins/_clearfix.scss" }}
 
 Use the mixin in SCSS:
 
@@ -31,9 +31,9 @@ The following example shows how the clearfix can be used. Without the clearfix
 the wrapping div would not span around the buttons which would cause a broken
 layout.
 
-{ { < example >} }
+{ {< example >} }
 <div class="bg-info clearfix">
   <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
   <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
 </div>
-{ { < /example >} }
+{ {< /example >} }

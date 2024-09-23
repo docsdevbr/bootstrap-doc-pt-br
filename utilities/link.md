@@ -14,23 +14,23 @@ Change the alpha opacity of the link `rgba()` color value with utilities. Please
 be aware that changes to a color's opacity can lead to links with [
 *insufficient* contrast](getting-started/accessibility.md#color-contrast).
 
-{ { < example >} }
+{ {< example >} }
 <p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
 <p><a class="link-opacity-25" href="#">Link opacity 25</a></p>
 <p><a class="link-opacity-50" href="#">Link opacity 50</a></p>
 <p><a class="link-opacity-75" href="#">Link opacity 75</a></p>
 <p><a class="link-opacity-100" href="#">Link opacity 100</a></p>
-{ { < /example >} }
+{ {< /example >} }
 
 You can even change the opacity level on hover.
 
-{ { < example >} }
+{ {< example >} }
 <p><a class="link-opacity-10-hover" href="#">Link hover opacity 10</a></p>
 <p><a class="link-opacity-25-hover" href="#">Link hover opacity 25</a></p>
 <p><a class="link-opacity-50-hover" href="#">Link hover opacity 50</a></p>
 <p><a class="link-opacity-75-hover" href="#">Link hover opacity 75</a></p>
 <p><a class="link-opacity-100-hover" href="#">Link hover opacity 100</a></p>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Link underlines
 
@@ -38,39 +38,39 @@ You can even change the opacity level on hover.
 
 Change the underline's color independent of the link text color.
 
-{ { < example >} }
-{ { < link-underline-colors.inline >} }
+{ {< example >} }
+{ {< link-underline-colors.inline >} }
 { {- range (index $.Site.Data "theme-colors") } }
 <p><a href="#" class="link-underline-{ { .name } }">{ { .name | title } } underline</a></p>
 { {- end -} }
-{ { < /link-underline-colors.inline >} }
-{ { < /example >} }
+{ {< /link-underline-colors.inline >} }
+{ {< /example >} }
 
 ### Underline offset
 
 Change the underline's distance from your text. Offset is set in `em` units to
 automatically scale with the element's current `font-size`.
 
-{ { < example >} }
+{ {< example >} }
 <p><a href="#">Default link</a></p>
 <p><a class="link-offset-1" href="#">Offset 1 link</a></p>
 <p><a class="link-offset-2" href="#">Offset 2 link</a></p>
 <p><a class="link-offset-3" href="#">Offset 3 link</a></p>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Underline opacity
 
 Change the underline's opacity. Requires adding `.link-underline` to first set
 an `rgba()` color we use to then modify the alpha opacity.
 
-{ { < example >} }
+{ {< example >} }
 <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-10" href="#">Underline opacity 10</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-25" href="#">Underline opacity 25</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-50" href="#">Underline opacity 50</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-75" href="#">Underline opacity 75</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Underline opacity 100</a></p>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Hover variants
 
@@ -78,11 +78,11 @@ Just like the `.link-opacity-*-hover` utilities, `.link-offset` and
 `.link-underline-opacity` utilities include `:hover` variants by default. Mix
 and match to create unique link styles.
 
-{ { < example >} }
+{ {< example >} }
 <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
 Underline opacity 0
 </a>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Colored links
 
@@ -90,18 +90,18 @@ Underline opacity 0
 updated to pair with our link utilities. Use the new utilities to modify the
 link opacity, underline opacity, and underline offset.
 
-{ { < example >} }
-{ { < colored-links.inline >} }
+{ {< example >} }
+{ {< colored-links.inline >} }
 { {- range (index $.Site.Data "theme-colors") } }
 <p><a href="#" class="link-{ { .name } } link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{ { .name | title } } link</a></p>
 { {- end -} }
-{ { < /colored-links.inline >} }
+{ {< /colored-links.inline >} }
 <p><a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis link</a></p>
-{ { < /example >} }
+{ {< /example >} }
 
-{ { < callout info >} }
-{ { < partial "callouts/warning-color-assistive-technologies.md" >} }
-{ { < /callout >} }
+{ { < callout info }}
+{ { < partial "callouts/warning-color-assistive-technologies.md" }}
+{ { < /callout }}
 
 ## CSS
 
@@ -114,4 +114,4 @@ aka CSS variables) for colors and more.
 Link utilities are declared in our utilities API in
 `scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{ { < scss-docs name="utils-links" file="scss/_utilities.scss" >} }
+{ { < scss-docs name="utils-links" file="scss/_utilities.scss" }}

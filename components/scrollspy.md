@@ -395,11 +395,11 @@ const scrollSpy = new bootstrap.ScrollSpy(document.body, {
 
 ### Options
 
-{ { < markdown > } }
-{ { < partial "js-data-attributes.md" > } }
-{ { < /markdown > } }
+{ {< markdown >} }
+{ {< partial "js-data-attributes.md" >} }
+{ {< /markdown >} }
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `rootMargin` | string | `0px 0px -25%` | Intersection
@@ -413,20 +413,20 @@ plugin. |
 `IntersectionObserver` [threshold](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold)
 valid input, when calculating scroll position. |
 
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
-{ { < callout warning > } }
+{ {< callout warning >} }
 **Deprecated Options**
 
 Up until v5.1.3 we were using `offset` & `method` options, which are now
 deprecated and replaced by `rootMargin`.
 To keep backwards compatibility, we will continue to parse a given `offset` to
 `rootMargin`, but this feature will be removed in **v6**.
-{ { < /callout > } }
+{ {< /callout >} }
 
 ### Methods
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Method | Description |
 | --- | --- |
 | `dispose` | Destroys an element's scrollspy. (Removes stored data on the DOM
@@ -438,7 +438,7 @@ associated with a DOM element, or to create a new one in case it wasn't
 initialized. |
 | `refresh` | When adding or removing elements in the DOM, you'll need to call
 the refresh method. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 Here's an example using the refresh method:
 
@@ -451,12 +451,12 @@ dataSpyList.forEach(dataSpyEl => {
 
 ### Events
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Event | Description |
 | --- | --- |
 | `activate.bs.scrollspy` | This event fires on the scroll element whenever an
 anchor is activated by the scrollspy. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ```javascript
 const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')

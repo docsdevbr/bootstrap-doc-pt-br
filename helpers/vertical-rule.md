@@ -21,30 +21,30 @@ Customize them with additional styles as needed.
 
 ## Example
 
-{ { < example >} }
+{ {< example >} }
 <div class="vr"></div>
-{ { < /example >} }
+{ {< /example >} }
 
 Vertical rules scale their height in flex layouts:
 
-{ { < example >} }
+{ {< example >} }
 <div class="d-flex" style="height: 200px;">
   <div class="vr"></div>
 </div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## With stacks
 
 They can also be used in [stacks](/helpers/stacks.md):
 
-{ { < example class="bd-example-flex" >} }
+{ { < example class="bd-example-flex" }}
 <div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="vr"></div>
   <div class="p-2">Third item</div>
 </div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## CSS
 
@@ -52,4 +52,4 @@ They can also be used in [stacks](/helpers/stacks.md):
 
 Customize the vertical rule Sass variable to change its width.
 
-{ { < scss-docs name="vr-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="vr-variables" file="scss/_variables.scss" }}

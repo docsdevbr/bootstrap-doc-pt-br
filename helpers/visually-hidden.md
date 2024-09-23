@@ -14,11 +14,11 @@ display it when it's focused (e.g. by a keyboard-only user).
 `:focus-within`, the container will be displayed when any child element of the
 container receives focus.
 
-{ { < example >} }
+{ {< example >} }
 <h2 class="visually-hidden">Title for screen readers</h2>
 <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
 <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
-{ { < /example >} }
+{ {< /example >} }
 
 Both `visually-hidden` and `visually-hidden-focusable` can also be used as
 mixins.

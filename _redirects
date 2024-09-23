@@ -9,3 +9,16 @@
 /getting-started/introduction/ /comecando/introducao 301
 /getting-started/javascript/ /comecando/javascript 301
 /getting-started/webpack/ /comecando/webpack 301
+
+# google-search
+
+/components/%7B%7B%3C%0Adocsref%20%22/:section /:section 301
+/components/%7B%7B%3C%0Adocsref%20%22%0A/:section /:section 301
+/components/%7B%7B%3C%0Adocsref%20%22/:section/ /:section/ 301
+/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/ /:section/ 301
+
+/components/%7B%7B%3C%0Adocsref%20%22/:section/:page /:section/:page 301
+/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/:page /:section/:page 301
+
+/components/%7B%7B%3C%0A%20%20docsref%20%22/:section/:page%22%20%3E%7D%7D /:section/:page 301
+/components/%7B%7B%3C%0A%20%20docsref%20%22%0A/:section/:page%22%20%3E%7D%7D /:section/:page 301

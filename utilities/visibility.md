@@ -9,10 +9,10 @@ Set the `visibility` of elements with our visibility utilities. These utility
 classes do not modify the `display` value at all and do not affect layout –
 `.invisible` elements still take up space in the page.
 
-{ { < callout warning >} }
+{ { < callout warning }}
 Elements with the `.invisible` class will be hidden *both* visually and for
 assistive technology/screen reader users.
-{ { < /callout >} }
+{ { < /callout }}
 
 Apply `.visible` or `.invisible` as needed.
 
@@ -38,4 +38,4 @@ Apply `.visible` or `.invisible` as needed.
 Visibility utilities are declared in our utilities API in
 `scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{ { < scss-docs name="utils-visibility" file="scss/_utilities.scss" >} }
+{ { < scss-docs name="utils-visibility" file="scss/_utilities.scss" }}

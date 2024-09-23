@@ -33,9 +33,9 @@ customizing the number and name of our modifier classes.
 Here are two examples of how we loop over the `$theme-colors` map to generate
 modifiers to the `.alert` and `.list-group` components.
 
-{ { < scss-docs name="alert-modifiers" file="scss/_alert.scss" >} }
+{ { < scss-docs name="alert-modifiers" file="scss/_alert.scss" }}
 
-{ { < scss-docs name="list-group-modifiers" file="scss/_list-group.scss" >} }
+{ { < scss-docs name="list-group-modifiers" file="scss/_list-group.scss" }}
 
 ## Responsive
 
@@ -44,12 +44,12 @@ responsive variations of your components. Take for example our responsive
 alignment of the dropdowns where we mix an `@each` loop for the
 `$grid-breakpoints` Sass map with a media query include.
 
-{ { < scss-docs name="responsive-breakpoints" file="scss/_dropdown.scss" >} }
+{ { < scss-docs name="responsive-breakpoints" file="scss/_dropdown.scss" }}
 
 Should you modify your `$grid-breakpoints`, your changes will apply to all the
 loops iterating over that map.
 
-{ { < scss-docs name="grid-breakpoints" file="scss/_variables.scss" >} }
+{ { < scss-docs name="grid-breakpoints" file="scss/_variables.scss" }}
 
 For more information and examples on how to modify our Sass maps and variables,
 please refer to [the CSS section of the Grid documentation](/layout/grid.md#css).
@@ -89,14 +89,14 @@ For the callouts, that unique styling is just a `border-left-color`. When you
 combine that base class with one of those modifier classes, you get your
 complete component family:
 
-{ { < callout info >} }
+{ { < callout info }}
 **This is an info callout.** Example text to show it in action.
-{ { < /callout >} }
+{ { < /callout }}
 
-{ { < callout warning >} }
+{ { < callout warning }}
 **This is a warning callout.** Example text to show it in action.
-{ { < /callout >} }
+{ { < /callout }}
 
-{ { < callout danger >} }
+{ { < callout danger }}
 **This is a danger callout.** Example text to show it in action.
-{ { < /callout >} }
+{ { < /callout }}

@@ -122,11 +122,11 @@ Learn more about your options
 at [sass-lang.com/install](https://sass-lang.com/install/)
 and [compiling with VS Code](https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css).
 
-{ { < callout info >} }
+{ { < callout info }}
 **Using Bootstrap with another build tool?** Consider reading our guides for
 compiling with [Webpack](/getting-started/webpack.md), [Parcel](/getting-started/parcel.md), or [Vite](/getting-started/vite.md). We also have production-ready demos
 in [our examples repository on GitHub](https://github.com/twbs/examples).
-{ { < /callout >} }
+{ { < /callout }}
 
 ## Including
 
@@ -298,7 +298,7 @@ lightness by a fixed amount, which often doesn't lead to the desired effect.
 `shift-color()` combines these two functions by shading the color if the weight
 is positive and tinting the color if the weight is negative.
 
-{ { < scss-docs name="color-functions" file="scss/_functions.scss" >} }
+{ { < scss-docs name="color-functions" file="scss/_functions.scss" }}
 
 In practice, you'd call the function and pass in the color and weight
 parameters.
@@ -424,7 +424,7 @@ See [the color modes documentation](/customize/color-modes.md)
 for information on our color mode mixin.
 
 { { < scss-docs name="mixin-color-scheme" file="scss/mixins/_
-color-scheme.scss" >} }
+color-scheme.scss" }}
 
 ```scss
 .custom-element {

@@ -212,5 +212,5 @@ esses recursos úteis.
   distribuição semelhantes para máximo alcance.
 
 Você também pode seguir
-[@getbootstrap no Twitter](https://twitter.com/{{  twitter }}) para as últimas
+[@getbootstrap no Twitter](https://twitter.com/{{ twitter }}) para as últimas
 fofocas e vídeos musicais incríveis.

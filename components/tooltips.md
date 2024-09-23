@@ -12,7 +12,7 @@ Things to know when using the tooltip plugin:
 
 - Tooltips rely on the third party
   library [Popper](https://popper.js.org/docs/v2/) for positioning. You must
-  include [popper.min.js]({ { < param "cdn.popper" > } }) before `bootstrap.js`, or
+  include [popper.min.js]({{ cdn.popper }}) before `bootstrap.js`, or
   use one `bootstrap.bundle.min.js` which contains Popper.
 - Tooltips are opt-in for performance reasons, so **you must initialize them
   yourself**.
@@ -30,13 +30,13 @@ Things to know when using the tooltip plugin:
 
 Got all that? Great, let's see how they work with some examples.
 
-{ { < callout info > } }
-{ { < partial "callouts/info-sanitizer.md" > } }
-{ { < /callout > } }
+{ {< callout info >} }
+{ {< partial "callouts/info-sanitizer.md" >} }
+{ {< /callout >} }
 
-{ { < callout info > } }
-{ { < partial "callouts/info-prefersreducedmotion.md" > } }
-{ { < /callout > } }
+{ {< callout info >} }
+{ {< partial "callouts/info-prefersreducedmotion.md" >} }
+{ {< /callout >} }
 
 ## Examples
 
@@ -55,17 +55,17 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 Hover over the links below to see tooltips:
 
-{ { < example class="tooltip-demo" stackblitz_add_js="true" > } }
+{ {< example class="tooltip-demo" stackblitz_add_js="true" >} }
 <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>
-{ { < /example > } }
+{ {< /example >} }
 
-{ { < callout warning > } }
-{ { < partial "callouts/warning-data-bs-title-vs-title.md" > } }
-{ { < /callout > } }
+{ {< callout warning >} }
+{ {< partial "callouts/warning-data-bs-title-vs-title.md" >} }
+{ {< /callout >} }
 
 ### Custom tooltips
 
-{ { < added-in "5.2.0" > } }
+{ {< added-in "5.2.0" >} }
 
 You can customize the appearance of tooltips using [CSS variables](#variables).
 We set a custom class with `data-bs-custom-class="custom-tooltip"` to scope our
@@ -74,14 +74,14 @@ custom appearance and use it to override a local CSS variable.
 { { < scss-docs name="custom-tooltip" file="site/assets/scss/_
 component-examples.scss" > } }
 
-{ { < example class="tooltip-demo" stackblitz_add_js="true" > } }
+{ {< example class="tooltip-demo" stackblitz_add_js="true" >} }
 <button type="button" class="btn btn-secondary"
 data-bs-toggle="tooltip" data-bs-placement="top"
 data-bs-custom-class="custom-tooltip"
 data-bs-title="This top tooltip is themed via CSS variables.">
 Custom tooltip
 </button>
-{ { < /example > } }
+{ {< /example >} }
 
 ### Directions
 
@@ -136,17 +136,17 @@ With an SVG:
 
 ### Variables
 
-{ { < added-in "5.2.0" > } }
+{ {< added-in "5.2.0" >} }
 
 As part of Bootstrap’s evolving CSS variables approach, tooltips now use local
 CSS variables on `.tooltip` for enhanced real-time customization. Values for the
 CSS variables are set via Sass, so Sass customization is still supported, too.
 
-{ { < scss-docs name="tooltip-css-vars" file="scss/_tooltip.scss" > } }
+{ {< scss-docs name="tooltip-css-vars" file="scss/_tooltip.scss" >} }
 
 ### Sass variables
 
-{ { < scss-docs name="tooltip-variables" file="scss/_variables.scss" > } }
+{ {< scss-docs name="tooltip-variables" file="scss/_variables.scss" >} }
 
 ## Usage
 
@@ -158,7 +158,7 @@ const exampleEl = document.getElementById('example')
 const tooltip = new bootstrap.Tooltip(exampleEl, options)
 ```
 
-{ { < callout warning > } }
+{ {< callout warning >} }
 Tooltips automatically attempt to change positions when a parent container has
 `overflow: auto` or `overflow: scroll`, but still keeps the original placement's
 positioning. Set the [
@@ -172,7 +172,7 @@ const tooltip = new bootstrap.Tooltip('#example', {
 })
 ```
 
-{ { < /callout > } }
+{ {< /callout >} }
 
 ### Markup
 
@@ -181,7 +181,7 @@ HTML element you wish to have a tooltip. The generated markup of a tooltip is
 rather simple, though it does require a position (by default, set to `top` by
 the plugin).
 
-{ { < callout warning > } }
+{ {< callout warning >} }
 **Keep tooltips accessible to keyboard and assistive technology users** by only
 adding them to HTML elements that are traditionally keyboard-focusable and
 interactive (such as links or form controls). While other HTML elements can be
@@ -190,7 +190,7 @@ tab stops on non-interactive elements for keyboard users, and most assistive
 technologies currently do not announce tooltips in this situation. Additionally,
 do not rely solely on `hover` as the trigger for your tooltips as this will make
 them impossible to trigger for keyboard users.
-{ { < /callout > } }
+{ {< /callout >} }
 
 ```html
 <!-- HTML to write -->
@@ -212,27 +212,27 @@ focus, hover, or click them to trigger a tooltip (or popover). As a workaround,
 you'll want to trigger the tooltip from a wrapper `<div>` or `<span>`, ideally
 made keyboard-focusable using `tabindex="0"`.
 
-{ { < example class="tooltip-demo" stackblitz_add_js="true" > } }
+{ {< example class="tooltip-demo" stackblitz_add_js="true" >} }
 <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
 <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>
-{ { < /example > } }
+{ {< /example >} }
 
 ### Options
 
-{ { < markdown > } }
-{ { < partial "js-data-attributes.md" > } }
-{ { < /markdown > } }
+{ {< markdown >} }
+{ {< partial "js-data-attributes.md" >} }
+{ {< /markdown >} }
 
-{ { < callout warning > } }
+{ {< callout warning >} }
 Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList`
 options cannot be supplied using data attributes.
-{ { < /callout > } }
+{ {< /callout >} }
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `allowList` | object | [Default value](../comecando/javascript.md#sanitizer) | Object which contains allowed
+| `allowList` | object | [Default value](../comecando/javascript.md#sanitizador) | Object which contains allowed
 attributes and tags. |
 | `animation` | boolean | `true` | Apply a CSS fade transition to the tooltip. |
 | `boundary` | string, element | `'clippingParents'` | Overflow constraint
@@ -291,7 +291,7 @@ sanitization. |
 | `selector` | string, false | `false` | If a selector is provided, tooltip
 objects will be delegated to the specified targets. In practice, this is used to
 also apply tooltips to dynamically added DOM elements (`jQuery.on` support).
-See [this issue]({ { < param repo > } }/issues/4215)
+See [this issue]({{ repo }}/issues/4215)
 and [an informative example](https://codepen.io/Johann-S/pen/djJYPb). **Note**:
 `title` attribute must not be used as a selector. |
 | `template` | string |
@@ -311,15 +311,15 @@ value cannot be combined with any other trigger. `'hover'` on its own will
 result in tooltips that cannot be triggered via the keyboard, and should only be
 used if alternative methods for conveying the same information for keyboard
 users is present. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
-{ { < callout info > } }
+{ {< callout info >} }
 
 #### Data attributes for individual tooltips
 
 Options for individual tooltips can alternatively be specified through the use
 of data attributes, as explained above.
-{ { < /callout > } }
+{ {< /callout >} }
 
 #### Using function with `popperConfig`
 
@@ -335,11 +335,11 @@ const tooltip = new bootstrap.Tooltip(element, {
 
 ### Methods
 
-{ { < callout danger > } }
-{ { < partial "callouts/danger-async-methods.md" > } }
-{ { < /callout > } }
+{ {< callout danger >} }
+{ {< partial "callouts/danger-async-methods.md" >} }
+{ {< /callout >} }
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Method | Description |
 | --- | --- |
 | `disable` | Removes the ability for an element's tooltip to be shown. The
@@ -372,7 +372,7 @@ of the tooltip. |
 | `toggleEnabled` | Toggles the ability for an element's tooltip to be shown or
 hidden. |
 | `update` | Updates the position of an element's tooltip. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ```javascript
 const tooltip = bootstrap.Tooltip.getInstance('#example') // Returns a Bootstrap tooltip instance
@@ -382,15 +382,15 @@ tooltip.setContent({ '.tooltip-inner': 'another title' })
 
 ```
 
-{ { < callout info > } }
+{ {< callout info >} }
 The `setContent` method accepts an `object` argument, where each property-key is
 a valid `string` selector within the tooltip template, and each related
 property-value can be `string` | `element` | `function` | `null`
-{ { < /callout > } }
+{ {< /callout >} }
 
 ### Events
 
-{ { < bs-table > } }
+{ {< bs-table >} }
 | Event | Description |
 | --- | --- |
 | `hide.bs.tooltip` | This event is fired immediately when the `hide` instance
@@ -403,7 +403,7 @@ when the tooltip template has been added to the DOM. |
 method is called. |
 | `shown.bs.tooltip` | This event is fired when the tooltip has been made
 visible to the user (will wait for CSS transitions to complete). |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ```javascript
 const myTooltipEl = document.getElementById('myTooltip')

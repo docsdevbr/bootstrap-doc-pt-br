@@ -13,7 +13,7 @@ body_class: "bg-body-tertiary"
   <div class="container-fluid d-flex align-items-center">
     <h1 class="d-flex align-items-center fs-4 text-white mb-0">
       <img alt="Bootstrap" class="me-3" height="30"
-           src="/docs/{ { < param docs_version >} }/assets/brand/bootstrap-logo-white.svg" width="38">
+           src="/docs/{{ docs_version }}/assets/brand/bootstrap-logo-white.svg" width="38">
       Cheatsheet
     </h1>
     <a href="/examples/cheatsheet-rtl.md" class="ms-auto link-light" hreflang="ar">RTL cheatsheet</a>
@@ -107,31 +107,31 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <p class="display-1">Display 1</p>
         <p class="display-2">Display 2</p>
         <p class="display-3">Display 3</p>
         <p class="display-4">Display 4</p>
         <p class="display-5">Display 5</p>
         <p class="display-6">Display 6</p>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <p class="h1">Heading 1</p>
         <p class="h2">Heading 2</p>
         <p class="h3">Heading 3</p>
         <p class="h4">Heading 4</p>
         <p class="h5">Heading 5</p>
         <p class="h6">Heading 6</p>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <p class="lead">
           This is a lead paragraph. It stands out from regular paragraphs.
         </p>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <p>You can use the mark tag to
           <mark>highlight</mark>
           text.
@@ -147,20 +147,20 @@ body_class: "bg-body-tertiary"
         <p><small>This line of text is meant to be treated as fine print.</small></p>
         <p><strong>This line rendered as bold text.</strong></p>
         <p><em>This line rendered as italicized text.</em></p>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <hr>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <blockquote class="blockquote">
           <p>A well-known quote, contained in a blockquote element.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <ul class="list-unstyled">
           <li>This is a list.</li>
           <li>It appears completely unstyled.</li>
@@ -175,15 +175,15 @@ body_class: "bg-body-tertiary"
           </li>
           <li>This may still come in handy in some situations.</li>
         </ul>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <ul class="list-inline">
           <li class="list-inline-item">This is a list item.</li>
           <li class="list-inline-item">And another one.</li>
           <li class="list-inline-item">But they're displayed inline.</li>
         </ul>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="images">
@@ -193,14 +193,14 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
-        { { < placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="Responsive image" >} }
-        { { < /example >} }
+        { { < example show_markup="false" }}
+        { { < placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="Responsive image" }}
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         { { < placeholder width="200" height="200" class="img-thumbnail" title="A generic square placeholder image with a
-        white border around it, making it resemble a photograph taken with an old instant camera" >} }
-        { { < /example >} }
+        white border around it, making it resemble a photograph taken with an old instant camera" }}
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="tables">
@@ -210,7 +210,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <table class="table table-striped">
           <thead>
           <tr>
@@ -240,9 +240,9 @@ body_class: "bg-body-tertiary"
           </tr>
           </tbody>
         </table>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <table class="table table-dark table-borderless">
           <thead>
           <tr>
@@ -272,9 +272,9 @@ body_class: "bg-body-tertiary"
           </tr>
           </tbody>
         </table>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <table class="table table-hover">
           <thead>
           <tr>
@@ -289,7 +289,7 @@ body_class: "bg-body-tertiary"
             <td>Cell</td>
             <td>Cell</td>
           </tr>
-          { { < table.inline >} }
+          { {< table.inline >} }
           { {- range (index $.Site.Data "theme-colors") } }
           <tr class="table-{ { .name } }">
             <th scope="row">{ { .name | title } }</th>
@@ -297,12 +297,12 @@ body_class: "bg-body-tertiary"
             <td>Cell</td>
           </tr>
           { {- end -} }
-          { { < /table.inline >} }
+          { {< /table.inline >} }
           </tbody>
         </table>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <table class="table table-sm table-bordered">
           <thead>
           <tr>
@@ -332,7 +332,7 @@ body_class: "bg-body-tertiary"
           </tr>
           </tbody>
         </table>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="figures">
@@ -342,12 +342,12 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <figure class="figure">
-          { { < placeholder width="400" height="300" class="figure-img img-fluid rounded" >} }
+          { { < placeholder width="400" height="300" class="figure-img img-fluid rounded" }}
           <figcaption class="figure-caption">A caption for the above image.</figcaption>
         </figure>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
   </section>
@@ -362,7 +362,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <form>
           <div class="mb-3">
             <label class="form-label" for="exampleInputEmail1">Email address</label>
@@ -411,7 +411,7 @@ body_class: "bg-body-tertiary"
           </div>
           <button class="btn btn-primary" type="submit">Submit</button>
         </form>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="disabled-forms">
@@ -421,7 +421,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <form>
           <fieldset aria-label="Disabled fieldset example" disabled>
             <div class="mb-3">
@@ -470,7 +470,7 @@ body_class: "bg-body-tertiary"
             <button class="btn btn-primary" type="submit">Submit</button>
           </fieldset>
         </form>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="sizing">
@@ -480,7 +480,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="mb-3">
           <input aria-label=".form-control-lg example" class="form-control form-control-lg" placeholder=".form-control-lg"
                  type="text">
@@ -496,9 +496,9 @@ body_class: "bg-body-tertiary"
         <div class="mb-3">
           <input aria-label="Large file input example" class="form-control form-control-lg" type="file">
         </div>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="mb-3">
           <input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder=".form-control-sm"
                  type="text">
@@ -514,7 +514,7 @@ body_class: "bg-body-tertiary"
         <div class="mb-3">
           <input aria-label="Small file input example" class="form-control form-control-sm" type="file">
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="input-group">
@@ -524,7 +524,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">@</span>
           <input aria-describedby="basic-addon1" aria-label="Username" class="form-control" placeholder="Username"
@@ -549,7 +549,7 @@ body_class: "bg-body-tertiary"
           <span class="input-group-text">With textarea</span>
           <textarea aria-label="With textarea" class="form-control"></textarea>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="floating-labels">
@@ -559,7 +559,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <form>
           <div class="form-floating mb-3">
             <input class="form-control" id="floatingInput" placeholder="name@example.com" type="email">
@@ -570,7 +570,7 @@ body_class: "bg-body-tertiary"
             <label for="floatingPassword">Password</label>
           </div>
         </form>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="validation">
@@ -580,7 +580,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <form class="row g-3">
           <div class="col-md-4">
             <label class="form-label" for="validationServer01">First name</label>
@@ -646,7 +646,7 @@ body_class: "bg-body-tertiary"
             <button class="btn btn-primary" type="submit">Submit form</button>
           </div>
         </form>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
   </section>
@@ -661,7 +661,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h4 class="accordion-header">
@@ -715,7 +715,7 @@ body_class: "bg-body-tertiary"
             </div>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="alerts">
@@ -725,8 +725,8 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
-        { { < alerts.inline >} }
+        { { < example show_markup="false" }}
+        { {< alerts.inline >} }
         { {- range (index $.Site.Data "theme-colors") } }
         <div class="alert alert-{ { .name } } alert-dismissible fade show" role="alert">
           A simple { { .name } } alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you
@@ -734,10 +734,10 @@ body_class: "bg-body-tertiary"
           <button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button"></button>
         </div>
         { { end -} }
-        { { < /alerts.inline >} }
-        { { < /example >} }
+        { {< /alerts.inline >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="alert alert-success" role="alert">
           <h4 class="alert-heading">Well done!</h4>
           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit
@@ -745,7 +745,7 @@ body_class: "bg-body-tertiary"
           <hr>
           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="badge">
@@ -755,7 +755,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <p class="h1">Example heading <span class="badge bg-primary">New</span></p>
         <p class="h2">Example heading <span class="badge bg-secondary">New</span></p>
         <p class="h3">Example heading <span class="badge bg-success">New</span></p>
@@ -764,15 +764,15 @@ body_class: "bg-body-tertiary"
         <p class="h6">Example heading <span class="badge text-bg-info">New</span></p>
         <p class="h6">Example heading <span class="badge text-bg-light">New</span></p>
         <p class="h6">Example heading <span class="badge bg-dark">New</span></p>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
-        { { < badge.inline >} }
+        { { < example show_markup="false" }}
+        { {< badge.inline >} }
         { {- range (index $.Site.Data "theme-colors") } }
         <span class="badge rounded-pill { { if or (eq .name " light") (eq .name "warning") (eq .name "info") } }text-{ {
         end } }bg-{ { .name } }">{ { .name | title } }</span>{ {- end -} }
-        { { < /badge.inline >} }
-        { { < /example >} }
+        { {< /badge.inline >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="breadcrumb">
@@ -782,7 +782,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -790,7 +790,7 @@ body_class: "bg-body-tertiary"
             <li aria-current="page" class="breadcrumb-item active">Data</li>
           </ol>
         </nav>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="buttons">
@@ -800,29 +800,29 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
-        { { < buttons.inline >} }
+        { { < example show_markup="false" }}
+        { {< buttons.inline >} }
         { {- range (index $.Site.Data "theme-colors") } }
         <button class="btn btn-{ { .name } }" type="button">{ { .name | title } }</button>
         { {- end -} }
-        { { < /buttons.inline >} }
+        { {< /buttons.inline >} }
 
         <button class="btn btn-link" type="button">Link</button>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
-        { { < buttons.inline >} }
+        { { < example show_markup="false" }}
+        { {< buttons.inline >} }
         { {- range (index $.Site.Data "theme-colors") } }
         <button class="btn btn-outline-{ { .name } }" type="button">{ { .name | title } }</button>
         { {- end -} }
-        { { < /buttons.inline >} }
-        { { < /example >} }
+        { {< /buttons.inline >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <button class="btn btn-primary btn-sm" type="button">Small button</button>
         <button class="btn btn-primary" type="button">Standard button</button>
         <button class="btn btn-primary btn-lg" type="button">Large button</button>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="button-group">
@@ -832,7 +832,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div aria-label="Toolbar with button groups" class="btn-toolbar" role="toolbar">
           <div aria-label="First group" class="btn-group me-2" role="group">
             <button class="btn btn-secondary" type="button">1</button>
@@ -849,7 +849,7 @@ body_class: "bg-body-tertiary"
             <button class="btn btn-secondary" type="button">8</button>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="card">
@@ -859,11 +859,11 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="row  row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
-              { { < placeholder width="100%" height="180" class="card-img-top" text="Image cap" >} }
+              { { < placeholder width="100%" height="180" class="card-img-top" text="Image cap" }}
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -910,7 +910,7 @@ body_class: "bg-body-tertiary"
             <div class="card">
               <div class="row g-0">
                 <div class="col-md-4">
-                  { { < placeholder width="100%" height="250" text="Image" >} }
+                  { { < placeholder width="100%" height="250" text="Image" }}
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -924,7 +924,7 @@ body_class: "bg-body-tertiary"
             </div>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="carousel">
@@ -934,7 +934,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
           <div class="carousel-indicators">
             <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
@@ -947,7 +947,7 @@ body_class: "bg-body-tertiary"
           <div class="carousel-inner">
             <div class="carousel-item active">
               { { < placeholder width="800" height="400" class="bd-placeholder-img-lg d-block w-100" color="#555"
-              background="#777" text="First slide" >} }
+              background="#777" text="First slide" }}
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
@@ -955,7 +955,7 @@ body_class: "bg-body-tertiary"
             </div>
             <div class="carousel-item">
               { { < placeholder width="800" height="400" class="bd-placeholder-img-lg d-block w-100" color="#444"
-              background="#666" text="Second slide" >} }
+              background="#666" text="Second slide" }}
               <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
@@ -963,7 +963,7 @@ body_class: "bg-body-tertiary"
             </div>
             <div class="carousel-item">
               { { < placeholder width="800" height="400" class="bd-placeholder-img-lg d-block w-100" color="#333"
-              background="#555" text="Third slide" >} }
+              background="#555" text="Third slide" }}
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -981,7 +981,7 @@ body_class: "bg-body-tertiary"
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="dropdowns">
@@ -991,7 +991,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
           <div class="dropdown">
             <button aria-expanded="false" class="btn btn-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown"
@@ -1042,9 +1042,9 @@ body_class: "bg-body-tertiary"
             </ul>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="btn-group">
           <button class="btn btn-primary" type="button">Primary</button>
           <button aria-expanded="false" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
@@ -1117,9 +1117,9 @@ body_class: "bg-body-tertiary"
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </div><!-- /btn-group -->
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
           <div class="dropend">
             <button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
@@ -1170,9 +1170,9 @@ body_class: "bg-body-tertiary"
             </ul>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="btn-group">
           <div class="dropdown">
             <button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
@@ -1190,7 +1190,7 @@ body_class: "bg-body-tertiary"
             </ul>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="list-group">
@@ -1200,7 +1200,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <ul class="list-group">
           <li aria-disabled="true" class="list-group-item disabled">A disabled item</li>
           <li class="list-group-item">A second item</li>
@@ -1208,9 +1208,9 @@ body_class: "bg-body-tertiary"
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li>
         </ul>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <ul class="list-group list-group-flush">
           <li class="list-group-item">An item</li>
           <li class="list-group-item">A second item</li>
@@ -1218,19 +1218,19 @@ body_class: "bg-body-tertiary"
           <li class="list-group-item">A fourth item</li>
           <li class="list-group-item">And a fifth one</li>
         </ul>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="list-group">
           <a class="list-group-item list-group-item-action" href="#">A simple default list group item</a>
-          { { < list.inline >} }
+          { {< list.inline >} }
           { {- range (index $.Site.Data "theme-colors") } }
           <a class="list-group-item list-group-item-action list-group-item-{ { .name } }" href="#">A simple { { .name } }
             list group item</a>
           { {- end -} }
-          { { < /list.inline >} }
+          { {< /list.inline >} }
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="modal">
@@ -1240,7 +1240,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="d-flex justify-content-between flex-wrap">
           <button class="btn btn-primary" data-bs-target="#exampleModalDefault" data-bs-toggle="modal" type="button">
             Launch demo modal
@@ -1256,7 +1256,7 @@ body_class: "bg-body-tertiary"
             Full screen
           </button>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="navs">
@@ -1266,16 +1266,16 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav class="nav">
           <a aria-current="page" class="nav-link active" href="#">Active</a>
           <a class="nav-link" href="#">Link</a>
           <a class="nav-link" href="#">Link</a>
           <a aria-disabled="true" class="nav-link disabled">Disabled</a>
         </nav>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav>
           <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
             <button aria-controls="nav-home" aria-selected="true" class="nav-link active" data-bs-target="#nav-home"
@@ -1309,9 +1309,9 @@ body_class: "bg-body-tertiary"
               navigation.</p>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <ul class="nav nav-pills">
           <li class="nav-item">
             <a aria-current="page" class="nav-link active" href="#">Active</a>
@@ -1326,7 +1326,7 @@ body_class: "bg-body-tertiary"
             <a aria-disabled="true" class="nav-link disabled">Disabled</a>
           </li>
         </ul>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="navbar">
@@ -1336,12 +1336,12 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img alt="Bootstrap" class="d-inline-block align-top" height="30"
-                   loading="lazy" src="/docs/{ { < param docs_version >} }/assets/brand/bootstrap-logo-white.svg" style="filter: invert(1) grayscale(100%) brightness(200%);"
+                   loading="lazy" src="/docs/{{ docs_version }}/assets/brand/bootstrap-logo-white.svg" style="filter: invert(1) grayscale(100%) brightness(200%);"
                    width="38">
             </a>
             <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -1387,7 +1387,7 @@ body_class: "bg-body-tertiary"
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img alt="Bootstrap" class="d-inline-block align-top" height="30"
-                   loading="lazy" src="/docs/{ { < param docs_version >} }/assets/brand/bootstrap-logo-white.svg" width="38">
+                   loading="lazy" src="/docs/{{ docs_version }}/assets/brand/bootstrap-logo-white.svg" width="38">
             </a>
             <button aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler" data-bs-target="#navbarSupportedContent2"
@@ -1427,7 +1427,7 @@ body_class: "bg-body-tertiary"
             </div>
           </div>
         </nav>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="pagination">
@@ -1437,7 +1437,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav aria-label="Pagination example">
           <ul class="pagination pagination-sm">
             <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1447,9 +1447,9 @@ body_class: "bg-body-tertiary"
             <li class="page-item"><a class="page-link" href="#">3</a></li>
           </ul>
         </nav>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav aria-label="Standard pagination example">
           <ul class="pagination">
             <li class="page-item">
@@ -1467,9 +1467,9 @@ body_class: "bg-body-tertiary"
             </li>
           </ul>
         </nav>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <nav aria-label="Another pagination example">
           <ul class="pagination pagination-lg flex-wrap">
             <li class="page-item disabled">
@@ -1485,7 +1485,7 @@ body_class: "bg-body-tertiary"
             </li>
           </ul>
         </nav>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="popovers">
@@ -1495,13 +1495,13 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <button class="btn btn-lg btn-danger" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-bs-toggle="popover" title="Popover title"
                 type="button">Click to toggle popover
         </button>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <button class="btn btn-secondary" data-bs-container="body" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-placement="top"
                 data-bs-toggle="popover" type="button">
           Popover on top
@@ -1518,7 +1518,7 @@ body_class: "bg-body-tertiary"
                 data-bs-toggle="popover" type="button">
           Popover on start
         </button>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="progress">
@@ -1528,7 +1528,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div aria-label="Example with label" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"
              class="progress mb-3" role="progressbar">
           <div class="progress-bar">0%</div>
@@ -1549,9 +1549,9 @@ body_class: "bg-body-tertiary"
              class="progress" role="progressbar">
           <div class="progress-bar bg-danger w-100">100%</div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
+        { { < example show_markup="false" }}
         <div class="progress-stacked">
           <div aria-label="Segment one - default example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="15"
                class="progress" role="progressbar" style="width: 15%">
@@ -1562,7 +1562,7 @@ body_class: "bg-body-tertiary"
             <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"></div>
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="scrollspy">
@@ -1629,25 +1629,25 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" >} }
-        { { < spinner.inline >} }
+        { { < example show_markup="false" }}
+        { {< spinner.inline >} }
         { {- range (index $.Site.Data "theme-colors") } }
         <div class="spinner-border text-{ { .name } }" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
         { {- end -} }
-        { { < /spinner.inline >} }
-        { { < /example >} }
+        { {< /spinner.inline >} }
+        { {< /example >} }
 
-        { { < example show_markup="false" >} }
-        { { < spinner.inline >} }
+        { { < example show_markup="false" }}
+        { {< spinner.inline >} }
         { {- range (index $.Site.Data "theme-colors") } }
         <div class="spinner-grow text-{ { .name } }" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
         { {- end -} }
-        { { < /spinner.inline >} }
-        { { < /example >} }
+        { {< /spinner.inline >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="my-3" id="toasts">
@@ -1657,11 +1657,11 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" class="bg-dark p-5 align-items-center" >} }
+        { { < example show_markup="false" class="bg-dark p-5 align-items-center" }}
         <div aria-atomic="true" aria-live="assertive" class="toast" role="alert">
           <div class="toast-header">
             { { < placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false"
-            >} }
+            }}
             <strong class="me-auto">Bootstrap</strong>
             <small class="text-body-secondary">11 mins ago</small>
             <button aria-label="Close" class="btn-close" data-bs-dismiss="toast" type="button"></button>
@@ -1670,7 +1670,7 @@ body_class: "bg-body-tertiary"
             Hello, world! This is a toast message.
           </div>
         </div>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
     <article class="mt-3 mb-5 pb-5" id="tooltips">
@@ -1680,7 +1680,7 @@ body_class: "bg-body-tertiary"
       </div>
 
       <div>
-        { { < example show_markup="false" class="tooltip-demo" >} }
+        { { < example show_markup="false" class="tooltip-demo" }}
         <button class="btn btn-secondary" data-bs-placement="top" data-bs-toggle="tooltip" title="Tooltip on top"
                 type="button">Tooltip on top
         </button>
@@ -1696,7 +1696,7 @@ body_class: "bg-body-tertiary"
         <button class="btn btn-secondary" data-bs-html="true" data-bs-toggle="tooltip" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
                 type="button">Tooltip with HTML
         </button>
-        { { < /example >} }
+        { {< /example >} }
       </div>
     </article>
   </section>

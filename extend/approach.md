@@ -13,7 +13,7 @@ Bootstrap. It explains our philosophy to building on the web so that others can
 learn from us, contribute with us, and help us improve.
 
 See something that doesn't sound right, or perhaps could be done
-better? [Open an issue]({ { < param repo >} }/issues/new/choose)—we'd love to
+better? [Open an issue]({{ repo }}/issues/new/choose)—we'd love to
 discuss it with you.
 
 ## Summary
@@ -111,7 +111,7 @@ and your browser generally provides a great deal of functionality for you.
 
 This principle is our first-class JavaScript API using `data` attributes. You
 don't need to write nearly any JavaScript to use our JavaScript plugins;
-instead, write HTML. Read more about this in [our JavaScript overview page](../comecando/javascript.md#data-attributes).
+instead, write HTML. Read more about this in [our JavaScript overview page](../comecando/javascript.md#atributos-de-dados).
 
 Lastly, our styles build on the fundamental behaviors of common web elements.
 Whenever possible, we prefer to use what the browser provides. For example, you

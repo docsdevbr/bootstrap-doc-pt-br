@@ -15,11 +15,11 @@ floating, based on the current viewport size using the [CSS
 viewport breakpoints as our grid system. Please be aware float utilities have no
 effect on flex items.
 
-{ { < example >} }
+{ {< example >} }
 <div class="float-start">Float start on all viewport sizes</div><br>
 <div class="float-end">Float end on all viewport sizes</div><br>
 <div class="float-none">Don't float on all viewport sizes</div>
-{ { < /example >} }
+{ {< /example >} }
 
 Use the [clearfix helper](/helpers/clearfix.md) on a parent
 element to clear floats.
@@ -28,26 +28,26 @@ element to clear floats.
 
 Responsive variations also exist for each `float` value.
 
-{ { < example >} }
+{ {< example >} }
 <div class="float-sm-end">Float end on viewports sized SM (small) or wider</div><br>
 <div class="float-md-end">Float end on viewports sized MD (medium) or wider</div><br>
 <div class="float-lg-end">Float end on viewports sized LG (large) or wider</div><br>
 <div class="float-xl-end">Float end on viewports sized XL (extra large) or wider</div><br>
 <div class="float-xxl-end">Float end on viewports sized XXL (extra extra large) or wider</div><br>
-{ { < /example >} }
+{ {< /example >} }
 
 Here are all the support classes:
 
-{ { < markdown >} }
-{ { < float.inline >} }
+{ { < markdown }}
+{ {< float.inline >} }
 { {- range $.Site.Data.breakpoints } }
 
 - `.float{ { .abbr } }-start`
 - `.float{ { .abbr } }-end`
 - `.float{ { .abbr } }-none`
   { {- end -} }
-  { { < /float.inline >} }
-  { { < /markdown >} }
+  { {< /float.inline >} }
+  { { < /markdown }}
 
 ## CSS
 
@@ -56,4 +56,4 @@ Here are all the support classes:
 Float utilities are declared in our utilities API in
 `scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{ { < scss-docs name="utils-float" file="scss/_utilities.scss" >} }
+{ { < scss-docs name="utils-float" file="scss/_utilities.scss" }}

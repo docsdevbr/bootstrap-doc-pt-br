@@ -15,12 +15,12 @@ reading here for how to enable RTL.
 You may also want to read up on [the RTLCSS project](https://rtlcss.com/), as it
 powers our approach to RTL.
 
-{ { < callout warning >} }
+{ { < callout warning }}
 **Bootstrap's RTL feature is still experimental** and will evolve based on user
 feedback. Spotted something or have an improvement to
-suggest? [Open an issue]({ { < param repo >} }/issues/new/choose), we'd love to get
+suggest? [Open an issue]({{ repo }}/issues/new/choose), we'd love to get
 your insights.
-{ { < /callout >} }
+{ { < /callout }}
 
 ## Required HTML
 
@@ -34,7 +34,7 @@ From there, you'll need to include an RTL version of our CSS. For example,
 here's the stylesheet for our compiled and minified CSS with RTL enabled:
 
 ```html
-<link rel="stylesheet" href="{ { < param "cdn.css_rtl" >} }" integrity="{ { < param "cdn.css_rtl_hash" >} }" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ "cdn.css_rtl" }}" integrity="{{ "cdn.css_rtl_hash" }}" crossorigin="anonymous">
 ```
 
 ### Starter template
@@ -51,7 +51,7 @@ template.
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{ { < param "cdn.css_rtl" >} }" integrity="{ { < param "cdn.css_rtl_hash" >} }" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "cdn.css_rtl" }}" integrity="{{ "cdn.css_rtl_hash" }}" crossorigin="anonymous">
 
     <title>مرحبًا بالعالم!</title>
   </head>
@@ -61,12 +61,12 @@ template.
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="{ { < param "cdn.js_bundle" >} }" integrity="{ { < param "cdn.js_bundle_hash" >} }" crossorigin="anonymous"></script>
+    <script src="{{ "cdn.js_bundle" }}" integrity="{{ "cdn.js_bundle_hash" }}" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="{ { < param "cdn.popper" >} }" integrity="{ { < param "cdn.popper_hash" >} }" crossorigin="anonymous"></script>
-    <script src="{ { < param "cdn.js" >} }" integrity="{ { < param "cdn.js_hash" >} }" crossorigin="anonymous"></script>
+    <script src="{{ "cdn.popper" }}" integrity="{{ "cdn.popper_hash" }}" crossorigin="anonymous"></script>
+    <script src="{{ "cdn.js" }}" integrity="{{ "cdn.js_hash" }}" crossorigin="anonymous"></script>
     -->
   </body>
 </html>
@@ -195,7 +195,7 @@ prepended by `.ltr`, and `.rtl` for RTL files. Now you're able to use both files
 on the same page, and simply use `.ltr` or `.rtl` on your components wrappers to
 use one or the other direction.
 
-{ { < callout warning >} }
+{ { < callout warning }}
 **Edge cases and known limitations** to consider when working with a combined
 LTR and RTL implementation:
 
@@ -207,7 +207,7 @@ LTR and RTL implementation:
 3. Nesting styles this way will prevent our `form-validation-state()` mixin from
    working as intended, thus require you tweak it a bit by
    yourself. [See #31223](https://github.com/twbs/bootstrap/issues/31223).
-   { { < /callout >} }
+   { { < /callout }}
 
 Do you want to automate this process and address several edge cases involving
 both directions within a single stylesheet? Then, consider
@@ -221,7 +221,7 @@ switch between LTR and RTL orientations by simply changing the `dir` of the
 page (or even by modifying a specific class if you configure the plugin
 accordingly).
 
-{ { < callout warning >} }
+{ { < callout warning }}
 **Important things to take into account** when using PostCSS RTLCSS to build a
 combined LTR and RTL implementation:
 
@@ -230,7 +230,7 @@ combined LTR and RTL implementation:
    Also, make sure you add the `lang` attribute accordingly.
 2. Having a single bundle with both directions will increase the size of the
    final stylesheet (on average, by 20%-30%): consider some [optimization]({ { <
-   docsref "/customize/optimize" >} }).
+   docsref "/customize/optimize" }}).
 3. Take into account that PostCSS RTLCSS is not compatible with
    `/* rtl:remove */` directives because it doesn't remove any CSS rule. You
    should replace your `/* rtl:remove */`, `/* rtl:begin:remove */` and
@@ -238,7 +238,7 @@ combined LTR and RTL implementation:
    `/* rtl:begin:ignore */` and `/* rtl:end:ignore */` directives respectively.
    These directives will ignore the rule and will not create an RTL
    counterpart (same result as the `remove` ones in RTLCSS).
-   { { < /callout >} }
+   { { < /callout }}
 
 ## The breadcrumb case
 

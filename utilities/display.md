@@ -49,15 +49,15 @@ screens.
 
 ## Examples
 
-{ { < example >} }
+{ {< example >} }
 <div class="d-inline p-2 text-bg-primary">d-inline</div>
 <div class="d-inline p-2 text-bg-dark">d-inline</div>
-{ { < /example >} }
+{ {< /example >} }
 
-{ { < example >} }
+{ {< example >} }
 <span class="d-block p-2 text-bg-primary">d-block</span>
 <span class="d-block p-2 text-bg-dark">d-block</span>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Hiding elements
 
@@ -74,7 +74,7 @@ To show an element only on a given interval of screen sizes you can combine one
 `.d-none .d-md-block .d-xl-none .d-xxl-none` will hide the element for all
 screen sizes except on medium and large devices.
 
-{ { < bs-table >} }
+{ {< bs-table >} }
 | Screen size | Class |
 | --- | --- |
 | Hidden on all | `.d-none` |
@@ -91,12 +91,12 @@ screen sizes except on medium and large devices.
 | Visible only on lg | `.d-none .d-lg-block .d-xl-none` |
 | Visible only on xl | `.d-none .d-xl-block .d-xxl-none` |
 | Visible only on xxl | `.d-none .d-xxl-block` |
-{ { < /bs-table >} }
+{ {< /bs-table >} }
 
-{ { < example >} }
+{ {< example >} }
 <div class="d-lg-none">hide on lg and wider screens</div>
 <div class="d-none d-lg-block">hide on screens smaller than lg</div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Display in print
 
@@ -118,11 +118,11 @@ responsive `.d-*` utilities.
 
 The print and display classes can be combined.
 
-{ { < example >} }
+{ {< example >} }
 <div class="d-print-none">Screen Only (Hide on print only)</div>
 <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
 <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## CSS
 
@@ -131,4 +131,4 @@ The print and display classes can be combined.
 Display utilities are declared in our utilities API in
 `scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
 
-{ { < scss-docs name="utils-display" file="scss/_utilities.scss" >} }
+{ { < scss-docs name="utils-display" file="scss/_utilities.scss" }}

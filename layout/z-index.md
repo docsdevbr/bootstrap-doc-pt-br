@@ -19,7 +19,7 @@ reasonably consistent in the behaviors. There's no reason we couldn't have used
 We don't encourage customization of these individual values; should you change
 one, you likely need to change them all.
 
-{ { < scss-docs name="zindex-stack" file="scss/_variables.scss" >} }
+{ { < scss-docs name="zindex-stack" file="scss/_variables.scss" }}
 
 To handle overlapping borders within components (e.g., buttons and inputs in
 input groups), we use low single digit `z-index` values of `1`, `2`, and `3` for

@@ -28,7 +28,7 @@ Here are our guidelines and reasons for choosing what to override in Reboot:
 
 ## CSS variables
 
-{ { < added-in "5.2.0" >} }
+{ { < added-in "5.2.0" }}
 
 With v5.1.1, we standardized our required `@import`s across all our CSS
 bundles (including `bootstrap.css`, `bootstrap-reboot.css`, and
@@ -43,11 +43,11 @@ implement.**
 
 For example, consider these `:root` CSS variables for common `<body>` styles:
 
-{ { < scss-docs name="root-body-variables" file="scss/_root.scss" >} }
+{ { < scss-docs name="root-body-variables" file="scss/_root.scss" }}
 
 In practice, those variables are then applied in Reboot like so:
 
-{ { < scss-docs name="reboot-body-rules" file="scss/_reboot.scss" >} }
+{ { < scss-docs name="reboot-body-rules" file="scss/_reboot.scss" }}
 
 Which allows you to make real-time customizations however you like:
 
@@ -125,7 +125,7 @@ All heading elements—`<h1>`—`<h6>` have their `margin-top` removed,
 their `color` by default, you can also override it via optional CSS variable,
 `--bs-heading-color`.
 
-{ { < bs-table "table" >} }
+{ { < bs-table "table" }}
 | Heading | Example |
 | --- | --- |
 | `<h1></h1>` | <span class="h1">h1. Bootstrap heading</span> |
@@ -134,16 +134,16 @@ their `color` by default, you can also override it via optional CSS variable,
 | `<h4></h4>` | <span class="h4">h4. Bootstrap heading</span> |
 | `<h5></h5>` | <span class="h5">h5. Bootstrap heading</span> |
 | `<h6></h6>` | <span class="h6">h6. Bootstrap heading</span> |
-{ { < /bs-table >} }
+{ {< /bs-table >} }
 
 ## Paragraphs
 
 All `<p>` elements have their `margin-top` removed and `margin-bottom: 1rem` set
 for easy spacing.
 
-{ { < example >} }
+{ {< example >} }
 <p>This is an example paragraph.</p>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Links
 
@@ -151,25 +151,25 @@ Links have a default `color` and underline applied. While links change on
 `:hover`, they don't change based on whether someone `:visited` the link. They
 also receive no special `:focus` styles.
 
-{ { < example >} }
+{ {< example >} }
 <a href="#">This is an example link</a>
-{ { < /example >} }
+{ {< /example >} }
 
 As of v5.3.x, link `color` is set using `rgba()` and new `-rgb` CSS variables,
 allowing for easy customization of link color opacity. Change the link color
 opacity with the `--bs-link-opacity` CSS variable:
 
-{ { < example >} }
+{ {< example >} }
 <a href="#" style="--bs-link-opacity: .5">This is an example link</a>
-{ { < /example >} }
+{ {< /example >} }
 
 Placeholder links—those without an `href`—are targeted with a more specific
 selector and have their `color` and `text-decoration` reset to their default
 values.
 
-{ { < example >} }
+{ {< example >} }
 <a>This is a placeholder link</a>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Horizontal rules
 
@@ -178,7 +178,7 @@ styled via `border-top`, have a default `opacity: .25`, and automatically
 inherit their `border-color` via `color`, including when `color` is set via the
 parent. They can be modified with text, border, and opacity utilities.
 
-{ { < example >} }
+{ {< example >} }
 <hr>
 
 <div class="text-success">
@@ -187,7 +187,7 @@ parent. They can be modified with text, border, and opacity utilities.
 
 <hr class="border border-danger border-2 opacity-50">
 <hr class="border border-primary border-3 opacity-75">
-{ { < /example >} }
+{ {< /example >} }
 
 ## Lists
 
@@ -196,7 +196,7 @@ All lists—`<ul>`, `<ol>`, and `<dl>`—have their `margin-top` removed and a
 the `padding-left` on `<ul>` and `<ol>` elements.
 
 <div class="bd-example">
-{ { < markdown >} }
+{ { < markdown }}
 * All lists have their top margin removed
 * And their bottom margin normalized
 * Nested lists have no bottom margin
@@ -208,7 +208,7 @@ the `padding-left` on `<ul>` and `<ol>` elements.
 2. With a few list items
 3. It has the same overall look
 4. As the previous unordered list
-   { { < /markdown >} }
+   { { < /markdown }}
 
 </div>
 
@@ -233,9 +233,9 @@ updated `margin`s. `<dd>`s reset `margin-left` to `0` and add
 Wrap inline snippets of code with `<code>`. Be sure to escape HTML angle
 brackets.
 
-{ { < example >} }
+{ {< example >} }
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
-{ { < /example >} }
+{ {< /example >} }
 
 ## Code blocks
 
@@ -243,38 +243,38 @@ Use `<pre>`s for multiple lines of code. Once again, be sure to escape any angle
 brackets in the code for proper rendering. The `<pre>` element is reset to
 remove its `margin-top` and use `rem` units for its `margin-bottom`.
 
-{ { < example >} }
+{ {< example >} }
 <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
 &lt;p&gt;And another line of sample text here...&lt;/p&gt;
 </code></pre>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Variables
 
 For indicating variables use the `<var>` tag.
 
-{ { < example >} }
+{ {< example >} }
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
-{ { < /example >} }
+{ {< /example >} }
 
 ## User input
 
 Use the `<kbd>` to indicate input that is typically entered via keyboard.
 
-{ { < example >} }
+{ {< example >} }
 To switch directories, type <kbd>cd</kbd> followed by the name of the
 directory.<br>
 To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Sample output
 
 For indicating sample output from a program use the `<samp>` tag.
 
-{ { < example >} }
+{ {< example >} }
 <samp>This text is meant to be treated as sample output from a computer
 program.</samp>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Tables
 
@@ -282,7 +282,7 @@ Tables are slightly adjusted to style `<caption>`s, collapse borders, and ensure
 consistent `text-align` throughout. Additional changes for borders, padding, and
 more come with [the `.table` class](/content/tables.md).
 
-{ { < example >} }
+{ {< example >} }
 <table>
   <caption>
     This is an example table, and this is its caption to describe the contents.
@@ -316,7 +316,7 @@ more come with [the `.table` class](/content/tables.md).
     </tr>
   </tbody>
 </table>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Forms
 
@@ -338,9 +338,9 @@ of the most notable changes:
 
 These changes, and more, are demonstrated below.
 
-{ { < callout warning >} }
-{ { < partial "callouts/warning-input-support.md" >} }
-{ { < /callout >} }
+{ { < callout warning }}
+{ { < partial "callouts/warning-input-support.md" }}
+{ { < /callout }}
 
 <form class="bd-example">
   <fieldset>
@@ -471,9 +471,9 @@ to `pointer`. Add this attribute to elements to help indicate elements are
 interactive. This role isn't necessary for `<button>` elements, which get their
 own `cursor` change.
 
-{ { < example >} }
+{ {< example >} }
 <span role="button" tabindex="0">Non-button element button</span>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Misc elements
 
@@ -550,11 +550,11 @@ getting accidentally overridden.
 <input type="text" hidden>
 ```
 
-{ { < callout info >} }
+{ { < callout info }}
 Since `[hidden]` is not compatible with jQuery's `$(...).hide()` and
 `$(...).show()` methods, we don't specifically endorse `[hidden]` over other
 techniques for managing the `display` of elements.
-{ { < /callout >} }
+{ { < /callout }}
 
 To merely toggle the visibility of an element, meaning its `display` is not
 modified and the element can still affect the flow of the document, use [the

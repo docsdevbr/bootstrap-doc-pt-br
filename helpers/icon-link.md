@@ -17,12 +17,12 @@ their associated text's `font-size`.
 Icon links assume [Bootstrap Icons](https://icons.getbootstrap.com) are being
 used, but you can use any icon or image you like.
 
-{ { < callout >} }
+{ { < callout }}
 When icons are purely decorative, they should be hidden from assistive
 technologies using `aria-hidden="true"`, as we've done in our examples. For
 icons that convey meaning, provide an appropriate text alternative by adding
 `role="img"` and an appropriate `aria-label="..."` to the SVGs.
-{ { < /callout >} }
+{ { < /callout }}
 
 ## Example
 
@@ -30,30 +30,30 @@ Take a regular `<a>` element, add `.icon-link`, and insert an icon on either the
 left or right of your link text. The icon is automatically sized, placed, and
 colored.
 
-{ { < example >} }
+{ {< example >} }
 <a class="icon-link" href="#">
 <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
 Icon link
 </a>
-{ { < /example >} }
+{ {< /example >} }
 
-{ { < example >} }
+{ {< example >} }
 <a class="icon-link" href="#">
 Icon link
 <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
 </a>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Style on hover
 
 Add `.icon-link-hover` to move the icon to the right on hover.
 
-{ { < example >} }
+{ {< example >} }
 <a class="icon-link icon-link-hover" href="#">
 Icon link
 <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
 </a>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Customize
 
@@ -68,36 +68,36 @@ change the default appearance.
 Customize the hover `transform` by overriding the `--bs-icon-link-transform` CSS
 variable:
 
-{ { < example >} }
+{ {< example >} }
 <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
 <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
 Icon link
 </a>
-{ { < /example >} }
+{ {< /example >} }
 
 Customize the color by overriding the `--bs-link-*` CSS variable:
 
-{ { < example >} }
+{ {< example >} }
 <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
 Icon link
 <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
 </a>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Sass variables
 
 Customize the icon link Sass variables to modify all icon link styles across
 your Bootstrap-powered project.
 
-{ { < scss-docs name="icon-link-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="icon-link-variables" file="scss/_variables.scss" }}
 
 ### Sass utilities API
 
 Modify icon links with any of [our link utilities](/utilities/link/.md) for modifying underline color and offset.
 
-{ { < example >} }
+{ {< example >} }
 <a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">
 Icon link
 <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
 </a>
-{ { < /example >} }
+{ {< /example >} }

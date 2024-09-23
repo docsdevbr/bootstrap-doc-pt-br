@@ -8,7 +8,7 @@ group: about
 Bootstrap is maintained by the founding team and a small group of invaluable
 core contributors, with the massive support and involvement of our community.
 
-{ { < team.inline >} }
+{ {< team.inline >} }
 <div class="list-group mb-3">
   { {- range (index $.Site.Data "core-team") } }
     <a class="list-group-item list-group-item-action d-flex align-items-center" href="https://github.com/{ { .user } }">
@@ -19,7 +19,7 @@ core contributors, with the massive support and involvement of our community.
     </a>
   { { end -} }
 </div>
-{ { < /team.inline >} }
+{ { < /team.inline } }
 
-Get involved with Bootstrap development by [opening an issue]({ { < param repo >} }/issues/new/choose) or submitting a pull request. Read
-our [contributing guidelines]({ { < param repo >} }/blob/v{ { < param current_version >} }/.github/CONTRIBUTING.md) for information on how we develop.
+Get involved with Bootstrap development by [opening an issue]({{ repo }}/issues/new/choose) or submitting a pull request. Read
+our [contributing guidelines]({{ repo }}/blob/v{{ current_version }}/.github/CONTRIBUTING.md) for information on how we develop.

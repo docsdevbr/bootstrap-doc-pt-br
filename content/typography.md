@@ -29,7 +29,7 @@ defined in `_variables.scss`. Make sure to set `$font-size-base` in `rem`.
 
 All HTML headings, `<h1>` through `<h6>`, are available.
 
-{ { < bs-table >} }
+{ {< bs-table >} }
 | Heading | Example |
 | --- | --- |
 | `<h1></h1>` | <span class="h1">h1. Bootstrap heading</span> |
@@ -38,7 +38,7 @@ All HTML headings, `<h1>` through `<h6>`, are available.
 | `<h4></h4>` | <span class="h4">h4. Bootstrap heading</span> |
 | `<h5></h5>` | <span class="h5">h5. Bootstrap heading</span> |
 | `<h6></h6>` | <span class="h6">h6. Bootstrap heading</span> |
-{ { < /bs-table >} }
+{ {< /bs-table >} }
 
 ```html
 <h1>h1. Bootstrap heading</h1>
@@ -52,26 +52,26 @@ All HTML headings, `<h1>` through `<h6>`, are available.
 `.h1` through `.h6` classes are also available, for when you want to match the
 font styling of a heading but cannot use the associated HTML element.
 
-{ { < example >} }
+{ {< example >} }
 <p class="h1">h1. Bootstrap heading</p>
 <p class="h2">h2. Bootstrap heading</p>
 <p class="h3">h3. Bootstrap heading</p>
 <p class="h4">h4. Bootstrap heading</p>
 <p class="h5">h5. Bootstrap heading</p>
 <p class="h6">h6. Bootstrap heading</p>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Customizing headings
 
 Use the included utility classes to recreate the small secondary heading text
 from Bootstrap 3.
 
-{ { < example >} }
+{ {< example >} }
 <h3>
 Fancy display heading
 <small class="text-body-secondary">With faded secondary text</small>
 </h3>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Display headings
 
@@ -103,23 +103,23 @@ variables, `$display-font-weight` and `$display-line-height`.
 Display headings are customizable via two variables, `$display-font-family` and
 `$display-font-style`.
 
-{ { < scss-docs name="display-headings" file="scss/_variables.scss" >} }
+{ { < scss-docs name="display-headings" file="scss/_variables.scss" }}
 
 ## Lead
 
 Make a paragraph stand out by adding `.lead`.
 
-{ { < example >} }
+{ {< example >} }
 <p class="lead">
   This is a lead paragraph. It stands out from regular paragraphs.
 </p>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Inline text elements
 
 Styling for common inline HTML5 elements.
 
-{ { < example >} }
+{ {< example >} }
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
 <p><del>This line of text is meant to be treated as deleted text.</del></p>
 <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -128,7 +128,7 @@ Styling for common inline HTML5 elements.
 <p><small>This line of text is meant to be treated as fine print.</small></p>
 <p><strong>This line rendered as bold text.</strong></p>
 <p><em>This line rendered as italicized text.</em></p>
-{ { < /example >} }
+{ {< /example >} }
 
 Beware that those tags should be used for semantic purpose:
 
@@ -166,21 +166,21 @@ users of assistive technologies.
 
 Add `.initialism` to an abbreviation for a slightly smaller font-size.
 
-{ { < example >} }
+{ {< example >} }
 <p><abbr title="attribute">attr</abbr></p>
 <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Blockquotes
 
 For quoting blocks of content from another source within your document. Wrap
 `<blockquote class="blockquote">` around any HTML as the quote.
 
-{ { < example >} }
+{ {< example >} }
 <blockquote class="blockquote">
   <p>A well-known quote, contained in a blockquote element.</p>
 </blockquote>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Naming a source
 
@@ -190,7 +190,7 @@ The HTML spec requires that blockquote attribution be placed outside the
 the `.blockquote-footer` class. Be sure to wrap the name of the source work in
 `<cite>` as well.
 
-{ { < example >} }
+{ {< example >} }
 <figure>
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
@@ -199,13 +199,13 @@ the `.blockquote-footer` class. Be sure to wrap the name of the source work in
     Someone famous in <cite title="Source Title">Source Title</cite>
   </figcaption>
 </figure>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Alignment
 
 Use text utilities as needed to change the alignment of your blockquote.
 
-{ { < example >} }
+{ {< example >} }
 <figure class="text-center">
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
@@ -214,9 +214,9 @@ Use text utilities as needed to change the alignment of your blockquote.
     Someone famous in <cite title="Source Title">Source Title</cite>
   </figcaption>
 </figure>
-{ { < /example >} }
+{ {< /example >} }
 
-{ { < example >} }
+{ {< example >} }
 <figure class="text-end">
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
@@ -225,7 +225,7 @@ Use text utilities as needed to change the alignment of your blockquote.
     Someone famous in <cite title="Source Title">Source Title</cite>
   </figcaption>
 </figure>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Lists
 
@@ -235,7 +235,7 @@ Remove the default `list-style` and left margin on list items (immediate
 children only). **This only applies to immediate children list items**, meaning
 you will need to add the class for any nested lists as well.
 
-{ { < example >} }
+{ {< example >} }
 <ul class="list-unstyled">
   <li>This is a list.</li>
   <li>It appears completely unstyled.</li>
@@ -250,20 +250,20 @@ you will need to add the class for any nested lists as well.
   </li>
   <li>This may still come in handy in some situations.</li>
 </ul>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Inline
 
 Remove a list's bullets and apply some light `margin` with a combination of two
 classes, `.list-inline` and `.list-inline-item`.
 
-{ { < example >} }
+{ {< example >} }
 <ul class="list-inline">
   <li class="list-inline-item">This is a list item.</li>
   <li class="list-inline-item">And another one.</li>
   <li class="list-inline-item">But they're displayed inline.</li>
 </ul>
-{ { < /example >} }
+{ {< /example >} }
 
 ### Description list alignment
 
@@ -271,7 +271,7 @@ Align terms and descriptions horizontally by using our grid system's predefined
 classes (or semantic mixins). For longer terms, you can optionally add a
 `.text-truncate` class to truncate the text with an ellipsis.
 
-{ { < example >} }
+{ {< example >} }
 <dl class="row">
   <dt class="col-sm-3">Description lists</dt>
   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
@@ -296,7 +296,7 @@ classes (or semantic mixins). For longer terms, you can optionally add a
     </dl>
   </dd>
 </dl>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Responsive font sizes
 
@@ -311,11 +311,11 @@ works.
 
 Headings have some dedicated variables for sizing and spacing.
 
-{ { < scss-docs name="headings-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="headings-variables" file="scss/_variables.scss" }}
 
 Miscellaneous typography elements covered here and in [Reboot](/content/reboot.md) also have dedicated variables.
 
-{ { < scss-docs name="type-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="type-variables" file="scss/_variables.scss" }}
 
 ### Sass mixins
 

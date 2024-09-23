@@ -38,9 +38,9 @@ myModal.addEventListener('shown.bs.modal', () => {
 })
 ```
 
-{ { < callout info > } }
-{ { < partial "callouts/info-prefersreducedmotion.md" > } }
-{ { < /callout > } }
+{ {< callout info >} }
+{ {< partial "callouts/info-prefersreducedmotion.md" >} }
+{ {< /callout >} }
 
 Keep reading for demos and usage guidelines.
 
@@ -94,13 +94,13 @@ action.
 </div>
 ```
 
-{ { < callout info > } }
+{ {< callout info >} }
 In the above static example, we use `<h5>`, to avoid issues with the heading
 hierarchy in the documentation page. Structurally, however, a modal dialog
 represents its own separate document/context, so the `.modal-title` should
 ideally be an `<h1>`. If necessary, you can use the [font size utilities](/utilities/text.md#font-size) to control the heading's appearance.
 All the following live examples use this approach.
-{ { < /callout > } }
+{ {< /callout >} }
 
 ### Live demo
 
@@ -480,7 +480,7 @@ Below is a live demo followed by example HTML and JavaScript. For more
 information, [read the modal events docs](#events) for details on
 `relatedTarget`.
 
-{ { < example stackblitz_add_js="true" > } }
+{ {< example stackblitz_add_js="true" >} }
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
 Open modal for @mdo</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">
@@ -514,7 +514,7 @@ Open modal for @getbootstrap</button>
     </div>
   </div>
 </div>
-{ { < /example > } }
+{ {< /example >} }
 
 { { < js-docs name="varying-modal-content" file="
 site/assets/js/partials/snippets.js" > } }
@@ -527,7 +527,7 @@ a password reset modal from within an already open sign in modal. **Please note
 multiple modals cannot be open at the same time**—this method simply toggles
 between two separate modals.
 
-{ { < example > } }
+{ {< example >} }
 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -561,7 +561,7 @@ between two separate modals.
   </div>
 </div>
 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
-{ { < /example > } }
+{ {< /example >} }
 
 ### Change animation
 
@@ -610,14 +610,14 @@ Modals have three optional sizes, available via modifier classes to be placed on
 a `.modal-dialog`. These sizes kick in at certain breakpoints to avoid
 horizontal scrollbars on narrower viewports.
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Size | Class | Modal max-width
 | --- | --- | --- |
 | Small | `.modal-sm` | `300px` |
 | Default | <span class="text-body-secondary">None</span> | `500px` |
 | Large | `.modal-lg` | `800px` |
 | Extra large | `.modal-xl` | `1140px` |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 Our default modal without modifier class constitutes the "medium" size modal.
 
@@ -680,7 +680,7 @@ Our default modal without modifier class constitutes the "medium" size modal.
 Another override is the option to pop up a modal that covers the user viewport,
 available via modifier classes that are placed on a `.modal-dialog`.
 
-{ { < bs-table > } }
+{ {< bs-table >} }
 | Class | Availability |
 | --- | --- |
 | `.modal-fullscreen` | Always |
@@ -689,7 +689,7 @@ available via modifier classes that are placed on a `.modal-dialog`.
 | `.modal-fullscreen-lg-down` | `992px` |
 | `.modal-fullscreen-xl-down` | `1200px` |
 | `.modal-fullscreen-xxl-down` | `1400px` |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
@@ -813,27 +813,27 @@ available via modifier classes that are placed on a `.modal-dialog`.
 
 ### Variables
 
-{ { < added-in "5.2.0" > } }
+{ {< added-in "5.2.0" >} }
 
 As part of Bootstrap's evolving CSS variables approach, modals now use local CSS
 variables on `.modal` and `.modal-backdrop` for enhanced real-time
 customization. Values for the CSS variables are set via Sass, so Sass
 customization is still supported, too.
 
-{ { < scss-docs name="modal-css-vars" file="scss/_modal.scss" > } }
+{ {< scss-docs name="modal-css-vars" file="scss/_modal.scss" >} }
 
-{ { < scss-docs name="modal-backdrop-css-vars" file="scss/_modal.scss" > } }
+{ {< scss-docs name="modal-backdrop-css-vars" file="scss/_modal.scss" >} }
 
 ### Sass variables
 
-{ { < scss-docs name="modal-variables" file="scss/_variables.scss" > } }
+{ {< scss-docs name="modal-variables" file="scss/_variables.scss" >} }
 
 ### Sass loops
 
 [Responsive fullscreen modals](#fullscreen-modal) are generated via the
 `$breakpoints` map and a loop in `scss/_modal.scss`.
 
-{ { < scss-docs name="modal-fullscreen-loop" file="scss/_modal.scss" > } }
+{ {< scss-docs name="modal-fullscreen-loop" file="scss/_modal.scss" >} }
 
 ## Usage
 
@@ -858,12 +858,12 @@ controller element, like a button, along with a `data-bs-target="#foo"` or
 
 { { % js-dismiss "modal" % } }
 
-{ { < callout warning > } }
+{ {< callout warning >} }
 While both ways to dismiss a modal are supported, keep in mind that dismissing
 from outside a modal does not match
 the [ARIA Authoring Practices Guide dialog (modal) pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/).
 Do this at your own risk.
-{ { < /callout > } }
+{ {< /callout >} }
 
 ### Via JavaScript
 
@@ -877,11 +877,11 @@ const myModalAlternative = new bootstrap.Modal('#myModal', options)
 
 ### Options
 
-{ { < markdown > } }
-{ { < partial "js-data-attributes.md" > } }
-{ { < /markdown > } }
+{ {< markdown >} }
+{ {< partial "js-data-attributes.md" >} }
+{ {< /markdown >} }
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `backdrop` | boolean, `'static'` | `true` | Includes a modal-backdrop element.
@@ -889,13 +889,13 @@ Alternatively, specify `static` for a backdrop which doesn't close the modal
 when clicked. |
 | `focus` | boolean | `true` | Puts the focus on the modal when initialized. |
 | `keyboard` | boolean | `true` | Closes the modal when escape key is pressed. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ### Methods
 
-{ { < callout danger > } }
-{ { < partial "callouts/danger-async-methods.md" > } }
-{ { < /callout > } }
+{ {< callout danger >} }
+{ {< partial "callouts/danger-async-methods.md" >} }
+{ {< /callout >} }
 
 #### Passing options
 
@@ -907,7 +907,7 @@ const myModal = new bootstrap.Modal('#myModal', {
 })
 ```
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Method | Description |
 | --- | --- |
 | `dispose` | Destroys an element's modal. (Removes stored data on the DOM
@@ -929,7 +929,7 @@ as the `relatedTarget` property). (i.e.
 | `toggle` | Manually toggles a modal. **Returns to the caller before the modal
 has actually been shown or hidden** (i.e. before the `shown.bs.modal` or
 `hidden.bs.modal` event occurs). |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ### Events
 
@@ -937,7 +937,7 @@ Bootstrap's modal class exposes a few events for hooking into modal
 functionality. All modal events are fired at the modal itself (i.e. at the
 `<div class="modal">`).
 
-{ { < bs-table > } }
+{ {< bs-table >} }
 | Event | Description |
 | --- | --- |
 | `hide.bs.modal` | This event is fired immediately when the `hide` instance
@@ -954,7 +954,7 @@ is called. If caused by a click, the clicked element is available as the
 | `shown.bs.modal` | This event is fired when the modal has been made visible to
 the user (will wait for CSS transitions to complete). If caused by a click, the
 clicked element is available as the `relatedTarget` property of the event. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ```javascript
 const myModalEl = document.getElementById('myModal')

@@ -14,9 +14,9 @@ Collapsing an element will animate the `height` from its current value to `0`.
 Given how CSS handles animations, you cannot use `padding` on a `.collapse`
 element. Instead, use the class as an independent wrapping element.
 
-{ { < callout info > } }
-{ { < partial "callouts/info-prefersreducedmotion.md" > } }
-{ { < /callout > } }
+{ {< callout info >} }
+{ {< partial "callouts/info-prefersreducedmotion.md" >} }
+{ {< /callout >} }
 
 ## Example
 
@@ -31,7 +31,7 @@ While not recommended from a semantic point of view, you can also use an `<a>`
 link with the `href` attribute (and a `role="button"`). In both cases, the
 `data-bs-toggle="collapse"` is required.
 
-{ { < example > } }
+{ {< example >} }
 <p class="d-inline-flex gap-1">
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link with href
@@ -45,7 +45,7 @@ link with the `href` attribute (and a `role="button"`). In both cases, the
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Horizontal
 
@@ -54,13 +54,13 @@ The collapse plugin supports horizontal collapsing. Add the
 `height` and set a `width` on the immediate child element. Feel free to write
 your own custom Sass, use inline styles, or use our [width utilities](/utilities/sizing.md).
 
-{ { < callout info > } }
+{ {< callout info >} }
 Please note that while the example below has a `min-height` set to avoid
 excessive repaints in our docs, this is not explicitly required. **Only
 the `width` on the child element is required.**
-{ { < /callout > } }
+{ {< /callout >} }
 
-{ { < example > } }
+{ {< example >} }
 <p>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
     Toggle width collapse
@@ -73,7 +73,7 @@ the `width` on the child element is required.**
     </div>
   </div>
 </div>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Multiple toggles and targets
 
@@ -83,7 +83,7 @@ Conversely, multiple `<button>` or `<a>` elements can show and hide the same
 element if they each reference it with their `data-bs-target` or `href`
 attribute.
 
-{ { < example > } }
+{ {< example >} }
 <p class="d-inline-flex gap-1">
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
@@ -105,7 +105,7 @@ attribute.
     </div>
   </div>
 </div>
-{ { < /example > } }
+{ {< /example >} }
 
 ## Accessibility
 
@@ -138,14 +138,14 @@ you will need to include these yourself with custom JavaScript.
 
 ### Sass variables
 
-{ { < scss-docs name="collapse-transition" file="scss/_variables.scss" > } }
+{ {< scss-docs name="collapse-transition" file="scss/_variables.scss" >} }
 
 ### Classes
 
 Collapse transition classes can be found in `scss/_transitions.scss` as these
 are shared across multiple components (collapse and accordion).
 
-{ { < scss-docs name="collapse-classes" file="scss/_transitions.scss" > } }
+{ {< scss-docs name="collapse-classes" file="scss/_transitions.scss" >} }
 
 ## Usage
 
@@ -180,11 +180,11 @@ const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Co
 
 ### Options
 
-{ { < markdown > } }
-{ { < partial "js-data-attributes.md" > } }
-{ { < /markdown > } }
+{ {< markdown >} }
+{ {< partial "js-data-attributes.md" >} }
+{ {< /markdown >} }
 
-{ { < bs-table "table" > } }
+{ {< bs-table "table" >} }
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 `parent` | selector, DOM element | `null` | If parent is provided, then all
@@ -193,13 +193,13 @@ collapsible item is shown. (similar to traditional accordion behavior - this is
 dependent on the `card` class). The attribute has to be set on the target
 collapsible area. |
 `toggle` | boolean | `true` | Toggles the collapsible element on invocation. |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ### Methods
 
-{ { < callout danger > } }
-{ { < partial "callouts/danger-async-methods.md" > } }
-{ { < /callout > } }
+{ {< callout danger >} }
+{ {< partial "callouts/danger-async-methods.md" >} }
+{ {< /callout >} }
 
 Activates your content as a collapsible element. Accepts an optional options
 `object`.
@@ -212,7 +212,7 @@ const bsCollapse = new bootstrap.Collapse('#myCollapse', {
 })
 ```
 
-{ { < bs-table > } }
+{ {< bs-table >} }
 | Method | Description |
 | --- | --- |
 | `dispose` | Destroys an element's collapse. (Removes stored data on the DOM
@@ -232,14 +232,14 @@ collapsible element has actually been shown** (e.g., before the
 | `toggle` | Toggles a collapsible element to shown or hidden. **Returns to the
 caller before the collapsible element has actually been shown or hidden** (i.e.
 before the `shown.bs.collapse` or `hidden.bs.collapse` event occurs). |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ### Events
 
 Bootstrap's collapse class exposes a few events for hooking into collapse
 functionality.
 
-{ { < bs-table > } }
+{ {< bs-table >} }
 | Event type | Description |
 | --- | --- |
 | `hide.bs.collapse` | This event is fired immediately when the `hide` method
@@ -250,7 +250,7 @@ hidden from the user (will wait for CSS transitions to complete). |
 method is called. |
 | `shown.bs.collapse` | This event is fired when a collapse element has been
 made visible to the user (will wait for CSS transitions to complete). |
-{ { < /bs-table > } }
+{ {< /bs-table >} }
 
 ```javascript
 const myCollapsible = document.getElementById('myCollapsible')

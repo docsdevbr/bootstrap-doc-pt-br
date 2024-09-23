@@ -18,7 +18,7 @@ The `$utilities` map contains all our utilities and is later merged with your
 custom `$utilities` map, if present. The utility map contains a keyed list of
 utility groups which accept the following options:
 
-{ { < bs-table "table table-utilities" >} }
+{ { < bs-table "table table-utilities" }}
 | Option | Type | Default&nbsp;value | Description |
 | --- | --- | --- | --- |
 | [`property`](#property) | **Required** | – | Name of the property, this can be
@@ -45,7 +45,7 @@ responsive classes should be generated. |
 need to be generated. |
 | `rtl` | Optional | `true` | Boolean indicating if utility should be kept in
 RTL. |
-{ { < /bs-table >} }
+{ {< /bs-table >} }
 
 ## API explained
 

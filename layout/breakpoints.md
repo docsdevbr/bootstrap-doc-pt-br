@@ -30,7 +30,7 @@ Bootstrap includes six default breakpoints, sometimes referred to as _grid
 tiers_, for building responsively. These breakpoints can be customized if you're
 using our source Sass files.
 
-{ { < bs-table "table" >} }
+{ { < bs-table "table" }}
 | Breakpoint | Class infix | Dimensions |
 | --- | --- | --- |
 | Extra small | <em>None</em> |&lt;576px |
@@ -39,7 +39,7 @@ using our source Sass files.
 | Large | `lg` | &ge;992px |
 | Extra large | `xl` | &ge;1200px |
 | Extra extra large | `xxl` | &ge;1400px |
-{ { < /bs-table >} }
+{ {< /bs-table >} }
 
 Each breakpoint was chosen to comfortably hold containers whose widths are
 multiples of 12. Breakpoints are also representative of a subset of common
@@ -50,7 +50,7 @@ to build on for nearly any device.
 These breakpoints are customizable via Sass—you'll find them in a Sass map in
 our `_variables.scss` stylesheet.
 
-{ { < scss-docs name="grid-breakpoints" file="scss/_variables.scss" >} }
+{ { < scss-docs name="grid-breakpoints" file="scss/_variables.scss" }}
 
 For more information and examples on how to modify our Sass maps and variables,
 please refer to [the CSS section of the Grid documentation](/layout/grid.md#css).
@@ -158,9 +158,9 @@ use them as our `max-width` values. For example:
 @media (max-width: 1399.98px) { ... }
 ```
 
-{ { < callout warning >} }
-{ { < partial "callouts/info-mediaqueries-breakpoints.md" >} }
-{ { < /callout >} }
+{ { < callout warning }}
+{ { < partial "callouts/info-mediaqueries-breakpoints.md" }}
+{ { < /callout }}
 
 ### Single breakpoint
 

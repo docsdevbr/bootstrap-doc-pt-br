@@ -11,7 +11,7 @@ toc: true
 Form controls are styled with a mix of Sass and CSS variables, allowing them to
 adapt to color modes and support any customization method.
 
-{ { < example >} }
+{ {< example >} }
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -20,44 +20,44 @@ adapt to color modes and support any customization method.
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Sizing
 
 Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 
-{ { < example >} }
+{ {< example >} }
 <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
 <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
-{ { < /example >} }
+{ {< /example >} }
 
 ## Form text
 
 Block-level or inline-level form text can be created using `.form-text`.
 
-{ { < callout warning >} }
+{ { < callout warning }}
 Form text should be explicitly associated with the form control it relates to
 using the `aria-describedby` attribute. This will ensure that assistive
 technologies—such as screen readers—will announce this form text when the user
 focuses or enters the control.
-{ { < /callout >} }
+{ { < /callout }}
 
 Form text below inputs can be styled with `.form-text`. If a block-level element
 will be used, a top margin is added for easy spacing from the inputs above.
 
-{ { < example >} }
+{ {< example >} }
 <label for="inputPassword5" class="form-label">Password</label>
 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
 <div id="passwordHelpBlock" class="form-text">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </div>
-{ { < /example >} }
+{ {< /example >} }
 
 Inline text can use any typical inline HTML element (be it a `<span>`,
 `<small>`, or something else) with nothing more than the `.form-text` class.
 
-{ { < example >} }
+{ {< example >} }
 <div class="row g-3 align-items-center">
   <div class="col-auto">
     <label for="inputPassword6" class="col-form-label">Password</label>
@@ -71,17 +71,17 @@ Inline text can use any typical inline HTML element (be it a `<span>`,
     </span>
   </div>
 </div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Disabled
 
 Add the `disabled` boolean attribute on an input to give it a grayed out
 appearance, remove pointer events, and prevent focusing.
 
-{ { < example >} }
+{ {< example >} }
 <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
 <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Readonly
 
@@ -89,9 +89,9 @@ Add the `readonly` boolean attribute on an input to prevent modification of the
 input's value. `readonly` inputs can still be focused and selected, while
 `disabled` inputs cannot.
 
-{ { < example >} }
+{ {< example >} }
 <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Readonly plain text
 
@@ -99,7 +99,7 @@ If you want to have `<input readonly>` elements in your form styled as plain
 text, replace `.form-control` with `.form-control-plaintext` to remove the
 default form field styling and preserve the correct `margin` and `padding`.
 
-{ { < example >} }
+{ {< example >} }
   <div class="mb-3 row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
@@ -112,9 +112,9 @@ default form field styling and preserve the correct `margin` and `padding`.
       <input type="password" class="form-control" id="inputPassword">
     </div>
   </div>
-{ { < /example >} }
+{ {< /example >} }
 
-{ { < example >} }
+{ {< example >} }
 <form class="row g-3">
   <div class="col-auto">
     <label for="staticEmail2" class="visually-hidden">Email</label>
@@ -128,11 +128,11 @@ default form field styling and preserve the correct `margin` and `padding`.
     <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
   </div>
 </form>
-{ { < /example >} }
+{ {< /example >} }
 
 ## File input
 
-{ { < example >} }
+{ {< example >} }
 <div class="mb-3">
   <label for="formFile" class="form-label">Default file input example</label>
   <input class="form-control" type="file" id="formFile">
@@ -153,7 +153,7 @@ default form field styling and preserve the correct `margin` and `padding`.
   <label for="formFileLg" class="form-label">Large file input example</label>
   <input class="form-control form-control-lg" id="formFileLg" type="file">
 </div>
-{ { < /example >} }
+{ {< /example >} }
 
 ## Color
 
@@ -161,10 +161,10 @@ Set the `type="color"` and add `.form-control-color` to the `<input>`. We use
 the modifier class to set fixed `height`s and override some inconsistencies
 between browsers.
 
-{ { < example >} }
+{ {< example >} }
 <label for="exampleColorInput" class="form-label">Color picker</label>
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
-{ { < /example >} }
+{ {< /example >} }
 
 ## Datalists
 
@@ -176,7 +176,7 @@ elements, their styling is inconsistent at best.
 
 Learn more about [support for datalist elements](https://caniuse.com/datalist).
 
-{ { < example >} }
+{ {< example >} }
 <label for="exampleDataList" class="form-label">Datalist example</label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
 <datalist id="datalistOptions">
@@ -186,7 +186,7 @@ Learn more about [support for datalist elements](https://caniuse.com/datalist).
   <option value="Los Angeles">
   <option value="Chicago">
 </datalist>
-{ { < /example >} }
+{ {< /example >} }
 
 ## CSS
 
@@ -194,15 +194,15 @@ Learn more about [support for datalist elements](https://caniuse.com/datalist).
 
 `$input-*` are shared across most of our form controls (and not buttons).
 
-{ { < scss-docs name="form-input-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="form-input-variables" file="scss/_variables.scss" }}
 
 `$form-label-*` and `$form-text-*` are for our `<label>`s and `.form-text`
 component.
 
-{ { < scss-docs name="form-label-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="form-label-variables" file="scss/_variables.scss" }}
 
-{ { < scss-docs name="form-text-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="form-text-variables" file="scss/_variables.scss" }}
 
 `$form-file-*` are for file input.
 
-{ { < scss-docs name="form-file-variables" file="scss/_variables.scss" >} }
+{ { < scss-docs name="form-file-variables" file="scss/_variables.scss" }}

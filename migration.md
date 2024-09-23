@@ -94,7 +94,7 @@ changes listed below.
   match their associated utilities.
 
 - Added new `.link-body-emphasis` helper alongside our [colored links]({ { <
-  docsref "/helpers/colored-links" >} }). This creates a colored link using our
+  docsref "/helpers/colored-links" }}). This creates a colored link using our
   color mode responsive emphasis color.
 
 - Added new link utilities for link color opacity, underline offset, underline
@@ -225,7 +225,7 @@ Learn more by reading the new [color modes documentation](/customize/color-modes
 
 - <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span>
   The `alert-variant()` mixin is now deprecated. We now [use a Sass loop]({ { <
-  docsref "/components/alerts#sass-loops" >} }) directly to modify the
+  docsref "/components/alerts#sass-loops" }}) directly to modify the
   component's default CSS variables for each variant.
 
 #### List group
@@ -515,7 +515,7 @@ changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/pr
 
 - **Added new stack and vertical rule helpers. —** Quickly apply multiple
   flexbox properties to quickly create custom layouts with [stacks]({ { <
-  docsref "/helpers/stacks/" >} }). Choose from horizontal (`.hstack`) and
+  docsref "/helpers/stacks/" }}). Choose from horizontal (`.hstack`) and
   vertical (`.vstack`) stacks. Add vertical dividers similar to `<hr>` elements
   with the [new `.vr` helpers](/helpers/vertical-rule/.md).
 
@@ -535,7 +535,7 @@ changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/pr
   ** Pull ready to use customized components and other common design patterns
   with our new [Snippets examples](/examples.md#snippets).
   Includes [footers](/examples/footers/.md), [dropdowns]({ { <
-  docsref "/examples/dropdowns/" >} }), [list groups](  /examples/list-groups/.md), and [modals](  /examples/modals/.md).
+  docsref "/examples/dropdowns/" }}), [list groups](  /examples/list-groups/.md), and [modals](  /examples/modals/.md).
 
 - **Removed unused positioning styles from popovers and tooltips** as these are
   handled solely by Popper. `$tooltip-margin` has been deprecated and set to
@@ -548,10 +548,10 @@ information? [Read the v5.1.0 blog post.](https://blog.getbootstrap.com/2021/08/
 
 <hr class="mb-4">
 
-{ { < callout info >} }
+{ { < callout info }}
 **Hey there!** Changes to our first major release of Bootstrap 5, v5.0.0, are
 documented below. They don't reflect the additional changes shown above.
-{ { < /callout >} }
+{ { < /callout }}
 
 ### Dependencies
 
@@ -594,7 +594,7 @@ documented below. They don't reflect the additional changes shown above.
 - We've ditched the default Sass map merges to make it easier to remove
   redundant values. Keep in mind you now have to define all values in the Sass
   maps like `$theme-colors`. Check out how to deal with [Sass maps]({ { <
-  docsref "/customize/sass#maps-and-loops" >} }).
+  docsref "/customize/sass#maps-and-loops" }}).
 
 - <span class="badge text-bg-danger">Breaking</span> Renamed `color-yiq()`
   function and related variables to `color-contrast()` as it's no longer related
@@ -784,7 +784,7 @@ documented below. They don't reflect the additional changes shown above.
 
 - **Added new floating forms!** We've promoted the Floating labels example to
   fully supported form components. [See the new Floating labels page.]({ { <
-  docsref "/forms/floating-labels" >} })
+  docsref "/forms/floating-labels" }})
 
 - <span class="badge text-bg-danger">Breaking</span> **Consolidated native and
   custom form elements.** Checkboxes, radios, selects, and other inputs that had
@@ -872,7 +872,7 @@ documented below. They don't reflect the additional changes shown above.
 #### Buttons
 
 - <span class="badge text-bg-danger">Breaking</span> **[Toggle buttons]({ { <
-  docsref "/forms/checks-radios#toggle-buttons" >} }), with checkboxes or radios,
+  docsref "/forms/checks-radios#toggle-buttons" }}), with checkboxes or radios,
   no longer require JavaScript and have new markup.** We no longer require a
   wrapping element, add `.btn-check` to the `<input>`, and pair it with any
   `.btn` classes on the
@@ -911,7 +911,7 @@ documented below. They don't reflect the additional changes shown above.
   indicators (great for lighter backgrounds).
 
 - Replaced chevron icons for carousel controls with new SVGs
-  from [Bootstrap Icons]({ { < param "icons" >} }).
+  from [Bootstrap Icons]({{ "icons" }}).
 
 #### Close button
 
