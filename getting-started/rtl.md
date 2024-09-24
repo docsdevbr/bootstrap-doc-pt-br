@@ -229,8 +229,7 @@ combined LTR and RTL implementation:
    This way, the entire page will be affected when you change the direction.
    Also, make sure you add the `lang` attribute accordingly.
 2. Having a single bundle with both directions will increase the size of the
-   final stylesheet (on average, by 20%-30%): consider some [optimization]({ { <
-   docsref "/customize/optimize" }}).
+   final stylesheet (on average, by 20%-30%): consider some [optimization](../customize/optimize.md).
 3. Take into account that PostCSS RTLCSS is not compatible with
    `/* rtl:remove */` directives because it doesn't remove any CSS rule. You
    should replace your `/* rtl:remove */`, `/* rtl:begin:remove */` and

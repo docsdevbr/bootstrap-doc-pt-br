@@ -25,7 +25,7 @@ para inserir facilmente em seu projeto, que inclui:
 * Pacotes CSS compilados e minimizados (veja a
   [comparação de arquivos CSS](conteudo.md#arquivos-css));
 * _Plug-ins_ JavaScript compilados e minimizados (veja a
-  [comparação de arquivos JS](conteudo#arquivos-js)).
+  [comparação de arquivos JS](conteudo.md#arquivos-js)).
 
 Isso não inclui documentação, arquivos fonte ou quaisquer dependências
 JavaScript opcionais como o Popper.

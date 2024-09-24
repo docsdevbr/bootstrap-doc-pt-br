@@ -182,7 +182,7 @@ and JavaScript.
    ```
 
    *You can also import our stylesheets individually if you
-   want. [Read our Sass import docs](   /customize/sass.md#importing) for details.*
+   want. [Read our Sass import docs](../customize/sass.md#importing) for details.*
 
 2. **Next we load the CSS and import Bootstrap's JavaScript.** Add the following
    to `src/js/main.js` to load the CSS and import all of Bootstrap's JS. Popper

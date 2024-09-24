@@ -164,7 +164,7 @@ and one into our `main.js`.
    ```
 
    *You can also import our stylesheets individually if you
-   want. [Read our Sass import docs](   /customize/sass.md#importing) for details.*
+   want. [Read our Sass import docs](../customize/sass.md#importing) for details.*
 
 2. **Import Bootstrap's JS.** Add the following to `src/js/main.js` to import
    all of Bootstrap's JS. Popper will be imported automatically through

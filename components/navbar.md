@@ -16,7 +16,7 @@ Here's what you need to know before getting started with the navbar:
 - Navbars and their contents are fluid by default. Change
   the [container](#containers) to limit their horizontal width in different
   ways.
-- Use our [spacing](../utilities/spacing.md) and [flex](../utilities/flex) utility classes for controlling spacing and
+- Use our [spacing](../utilities/spacing.md) and [flex](../utilities/flex.md) utility classes for controlling spacing and
   alignment within navbars.
 - Navbars are responsive by default, but you can easily modify them to change
   that. Responsive behavior depends on our Collapse JavaScript plugin.

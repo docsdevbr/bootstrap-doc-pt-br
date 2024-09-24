@@ -458,4 +458,7 @@ Configure o Webpack para extrair arquivos SVG em linha dessa forma:
 Depois de executar `npm run build` novamente, você encontrará os arquivos SVG
 extraídos em `dist/icons` e referenciados corretamente do CSS.
 
-{% include-markdown '_includes/partials/guide-footer.md' %}
+{%
+  include-markdown '_includes/partials/guide-footer.md'
+  rewrite-relative-urls=false
+%}

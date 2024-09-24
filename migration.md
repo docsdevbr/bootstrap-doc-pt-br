@@ -93,8 +93,7 @@ changes listed below.
 - Renamed Sass and CSS variables `${color}-text` to `${color}-text-emphasis` to
   match their associated utilities.
 
-- Added new `.link-body-emphasis` helper alongside our [colored links]({ { <
-  docsref "/helpers/colored-links" }}). This creates a colored link using our
+- Added new `.link-body-emphasis` helper alongside our [colored links](helpers/colored-links.md). This creates a colored link using our
   color mode responsive emphasis color.
 
 - Added new link utilities for link color opacity, underline offset, underline
@@ -224,8 +223,7 @@ Learn more by reading the new [color modes documentation](customize/color-modes.
 - Alert variants are now styled via CSS variables.
 
 - <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span>
-  The `alert-variant()` mixin is now deprecated. We now [use a Sass loop]({ { <
-  docsref "/components/alerts#sass-loops" }}) directly to modify the
+  The `alert-variant()` mixin is now deprecated. We now [use a Sass loop](components/alerts.md#sass-loops) directly to modify the
   component's default CSS variables for each variant.
 
 #### List group
@@ -514,8 +512,7 @@ changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/pr
   repainting by setting a `min-height` or `height`.
 
 - **Added new stack and vertical rule helpers. —** Quickly apply multiple
-  flexbox properties to quickly create custom layouts with [stacks]({ { <
-  docsref "/helpers/stacks/" }}). Choose from horizontal (`.hstack`) and
+  flexbox properties to quickly create custom layouts with [stacks](helpers/stacks.md). Choose from horizontal (`.hstack`) and
   vertical (`.vstack`) stacks. Add vertical dividers similar to `<hr>` elements
   with the [new `.vr` helpers](helpers/vertical-rule.md).
 
@@ -534,8 +531,7 @@ changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/pr
 - **Added new snippet examples based to show how to customize our components. —
   ** Pull ready to use customized components and other common design patterns
   with our new [Snippets examples](examples/index.md#snippets).
-  Includes [footers](examples/footers/index.html), [dropdowns]({ { <
-  docsref "/examples/dropdowns/" }}), [list groups](examples/list-groups/index.html), and [modals](examples/modals/index.html).
+  Includes [footers](examples/footers/index.html), [dropdowns](examples/dropdowns/index.html), [list groups](examples/list-groups/index.html), and [modals](examples/modals/index.html).
 
 - **Removed unused positioning styles from popovers and tooltips** as these are
   handled solely by Popper. `$tooltip-margin` has been deprecated and set to
@@ -593,8 +589,7 @@ documented below. They don't reflect the additional changes shown above.
 
 - We've ditched the default Sass map merges to make it easier to remove
   redundant values. Keep in mind you now have to define all values in the Sass
-  maps like `$theme-colors`. Check out how to deal with [Sass maps]({ { <
-  docsref "/customize/sass#maps-and-loops" }}).
+  maps like `$theme-colors`. Check out how to deal with [Sass maps](customize/sass.md#maps-and-loops).
 
 - <span class="badge text-bg-danger">Breaking</span> Renamed `color-yiq()`
   function and related variables to `color-contrast()` as it's no longer related
@@ -783,8 +778,7 @@ documented below. They don't reflect the additional changes shown above.
 ### Forms
 
 - **Added new floating forms!** We've promoted the Floating labels example to
-  fully supported form components. [See the new Floating labels page.]({ { <
-  docsref "/forms/floating-labels" }})
+  fully supported form components. [See the new Floating labels page.](forms/floating-labels.md)
 
 - <span class="badge text-bg-danger">Breaking</span> **Consolidated native and
   custom form elements.** Checkboxes, radios, selects, and other inputs that had
@@ -871,8 +865,7 @@ documented below. They don't reflect the additional changes shown above.
 
 #### Buttons
 
-- <span class="badge text-bg-danger">Breaking</span> **[Toggle buttons]({ { <
-  docsref "/forms/checks-radios#toggle-buttons" }}), with checkboxes or radios,
+- <span class="badge text-bg-danger">Breaking</span> **[Toggle buttons](forms/checks-radios.md#toggle-buttons), with checkboxes or radios,
   no longer require JavaScript and have new markup.** We no longer require a
   wrapping element, add `.btn-check` to the `<input>`, and pair it with any
   `.btn` classes on the
@@ -911,7 +904,7 @@ documented below. They don't reflect the additional changes shown above.
   indicators (great for lighter backgrounds).
 
 - Replaced chevron icons for carousel controls with new SVGs
-  from [Bootstrap Icons]({{ "icons" }}).
+  from [Bootstrap Icons]({{ icons }}).
 
 #### Close button
 
