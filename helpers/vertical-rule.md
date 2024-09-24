@@ -35,7 +35,7 @@ Vertical rules scale their height in flex layouts:
 
 ## With stacks
 
-They can also be used in [stacks](/helpers/stacks.md):
+They can also be used in [stacks](stacks.md):
 
 { { < example class="bd-example-flex" }}
 <div class="hstack gap-3">

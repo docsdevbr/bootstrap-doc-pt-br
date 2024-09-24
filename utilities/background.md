@@ -14,7 +14,7 @@ toc: true
 
 Similar to the contextual text color classes, set the background of an element
 to any contextual class. Background utilities **do not set `color`**, so in some
-cases you'll want to use `.text-*` [color utilities](/utilities/colors.md).
+cases you'll want to use `.text-*` [color utilities](colors.md).
 
 { { < callout info }}
 Background utilities like `.bg-*` that generated from our original
@@ -105,7 +105,7 @@ Or, choose from any of the `.bg-opacity` utilities:
 ## CSS
 
 In addition to the following Sass functionality, consider reading about our
-included [CSS custom properties](/customize/css-variables.md) (
+included [CSS custom properties](../customize/css-variables.md) (
 aka CSS variables) for colors and more.
 
 ### Sass variables
@@ -172,6 +172,6 @@ gradients.
 ### Sass utilities API
 
 Background utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-bg-color" file="scss/_utilities.scss" }}

@@ -16,7 +16,7 @@ Here's what you need to know before getting started with the navbar:
 - Navbars and their contents are fluid by default. Change
   the [container](#containers) to limit their horizontal width in different
   ways.
-- Use our [spacing](/utilities/spacing.md) and [flex](../utilities/flex) utility classes for controlling spacing and
+- Use our [spacing](../utilities/spacing.md) and [flex](../utilities/flex) utility classes for controlling spacing and
   alignment within navbars.
 - Navbars are responsive by default, but you can easily modify them to change
   that. Responsive behavior depends on our Collapse JavaScript plugin.
@@ -94,8 +94,8 @@ light-themed navbar that automatically collapses at the `lg` (large) breakpoint.
 </nav>
 { {< /example >} }
 
-This example uses [background](/utilities/background.md) (
-`bg-body-tertiary`) and [spacing](/utilities/spacing.md) (
+This example uses [background](../utilities/background.md) (
+`bg-body-tertiary`) and [spacing](../utilities/spacing.md) (
 `me-auto`, `mb-2`, `mb-lg-0`, `me-2`) utility classes.
 
 ### Brand
@@ -269,7 +269,7 @@ Place various form controls and components within a navbar:
 { {< /example >} }
 
 Immediate child elements of `.navbar` use flex layout and will default to
-`justify-content: space-between`. Use additional [flex utilities](/utilities/flex.md) as needed to adjust this behavior.
+`justify-content: space-between`. Use additional [flex utilities](../utilities/flex.md) as needed to adjust this behavior.
 
 { {< example >} }
 <nav class="navbar bg-body-tertiary">
@@ -359,7 +359,7 @@ Mix and match with other components and utilities as needed.
 { {< callout warning >} }
 **New dark navbars in v5.3.0 —** We've deprecated `.navbar-dark` in favor of the
 new `data-bs-theme="dark"`. Add `data-bs-theme="dark"` to the `.navbar` to
-enable a component-specific color mode. [Learn more about our color modes.](/customize/color-modes.md)
+enable a component-specific color mode. [Learn more about our color modes.](../customize/color-modes.md)
 
 ---
 
@@ -507,7 +507,7 @@ navbar is presented.
 
 ## Placement
 
-Use our [position utilities](/utilities/position.md) to place
+Use our [position utilities](../utilities/position.md) to place
 navbars in non-static positions. Choose from fixed to the top, fixed to the
 bottom, stickied to the top (scrolls with the page until it reaches the top,
 then stays there), or stickied to the bottom (scrolls with the page until it
@@ -756,7 +756,7 @@ currently quite patchy.
 ### Offcanvas
 
 Transform your expanding and collapsing navbar into an offcanvas drawer with
-the [offcanvas component](/components/offcanvas.md). We extend
+the [offcanvas component](offcanvas.md). We extend
 both the offcanvas default styles and use our `.navbar-expand-*` classes to
 create a dynamic and flexible navigation sidebar.
 

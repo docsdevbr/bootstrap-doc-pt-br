@@ -898,7 +898,7 @@ Separate groups of related menu items with a divider.
 ### Text
 
 Place any freeform text within a dropdown menu with text and
-use [spacing utilities](/utilities/spacing.md). Note that you'll
+use [spacing utilities](../utilities/spacing.md). Note that you'll
 likely need additional sizing styles to constrain the menu width.
 
 { {< example >} }
@@ -915,7 +915,7 @@ likely need additional sizing styles to constrain the menu width.
 ### Forms
 
 Put a form within a dropdown menu, or make it into a dropdown menu, and
-use [margin or padding utilities](/utilities/spacing.md) to give
+use [margin or padding utilities](../utilities/spacing.md) to give
 it the negative space you require.
 
 { {< example >} }

@@ -56,7 +56,7 @@ Using horizontal margin utilities like `.ms-auto` as spacers:
 </div>
 { {< /example >} }
 
-And with [vertical rules](/helpers/vertical-rule.md):
+And with [vertical rules](vertical-rule.md):
 
 { { < example class="bd-example-flex" }}
 <div class="hstack gap-3">

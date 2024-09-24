@@ -177,6 +177,6 @@ utilities API.
 ### Sass utilities API
 
 Font and text utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-text" file="scss/_utilities.scss" }}

@@ -36,10 +36,10 @@ Our two preferred methods are:
    override Bootstrap's styles.
 
 While we cannot go into details here on how to use every package manager, we can
-give some guidance on [using Bootstrap with your own Sass compiler](/customize/sass.md).
+give some guidance on [using Bootstrap with your own Sass compiler](sass.md).
 
 For those who want to use the distribution files, review
-the [getting started page](/getting-started/introduction.md) for
+the [getting started page](../comecando/introducao.md) for
 how to include those files and an example HTML page. From there, consult the
 docs for the layout, components, and behaviors you'd like to use.
 
@@ -58,20 +58,20 @@ configurations**, we've documented all instances of our embedded SVGs (all of
 which are applied via `background-image`) so you can more thoroughly review your
 options.
 
-- [Accordion](/components/accordion.md)
-- [Carousel controls](/components/carousel.md#with-controls)
-- [Close button](/components/close-button.md) (used in alerts and
+- [Accordion](../components/accordion.md)
+- [Carousel controls](../components/carousel.md#with-controls)
+- [Close button](../components/close-button.md) (used in alerts and
   modals)
-- [Form checkboxes and radio buttons](/forms/checks-radios.md)
-- [Form switches](/forms/checks-radios.md#switches)
-- [Form validation icons](/forms/validation.md#server-side)
-- [Navbar toggle buttons](  /components/navbar.md#responsive-behaviors)
-- [Select menus](/forms/select.md)
+- [Form checkboxes and radio buttons](../forms/checks-radios.md)
+- [Form switches](../forms/checks-radios.md#switches)
+- [Form validation icons](../forms/validation.md#server-side)
+- [Navbar toggle buttons](../components/navbar.md#responsive-behaviors)
+- [Select menus](../forms/select.md)
 
 Based
 on [community conversation](https://github.com/twbs/bootstrap/issues/25394),
 some options for addressing this in your own codebase
-include [replacing the URLs with locally hosted assets](/getting-started/webpack.md#extracting-svg-files), removing the images and
+include [replacing the URLs with locally hosted assets](../comecando/webpack.md#extraindo-arquivos-svg), removing the images and
 using inline images (not possible in all components), and modifying your CSP.
 Our recommendation is to carefully review your own security policies and decide
 on the best path forward, if necessary.

@@ -19,7 +19,7 @@ img-fluid" text="Responsive image" }}
 
 ## Image thumbnails
 
-In addition to our [border-radius utilities](/utilities/borders.md), you can use `.img-thumbnail` to give an image a
+In addition to our [border-radius utilities](../utilities/borders.md), you can use `.img-thumbnail` to give an image a
 rounded 1px border appearance.
 
 { {< example >} }
@@ -30,10 +30,10 @@ photograph taken with an old instant camera" }}
 
 ## Aligning images
 
-Align images with the [helper float classes](/utilities/float.md)
-or [text alignment classes](/utilities/text.md#text-alignment).
+Align images with the [helper float classes](../utilities/float.md)
+or [text alignment classes](../utilities/text.md#text-alignment).
 `block`-level images can be centered using [the
-`.mx-auto` margin utility class](/utilities/spacing.md#horizontal-centering).
+`.mx-auto` margin utility class](../utilities/spacing.md#horizontal-centering).
 
 { {< example >} }
 { { < placeholder width="200" height="200" class="rounded float-start" }}

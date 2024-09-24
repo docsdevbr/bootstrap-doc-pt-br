@@ -34,6 +34,6 @@ Set the `opacity` of an element using `.opacity-{value}` utilities.
 ### Sass utilities API
 
 Opacity utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-opacity" file="scss/_utilities.scss" }}

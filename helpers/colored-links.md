@@ -9,7 +9,7 @@ toc: true
 ## Link colors
 
 You can use the `.link-*` classes to colorize links. Unlike the [
-`.text-*` classes](/utilities/colors.md), these classes have a
+`.text-*` classes](../utilities/colors.md), these classes have a
 `:hover` and `:focus` state. Some of the link styles use a relatively light
 foreground color, and should only be used on a dark background in order to have
 sufficient contrast.
@@ -39,7 +39,7 @@ However, it still responds to the new link utilities.
 
 { { < added-in "5.3.0" }}
 
-Colored links can also be modified by our [link utilities](/utilities/link/.md).
+Colored links can also be modified by our [link utilities](../utilities/link.md).
 
 { {< example >} }
 { {< colored-links.inline >} }

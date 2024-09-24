@@ -124,7 +124,7 @@ and [compiling with VS Code](https://code.visualstudio.com/docs/languages/css#_t
 
 { { < callout info }}
 **Using Bootstrap with another build tool?** Consider reading our guides for
-compiling with [Webpack](/getting-started/webpack.md), [Parcel](/getting-started/parcel.md), or [Vite](/getting-started/vite.md). We also have production-ready demos
+compiling with [Webpack](../comecando/webpack.md), [Parcel](../getting-started/parcel.md), or [Vite](../getting-started/vite.md). We also have production-ready demos
 in [our examples repository on GitHub](https://github.com/twbs/examples).
 { { < /callout }}
 
@@ -280,7 +280,7 @@ makes use of those values.
 
 ### Colors
 
-Next to the [Sass maps](/customize/color.md#color-sass-maps) we
+Next to the [Sass maps](color.md#color-sass-maps) we
 have, theme colors can also be used as standalone variables, like `$primary`.
 
 ```scss
@@ -420,7 +420,7 @@ and can also be used across your own project.
 
 A shorthand mixin for the `prefers-color-scheme` media query is available with
 support for `light` and `dark` color schemes.
-See [the color modes documentation](/customize/color-modes.md)
+See [the color modes documentation](color-modes.md)
 for information on our color mode mixin.
 
 { { < scss-docs name="mixin-color-scheme" file="scss/mixins/_

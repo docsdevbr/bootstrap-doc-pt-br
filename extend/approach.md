@@ -100,7 +100,7 @@ common UI principles allow user focused or hovered elements to remain in view at
 all times. For example, a modal is document blocking (e.g., you cannot take any
 other action save for the modal's action), so we put that above our navbars.
 
-Learn more about this in our [`z-index` layout page](/layout/z-index.md).
+Learn more about this in our [`z-index` layout page](../layout/z-index.md).
 
 ## HTML and CSS over JS
 

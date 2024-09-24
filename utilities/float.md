@@ -21,7 +21,7 @@ effect on flex items.
 <div class="float-none">Don't float on all viewport sizes</div>
 { {< /example >} }
 
-Use the [clearfix helper](/helpers/clearfix.md) on a parent
+Use the [clearfix helper](../helpers/clearfix.md) on a parent
 element to clear floats.
 
 ## Responsive
@@ -54,6 +54,6 @@ Here are all the support classes:
 ### Sass utilities API
 
 Float utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-float" file="scss/_utilities.scss" }}

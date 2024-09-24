@@ -44,7 +44,7 @@ page with the parent `.container`.
 
 Breaking it down, here's how the grid system comes together:
 
-- **Our grid supports [six responsive breakpoints](  /layout/breakpoints.md).**  Breakpoints are based on `min-width` media
+- **Our grid supports [six responsive breakpoints](layout/breakpoints.md).**  Breakpoints are based on `min-width` media
   queries, meaning they affect that breakpoint and all those above it (e.g.,
   `.col-sm-4` applies to `sm`, `md`, `lg`, `xl`, and `xxl`). This means you can
   control container and column sizing and behavior by each breakpoint.
@@ -59,7 +59,7 @@ Breaking it down, here's how the grid system comes together:
   then counteracted on the rows with negative margins to ensure the content in
   your columns is visually aligned down the left side. Rows also support
   modifier classes to [uniformly apply column sizing](#row-columns)
-  and [gutter classes](/layout/gutters.md) to change the spacing
+  and [gutter classes](gutters.md) to change the spacing
   of your content.
 
 - **Columns are incredibly flexible.** There are 12 template columns available
@@ -69,9 +69,9 @@ Breaking it down, here's how the grid system comes together:
   always have the same relative sizing.
 
 - **Gutters are also responsive and customizable.
-  ** [Gutter classes are available](/layout/gutters.md) across
+  ** [Gutter classes are available](gutters.md) across
   all breakpoints, with all the same sizes as
-  our [margin and padding spacing](/utilities/spacing.md). Change
+  our [margin and padding spacing](../utilities/spacing.md). Change
   horizontal gutters with `.gx-*` classes, vertical gutters with `.gy-*`, or all
   gutters with `.g-*` classes. `.g-0` is also available to remove gutters.
 

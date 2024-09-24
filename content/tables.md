@@ -271,7 +271,7 @@ Add `.table-bordered` for borders on all sides of the table and cells.
 
 { { < table class="table table-bordered" }}
 
-[Border color utilities](/utilities/borders.md#border-color) can
+[Border color utilities](../utilities/borders.md#border-color) can
 be added to change colors:
 
 { { < table class="table table-bordered border-primary" }}
@@ -336,7 +336,7 @@ time).
 
 Table cells of `<thead>` are always vertical aligned to the bottom. Table cells
 in `<tbody>` inherit their alignment from `<table>` and are aligned to the top
-by default. Use the [vertical align](/utilities/vertical-align.md) classes to re-align where needed.
+by default. Use the [vertical align](../utilities/vertical-align.md) classes to re-align where needed.
 
 <div class="bd-example">
   <div class="table-responsive">

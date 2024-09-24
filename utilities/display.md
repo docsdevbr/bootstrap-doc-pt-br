@@ -16,7 +16,7 @@ effects as you need.
 
 ## Notation
 
-Display utility classes that apply to all [breakpoints](/layout/breakpoints.md), from `xs` to `xxl`, have no breakpoint abbreviation
+Display utility classes that apply to all [breakpoints](../layout/breakpoints.md), from `xs` to `xxl`, have no breakpoint abbreviation
 in them. This is because those classes are applied from `min-width: 0;` and up,
 and thus are not bound by a media query. The remaining breakpoints, however, do
 include a breakpoint abbreviation.
@@ -129,6 +129,6 @@ The print and display classes can be combined.
 ### Sass utilities API
 
 Display utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-display" file="scss/_utilities.scss" }}

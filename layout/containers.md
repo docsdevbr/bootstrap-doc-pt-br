@@ -23,7 +23,7 @@ Bootstrap comes with three different containers:
 The table below illustrates how each container's `max-width` compares to the
 original `.container` and `.container-fluid` across each breakpoint.
 
-See them in action and compare them in our [Grid example](/examples/grid.md#containers).
+See them in action and compare them in our [Grid example](../examples/grid/index.html#containers).
 
 { { < bs-table "table" }}
 | | Extra small<div class="fw-normal">&lt;576px</div> |
@@ -110,7 +110,7 @@ powers them:
 { { < scss-docs name="container-max-widths" file="scss/_variables.scss" }}
 
 For more information and examples on how to modify our Sass maps and variables,
-please refer to [the Sass section of the Grid documentation](/layout/grid.md#css).
+please refer to [the Sass section of the Grid documentation](grid.md#css).
 
 ### Sass mixins
 

@@ -139,7 +139,7 @@ additional sizes.
 
 ## Alignment
 
-Change the alignment of pagination components with [flexbox utilities](/utilities/flex.md). For example, with `.justify-content-center`:
+Change the alignment of pagination components with [flexbox utilities](../utilities/flex.md). For example, with `.justify-content-center`:
 
 { {< example >} }
 <nav aria-label="Page navigation example">

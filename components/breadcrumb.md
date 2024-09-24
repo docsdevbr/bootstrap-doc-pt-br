@@ -70,7 +70,7 @@ property, or use the Sass variable.
 { {< callout info >} }
 **Inlined SVG requires properly escaped characters.** Some reserved characters,
 such as `<`, `>` and `#`, must be URL-encoded or escaped. We do this with the
-`$breadcrumb-divider` variable using our [`escape-svg()` Sass function](/customize/sass.md#escape-svg). When customizing the CSS variable,
+`$breadcrumb-divider` variable using our [`escape-svg()` Sass function](../customize/sass.md#escape-svg). When customizing the CSS variable,
 you must handle this yourself.
 Read [Kevin Weber's explanations on CodePen](https://codepen.io/kevinweber/pen/dXWoRw )
 for more info.

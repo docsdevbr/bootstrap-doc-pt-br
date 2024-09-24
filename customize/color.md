@@ -402,7 +402,7 @@ All these colors are available as a Sass map, `$theme-colors`.
 
 { { < scss-docs name="theme-colors-map" file="scss/_variables.scss" }}
 
-Check out [our Sass maps and loops docs](/customize/sass.md#maps-and-loops) for how to modify these colors.
+Check out [our Sass maps and loops docs](sass.md#maps-and-loops) for how to modify these colors.
 
 ### All colors
 
@@ -502,7 +502,7 @@ Here's how you can use these in your Sass:
 }
 ```
 
-[Color](/utilities/colors.md) and [background](/utilities/background.md) utility classes are also available for setting
+[Color](../utilities/colors.md) and [background](../utilities/background.md) utility classes are also available for setting
 `color` and `background-color` using the `500` color values.
 
 ## Generating utilities
@@ -510,7 +510,7 @@ Here's how you can use these in your Sass:
 { { < added-in "5.1.0" }}
 
 Bootstrap doesn't include `color` and `background-color` utilities for every
-color variable, but you can generate these yourself with our [utility API](/utilities/api.md) and our extended Sass maps added in v5.1.0.
+color variable, but you can generate these yourself with our [utility API](../utilities/api.md) and our extended Sass maps added in v5.1.0.
 
 1. To start, make sure you've imported our functions, variables, mixins, and
    utilities.

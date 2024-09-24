@@ -21,7 +21,7 @@ elements. Images in figures have no explicit size, so be sure to add the
 </figure>
 { {< /example >} }
 
-Aligning the figure's caption is easy with our [text utilities](/utilities/text.md#text-alignment).
+Aligning the figure's caption is easy with our [text utilities](../utilities/text.md#text-alignment).
 
 { {< example >} }
 <figure class="figure">

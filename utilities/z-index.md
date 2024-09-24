@@ -12,7 +12,7 @@ added:
 
 Use `z-index` utilities to stack elements on top of one another. Requires a
 `position` value other than `static`, which can be set with custom styles or
-using our [position utilities](/utilities/position/.md).
+using our [position utilities](position.md).
 
 { { < callout }}
 We call these "low-level" `z-index` utilities because of their default values of
@@ -35,7 +35,7 @@ Bootstrap overlay components—dropdown, modal, offcanvas, popover, toast, and
 tooltip—all have their own `z-index` values to ensure a usable experience with
 competing "layers" of an interface.
 
-Read about them in the [`z-index` layout page](/layout/z-index.md).
+Read about them in the [`z-index` layout page](../layout/z-index.md).
 
 ## Component approach
 
@@ -43,7 +43,7 @@ On some components, we use our low-level `z-index` values to manage repeating
 elements that overlap one another (like buttons in a button group or items in a
 list group).
 
-Learn about our [`z-index` approach](/extend/approach.md#z-index-scales).
+Learn about our [`z-index` approach](../extend/approach.md#z-index-scales).
 
 ## CSS
 
@@ -56,6 +56,6 @@ Customize this Sass map to change the available values and generated utilities.
 ### Sass utilities API
 
 Position utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-zindex" file="scss/_utilities.scss" }}

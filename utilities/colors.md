@@ -13,7 +13,7 @@ toc: true
 ## Colors
 
 Colorize text with color utilities. If you want to colorize links, you can use
-the [`.link-*` helper classes](/helpers/colored-links.md) which
+the [`.link-*` helper classes](../helpers/colored-links.md) which
 have `:hover` and `:focus` states.
 
 { { < callout info }}
@@ -109,7 +109,7 @@ content in a `<div>` or more semantic element with the desired class.
 ## CSS
 
 In addition to the following Sass functionality, consider reading about our
-included [CSS custom properties](/customize/css-variables.md) (
+included [CSS custom properties](../customize/css-variables.md) (
 aka CSS variables) for colors and more.
 
 ### Sass variables
@@ -166,6 +166,6 @@ Color mode adaptive text colors are also available as a Sass map:
 ### Sass utilities API
 
 Color utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-color" file="scss/_utilities.scss" }}

@@ -101,7 +101,7 @@ specified theme value.
 Enable the built in dark color mode across your entire project by adding the
 `data-bs-theme="dark"` attribute to the `<html>` element. This will apply the
 dark color mode to all components and elements, other than those with a specific
-`data-bs-theme` attribute applied. Building on the [quick start template](/getting-started/introduction.md#quick-start):
+`data-bs-theme` attribute applied. Building on the [quick start template](../comecando/introducao.md#inicio-rapido):
 
 ```html
 <!doctype html>
@@ -252,7 +252,7 @@ assets/js/color-modes.js") -} }
 ## Adding theme colors
 
 Adding a new color in `$theme-colors` is not enough for some of our components
-like [alerts](/components/alerts.md) and [list groups](/components/list-group.md). New colors must also be defined in
+like [alerts](../components/alerts.md) and [list groups](../components/list-group.md). New colors must also be defined in
 `$theme-colors-text`, `$theme-colors-bg-subtle`, and
 `$theme-colors-border-subtle` for light theme; but also in
 `$theme-colors-text-dark`, `$theme-colors-bg-subtle-dark`, and

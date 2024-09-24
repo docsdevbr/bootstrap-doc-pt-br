@@ -26,7 +26,7 @@ button toolbars. Then use `aria-label` or `aria-labelledby` to label them.
 { {< /callout >} }
 
 These classes can also be added to groups of links, as an alternative to the [
-`.nav` navigation components](/components/navs-tabs.md).
+`.nav` navigation components](navs-tabs.md).
 
 { {< example >} }
 <div class="btn-group">
@@ -58,7 +58,7 @@ These classes can also be added to groups of links, as an alternative to the [
 
 ## Checkbox and radio button groups
 
-Combine button-like checkbox and radio [toggle buttons](/forms/checks-radios.md) into a seamless looking button group.
+Combine button-like checkbox and radio [toggle buttons](../forms/checks-radios.md) into a seamless looking button group.
 
 { {< example >} }
 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">

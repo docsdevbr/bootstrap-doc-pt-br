@@ -36,6 +36,6 @@ Apply `.visible` or `.invisible` as needed.
 ### Sass utilities API
 
 Visibility utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-visibility" file="scss/_utilities.scss" }}

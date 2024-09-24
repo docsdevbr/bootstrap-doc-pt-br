@@ -76,8 +76,8 @@ Profile
 { {< added-in "5.2.0" >} }
 
 Set a `background-color` with contrasting foreground `color` with [our
-`.text-bg-{color}` helpers](helpers/color-background.md).
-Previously it was required to manually pair your choice of [`.text-{color}`](/utilities/colors.md) and [`.bg-{color}`](/utilities/background.md) utilities for styling, which you still may use if
+`.text-bg-{color}` helpers](../helpers/color-background.md).
+Previously it was required to manually pair your choice of [`.text-{color}`](../utilities/colors.md) and [`.bg-{color}`](../utilities/background.md) utilities for styling, which you still may use if
 you prefer.
 
 { {< example >} }

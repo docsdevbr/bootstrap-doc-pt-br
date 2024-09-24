@@ -219,7 +219,7 @@ The button plugin allows you to create simple on/off toggle buttons.
 
 { {< callout info >} }
 Visually, these toggle buttons are identical to
-the [checkbox toggle buttons](/forms/checks-radios.md#checkbox-toggle-buttons). However, they are conveyed
+the [checkbox toggle buttons](../forms/checks-radios.md#checkbox-toggle-buttons). However, they are conveyed
 differently by assistive technologies: the checkbox toggles will be announced by
 screen readers as "checked"/"not checked" (since, despite their appearance, they
 are fundamentally still checkboxes), whereas these toggle buttons will be

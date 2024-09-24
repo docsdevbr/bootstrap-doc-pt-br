@@ -22,7 +22,7 @@ following as our menu options have recently changed.
   position to avoid potential interference from other elements. You'll likely
   run into issues when nesting a `.modal` within another fixed element.
 - Once again, due to `position: fixed`, there are some caveats with using modals
-  on mobile devices. [See our browser support docs](  /getting-started/browsers-devices.md#modals-and-dropdowns-on-mobile) for
+  on mobile devices. [See our browser support docs](../comecando/navegadores-dispositivos.md#modais-e-menus-suspensos-em-dispositivos-moveis) for
   details.
 - Due to how HTML5 defines its semantics, [the
   `autofocus` HTML attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus)
@@ -98,7 +98,7 @@ action.
 In the above static example, we use `<h5>`, to avoid issues with the heading
 hierarchy in the documentation page. Structurally, however, a modal dialog
 represents its own separate document/context, so the `.modal-title` should
-ideally be an `<h1>`. If necessary, you can use the [font size utilities](/utilities/text.md#font-size) to control the heading's appearance.
+ideally be an `<h1>`. If necessary, you can use the [font size utilities](../utilities/text.md#font-size) to control the heading's appearance.
 All the following live examples use this approach.
 { {< /callout >} }
 
@@ -342,7 +342,7 @@ Add `.modal-dialog-centered` to `.modal-dialog` to vertically center the modal.
 
 ### Tooltips and popovers
 
-[Tooltips](/components/tooltips.md) and [popovers](/components/popovers.md) can be placed within modals as needed. When modals
+[Tooltips](tooltips.md) and [popovers](popovers.md) can be placed within modals as needed. When modals
 are closed, any tooltips and popovers within are also automatically dismissed.
 
 <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">

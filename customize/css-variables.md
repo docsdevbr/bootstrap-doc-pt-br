@@ -63,10 +63,10 @@ aren't inherited in places like nested tables, and allow some basic restyling
 and extending of Bootstrap components after Sass compilation.
 
 Have a look at our table documentation for
-some [insight into how we're using CSS variables](/content/tables.md#how-do-the-variants-and-accented-tables-work).
-Our [navbars also use CSS variables](/components/navbar.md#css)
+some [insight into how we're using CSS variables](../content/tables.md#how-do-the-variants-and-accented-tables-work).
+Our [navbars also use CSS variables](../components/navbar.md#css)
 as of v5.2.0. We're also using CSS variables across our grids—primarily for
-gutters the [new opt-in CSS grid](/layout/css-grid.md)—with more
+gutters the [new opt-in CSS grid](../layout/css-grid.md)—with more
 component usage coming in the future.
 
 Whenever possible, we'll assign CSS variables at the base component level (e.g.,

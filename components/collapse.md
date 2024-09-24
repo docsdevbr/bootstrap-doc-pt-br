@@ -52,7 +52,7 @@ link with the `href` attribute (and a `role="button"`). In both cases, the
 The collapse plugin supports horizontal collapsing. Add the
 `.collapse-horizontal` modifier class to transition the `width` instead of
 `height` and set a `width` on the immediate child element. Feel free to write
-your own custom Sass, use inline styles, or use our [width utilities](/utilities/sizing.md).
+your own custom Sass, use inline styles, or use our [width utilities](../utilities/sizing.md).
 
 { {< callout info >} }
 Please note that while the example below has a `min-height` set to avoid
@@ -167,7 +167,7 @@ sure to add the class `collapse` to the collapsible element. If you'd like it to
 default open, add the additional class `show`.
 
 To add accordion-like group management to a collapsible area, add the data
-attribute `data-bs-parent="#selector"`. Refer to the [accordion page](/components/accordion.md) for more information.
+attribute `data-bs-parent="#selector"`. Refer to the [accordion page](accordion.md) for more information.
 
 ### Via JavaScript
 

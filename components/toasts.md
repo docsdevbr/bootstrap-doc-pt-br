@@ -155,9 +155,9 @@ vertically add some spacing.
 ### Custom content
 
 Customize your toasts by removing sub-components, tweaking them
-with [utilities](/utilities/api.md), or by adding your own
+with [utilities](../utilities/api.md), or by adding your own
 markup. Here we've created a simpler toast by removing the default
-`.toast-header`, adding a custom hide icon from [Bootstrap Icons]({{ icons }}), and using some [flexbox utilities](/utilities/flex.md) to adjust the layout.
+`.toast-header`, adding a custom hide icon from [Bootstrap Icons]({{ icons }}), and using some [flexbox utilities](../utilities/flex.md) to adjust the layout.
 
 { {< example >} }
 <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
@@ -187,7 +187,7 @@ Alternatively, you can also add additional controls and components to toasts.
 ### Color schemes
 
 Building on the above example, you can create different toast color schemes with
-our [color](/utilities/colors.md) and [background](/utilities/background.md) utilities. Here we've added `.text-bg-primary` to
+our [color](../utilities/colors.md) and [background](../utilities/background.md) utilities. Here we've added `.text-bg-primary` to
 the `.toast`, and then added `.btn-close-white` to our close button. For a crisp
 edge, we remove the default border with `.border-0`.
 
@@ -318,7 +318,7 @@ single (atomic) unit, rather than just announcing what was changed (which could
 lead to problems if you only update part of the toast's content, or if
 displaying the same toast content at a later point in time). If the information
 needed is important for the process, e.g. for a list of errors in a form, then
-use the [alert component](/components/alerts.md) instead of
+use the [alert component](alerts.md) instead of
 toast.
 
 Note that the live region needs to be present in the markup *before* the toast

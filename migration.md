@@ -14,12 +14,12 @@ their changes in addition to this section.
 
 ### Helpers
 
-- [Colored links](/helpers/colored-links.md) once again have
+- [Colored links](helpers/colored-links.md) once again have
   `!important` so they work better with our newly added link utilities.
 
 ### Utilities
 
-- Added new `.d-inline-grid` [display utility](  /utilities/display.md).
+- Added new `.d-inline-grid` [display utility](utilities/display.md).
 
 ## v5.3.0-alpha2
 
@@ -40,7 +40,7 @@ changes listed below.
 - Added Sass maps for generating theme colors for dark mode text, subtle
   background, and subtle border.
 
-- [Snippet examples](/examples.md#snippets) are now ready for
+- [Snippet examples](examples/index.md#snippets) are now ready for
   dark mode with updated markup and reduced custom styles.
 
 - Added `color-scheme: dark` to dark mode CSS to change OS level controls like
@@ -75,7 +75,7 @@ changes listed below.
 - Cards now have a `color` set on them to improve rendering across color modes.
 
 - Added new `.nav-underline` variant for our navigation with a simpler bottom
-  border under the active nav link. [See the docs for an example.](  /components/navs-tabs.md#underline)
+  border under the active nav link. [See the docs for an example.](components/navs-tabs.md#underline)
 
 - Navs now have new `:focus-visible` styles that better match our custom button
   focus styles.
@@ -98,7 +98,7 @@ changes listed below.
   color mode responsive emphasis color.
 
 - Added new link utilities for link color opacity, underline offset, underline
-  color, and underline opacity. [Explore the new links utilities.](  /utilities/link.md)
+  color, and underline opacity. [Explore the new links utilities.](utilities/link.md)
 
 - CSS variable based `border-width` utilities have been reverted to set their
   property directly (as was done prior to v5.2.0). This avoids inheritance
@@ -140,7 +140,7 @@ changes, [see the v5.3.0-alpha2 project on GitHub](https://github.com/orgs/twbs/
 
 ### Color modes!
 
-Learn more by reading the new [color modes documentation](/customize/color-modes.md).
+Learn more by reading the new [color modes documentation](customize/color-modes.md).
 
 - **Global support for light (default) and dark color modes.** Set color mode
   globally on the `:root` element, on groups of elements and components with a
@@ -234,7 +234,7 @@ Learn more by reading the new [color modes documentation](/customize/color-modes
 
 - <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span>
   The `list-group-item-variant()` mixin is now deprecated. We
-  now [use a Sass loop](/components/list-group.md#sass-loops)
+  now [use a Sass loop](components/list-group.md#sass-loops)
   directly to modify the component's default CSS variables for each variant.
 
 #### Dropdowns
@@ -242,25 +242,25 @@ Learn more by reading the new [color modes documentation](/customize/color-modes
 - <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span>
   The `.dropdown-menu-dark` class has been deprecated and replaced with
   `data-bs-theme="dark"` on the dropdown or any parent
-  element. [See the docs for an example.](  /components/dropdowns.md#dark-dropdowns)
+  element. [See the docs for an example.](components/dropdowns.md#dark-dropdowns)
 
 #### Close button
 
 - <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span>
   The `.btn-close-white` class has been deprecated and replaced with
   `data-bs-theme="dark"` on the close button or any parent
-  element. [See the docs for an example.](  /components/close-button.md#dark-variant)
+  element. [See the docs for an example.](components/close-button.md#dark-variant)
 
 #### Navbar
 
 - <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span>
   The `.navbar-dark` class has been deprecated and replaced with
   `data-bs-theme="dark"` on the navbar or any parent
-  element. [See the docs for updated examples.](  /components/navbar.md#color-schemes)
+  element. [See the docs for updated examples.](components/navbar.md#color-schemes)
 
 ### Progress bars
 
-The markup for [progress bars](/components/progress.md) has been
+The markup for [progress bars](components/progress.md) has been
 updated in v5.3.0. Due to the placement of `role` and various `aria-` attributes
 on the inner `.progress-bar` element, **some screen readers were not announcing
 zero value progress bars**. Now, `role="progressbar"` and the relevant `aria-*`
@@ -284,7 +284,7 @@ work as before.
 ```
 
 We've also introduced a new `.progress-stacked` class to more logically
-wrap [multiple progress bars](/components/progress.md#multiple-bars) into a single stacked progress bar.
+wrap [multiple progress bars](components/progress.md#multiple-bars) into a single stacked progress bar.
 
 ```html
 <!-- Previous markup -->
@@ -343,10 +343,10 @@ wrap [multiple progress bars](/components/progress.md#multiple-bars) into a sing
 
 - Adds new `.fw-medium` utility.
 
-- Added new [`.z-*` utilities](/utilities/z-index.md) for
+- Added new [`.z-*` utilities](utilities/z-index.md) for
   `z-index`.
 
-- [Box shadow utilities](/utilities/shadows.md) (and Sass
+- [Box shadow utilities](utilities/shadows.md) (and Sass
   variables) have been updated for dark mode. They now use `--bs-body-color-rgb`
   to generate the `rgba()` color values, allowing them to easily adapt to color
   modes based on the specified foreground color.
@@ -444,9 +444,9 @@ separate maps import.
 
 ### New utilities
 
-- Expanded [`font-weight` utilities](  /utilities/text.md#font-weight-and-italics) to include `.fw-semibold` for
+- Expanded [`font-weight` utilities](utilities/text.md#font-weight-and-italics) to include `.fw-semibold` for
   semibold fonts.
-- Expanded [`border-radius` utilities](  /utilities/borders.md#sizes) to include two new sizes, `.rounded-4` and
+- Expanded [`border-radius` utilities](utilities/borders.md#sizes) to include two new sizes, `.rounded-4` and
   `.rounded-5`, for more options.
 
 ### Additional changes
@@ -456,7 +456,7 @@ separate maps import.
   compiled, unless this option is set to `false`. Containers also now keep their
   gutter values.
 
-- **Offcanvas component now has [responsive variations](  /components/offcanvas.md#responsive).** The original `.offcanvas` class
+- **Offcanvas component now has [responsive variations](components/offcanvas.md#responsive).** The original `.offcanvas` class
   remains unchanged—it hides content across all viewports. To make it
   responsive, change that `.offcanvas` class to any
   `.offcanvas-{sm|md|lg|xl|xxl}` class.
@@ -464,7 +464,7 @@ separate maps import.
 - **Thicker table dividers are now opt-in. —** We've removed the thicker and
   more difficult to override border between table groups and moved it to an
   optional class you can apply,
-  `.table-group-divider`. [See the table docs for an example.](  /content/tables.md#table-group-dividers)
+  `.table-group-divider`. [See the table docs for an example.](content/tables.md#table-group-dividers)
 
 - **[Scrollspy has been rewritten](https://github.com/twbs/bootstrap/pull/33421)
   to use the Intersection Observer API**, which means you no longer need
@@ -486,7 +486,7 @@ separate maps import.
 - Added `.form-check-reverse` modifier to flip the order of labels and
   associated checkboxes/radios.
 
-- Added [striped columns](/content/tables.md#striped-columns)
+- Added [striped columns](content/tables.md#striped-columns)
   support to tables via the new `.table-striped-columns` class.
 
 For a complete list of
@@ -496,20 +496,20 @@ changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/pr
 
 <hr class="mb-4">
 
-- **Added experimental support for [CSS Grid layout](  /layout/css-grid.md). —** This is a work in progress, and is not yet ready
+- **Added experimental support for [CSS Grid layout](layout/css-grid.md). —** This is a work in progress, and is not yet ready
   for production use, but you can opt into the new feature via Sass. To enable
   it, disable the default grid, by setting `$enable-grid-classes: false` and
   enable the CSS Grid by setting `$enable-cssgrid: true`.
 
 - **Updated navbars to support offcanvas. —**
-  Add [offcanvas drawers in any navbar](  /components/navbar.md#offcanvas) with the responsive `.navbar-expand-*`
+  Add [offcanvas drawers in any navbar](components/navbar.md#offcanvas) with the responsive `.navbar-expand-*`
   classes and some offcanvas markup.
 
-- **Added new [placeholder component](  /components/placeholders/.md). —** Our newest component, a way to provide
+- **Added new [placeholder component](components/placeholders.md). —** Our newest component, a way to provide
   temporary blocks in lieu of real content to help indicate that something is
   still loading in your site or app.
 
-- **Collapse plugin now supports [horizontal collapsing](  /components/collapse.md#horizontal). —** Add `.collapse-horizontal` to your
+- **Collapse plugin now supports [horizontal collapsing](components/collapse.md#horizontal). —** Add `.collapse-horizontal` to your
   `.collapse` to collapse the `width` instead of the `height`. Avoid browser
   repainting by setting a `min-height` or `height`.
 
@@ -517,25 +517,25 @@ changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/pr
   flexbox properties to quickly create custom layouts with [stacks]({ { <
   docsref "/helpers/stacks/" }}). Choose from horizontal (`.hstack`) and
   vertical (`.vstack`) stacks. Add vertical dividers similar to `<hr>` elements
-  with the [new `.vr` helpers](/helpers/vertical-rule/.md).
+  with the [new `.vr` helpers](helpers/vertical-rule.md).
 
 - **Added new global `:root` CSS variables. —** Added several new CSS variables
   to the `:root` level for controlling `<body>` styles. More are in the works,
   including across our utilities and components, but for now read
-  up [CSS variables in the Customize section](  /customize/css-variables/.md).
+  up [CSS variables in the Customize section](customize/css-variables.md).
 
 - **Overhauled color and background utilities to use CSS variables, and added
-  new [text opacity](/utilities/text.md#opacity)
-  and [background opacity](/utilities/background.md#opacity)
+  new [text opacity](utilities/text.md#opacity)
+  and [background opacity](utilities/background.md#opacity)
   utilities. —** `.text-*` and `.bg-*` utilities are now built with CSS
   variables and `rgba()` color values, allowing you to easily customize any
   utility with new opacity utilities.
 
 - **Added new snippet examples based to show how to customize our components. —
   ** Pull ready to use customized components and other common design patterns
-  with our new [Snippets examples](/examples.md#snippets).
-  Includes [footers](/examples/footers/.md), [dropdowns]({ { <
-  docsref "/examples/dropdowns/" }}), [list groups](  /examples/list-groups/.md), and [modals](  /examples/modals/.md).
+  with our new [Snippets examples](examples/index.md#snippets).
+  Includes [footers](examples/footers/index.html), [dropdowns]({ { <
+  docsref "/examples/dropdowns/" }}), [list groups](examples/list-groups/index.html), and [modals](examples/modals/index.html).
 
 - **Removed unused positioning styles from popovers and tooltips** as these are
   handled solely by Popper. `$tooltip-margin` has been deprecated and set to
@@ -575,13 +575,13 @@ documented below. They don't reflect the additional changes shown above.
 ### Documentation changes
 
 - Redesigned homepage, docs layout, and footer.
-- Added [new Parcel guide](/getting-started/parcel.md).
-- Added [new Customize section](/customize/overview.md),
+- Added [new Parcel guide](getting-started/parcel.md).
+- Added [new Customize section](customize/overview.md),
   replacing [v4's Theming page](https://getbootstrap.com/docs/4.6/getting-started/theming/),
   with new details on Sass, global configuration options, color schemes, CSS
   variables, and more.
-- Reorganized all form documentation into [new Forms section](  /forms/overview.md), breaking apart the content into more focused pages.
-- Similarly, updated [the Layout section](  /layout/breakpoints.md), to flesh out grid content more clearly.
+- Reorganized all form documentation into [new Forms section](forms/overview.md), breaking apart the content into more focused pages.
+- Similarly, updated [the Layout section](layout/breakpoints.md), to flesh out grid content more clearly.
 - Renamed "Navs" component page to "Navs & Tabs".
 - Renamed "Checks" page to "Checks & radios".
 - Redesigned the navbar and added a new subnav to make it easier to get around
@@ -686,7 +686,7 @@ documented below. They don't reflect the additional changes shown above.
 - **Improved gutters.** Gutters are now set in rems, and are narrower than v4 (
   `1.5rem`, or about `24px`, down from `30px`). This aligns our grid system's
   gutters with our spacing utilities.
-  - Added new [gutter class](/layout/gutters.md) (`.g-*`,
+  - Added new [gutter class](layout/gutters.md) (`.g-*`,
     `.gx-*`, and `.gy-*`) to control horizontal/vertical gutters, horizontal
     gutters, and vertical gutters.
   - <span class="badge text-bg-danger">Breaking</span> Renamed `.no-gutters` to
@@ -702,7 +702,7 @@ documented below. They don't reflect the additional changes shown above.
 - <span class="badge text-bg-danger">Breaking</span> Dropped the `.media`
   component as it can be easily replicated with
   utilities. [See #28265](https://github.com/twbs/bootstrap/pull/28265) and
-  the [flex utilities page for an example](  /utilities/flex.md#media-object).
+  the [flex utilities page for an example](utilities/flex.md#media-object).
 
 - <span class="badge text-bg-danger">Breaking</span> `bootstrap-grid.css` now
   only applies `box-sizing: border-box` to the column instead of resetting the
@@ -717,7 +717,7 @@ documented below. They don't reflect the additional changes shown above.
 
 ### Content, Reboot, etc
 
-- **[RFS](/getting-started/rfs.md) is now enabled by default.**
+- **[RFS](getting-started/rfs.md) is now enabled by default.**
   Headings using the `font-size()` mixin will automatically adjust their
   `font-size` to scale with the viewport. _This feature was previously opt-in
   with v4._
@@ -838,11 +838,11 @@ documented below. They don't reflect the additional changes shown above.
 
 #### Accordion
 
-- Added [new accordion component](/components/accordion.md).
+- Added [new accordion component](components/accordion.md).
 
 #### Alerts
 
-- Alerts now have [examples with icons](  /components/alerts.md#icons).
+- Alerts now have [examples with icons](components/alerts.md#icons).
 
 - Removed custom styles for `<hr>`s in each alert since they already use
   `currentColor`.
@@ -883,7 +883,7 @@ documented below. They don't reflect the additional changes shown above.
   utilities.** Instead of using `.btn-block` on the `.btn`, wrap your buttons
   with `.d-grid` and a `.gap-*` utility to space them as needed. Switch to
   responsive classes for even more control over
-  them. [Read the docs for some examples.](  /components/buttons.md#block-buttons)
+  them. [Read the docs for some examples.](components/buttons.md#block-buttons)
 
 - Updated our `button-variant()` and `button-outline-variant()` mixins to
   support additional parameters.
@@ -903,11 +903,11 @@ documented below. They don't reflect the additional changes shown above.
   favor of Masonry. [See #28922](https://github.com/twbs/bootstrap/pull/28922).
 
 - <span class="badge text-bg-danger">Breaking</span> Replaced the `.card` based
-  accordion with a [new Accordion component](  /components/accordion.md).
+  accordion with a [new Accordion component](components/accordion.md).
 
 #### Carousel
 
-- Added new [`.carousel-dark` variant](  /components/carousel.md#dark-variant) for dark text, controls, and
+- Added new [`.carousel-dark` variant](components/carousel.md#dark-variant) for dark text, controls, and
   indicators (great for lighter backgrounds).
 
 - Replaced chevron icons for carousel controls with new SVGs
@@ -954,7 +954,7 @@ documented below. They don't reflect the additional changes shown above.
   option in [flip](https://popper.js.org/docs/v2/modifiers/flip/) modifier.
 
 - Dropdown menus can now be clickable with a new `autoClose` option to handle
-  the [auto close behavior](  /components/dropdowns.md#auto-close-behavior). You can use this option to
+  the [auto close behavior](components/dropdowns.md#auto-close-behavior). You can use this option to
   accept the click inside or outside the dropdown menu to make it interactive.
 
 - Dropdowns now support `.dropdown-item`s wrapped in `<li>`s.
@@ -963,11 +963,11 @@ documented below. They don't reflect the additional changes shown above.
 
 - <span class="badge text-bg-danger">Breaking</span> Dropped the jumbotron
   component as it can be replicated with
-  utilities. [See our new Jumbotron example for a demo.](  /examples/jumbotron.md)
+  utilities. [See our new Jumbotron example for a demo.](examples/jumbotron/index.html)
 
 #### List group
 
-- Added new [`.list-group-numbered` modifier](  /components/list-group.md#numbered) to list groups.
+- Added new [`.list-group-numbered` modifier](components/list-group.md#numbered) to list groups.
 
 #### Navs and tabs
 
@@ -985,7 +985,7 @@ documented below. They don't reflect the additional changes shown above.
 
 #### Offcanvas
 
-- Added the new [offcanvas component](/components/offcanvas.md).
+- Added the new [offcanvas component](components/offcanvas.md).
 
 #### Pagination
 
@@ -1010,8 +1010,8 @@ documented below. They don't reflect the additional changes shown above.
 
 #### Toasts
 
-- Toasts can now be [positioned](/components/toasts.md#placement)
-  in a `.toast-container` with the help of [positioning utilities](  /utilities/position.md).
+- Toasts can now be [positioned](components/toasts.md#placement)
+  in a `.toast-container` with the help of [positioning utilities](utilities/position.md).
 
 - Changed default toast duration to 5 seconds.
 
@@ -1051,13 +1051,13 @@ documented below. They don't reflect the additional changes shown above.
 - Added new `.bg-body` class for quickly setting the `<body>`'s background to
   additional elements.
 
-- Added new [position utilities](  /utilities/position.md#arrange-elements) for `top`, `right`, `bottom`, and
+- Added new [position utilities](utilities/position.md#arrange-elements) for `top`, `right`, `bottom`, and
   `left`. Values include `0`, `50%`, and `100%` for each property.
 
 - Added new `.translate-middle-x` & `.translate-middle-y` utilities to
   horizontally or vertically center absolute/fixed positioned elements.
 
-- Added new [`border-width` utilities](  /utilities/borders.md#border-width).
+- Added new [`border-width` utilities](utilities/borders.md#border-width).
 
 - <span class="badge text-bg-danger">Breaking</span> Renamed `.text-monospace`
   to `.font-monospace`.
@@ -1084,7 +1084,7 @@ documented below. They don't reflect the additional changes shown above.
   `.rounded-3`. [See #31687](https://github.com/twbs/bootstrap/pull/31687).
 
 - Added new `line-height` utilities: `.lh-1`, `.lh-sm`, `.lh-base` and `.lh-lg`.
-  See [here](/utilities/text.md#line-height).
+  See [here](utilities/text.md#line-height).
 
 - Moved the `.d-none` utility in our CSS to give it more weight over other
   display utilities.
@@ -1095,7 +1095,7 @@ documented below. They don't reflect the additional changes shown above.
 ### Helpers
 
 - <span class="badge text-bg-danger">Breaking</span> **Responsive embed helpers
-  have been renamed to [ratio helpers](/helpers/ratio.md)** with
+  have been renamed to [ratio helpers](helpers/ratio.md)** with
   new class names and improved behaviors, as well as a helpful CSS variable.
   - Classes have been renamed to change `by` to `x` in the aspect ratio. For
     example, `.ratio-16by9` is now `.ratio-16x9`.
@@ -1107,10 +1107,10 @@ documented below. They don't reflect the additional changes shown above.
     name and the percentage as the `key: value` pair.
   - CSS variables are now generated and included for each value in the Sass map.
     Modify the `--bs-aspect-ratio` variable on the `.ratio` to create
-    any [custom aspect ratio](/helpers/ratio.md#custom-ratios).
+    any [custom aspect ratio](helpers/ratio.md#custom-ratios).
 
 - <span class="badge text-bg-danger">Breaking</span> **"Screen reader" classes
-  are now ["visually hidden" classes](  /helpers/visually-hidden.md).**
+  are now ["visually hidden" classes](helpers/visually-hidden.md).**
   - Changed the Sass file from `scss/helpers/_screenreaders.scss` to
     `scss/helpers/_visually-hidden.scss`
   - Renamed `.sr-only` and `.sr-only-focusable` to `.visually-hidden` and

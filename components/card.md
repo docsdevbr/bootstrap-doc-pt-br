@@ -19,7 +19,7 @@ components is available as modifier classes for cards.
 Cards are built with as little markup and styles as possible, but still manage
 to deliver a ton of control and customization. Built with flexbox, they offer
 easy alignment and mix well with other Bootstrap components. They have no
-`margin` by default, so use [spacing utilities](/utilities/spacing.md) as needed.
+`margin` by default, so use [spacing utilities](../utilities/spacing.md) as needed.
 
 Below is an example of a basic card with mixed content and a fixed width. Cards
 have no fixed width to start, so they'll naturally fill the full width of its
@@ -253,7 +253,7 @@ Using the grid, wrap cards in columns and rows as needed.
 
 ### Using utilities
 
-Use our handful of [available sizing utilities](/utilities/sizing.md) to quickly set a card's width.
+Use our handful of [available sizing utilities](../utilities/sizing.md) to quickly set a card's width.
 
 { {< example >} }
 <div class="card w-75 mb-3">
@@ -290,7 +290,7 @@ Use custom CSS in your stylesheets or as inline styles to set a width.
 ## Text alignment
 
 You can quickly change the text alignment of any card—in its entirety or
-specific parts—with our [text align classes](/utilities/text.md#text-alignment).
+specific parts—with our [text align classes](../utilities/text.md#text-alignment).
 
 { {< example >} }
 <div class="card mb-3" style="width: 18rem;">
@@ -321,7 +321,7 @@ specific parts—with our [text align classes](/utilities/text.md#text-alignment
 ## Navigation
 
 Add some navigation to a card's header (or block) with
-Bootstrap's [nav components](/components/navs-tabs.md).
+Bootstrap's [nav components](navs-tabs.md).
 
 { {< example >} }
 <div class="card text-center">
@@ -455,8 +455,8 @@ color.
 { {< added-in "5.2.0" >} }
 
 Set a `background-color` with contrasting foreground `color` with [our
-`.text-bg-{color}` helpers](helpers/color-background.md).
-Previously it was required to manually pair your choice of [`.text-{color}`](/utilities/colors.md) and [`.bg-{color}`](/utilities/background.md) utilities for styling, which you still may use if
+`.text-bg-{color}` helpers](../helpers/color-background.md).
+Previously it was required to manually pair your choice of [`.text-{color}`](../utilities/colors.md) and [`.bg-{color}`](../utilities/background.md) utilities for styling, which you still may use if
 you prefer.
 
 { {< example >} }
@@ -479,7 +479,7 @@ you prefer.
 
 ### Border
 
-Use [border utilities](/utilities/borders.md) to change just the
+Use [border utilities](../utilities/borders.md) to change just the
 `border-color` of a card. Note that you can put `.text-{color}` classes on the
 parent `.card` or a subset of the card's contents as shown below.
 
@@ -593,7 +593,7 @@ When using card groups with footers, their content will automatically line up.
 
 ### Grid cards
 
-Use the Bootstrap grid system and its [`.row-cols` classes](/layout/grid.md#row-columns) to control how many grid columns (wrapped around
+Use the Bootstrap grid system and its [`.row-cols` classes](../layout/grid.md#row-columns) to control how many grid columns (wrapped around
 your cards) you show per row. For example, here's `.row-cols-1` laying out the
 cards on one column, and `.row-cols-md-2` splitting four cards to equal width
 across multiple rows, from the medium breakpoint up.
@@ -777,7 +777,7 @@ came with lots of
 unpleasant [side effects](https://github.com/twbs/bootstrap/pull/28922). If you
 want to have this type of layout in `v5`, you can just make use of Masonry
 plugin. **Masonry is not included in Bootstrap**, but we've made
-a [demo example](/examples/masonry.md) to help you get started.
+a [demo example](../examples/masonry/index.html) to help you get started.
 
 ## CSS
 

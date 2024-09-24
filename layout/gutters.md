@@ -14,7 +14,7 @@ toc: true
   row to align content.
 
 - **Gutters start at `1.5rem` (`24px`) wide.** This allows us to match our grid
-  to the [padding and margin spacers](/utilities/spacing.md)
+  to the [padding and margin spacers](../utilities/spacing.md)
   scale.
 
 - **Gutters can be responsively adjusted.** Use breakpoint-specific gutter
@@ -110,7 +110,7 @@ example below, we use a smaller gutter width, so there isn't a need for the
 
 ## Row columns gutters
 
-Gutter classes can also be added to [row columns](/layout/grid.md#row-columns). In the following example, we use responsive row
+Gutter classes can also be added to [row columns](grid.md#row-columns). In the following example, we use responsive row
 columns and responsive gutter classes.
 
 { { < example class="bd-example-cols" }}

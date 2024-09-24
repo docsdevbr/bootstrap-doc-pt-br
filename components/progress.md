@@ -9,7 +9,7 @@ toc: true
 { {< callout info >} }
 **New markup in v5.3.0 —** We've deprecated the previous HTML structure for
 progress bars and replaced it with a more accessible one. The previous structure
-will continue to work until v6. [See what's changed in our migration guide.](/migration.md#improved-markup-for-progress-bars)
+will continue to work until v6. [See what's changed in our migration guide.](../migration.md#improved-markup-for-progress-bars)
 { {< /callout >} }
 
 ## How it works
@@ -55,7 +55,7 @@ Put that all together, and you have the following examples.
 
 ### Width
 
-Bootstrap provides a handful of [utilities for setting width](/utilities/sizing.md). Depending on your needs, these may help with quickly
+Bootstrap provides a handful of [utilities for setting width](../utilities/sizing.md). Depending on your needs, these may help with quickly
 configuring the width of the `.progress-bar`.
 
 { {< example >} }
@@ -92,9 +92,9 @@ Note that by default, the content inside the `.progress-bar` is controlled with
 `overflow: hidden`, so it doesn't bleed out of the bar. If your progress bar is
 shorter than its label, the content will be capped and may become unreadable. To
 change this behavior, you can use `.overflow-visible` from
-the [overflow utilities](/utilities/overflow.md), but make sure
-to also define an explicit [text color](/utilities/colors.md#colors) so the text remains readable. Be aware though
-that currently this approach does not take into account [color modes](/customize/color-modes.md).
+the [overflow utilities](../utilities/overflow.md), but make sure
+to also define an explicit [text color](../utilities/colors.md#colors) so the text remains readable. Be aware though
+that currently this approach does not take into account [color modes](../customize/color-modes.md).
 
 { {< example >} }
 <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
@@ -127,7 +127,7 @@ bars.
 { {< /callout >} }
 
 If you're adding labels to progress bars with a custom background color, make
-sure to also set an appropriate [text color](/utilities/colors.md#colors), so the labels remain readable and have
+sure to also set an appropriate [text color](../utilities/colors.md#colors), so the labels remain readable and have
 sufficient contrast.
 
 { {< example >} }
@@ -145,7 +145,7 @@ sufficient contrast.
 </div>
 { {< /example >} }
 
-Alternatively, you can use the new combined [color and background](/helpers/color-background.md) helper classes.
+Alternatively, you can use the new combined [color and background](../helpers/color-background.md) helper classes.
 
 { {< example >} }
 <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">

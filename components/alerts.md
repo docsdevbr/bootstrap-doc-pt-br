@@ -76,7 +76,7 @@ dividers.
 
 ### Icons
 
-Similarly, you can use [flexbox utilities](/utilities/flex.md)
+Similarly, you can use [flexbox utilities](../utilities/flex.md)
 and [Bootstrap Icons]({{ icons }}) to create alerts with icons.
 Depending on your icons and content, you may want to add more utilities or
 custom styles.
@@ -140,7 +140,7 @@ Using the alert JavaScript plugin, it's possible to dismiss any alert inline.
 Here's how:
 
 - Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.
-- Add a [close button](/components/close-button.md) and the
+- Add a [close button](close-button.md) and the
   `.alert-dismissible` class, which adds extra padding to the right of the alert
   and positions the close button.
 - On the close button, add the `data-bs-dismiss="alert"` attribute, which

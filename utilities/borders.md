@@ -223,7 +223,7 @@ border-radius.scss" }}
 ### Sass utilities API
 
 Border utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-borders" file="scss/_utilities.scss" }}
 

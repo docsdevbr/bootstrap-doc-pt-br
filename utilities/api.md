@@ -40,7 +40,7 @@ variables to generate in addition to the CSS rules. |
 `:hover` or `:focus`) to generate. |
 | [`responsive`](#responsive) | Optional | `false` | Boolean indicating if
 responsive classes should be generated. |
-| `rfs` | Optional | `false` | Boolean to enable [fluid rescaling with RFS](/getting-started/rfs.md). |
+| `rfs` | Optional | `false` | Boolean to enable [fluid rescaling with RFS](../getting-started/rfs.md). |
 | [`print`](#print) | Optional | `false` | Boolean indicating if print classes
 need to be generated. |
 | `rtl` | Optional | `true` | Boolean indicating if utility should be kept in
@@ -107,13 +107,13 @@ Use the `values` key to specify which values for the specified `property` should
 be used in the generated class names and rules. Can be a list or map (set in the
 utilities or in a Sass variable).
 
-As a list, like with [`text-decoration` utilities](/utilities/text.md#text-decoration):
+As a list, like with [`text-decoration` utilities](text.md#text-decoration):
 
 ```scss
 values: none underline line-through
 ```
 
-As a map, like with [`opacity` utilities](/utilities/opacity.md):
+As a map, like with [`opacity` utilities](opacity.md):
 
 ```scss
 values: (
@@ -126,7 +126,7 @@ values: (
 ```
 
 As a Sass variable that sets the list or map, as in our [
-`position` utilities](/utilities/position.md):
+`position` utilities](position.md):
 
 ```scss
 values: $position-values
@@ -295,7 +295,7 @@ Output:
 ### Responsive
 
 Add the `responsive` boolean to generate responsive utilities (e.g.,
-`.opacity-md-25`) across [all breakpoints](/layout/breakpoints.md).
+`.opacity-md-25`) across [all breakpoints](../layout/breakpoints.md).
 
 ```scss
 $utilities: (

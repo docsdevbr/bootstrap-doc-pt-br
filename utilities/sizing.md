@@ -61,6 +61,6 @@ You can also use utilities to set the width and height relative to the viewport.
 ### Sass utilities API
 
 Sizing utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-sizing" file="scss/_utilities.scss" }}

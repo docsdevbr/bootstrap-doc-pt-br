@@ -19,7 +19,7 @@ our `$theme-colors` and creating responsive variants for each breakpoint. As you
 customize these Sass maps and recompile, you'll automatically see your changes
 reflected in these loops.
 
-Check out [our Sass maps and loops docs](/customize/sass.md#maps-and-loops) for how to customize these loops and extend
+Check out [our Sass maps and loops docs](sass.md#maps-and-loops) for how to customize these loops and extend
 Bootstrap's base-modifier approach to your own code.
 
 ## Modifiers
@@ -52,7 +52,7 @@ loops iterating over that map.
 { { < scss-docs name="grid-breakpoints" file="scss/_variables.scss" }}
 
 For more information and examples on how to modify our Sass maps and variables,
-please refer to [the CSS section of the Grid documentation](/layout/grid.md#css).
+please refer to [the CSS section of the Grid documentation](../layout/grid.md#css).
 
 ## Creating your own
 

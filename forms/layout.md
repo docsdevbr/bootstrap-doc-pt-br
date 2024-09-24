@@ -24,7 +24,7 @@ used to vary this layout on a per-form basis.
 
 ## Utilities
 
-[Margin utilities](/utilities/spacing.md) are the easiest way to
+[Margin utilities](../utilities/spacing.md) are the easiest way to
 add some structure to forms. They provide basic grouping of labels, controls,
 optional form text, and form validation messaging. We recommend sticking to
 `margin-bottom` utilities, and using a single direction throughout the form for
@@ -64,7 +64,7 @@ by default).
 
 ## Gutters
 
-By adding [gutter modifier classes](/layout/gutters.md), you can
+By adding [gutter modifier classes](../layout/gutters.md), you can
 have control over the gutter width in as well the inline as block direction. *
 *Also requires the `$enable-grid-classes` Sass variable to be enabled** (on by
 default).
@@ -323,7 +323,7 @@ You can then remix that once again with size-specific column classes.
 ## Inline forms
 
 Use the `.row-cols-*` classes to create responsive horizontal layouts. By
-adding [gutter modifier classes](/layout/gutters.md), we'll have
+adding [gutter modifier classes](../layout/gutters.md), we'll have
 gutters in horizontal and vertical directions. On narrow mobile viewports, the
 `.col-12` helps stack the form controls and more. The `.align-items-center`
 aligns the form elements to the middle, making the `.form-check` align properly.

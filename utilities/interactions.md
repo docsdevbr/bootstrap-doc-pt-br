@@ -47,6 +47,6 @@ If possible, the simpler solution is:
 ### Sass utilities API
 
 Interaction utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-interaction" file="scss/_utilities.scss" }}

@@ -53,7 +53,7 @@ our `_variables.scss` stylesheet.
 { { < scss-docs name="grid-breakpoints" file="scss/_variables.scss" }}
 
 For more information and examples on how to modify our Sass maps and variables,
-please refer to [the CSS section of the Grid documentation](/layout/grid.md#css).
+please refer to [the CSS section of the Grid documentation](grid.md#css).
 
 ## Media queries
 

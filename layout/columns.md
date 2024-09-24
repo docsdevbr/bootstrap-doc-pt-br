@@ -7,7 +7,7 @@ toc: true
 ---
 
 { { < callout info }}
-**Heads up!** Be sure to [read the Grid page](/layout/grid.md)
+**Heads up!** Be sure to [read the Grid page](grid.md)
 first before diving into how to modify and customize your grid columns.
 { { < /callout }}
 
@@ -15,16 +15,16 @@ first before diving into how to modify and customize your grid columns.
 
 - **Columns build on the grid's flexbox architecture.** Flexbox means we have
   options for changing individual columns
-  and [modifying groups of columns at the row level](  /layout/grid.md#row-columns). You choose how columns grow, shrink, or
+  and [modifying groups of columns at the row level](grid.md#row-columns). You choose how columns grow, shrink, or
   otherwise change.
 
 - **When building grid layouts, all content goes in columns.** The hierarchy of
-  Bootstrap's grid goes from [container](/layout/containers.md)
+  Bootstrap's grid goes from [container](containers.md)
   to row to column to your content. On rare occasions, you may combine content
   and column, but be aware there can be unintended consequences.
 
 - **Bootstrap includes predefined classes for creating fast, responsive layouts.
-  ** With [six breakpoints](/layout/breakpoints.md) and a dozen
+  ** With [six breakpoints](breakpoints.md) and a dozen
   columns at each grid tier, we have dozens of classes already built for you to
   create your desired layouts. This can be disabled via Sass if you wish.
 
@@ -201,7 +201,7 @@ implementation method can account for this.
 { {< /example >} }
 
 You may also apply this break at specific breakpoints with
-our [responsive display utilities](/utilities/display.md).
+our [responsive display utilities](../utilities/display.md).
 
 { { < example class="bd-example-row" }}
 <div class="container text-center">
@@ -269,7 +269,7 @@ needed.
 ### Offsetting columns
 
 You can offset grid columns in two ways: our responsive `.offset-` grid classes
-and our [margin utilities](/utilities/spacing.md). Grid classes
+and our [margin utilities](../utilities/spacing.md). Grid classes
 are sized to match columns while margins are more useful for quick layouts where
 the width of the offset is variable.
 
@@ -296,7 +296,7 @@ the left margin of a column by `*` columns. For example, `.offset-md-4` moves
 { {< /example >} }
 
 In addition to column clearing at responsive breakpoints, you may need to reset
-offsets. See this in action in [the grid example](/examples/grid.md).
+offsets. See this in action in [the grid example](../examples/grid/index.html).
 
 { { < example class="bd-example-row" }}
 <div class="container text-center">
@@ -350,7 +350,7 @@ row, the paddings are omitted.
 { {< /example >} }
 
 The classes can be used together with utilities to create responsive floated
-images. Make sure to wrap the content in a [`.clearfix`](/helpers/clearfix.md) wrapper to clear the float if the text is shorter.
+images. Make sure to wrap the content in a [`.clearfix`](../helpers/clearfix.md) wrapper to clear the float if the text is shorter.
 
 { {< example >} }
 <div class="clearfix">

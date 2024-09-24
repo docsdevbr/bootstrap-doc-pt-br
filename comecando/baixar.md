@@ -119,7 +119,7 @@ openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A
 Inclua os **arquivos fonte** do Bootstrap em praticamente qualquer projeto com
 alguns dos gerenciadores de pacotes mais populares.
 Não importa o gerenciador de pacotes, o Bootstrap **exigirá um
-[compilador Sass](/getting-started/contribute.md#sass) e um
+[compilador Sass](../getting-started/contribute.md#sass) e um
 [Autoprefixer](https://github.com/postcss/autoprefixer)** para uma configuração
 que corresponda às nossas versões oficiais compiladas.
 

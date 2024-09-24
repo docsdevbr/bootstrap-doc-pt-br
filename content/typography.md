@@ -9,9 +9,9 @@ toc: true
 ## Global settings
 
 Bootstrap sets basic global display, typography, and link styles. When more
-control is needed, check out the [textual utility classes](/utilities/text.md).
+control is needed, check out the [textual utility classes](../utilities/text.md).
 
-- Use a [native font stack](/content/reboot.md#native-font-stack)
+- Use a [native font stack](reboot.md#native-font-stack)
   that selects the best `font-family` for each OS and device.
 - For a more inclusive and accessible type scale, we use the browser's default
   root `font-size` (typically 16px) so visitors can customize their browser
@@ -154,8 +154,8 @@ to highlight words or phrases without conveying additional importance, while
 ## Text utilities
 
 Change text alignment, transform, style, weight, line-height, decoration and
-color with our [text utilities](/utilities/text.md)
-and [color utilities](/utilities/colors.md).
+color with our [text utilities](../utilities/text.md)
+and [color utilities](../utilities/colors.md).
 
 ## Abbreviations
 
@@ -302,7 +302,7 @@ classes (or semantic mixins). For longer terms, you can optionally add a
 
 In Bootstrap 5, we've enabled responsive font sizes by default, allowing text to
 scale more naturally across device and viewport sizes. Have a look at
-the [RFS page](/getting-started/rfs.md) to find out how this
+the [RFS page](../getting-started/rfs.md) to find out how this
 works.
 
 ## CSS
@@ -313,11 +313,11 @@ Headings have some dedicated variables for sizing and spacing.
 
 { { < scss-docs name="headings-variables" file="scss/_variables.scss" }}
 
-Miscellaneous typography elements covered here and in [Reboot](/content/reboot.md) also have dedicated variables.
+Miscellaneous typography elements covered here and in [Reboot](reboot.md) also have dedicated variables.
 
 { { < scss-docs name="type-variables" file="scss/_variables.scss" }}
 
 ### Sass mixins
 
 There are no dedicated mixins for typography, but Bootstrap does
-use [Responsive Font Sizing (RFS)](/getting-started/rfs.md).
+use [Responsive Font Sizing (RFS)](../getting-started/rfs.md).

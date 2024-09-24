@@ -66,7 +66,7 @@ match as needed, or build your own.
 
 ### Horizontal alignment
 
-Change the horizontal alignment of your nav with [flexbox utilities](/utilities/flex.md#justify-content). By default, navs are
+Change the horizontal alignment of your nav with [flexbox utilities](../utilities/flex.md#justify-content). By default, navs are
 left-aligned, but you can easily change them to center or right-aligned.
 
 Centered with `.justify-content-center`:
@@ -278,7 +278,7 @@ Similar to the `.nav-fill` example using a `<nav>`-based navigation.
 ## Working with flex utilities
 
 If you need responsive nav variations, consider using a series
-of [flexbox utilities](/utilities/flex.md). While more verbose,
+of [flexbox utilities](../utilities/flex.md). While more verbose,
 these utilities offer greater customization across responsive breakpoints. In
 the example below, our nav will be stacked on the lowest breakpoint, then adapt
 to a horizontal layout that fills the available width starting from the small
@@ -314,7 +314,7 @@ adding `aria-selected="true"` on the active tab.
 ## Using dropdowns
 
 Add dropdown menus with a little extra HTML and
-the [dropdowns JavaScript plugin](/components/dropdowns.md#usage).
+the [dropdowns JavaScript plugin](dropdowns.md#usage).
 
 ### Tabs with dropdowns
 

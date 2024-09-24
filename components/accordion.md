@@ -11,7 +11,7 @@ toc: true
 
 ## How it works
 
-The accordion uses [collapse](/components/collapse.md) internally
+The accordion uses [collapse](collapse.md) internally
 to make it collapsible.
 
 { {< callout info >} }
@@ -157,7 +157,7 @@ accordion items stay open when another item is opened.
 
 ## Accessibility
 
-Please read the [collapse accessibility section](/components/collapse.md#accessibility) for more information.
+Please read the [collapse accessibility section](collapse.md#accessibility) for more information.
 
 ## CSS
 

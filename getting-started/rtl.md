@@ -9,7 +9,7 @@ toc: true
 ## Get familiar
 
 We recommend getting familiar with Bootstrap first by reading through
-our [Getting Started Introduction page](/getting-started/introduction.md). Once you've run through it, continue
+our [Getting Started Introduction page](../comecando/introducao.md). Once you've run through it, continue
 reading here for how to enable RTL.
 
 You may also want to read up on [the RTLCSS project](https://rtlcss.com/), as it
@@ -74,7 +74,7 @@ template.
 
 ### RTL examples
 
-Get started with one of our several [RTL examples](/examples/.md#rtl).
+Get started with one of our several [RTL examples](../examples/index.md#rtl).
 
 ## Approach
 
@@ -99,7 +99,7 @@ different from our default LTR though.
 
 ## Customize from source
 
-When it comes to [customization](/customize/sass.md), the
+When it comes to [customization](../customize/sass.md), the
 preferred way is to take advantage of variables, maps, and mixins. This approach
 works the same for RTL, even if it's post-processed from the compiled files,
 thanks
@@ -202,7 +202,7 @@ LTR and RTL implementation:
 1. When switching `.ltr` and `.rtl`, make sure you add `dir` and `lang`
    attributes accordingly.
 2. Loading both files can be a real performance bottleneck: consider
-   some [optimization](/customize/optimize.md), and maybe try
+   some [optimization](../customize/optimize.md), and maybe try
    to [load one of those files asynchronously](https://www.filamentgroup.com/lab/load-css-simpler/).
 3. Nesting styles this way will prevent our `form-validation-state()` mixin from
    working as intended, thus require you tweak it a bit by
@@ -242,7 +242,7 @@ combined LTR and RTL implementation:
 
 ## The breadcrumb case
 
-The [breadcrumb separator](/components/breadcrumb.md#dividers) is
+The [breadcrumb separator](../components/breadcrumb.md#dividers) is
 the only case requiring its own brand-new variable— namely
 `$breadcrumb-divider-flipped` —defaulting to `$breadcrumb-divider`.
 

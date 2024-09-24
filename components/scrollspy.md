@@ -10,7 +10,7 @@ toc: true
 
 Scrollspy toggles the `.active` class on anchor (`<a>`) elements when the
 element with the `id` referenced by the anchor's `href` is scrolled into view.
-Scrollspy is best used in conjunction with a Bootstrap [nav component](/components/navs-tabs.md) or [list group](/components/list-group.md), but it will also work with any anchor elements in
+Scrollspy is best used in conjunction with a Bootstrap [nav component](navs-tabs.md) or [list group](list-group.md), but it will also work with any anchor elements in
 the current page. Here's how it works.
 
 - To start, scrollspy requires two things: a navigation, list group, or a simple

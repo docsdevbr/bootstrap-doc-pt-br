@@ -252,7 +252,7 @@ Put your checkboxes, radios, and switches on the opposite side with the
 Omit the wrapping `.form-check` for checkboxes and radios that have no label
 text. Remember to still provide some form of accessible name for assistive
 technologies (for instance, using `aria-label`). See
-the [forms overview accessibility](/forms/overview.md#accessibility) section for details.
+the [forms overview accessibility](overview.md#accessibility) section for details.
 
 { {< example >} }
 <div>
@@ -268,7 +268,7 @@ the [forms overview accessibility](/forms/overview.md#accessibility) section for
 
 Create button-like checkboxes and radio buttons by using `.btn` styles rather
 than `.form-check-label` on the `<label>` elements. These toggle buttons can
-further be grouped in a [button group](/components/button-group.md) if needed.
+further be grouped in a [button group](../components/button-group.md) if needed.
 
 ### Checkbox toggle buttons
 
@@ -296,7 +296,7 @@ further be grouped in a [button group](/components/button-group.md) if needed.
 
 { { < callout info }}
 Visually, these checkbox toggle buttons are identical to
-the [button plugin toggle buttons](/components/buttons.md#button-plugin). However, they are conveyed differently
+the [button plugin toggle buttons](../components/buttons.md#button-plugin). However, they are conveyed differently
 by assistive technologies: the checkbox toggles will be announced by screen
 readers as "checked"/"not checked" (since, despite their appearance, they are
 fundamentally still checkboxes), whereas the button plugin toggle buttons will

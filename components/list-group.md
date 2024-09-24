@@ -219,7 +219,7 @@ indicate an active selection on a contextual list group item.
 ## With badges
 
 Add badges to any list group item to show unread counts, activity, and more with
-the help of some [utilities](/utilities/flex.md).
+the help of some [utilities](../utilities/flex.md).
 
 { {< example >} }
 <ul class="list-group">
@@ -241,7 +241,7 @@ the help of some [utilities](/utilities/flex.md).
 ## Custom content
 
 Add nearly any HTML within, even for linked list groups like the one below, with
-the help of [flexbox utilities](/utilities/flex.md).
+the help of [flexbox utilities](../utilities/flex.md).
 
 { {< example >} }
 <div class="list-group">

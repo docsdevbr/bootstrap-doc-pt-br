@@ -111,7 +111,7 @@ The indicators let users jump directly to a particular slide.
 
 You can add captions to your slides with the `.carousel-caption` element within
 any `.carousel-item`. They can be easily hidden on smaller viewports, as shown
-below, with optional [display utilities](/utilities/display.md).
+below, with optional [display utilities](../utilities/display.md).
 We hide them initially with `.d-none` and bring them back on medium-sized
 devices with `.d-md-block`.
 

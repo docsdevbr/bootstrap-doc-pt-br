@@ -77,7 +77,7 @@ When you don't want to use the includes, there are also two functions:
   rescaling.
 
 In this example, we use one of Bootstrap's
-built-in [responsive breakpoint mixins](/layout/breakpoints.md)
+built-in [responsive breakpoint mixins](../layout/breakpoints.md)
 to only apply styling below the `lg` breakpoint.
 
 ```scss

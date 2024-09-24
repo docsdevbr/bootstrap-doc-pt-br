@@ -18,7 +18,7 @@ variable, which also allows [custom aspect ratios](#custom-ratios).
 
 { { < callout info }}
 **Pro-Tip!** You don't need `frameborder="0"` on your `<iframe>`s as we override
-that for you in [Reboot](/content/reboot.md).
+that for you in [Reboot](../content/reboot.md).
 { { < /callout }}
 
 ## Example

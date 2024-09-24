@@ -67,7 +67,7 @@ styles across your Bootstrap-powered project.
 
 In addition to `.focus-ring`, we have several `.focus-ring-*` utilities to
 modify the helper class defaults. Modify the color with any of
-our [theme colors](/customize/color.md#theme-colors). Note that
+our [theme colors](../customize/color.md#theme-colors). Note that
 the light and dark variants may not be visible on all background colors given
 current color mode support.
 
@@ -80,6 +80,6 @@ current color mode support.
 { {< /example >} }
 
 Focus ring utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](../utilities/api.md#using-the-api)
 
 { { < scss-docs name="utils-focus-ring" file="scss/_utilities.scss" }}

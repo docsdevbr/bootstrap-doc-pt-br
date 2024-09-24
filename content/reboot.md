@@ -34,7 +34,7 @@ With v5.1.1, we standardized our required `@import`s across all our CSS
 bundles (including `bootstrap.css`, `bootstrap-reboot.css`, and
 `bootstrap-grid.css`) to include `_root.scss`. This adds `:root` level CSS
 variables to all bundles, regardless of how many of them are used in that
-bundle. Ultimately Bootstrap 5 will continue to see more [CSS variables](/customize/css-variables.md) added over time, in order to provide
+bundle. Ultimately Bootstrap 5 will continue to see more [CSS variables](../customize/css-variables.md) added over time, in order to provide
 more real-time customization without the need to always recompile Sass. Our
 approach is to take our source Sass variables and transform them into CSS
 variables. That way, even if you don't use CSS variables, you still have all the
@@ -280,7 +280,7 @@ program.</samp>
 
 Tables are slightly adjusted to style `<caption>`s, collapse borders, and ensure
 consistent `text-align` throughout. Additional changes for borders, padding, and
-more come with [the `.table` class](/content/tables.md).
+more come with [the `.table` class](tables.md).
 
 { {< example >} }
 <table>
@@ -558,4 +558,4 @@ techniques for managing the `display` of elements.
 
 To merely toggle the visibility of an element, meaning its `display` is not
 modified and the element can still affect the flow of the document, use [the
-`.invisible` class](/utilities/visibility.md) instead.
+`.invisible` class](../utilities/visibility.md) instead.

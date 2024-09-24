@@ -10,7 +10,7 @@ added:
 
 ## Overview
 
-Color and background helpers combine the power of our [`.text-*` utilities](/utilities/colors.md) and [`.bg-*` utilities](/utilities/background.md) in one class. Using our Sass `color-contrast()`
+Color and background helpers combine the power of our [`.text-*` utilities](../utilities/colors.md) and [`.bg-*` utilities](../utilities/background.md) in one class. Using our Sass `color-contrast()`
 function, we automatically determine a contrasting `color` for a particular
 `background-color`.
 
@@ -35,14 +35,14 @@ colors via CSS variables may cause color contrast issues with these utilities.
 ## With components
 
 Use them in place of combined `.text-*` and `.bg-*` classes, like
-on [badges](/components/badge.md#background-colors):
+on [badges](../components/badge.md#background-colors):
 
 { {< example >} }
 <span class="badge text-bg-primary">Primary</span>
 <span class="badge text-bg-info">Info</span>
 { {< /example >} }
 
-Or on [cards](/components/card.md#background-and-color):
+Or on [cards](../components/card.md#background-and-color):
 
 { {< example >} }
 <div class="card text-bg-primary mb-3" style="max-width: 18rem;">

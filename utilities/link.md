@@ -12,7 +12,7 @@ added:
 
 Change the alpha opacity of the link `rgba()` color value with utilities. Please
 be aware that changes to a color's opacity can lead to links with [
-*insufficient* contrast](getting-started/accessibility.md#color-contrast).
+*insufficient* contrast](../getting-started/accessibility.md#color-contrast).
 
 { {< example >} }
 <p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
@@ -86,7 +86,7 @@ Underline opacity 0
 
 ## Colored links
 
-[Colored link helpers](/helpers/colored-links/.md) have been
+[Colored link helpers](../helpers/colored-links.md) have been
 updated to pair with our link utilities. Use the new utilities to modify the
 link opacity, underline opacity, and underline offset.
 
@@ -106,12 +106,12 @@ link opacity, underline opacity, and underline offset.
 ## CSS
 
 In addition to the following Sass functionality, consider reading about our
-included [CSS custom properties](/customize/css-variables.md) (
+included [CSS custom properties](../customize/css-variables.md) (
 aka CSS variables) for colors and more.
 
 ### Sass utilities API
 
 Link utilities are declared in our utilities API in
-`scss/_utilities.scss`. [Learn how to use the utilities API.](/utilities/api.md#using-the-api)
+`scss/_utilities.scss`. [Learn how to use the utilities API.](api.md#using-the-api)
 
 { { < scss-docs name="utils-links" file="scss/_utilities.scss" }}

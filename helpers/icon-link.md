@@ -93,7 +93,7 @@ your Bootstrap-powered project.
 
 ### Sass utilities API
 
-Modify icon links with any of [our link utilities](/utilities/link/.md) for modifying underline color and offset.
+Modify icon links with any of [our link utilities](../utilities/link.md) for modifying underline color and offset.
 
 { {< example >} }
 <a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">

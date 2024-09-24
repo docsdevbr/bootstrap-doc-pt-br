@@ -14,7 +14,7 @@ Things to know when using the popover plugin:
   library [Popper](https://popper.js.org/docs/v2/) for positioning. You must
   include [popper.min.js]({{ cdn.popper }}) before `bootstrap.js`, or
   use one `bootstrap.bundle.min.js` which contains Popper.
-- Popovers require the [popover plugin](/components/popovers.md)
+- Popovers require the [popover plugin](popovers.md)
   as a dependency.
 - Popovers are opt-in for performance reasons, so **you must initialize them
   yourself**.
@@ -104,7 +104,7 @@ const popover = new bootstrap.Popover('.example-popover', {
 ```
 
 Another situation where you'll want to set an explicit custom `container` are
-popovers inside a [modal dialog](/components/modal.md), to make
+popovers inside a [modal dialog](modal.md), to make
 sure that the popover itself is appended to the modal. This is particularly
 important for popovers that contain interactive elements – modal dialogs will
 trap focus, so unless the popover is a child element of the modal, users won't
