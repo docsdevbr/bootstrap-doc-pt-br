@@ -42,7 +42,7 @@ nav:
       - Navegadores e Dispositivos: comecando/navegadores-dispositivos.md
       - JavaScript: comecando/javascript.md
       - Webpack: comecando/webpack.md
-      - Parcel: getting-started/parcel.md
+      - Parcel: comecando/parcel.md
       - Vite: getting-started/vite.md
       - Accessibility: getting-started/accessibility.md
       - RFS: getting-started/rfs.md

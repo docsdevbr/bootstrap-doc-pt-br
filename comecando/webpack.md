@@ -31,7 +31,7 @@ Baixe o código-fonte e a demonstração funcional para este guia do repositóri
 Você também pode
 [abrir o exemplo no StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html)
 para edição ao vivo.
-{: .callout }
+{: .callout .info }
 
 ## Configuração
 

@@ -1,24 +1,27 @@
 # comecando
 
-/ /comecando/introducao 301
-/comecando/ /comecando/introducao 301
-/getting-started/ /comecando/introducao 301
-/getting-started/browsers-devices/ /comecando/navegadores-dispositivos 301
-/getting-started/contents/ /comecando/conteudo 301
-/getting-started/download/ /comecando/baixe 301
-/getting-started/introduction/ /comecando/introducao 301
-/getting-started/javascript/ /comecando/javascript 301
-/getting-started/webpack/ /comecando/webpack 301
+/ /doc/5.3/comecando/introducao 301
+/doc/ /doc/5.3/comecando/introducao 301
+/doc/5.3/ /doc/5.3/comecando/introducao 301
 
-# google-search
+/doc/5.3/comecando/ /doc/5.3/comecando/introducao 301
+/doc/5.3/getting-started/ /doc/5.3/comecando/introducao 301
+/doc/5.3/getting-started/browsers-devices/ /doc/5.3/comecando/navegadores-dispositivos 301
+/doc/5.3/getting-started/contents/ /doc/5.3/comecando/conteudo 301
+/doc/5.3/getting-started/download/ /doc/5.3/comecando/baixe 301
+/doc/5.3/getting-started/introduction/ /doc/5.3/comecando/introducao 301
+/doc/5.3/getting-started/javascript/ /doc/5.3/comecando/javascript 301
+/doc/5.3/getting-started/webpack/ /doc/5.3/comecando/webpack 301
 
-/components/%7B%7B%3C%0Adocsref%20%22/:section /:section 301
-/components/%7B%7B%3C%0Adocsref%20%22%0A/:section /:section 301
-/components/%7B%7B%3C%0Adocsref%20%22/:section/ /:section/ 301
-/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/ /:section/ 301
+# google-search-console
 
-/components/%7B%7B%3C%0Adocsref%20%22/:section/:page /:section/:page 301
-/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/:page /:section/:page 301
+/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22/:section /doc/5.3/:section 301
+/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22%0A/:section /doc/5.3/:section 301
+/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22/:section/ /doc/5.3/:section/ 301
+/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/ /doc/5.3/:section/ 301
 
-/components/%7B%7B%3C%0A%20%20docsref%20%22/:section/:page%22%20%3E%7D%7D /:section/:page 301
-/components/%7B%7B%3C%0A%20%20docsref%20%22%0A/:section/:page%22%20%3E%7D%7D /:section/:page 301
+/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22/:section/:page /doc/5.3/:section/:page 301
+/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/:page /doc/5.3/:section/:page 301
+
+/doc/5.3/components/%7B%7B%3C%0A%20%20docsref%20%22/:section/:page%22%20%3E%7D%7D /doc/5.3/:section/:page 301
+/doc/5.3/components/%7B%7B%3C%0A%20%20docsref%20%22%0A/:section/:page%22%20%3E%7D%7D /doc/5.3/:section/:page 301
