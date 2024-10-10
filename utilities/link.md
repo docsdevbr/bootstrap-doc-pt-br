@@ -12,7 +12,7 @@ added:
 
 Change the alpha opacity of the link `rgba()` color value with utilities. Please
 be aware that changes to a color's opacity can lead to links with [
-*insufficient* contrast](../getting-started/accessibility.md#color-contrast).
+*insufficient* contrast](../comecando/acessibilidade.md#contraste-de-cores).
 
 { {< example >} }
 <p><a class="link-opacity-10" href="#">Link opacity 10</a></p>

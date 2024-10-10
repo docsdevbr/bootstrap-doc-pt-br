@@ -44,7 +44,7 @@ nav:
       - Webpack: comecando/webpack.md
       - Parcel: comecando/parcel.md
       - Vite: comecando/vite.md
-      - Accessibility: getting-started/accessibility.md
+      - Acessibilidade: comecando/acessibilidade.md
       - RFS: getting-started/rfs.md
       - RTL: getting-started/rtl.md
       - Contribute: getting-started/contribute.md

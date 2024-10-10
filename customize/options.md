@@ -31,7 +31,7 @@ predefined gradients via `background-image` styles on various components. |
 | `$enable-transitions`          | `true` (default) or `false`        | Enables
 predefined `transition`s on various components. |
 | `$enable-reduced-motion`       | `true` (default) or `false`        | Enables
-the [`prefers-reduced-motion` media query](../getting-started/accessibility.md#reduced-motion), which suppresses certain
+the [`prefers-reduced-motion` media query](../comecando/acessibilidade.md#movimento-reduzido), which suppresses certain
 animations/transitions based on the users' browser/operating system
 preferences. |
 | `$enable-grid-classes`         | `true` (default) or `false`        | Enables
@@ -59,5 +59,5 @@ that are planned to be removed in `v6`. |
 the `!important` suffix in utility classes. |
 | `$enable-smooth-scroll`        | `true` (default) or `false`        | Applies
 `scroll-behavior: smooth` globally, except for users asking for reduced motion
-through [`prefers-reduced-motion` media query](../getting-started/accessibility.md#reduced-motion) |
+through [`prefers-reduced-motion` media query](../comecando/acessibilidade.md#movimento-reduzido) |
 { {< /bs-table >} }
