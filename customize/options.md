@@ -46,7 +46,7 @@ pseudo element caret on `.dropdown-toggle`. |
 | `$enable-button-pointers`      | `true` (default) or `false`        | Add "
 hand" cursor to non-disabled button elements. |
 | `$enable-rfs`                  | `true` (default) or `false`        | Globally
-enables [RFS](../getting-started/rfs.md). |
+enables [RFS](../comecando/rfs.md). |
 | `$enable-validation-icons`     | `true` (default) or `false`        | Enables
 `background-image` icons within textual inputs and some custom forms for
 validation states. |

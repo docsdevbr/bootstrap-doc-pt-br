@@ -23,6 +23,7 @@ extra:
   current_ruby_version: 5.3.3
   current_version: 5.3.3
   docs_version: 5.3
+  rfs_version: v10.0.0
   download:
     dist: https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-dist.zip
     dist_examples: https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip
@@ -45,7 +46,7 @@ nav:
       - Parcel: comecando/parcel.md
       - Vite: comecando/vite.md
       - Acessibilidade: comecando/acessibilidade.md
-      - RFS: getting-started/rfs.md
+      - RFS: comecando/rfs.md
       - RTL: getting-started/rtl.md
       - Contribute: getting-started/contribute.md
   - Customize:

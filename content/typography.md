@@ -302,7 +302,7 @@ classes (or semantic mixins). For longer terms, you can optionally add a
 
 In Bootstrap 5, we've enabled responsive font sizes by default, allowing text to
 scale more naturally across device and viewport sizes. Have a look at
-the [RFS page](../getting-started/rfs.md) to find out how this
+the [RFS page](../comecando/rfs.md) to find out how this
 works.
 
 ## CSS
@@ -320,4 +320,4 @@ Miscellaneous typography elements covered here and in [Reboot](reboot.md) also h
 ### Sass mixins
 
 There are no dedicated mixins for typography, but Bootstrap does
-use [Responsive Font Sizing (RFS)](../getting-started/rfs.md).
+use [Responsive Font Sizing (RFS)](../comecando/rfs.md).

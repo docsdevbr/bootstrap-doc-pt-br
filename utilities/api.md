@@ -40,7 +40,7 @@ variables to generate in addition to the CSS rules. |
 `:hover` or `:focus`) to generate. |
 | [`responsive`](#responsive) | Optional | `false` | Boolean indicating if
 responsive classes should be generated. |
-| `rfs` | Optional | `false` | Boolean to enable [fluid rescaling with RFS](../getting-started/rfs.md). |
+| `rfs` | Optional | `false` | Boolean to enable [fluid rescaling with RFS](../comecando/rfs.md). |
 | [`print`](#print) | Optional | `false` | Boolean indicating if print classes
 need to be generated. |
 | `rtl` | Optional | `true` | Boolean indicating if utility should be kept in

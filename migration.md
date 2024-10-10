@@ -712,7 +712,7 @@ documented below. They don't reflect the additional changes shown above.
 
 ### Content, Reboot, etc
 
-- **[RFS](getting-started/rfs.md) is now enabled by default.**
+- **[RFS](comecando/rfs.md) is now enabled by default.**
   Headings using the `font-size()` mixin will automatically adjust their
   `font-size` to scale with the viewport. _This feature was previously opt-in
   with v4._
