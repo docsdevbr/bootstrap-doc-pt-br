@@ -43,7 +43,7 @@ nav:
       - JavaScript: comecando/javascript.md
       - Webpack: comecando/webpack.md
       - Parcel: comecando/parcel.md
-      - Vite: getting-started/vite.md
+      - Vite: comecando/vite.md
       - Accessibility: getting-started/accessibility.md
       - RFS: getting-started/rfs.md
       - RTL: getting-started/rtl.md

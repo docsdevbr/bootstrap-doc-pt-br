@@ -571,7 +571,7 @@ documented below. They don't reflect the additional changes shown above.
 ### Documentation changes
 
 - Redesigned homepage, docs layout, and footer.
-- Added [new Parcel guide](getting-started/parcel.md).
+- Added [new Parcel guide](comecando/parcel.md).
 - Added [new Customize section](customize/overview.md),
   replacing [v4's Theming page](https://getbootstrap.com/docs/4.6/getting-started/theming/),
   with new details on Sass, global configuration options, color schemes, CSS

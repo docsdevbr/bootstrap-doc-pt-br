@@ -36,7 +36,7 @@ para edição ao vivo.
 ## Configuração
 
 Estamos construindo um projeto Webpack com Bootstrap do zero, então há alguns
-pré-requisitos e etapas iniciais antes de realmente começarmos.
+pré-requisitos e passos iniciais antes de realmente começarmos.
 Este guia requer que você tenha o Node.js instalado e alguma familiaridade com o
 terminal.
 
@@ -156,9 +156,9 @@ module.exports = {
 
 2. **Em seguida, preenchemos nosso `src/index.html`.**
    Esta é a página HTML que o Webpack carregará no navegador para utilizar o CSS
-   e o JS empacotados que adicionaremos a ele em etapas posteriores.
+   e o JS empacotados que adicionaremos a ele em passos posteriores.
    Antes de fazermos isso, temos que dar a ele algo para renderizar e incluir o
-   JS listado em `output` da etapa anterior:
+   JS listado em `output` do passo anterior:
 
 ```html
 <!doctype html>
@@ -308,7 +308,8 @@ module.exports = {
    JS do Bootstrap.
    O Popper será importado automaticamente pelo Bootstrap.
 
-```js
+<!-- eslint-skip -->
+```javascript
 // Importa nosso CSS personalizado
 import '../scss/styles.scss'
 
@@ -319,29 +320,30 @@ import * as bootstrap from 'bootstrap'
    Você também pode importar _plugins_ JavaScript individualmente, conforme
    necessário, para manter o tamanho dos pacotes reduzido:
 
-```js
+<!-- eslint-skip -->
+```javascript
 import Alert from 'bootstrap/js/dist/alert'
 
 // ou especifique quais plugins você precisa:
 import { Tooltip, Toast, Popover } from 'bootstrap'
 ```
 
-   _[Leia nossa documentação JavaScript](../comecando/javascript.md) para mais
-   informações sobre como usar os plugins do Bootstrap._
+   _[Leia nossa documentação do JavaScript](../comecando/javascript.md) para
+   mais informações sobre como usar os plugins do Bootstrap._
 
 4. **E pronto! 🎉**
-   Com o Sass e o JS do Bootstrap totalmente carregados, seu servidor de
-   desenvolvimento local deve ficar assim:
+   Com os arquivos fonte Sass e JS do Bootstrap totalmente carregados, seu
+   servidor de desenvolvimento local deve ficar assim:
 
    ![Servidor de desenvolvimento Webpack em execução com Bootstrap](../assets/img/guides/webpack-dev-server-bootstrap.png)
    {: .img-fluid }
 
    Agora você pode começar a adicionar quaisquer componentes do Bootstrap que
-   desejar usar.
+   quiser usar.
    Não deixe de
    [conferir o projeto de exemplo completo do Webpack](https://github.com/twbs/examples/tree/main/webpack)
    para saber como incluir Sass personalizado adicional e otimizar sua
-   compilação importando apenas as partes do CSS e JS do Bootstrap que você
+   construção importando apenas as partes do CSS e JS do Bootstrap que você
    precisa.
 
 ## Otimizações de produção

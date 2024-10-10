@@ -1,16 +1,23 @@
 # comecando
 
 / /doc/5.3/comecando/introducao 301
+/doc /doc/5.3/comecando/introducao 301
 /doc/ /doc/5.3/comecando/introducao 301
 /doc/5.3/ /doc/5.3/comecando/introducao 301
 
+/doc/5.3/comecando /doc/5.3/comecando/introducao 301
 /doc/5.3/comecando/ /doc/5.3/comecando/introducao 301
+
+/doc/5.3/getting-started /doc/5.3/comecando/introducao 301
 /doc/5.3/getting-started/ /doc/5.3/comecando/introducao 301
+
 /doc/5.3/getting-started/browsers-devices/ /doc/5.3/comecando/navegadores-dispositivos 301
 /doc/5.3/getting-started/contents/ /doc/5.3/comecando/conteudo 301
-/doc/5.3/getting-started/download/ /doc/5.3/comecando/baixe 301
+/doc/5.3/getting-started/download/ /doc/5.3/comecando/baixar 301
 /doc/5.3/getting-started/introduction/ /doc/5.3/comecando/introducao 301
 /doc/5.3/getting-started/javascript/ /doc/5.3/comecando/javascript 301
+/doc/5.3/getting-started/parcel/ /doc/5.3/comecando/parcel 301
+/doc/5.3/getting-started/vite/ /doc/5.3/comecando/vite 301
 /doc/5.3/getting-started/webpack/ /doc/5.3/comecando/webpack 301
 
 # google-search-console

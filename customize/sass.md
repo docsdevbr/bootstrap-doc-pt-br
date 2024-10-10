@@ -124,7 +124,7 @@ and [compiling with VS Code](https://code.visualstudio.com/docs/languages/css#_t
 
 { { < callout info }}
 **Using Bootstrap with another build tool?** Consider reading our guides for
-compiling with [Webpack](../comecando/webpack.md), [Parcel](../getting-started/parcel.md), or [Vite](../getting-started/vite.md). We also have production-ready demos
+compiling with [Webpack](../comecando/webpack.md), [Parcel](../comecando/parcel.md), or [Vite](../comecando/vite.md). We also have production-ready demos
 in [our examples repository on GitHub](https://github.com/twbs/examples).
 { { < /callout }}
 
