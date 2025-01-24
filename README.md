@@ -14,12 +14,9 @@ Você pode apoiar o projeto através do [GitHub Sponsors][sponsor-github] ou
 
 Copyright (c) 2011-2024 The Bootstrap Authors.
 
-Código licenciado sob a Licença MIT.<br>
-Documentação licenciada sob a Licença Creative Commons Atribuição 3.0.<br>
+Código licenciado sob a [Licença MIT][license-mit].<br>
+Documentação licenciada sob a [Licença Creative Commons Atribuição 3.0][license-cc].<br>
 A obra original foi traduzida do inglês para o português brasileiro.
-
-[Licença MIT][license-mit]<br>
-[Licença Creative Commons Atribuição 3.0][license-cc]
 
 [license-cc]: https://creativecommons.org/licenses/by/3.0/deed.pt-br
 

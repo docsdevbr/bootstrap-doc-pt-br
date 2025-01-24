@@ -14,11 +14,8 @@ You can support the project through [GitHub Sponsors][sponsor-github] or
 
 Copyright (c) 2011-2024 The Bootstrap Authors.
 
-Code licensed under the MIT License.<br>
-Documentation licensed under the Creative Commons Attribution 3.0 License.
-
-[MIT License][license-mit]<br>
-[Creative Commons Attribution 3.0 License][license-cc]
+Code licensed under the [MIT License][license-mit].<br>
+Documentation licensed under the [Creative Commons Attribution 3.0 License][license-cc].
 
 [license-cc]: https://creativecommons.org/licenses/by/3.0/
 
