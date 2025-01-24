@@ -1,0 +1,39 @@
+# [bootstrap-doc-pt-br][portal-link]
+
+[![README file in English][readme-badge-en]][readme-lang-en]
+[![README file in Brazilian Portuguese][readme-badge-pt-br]][readme-lang-pt-br]
+
+Translation of Bootstrap Documentation into Brazilian Portuguese.
+
+## Support
+
+You can support the project through [GitHub Sponsors][sponsor-github] or
+[Pix][sponsor-pix].
+
+## License
+
+Copyright (c) 2011-2024 The Bootstrap Authors.
+
+Code licensed under the MIT License.<br>
+Documentation licensed under the Creative Commons Attribution 3.0 License.
+
+[MIT License][license-mit]<br>
+[Creative Commons Attribution 3.0 License][license-cc]
+
+[license-cc]: https://creativecommons.org/licenses/by/3.0/
+
+[license-mit]: LICENSE
+
+[portal-link]: https://docs.dev.br/pt-br/docs/bootstrap/doc/
+
+[readme-badge-en]: https://img.shields.io/badge/lang-en-blue.svg
+
+[readme-badge-pt-br]: https://img.shields.io/badge/lang-pt--br-dark--green.svg
+
+[readme-lang-en]: README.EN.md
+
+[readme-lang-pt-br]: README.md
+
+[sponsor-github]: https://github.com/sponsors/docsdevbr
+
+[sponsor-pix]: https://docs.dev.br/pt-br/support-us

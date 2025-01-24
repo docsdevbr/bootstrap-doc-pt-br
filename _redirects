@@ -1,37 +1,24 @@
-# comecando
+/ /getting-started/introduction 301
+/getting-started/ /getting-started/introduction 301
+/customize/ /customize/overview 301
+/layout/ /layout/breakpoints 301
+/content/ /content/reboot 301
+/forms/ /forms/overview 301
+/components/ /components/accordion 301
+/helpers/ /helpers/clearfix 301
+/utilities/ /utilities/api 301
+/extend/ /extend/approach 301
+/about/ /about/overview 301
 
-/ /doc/5.3/comecando/introducao 301
-/doc /doc/5.3/comecando/introducao 301
-/doc/ /doc/5.3/comecando/introducao 301
-/doc/5.3/ /doc/5.3/comecando/introducao 301
-
-/doc/5.3/comecando /doc/5.3/comecando/introducao 301
-/doc/5.3/comecando/ /doc/5.3/comecando/introducao 301
-
-/doc/5.3/getting-started /doc/5.3/comecando/introducao 301
-/doc/5.3/getting-started/ /doc/5.3/comecando/introducao 301
-
-/doc/5.3/getting-started/accessibility/ /doc/5.3/comecando/acessibilidade 301
-/doc/5.3/getting-started/browsers-devices/ /doc/5.3/comecando/navegadores-dispositivos 301
-/doc/5.3/getting-started/contents/ /doc/5.3/comecando/conteudo 301
-/doc/5.3/getting-started/download/ /doc/5.3/comecando/baixar 301
-/doc/5.3/getting-started/introduction/ /doc/5.3/comecando/introducao 301
-/doc/5.3/getting-started/javascript/ /doc/5.3/comecando/javascript 301
-/doc/5.3/getting-started/parcel/ /doc/5.3/comecando/parcel 301
-/doc/5.3/getting-started/rfs/ /doc/5.3/comecando/rfs 301
-/doc/5.3/getting-started/rtl/ /doc/5.3/comecando/rtl 301
-/doc/5.3/getting-started/vite/ /doc/5.3/comecando/vite 301
-/doc/5.3/getting-started/webpack/ /doc/5.3/comecando/webpack 301
-
-# google-search-console
-
-/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22/:section /doc/5.3/:section 301
-/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22%0A/:section /doc/5.3/:section 301
-/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22/:section/ /doc/5.3/:section/ 301
-/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/ /doc/5.3/:section/ 301
-
-/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22/:section/:page /doc/5.3/:section/:page 301
-/doc/5.3/components/%7B%7B%3C%0Adocsref%20%22%0A/:section/:page /doc/5.3/:section/:page 301
-
-/doc/5.3/components/%7B%7B%3C%0A%20%20docsref%20%22/:section/:page%22%20%3E%7D%7D /doc/5.3/:section/:page 301
-/doc/5.3/components/%7B%7B%3C%0A%20%20docsref%20%22%0A/:section/:page%22%20%3E%7D%7D /doc/5.3/:section/:page 301
+/comecando/ /getting-started/introduction 301
+/comecando/acessibilidade /getting-started/accessibility 301
+/comecando/baixar /getting-started/download 301
+/comecando/conteudo /getting-started/contents 301
+/comecando/introducao /getting-started/introduction 301
+/comecando/javascript /getting-started/javascript 301
+/comecando/navegadores-dispositivos /getting-started/browsers-devices 301
+/comecando/parcel /getting-started/parcel 301
+/comecando/rfs /getting-started/rfs 301
+/comecando/rtl /getting-started/rtl 301
+/comecando/vite /getting-started/vite 301
+/comecando/webpack /getting-started/webpack 301
