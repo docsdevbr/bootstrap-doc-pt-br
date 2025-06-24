@@ -3,6 +3,7 @@
 [![Arquivo README em inglês][badge-readme-en]][readme-en]
 [![Arquivo README em português brasileiro][badge-readme-pt-br]][readme-pt-br]
 [![Licença: CC-BY-3.0][badge-license]][license-cc]
+[![Pessoas contribuidoras][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
 Tradução da Documentação do Bootstrap para português brasileiro.
@@ -32,17 +33,21 @@ Código licenciado sob a [Licença MIT][license-mit].<br>
 Documentação licenciada sob a [Licença Creative Commons Atribuição 3.0 Não Adaptada][license-cc].<br>
 A obra original foi traduzida do inglês para o português brasileiro.
 
+[badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/bootstrap-doc-pt-br
+
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/badge/license-CC--BY--3.0-blue
+[badge-license]: https://img.shields.io/badge/license-CC--BY--3.0-green
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
 [badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-blue
 
+[code-of-conduct]: https://github.com/docsdevbr/.github/blob/main/CODE_OF_CONDUCT.md
+
 [contributing]: https://github.com/docsdevbr/.github/blob/main/CONTRIBUTING.md
 
-[code-of-conduct]: https://github.com/docsdevbr/.github/blob/main/CODE_OF_CONDUCT.md
+[contributors]: https://github.com/docsdevbr/bootstrap-doc-pt-br/graphs/contributors
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 

@@ -3,6 +3,7 @@
 [![README file in English][badge-readme-en]][readme-en]
 [![README file in Brazilian Portuguese][badge-readme-pt-br]][readme-pt-br]
 [![License: CC-BY-3.0][badge-license]][license-cc]
+[![Contributors][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
 Translation of the Bootstrap Documentation into Brazilian Portuguese.
@@ -33,17 +34,21 @@ Documentation licensed under the
 [Creative Commons Attribution 3.0 Unported License][license-cc].<br>
 The original work was translated from English into Brazilian Portuguese.
 
+[badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/bootstrap-doc-pt-br
+
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
-[badge-license]: https://img.shields.io/badge/license-CC--BY--3.0-blue
+[badge-license]: https://img.shields.io/badge/license-CC--BY--3.0-green
 
 [badge-readme-en]: https://img.shields.io/badge/lang-en-blue
 
 [badge-readme-pt-br]: https://img.shields.io/badge/lang-pt--br-blue
 
+[code-of-conduct]: https://github.com/docsdevbr/.github/blob/main/CODE_OF_CONDUCT.EN.md
+
 [contributing]: https://github.com/docsdevbr/.github/blob/main/CONTRIBUTING.EN.md
 
-[code-of-conduct]: https://github.com/docsdevbr/.github/blob/main/CODE_OF_CONDUCT.EN.md
+[contributors]: https://github.com/docsdevbr/bootstrap-doc-pt-br/graphs/contributors
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
