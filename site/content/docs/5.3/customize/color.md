@@ -1,4 +1,11 @@
 ---
+# Copyright (c) 2011-2025 The Bootstrap Authors.
+
+# Code licensed under the MIT License.
+# Documentation licensed under the Creative Commons Attribution 3.0 Unported License.
+# The original work was translated from English into Brazilian Portuguese.
+# https://creativecommons.org/licenses/by/3.0/
+
 layout: docs
 title: Color
 description: Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.

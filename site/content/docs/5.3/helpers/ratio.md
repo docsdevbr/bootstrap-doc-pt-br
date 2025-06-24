@@ -1,4 +1,11 @@
 ---
+# Copyright (c) 2011-2025 The Bootstrap Authors.
+
+# Code licensed under the MIT License.
+# Documentation licensed under the Creative Commons Attribution 3.0 Unported License.
+# The original work was translated from English into Brazilian Portuguese.
+# https://creativecommons.org/licenses/by/3.0/
+
 layout: docs
 title: Ratios
 description: Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of the parent.

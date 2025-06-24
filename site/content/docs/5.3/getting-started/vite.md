@@ -1,4 +1,11 @@
 ---
+# Copyright (c) 2011-2025 The Bootstrap Authors.
+
+# Code licensed under the MIT License.
+# Documentation licensed under the Creative Commons Attribution 3.0 Unported License.
+# The original work was translated from English into Brazilian Portuguese.
+# https://creativecommons.org/licenses/by/3.0/
+
 source_url: https://github.com/twbs/bootstrap/blob/v5.3.3/site/content/docs/5.3/getting-started/vite.md
 revision: cb7467b428d212562d0e8fe29f48588f5ea97ba7
 status: ready

@@ -1,4 +1,11 @@
 ---
+# Copyright (c) 2011-2025 The Bootstrap Authors.
+
+# Code licensed under the MIT License.
+# Documentation licensed under the Creative Commons Attribution 3.0 Unported License.
+# The original work was translated from English into Brazilian Portuguese.
+# https://creativecommons.org/licenses/by/3.0/
+
 layout: docs
 title: Display property
 description: Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.
