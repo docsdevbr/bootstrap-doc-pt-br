@@ -2,7 +2,7 @@
 
 [![Arquivo README em inglês][badge-readme-en]][readme-en]
 [![Arquivo README em português brasileiro][badge-readme-pt-br]][readme-pt-br]
-[![Licença: CC-BY-3.0][badge-license]][license-cc]
+[![Licença: CC-BY-3.0][badge-license]][license]
 [![Pessoas contribuidoras][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
@@ -29,8 +29,8 @@ Você pode apoiar o projeto através do [GitHub Sponsors][github-sponsors] ou
 
 Copyright (c) 2011-2025 The Bootstrap Authors.
 
-Código licenciado sob a [Licença MIT][license-mit].<br>
-Documentação licenciada sob a [Licença Creative Commons Atribuição 3.0 Não Adaptada][license-cc].<br>
+Documentação licenciada sob a
+[Licença Creative Commons Atribuição 3.0 Não Adaptada][license].<br>
 A obra original foi traduzida do inglês para o português brasileiro.
 
 [badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/bootstrap-doc-pt-br
@@ -51,9 +51,7 @@ A obra original foi traduzida do inglês para o português brasileiro.
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
-[license-cc]: https://creativecommons.org/licenses/by/3.0/deed.pt-br
-
-[license-mit]: LICENSE
+[license]: https://creativecommons.org/licenses/by/3.0/deed.pt-br
 
 [page]: https://docs.dev.br/docs/bootstrap/doc/
 

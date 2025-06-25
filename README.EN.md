@@ -2,7 +2,7 @@
 
 [![README file in English][badge-readme-en]][readme-en]
 [![README file in Brazilian Portuguese][badge-readme-pt-br]][readme-pt-br]
-[![License: CC-BY-3.0][badge-license]][license-cc]
+[![License: CC-BY-3.0][badge-license]][license]
 [![Contributors][badge-contributors]][contributors]
 [![GitHub Sponsors][badge-github-sponsors]][github-sponsors]
 
@@ -29,9 +29,8 @@ You can support the project through [GitHub Sponsors][github-sponsors] or
 
 Copyright (c) 2011-2025 The Bootstrap Authors.
 
-Code licensed under the [MIT License][license-mit].<br>
 Documentation licensed under the
-[Creative Commons Attribution 3.0 Unported License][license-cc].<br>
+[Creative Commons Attribution 3.0 Unported License][license].<br>
 The original work was translated from English into Brazilian Portuguese.
 
 [badge-contributors]: https://img.shields.io/github/contributors/docsdevbr/bootstrap-doc-pt-br
@@ -52,9 +51,7 @@ The original work was translated from English into Brazilian Portuguese.
 
 [github-sponsors]: https://github.com/sponsors/docsdevbr
 
-[license-cc]: https://creativecommons.org/licenses/by/3.0/
-
-[license-mit]: LICENSE
+[license]: https://creativecommons.org/licenses/by/3.0/
 
 [page]: https://docs.dev.br/docs/bootstrap/doc/
 
