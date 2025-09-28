@@ -53,10 +53,10 @@ The original work was translated from English into Brazilian Portuguese.
 
 [license]: https://creativecommons.org/licenses/by/3.0/
 
-[page]: https://docs.dev.br/docs/bootstrap/doc/
+[page]: https://pt.docs.dev.br/p/bootstrap/docs/
 
 [readme-en]: README.EN.md
 
 [readme-pt-br]: README.md
 
-[sponsor]: https://docs.dev.br/apoie-o-projeto
+[sponsor]: https://pt.docs.dev.br/sponsor
